@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -56,7 +56,7 @@ DKIM kräver vissa förutsättningar:
 * **Säkerhet**: Kryptering är ett nyckelelement i DKIM. För att säkerställa att DKIM:s säkerhetsnivå är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
 * **Anseende**: Anseendet baseras på IP och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av vem som helst och därför har ett svagt anseende. Du måste implementera en annan väljare för **kvarhållning jämfört med förvärvsinformation** och för autentisering.
 
-Läs mer om DKIM-krav när du använder Campaign Classic i [det här avsnittet](/help/putting-it-in-practice/acc-technical-recommendations.md#dkim-acc).
+Läs mer om DKIM-krav när du använder Campaign Classic i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
 ## DMARC {#dmarc}
 
