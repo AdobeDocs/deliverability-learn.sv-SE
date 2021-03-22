@@ -8,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
@@ -25,3 +25,7 @@ Mer information om de viktiga skillnaderna mellan följande valda grupper av lev
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft (Hotmail, Outlook, Windows Live etc.)](/help/internet-service-provider-specifics/microsoft.md)
 * [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
+
+## Ytterligare resurser
+
+* Lär dig mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
