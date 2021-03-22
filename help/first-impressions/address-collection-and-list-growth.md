@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: TM
 translation-type: tm+mt
-source-git-commit: 131e3f06ac8d593d4b67711ee3688ff895aa380c
+source-git-commit: ec0bb2f9ee514cc94c764744e0cc51e62e811c20
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Den vanligaste formen för **webbplatsregistrering** är&quot;single opt-in&quot
 
 * Obekräftade e-postadresser kan innehålla stavfel, vara felaktiga eller ha skadligt format. Typos och felformaterade adresser orsakar höga studsfrekvenser, vilket kan och gör att blockeringar som utfärdas av Internet-leverantörer eller IP-adresser inte fungerar som de ska.
 
-* Skadlig inlämning av kända skräppostfällor (kallas ibland&quot;listförgiftning&quot;) kan orsaka stora problem med leveransen och anseendet om ägaren till fällan vidtar åtgärder. Det är omöjligt att veta om mottagaren verkligen vill bli medlem i en marknadsföringslista utan att bekräfta det. Detta gör det lika omöjligt att ställa mottagarens förväntningar och kan leda till fler skräppostklagomål - och ibland en svartlista om det insamlade e-postmeddelandet råkar vara en skräppostfälla.
+* Skadlig inlämning av kända skräppostfällor (kallas ibland&quot;listförgiftning&quot;) kan orsaka stora problem med leveransen och anseendet om ägaren till fällan vidtar åtgärder. Det är omöjligt att veta om mottagaren verkligen vill bli medlem i en marknadsföringslista utan att bekräfta det. Detta gör det lika omöjligt att ställa in mottagarens förväntningar och kan leda till fler skräppostklagomål - och ibland blocklist om det insamlade e-postmeddelandet råkar vara en skräppostfälla.
 
 Mer information om hur du minimerar problemen i både fysisk lagring och fristående deltagande finns i [Datakvalitet och hygien](#data-quality-and-hygiene)-avsnittet i den här handboken där du hittar information om och fördelar med dubbel anmälan.
 
@@ -89,4 +89,16 @@ Det här är kunder som har valt att interagera med ert varumärke, vilket är b
 samla in tävlingsadresser både vid ett eller flera officiella och tydligt märkta mässor. Risken är att många händelser, som detta, samlar in alla adresser och distribuerar dem via eventleverantören eller värden. Det innebär att ägarna av dessa e-postadresser aldrig har begärt e-post från ert varumärke. Dessa prenumeranter kommer troligen att klaga och markera din e-post som skräppost, och de kanske inte har angett korrekt kontaktinformation.
 
 **Lotteriet**
+
 Lotteriet erbjuder snabbt ett stort antal e-postadresser. Men de här prenumeranterna vill ha priset, inte era e-postmeddelanden. De kanske inte ens uppmärksammat namnet på dem som skulle komma att kontakta dem. De kommer troligen att klaga och markera din post som skräppost, och det är inte troligt att de någonsin kommer att genomföra något köp.
+
+## Produktspecifika resurser
+
+**Adobe Campaign Classic**
+
+* [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+
+**Adobe Campaign Standard**
+
+* [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+
