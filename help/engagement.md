@@ -9,10 +9,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 0%
+source-wordcount: '924'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,16 @@ En sista viktig del av svarsstrategin är att om du har en riktig e-postadress s
 
 ## Produktspecifika resurser
 
+**Adobe Campaign Classic**
+
+* [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
+* [Tryckregler](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+
 **Adobe Campaign Standard**
 
 * [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
-* [Trötthetsregler (produktdokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+* [Fatigue-regler](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+
+## Ytterligare resurser
+
+* Läs mer om strategier för återengagemang (eller återvinning) i [det här avsnittet](/help/additional-resources/re-engagement.md).
