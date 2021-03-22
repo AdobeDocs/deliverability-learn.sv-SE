@@ -3,10 +3,10 @@ user-guide-title: Handbok om bästa praxis för leverans
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för leverans för att säkerställa att ert marknadsföringsprogram lyckas.
 translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 9%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 9%
    + [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Pågående övervakning](/help/ongoing-monitoring.md)
 + Placera den i praktiken {#putting-it-in-practice}
-   + [Hur ni lyckas](/help/putting-it-in-practice/how-to-reach-success.md)
+   + [Översikt](/help/putting-it-in-practice/putting-it-in-practice.md)
    + Campaign {#campaign}
       + [Inställningar för domännamn](/help/putting-it-in-practice/ac-domain-name-setup.md)
       + [SSL-certifikatbegäran](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
