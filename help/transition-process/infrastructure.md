@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Framgångsrik leverans är beroende av en stark grund. E-postinfrastruktur är en viktig del. En korrekt konstruerad e-postinfrastruktur innehåller flera komponenter - nämligen domän(er) och IP-adress(er). Dessa komponenter är som maskinerna bakom de e-postmeddelanden du skickar och de är ofta navet för att skicka anseende. Produktionskonsulter ser till att dessa element är korrekt konfigurerade under implementeringen, men på grund av anseendeelementet är det viktigt för dig att ha denna grundläggande förståelse.
 
-## Domäninställningar och -strategi
+## Domänkonfiguration och strategi {#domain-setup-and-strategy}
 
 Tiderna har ändrats och vissa Internet-leverantörer (som Gmail och Yahoo) har nu lagt till domänens anseende som en extra poäng när det gäller att knyta e-postens anseende till en avsändare. Ditt domänrykte baseras på din avsändande domän i stället för på din IP-adress. Detta innebär att ert varumärke har företräde när det gäller beslut om filtrering av Internet-leverantörer.
 
@@ -32,7 +32,7 @@ En del av introduktionsprocessen för nya avsändare på Adobe-plattformar är b
 * Använd en underdomän till din överordnade domän för att legitimera den sändande domänen.
 * Separera dina underdomäner för meddelandekategorierna Transactional och Marketing. Detta gör att e-posttrafiken kan flöda på ett mer tillförlitligt sätt eftersom internetleverantörer letar efter den här sändningsmetoden, som är en känd e-postmetod och som rekommenderas varmt.
 
-## IP-strategi
+## IP-strategi {#ip-strategy}
 
 Det är viktigt att utforma en välstrukturerad IP-strategi för att skapa ett gott rykte. Antalet IP-adresser och inställningar varierar beroende på er affärsmodell och era marknadsföringsmål. Samarbeta med en expert för att ta fram en tydlig strategi för att komma igång. Tänk på följande saker som är viktiga att tänka på:
 
@@ -41,11 +41,11 @@ Det är viktigt att utforma en välstrukturerad IP-strategi för att skapa ett g
 * Det är viktigt att separera trafiken för meddelandetyper. Det är viktigt att i minsta möjliga mån avgränsa marknadsföring och transaktionell post i separata IP-pooler.
 * Beroende på er e-poststrategi kan det även vara tillrådligt att separera olika produkter eller marknadsföringsströmmar från olika IP-pooler om ert rykte är drastiskt annorlunda. Vissa marknadsförare segmenterar också efter region. Att separera IP-adressen för trafik med lägre anseende löser inte problemet med anseende, men det förhindrar problem med e-postleveranser med gott anseende. Ni vill trots allt inte offra er goda publik för en mer riskfylld.
 
-## Feedback-slingor
+## Feedback-slingor {#feedback-loops}
 
 Bakom kulisserna behandlar Adobe-plattformarna data om studsar, klagomål, avanmälan med mera. Inställningarna av dessa feedbackslingor är en viktig del av leveransen. Klaganden kan skada ett anseende, så du bör skicka e-postadresser som registrerar klagomål från målgruppen. Observera att Gmail inte skickar tillbaka dessa data. Avsändningsrubriker och interaktionsfiltrering är särskilt viktiga för Gmail-prenumeranter, som nu har större delen av prenumerationsdatabaserna.
 
-## Autentisering
+## Autentisering {#authentication}
 
 Autentisering är den process som Internet-leverantörer använder för att validera en avsändares identitet. De två vanligaste autentiseringsprotokollen är [!DNL Sender Policy Framework] (SPF) och [!DNL DomainKeys Identified Mail] (DKIM). Dessa är inte synliga för slutanvändaren, men hjälper Internet-leverantörer att filtrera e-post från verifierade avsändare. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) blir allt populärare, även om dess policyer ännu inte införlivats av alla internetleverantörer i deras anseende.
 
@@ -63,10 +63,14 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 
 ## Produktspecifika resurser
 
-**Campaign Standard**
+**Campaign**
 
-* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html):  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard.*
+* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* Läs mer om hur du implementerar en feedbackslinga för en Campaign Classic-instans i [det här avsnittet](/help/putting-it-in-practice/acc-technical-recommendations.md#feedback-loop-acc).
 
-**Campaign Classic**
+## Ytterligare resurser
 
-* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html):  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic.*
+* Läs mer om autentiseringsmetoderna SPF, DKIM och DMARC i [det här avsnittet](/help/additional-resources/authentication.md).
+* Lär dig mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
