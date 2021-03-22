@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 9e4c4c56a09fb505a431d3799104c2684aed4a70
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Smidig övergång när du byter e-postplattform.
+# Smidig övergång när du byter e-postplattform
 
 När du flyttar ESP (e-postleverantörer) går det inte att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt. Eftersom de nya IP-adresserna som du kommer att använda ännu inte har något anseende kan internetleverantörerna inte helt lita på den post som kommer från dem och måste vara försiktiga med vad de tillåter att de levereras till sina kunder.
 
