@@ -8,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 7e9cc30c6d3fb69f557b17f452b43de08ae85a03
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,8 @@ Denna handbok om bästa praxis för leverans innehåller följande ämnen:
 7. [Avsändarens varaktighet](/help/sender-permanence.md)
 8. [Specifikationer för Internetleverantör](/help/internet-service-provider-specifics/overview.md)
 9. [Pågående övervakning](/help/ongoing-monitoring.md)
-   [I praktiken](/help/putting-it-in-practice.md)
+10. [I praktiken](/help/putting-it-in-practice/how-to-reach-success.md)
+11. [Ytterligare resurser](/help/additional-resources/general-resources.md)
 
 ## Källor
 
