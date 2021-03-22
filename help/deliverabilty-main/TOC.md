@@ -3,10 +3,10 @@ user-guide-title: Handbok om bästa praxis för leverans
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för leverans för att säkerställa att ert marknadsföringsprogram lyckas.
 translation-type: tm+mt
-source-git-commit: 5019165cd38a3b7cd26e4971e11f155278c3d3da
+source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
    + [Skräppostsvällning](/help/metrics/spam-traps.md)
    + [Massor och blockering](/help/metrics/bulking-and-blocking.md)
 + [Engagemang](/help/engagement.md)
-+ Övergångsprocess - Byta e-postplattform{#transition-process}
++ Övergångsprocess - Byta e-postplattformar {#transition-process}
    + [Smidig övergång när du byter e-postplattform](/help/transition-process/switching-email-platforms.md)
    + [Infrastruktur](/help/transition-process/infrastructure.md)
    + [Målkriterier](/help/transition-process/targeting-criteria.md)
@@ -40,4 +40,19 @@ ht-degree: 3%
    + [Microsoft (Hotmail, Outlook, Windows Live etc.)](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Pågående övervakning](/help/ongoing-monitoring.md)
-+ [I praktiken](/help/putting-it-in-practice.md)
++ Placera den i praktiken {#putting-it-in-practice}
+   + [Hur ni lyckas](/help/putting-it-in-practice/how-to-reach-success.md)
+   + Campaign {#campaign}
+      + [Inställningar för domännamn](/help/putting-it-in-practice/ac-domain-name-setup.md)
+      + [SSL-certifikatbegäran](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
+      + [Starta en ny plattform](/help/putting-it-in-practice/ac-starting-new-platform.md)
+      + [Campaign Classic - Tekniska rekommendationer](/help/putting-it-in-practice/acc-technical-recommendations.md)
++ Ytterligare resurser {#additional-resources}
+   + [Översikt](/help/additional-resources/general-resources.md)
+   + [Allt om skräppostsvällning](/help/additional-resources/all-about-spam-traps.md)
+   + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
+   + [Autentisering](/help/additional-resources/authentication.md)
+   + [Dubbletter](/help/additional-resources/duplicates.md)
+   + [Bästa praxis för förnyat engagemang](/help/additional-resources/re-engagement.md)
+   + [Svarthålslistor i realtid](/help/additional-resources/blocklist-databases.md)
+   + [Felsökning](/help/additional-resources/troubleshooting.md)
