@@ -9,9 +9,9 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: d42a8c3b06308fca0cf3e9db8d634a767fc0cdc6
+source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -42,3 +42,17 @@ I många fall följer inte transaktionsmarknadsföring den traditionella uppvär
 2. Övergivna kundvagnar - medelhög - hög engagemang i allmänhet
 3. Välkomstmeddelanden - hög engagemangsnivå men kan innehålla felaktiga adresser beroende på vilka listsamlingsmetoder du använder
 4. Återvinning av e-post - generellt lägre engagemang
+
+## Produktspecifika resurser
+
+**Campaign**
+
+* Läs mer om hur du hanterar slutprodukter när du startar en ny plattform med Adobe Campaign i [det här avsnittet](/help/putting-it-in-practice/ac-starting-new-platform.md).
+* Lär dig hur du skickar med flera vågor med Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+
+## Ytterligare resurser
+
+* Lär dig mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
