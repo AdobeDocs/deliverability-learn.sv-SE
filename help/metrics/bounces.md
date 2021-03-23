@@ -1,6 +1,6 @@
 ---
 title: Studsar
-description: Lär dig mer om de olika typerna av studsar.
+description: Lär dig mer om olika typer av studsar.
 feature: Mätvärden
 topics: Deliverability
 kt: 7047
@@ -12,20 +12,20 @@ translation-type: tm+mt
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 4%
+ht-degree: 88%
 
 ---
 
 
 # Studsar
 
-Satser är resultatet av ett leveransförsök och fel där Internet-leverantören tillhandahåller meddelanden om misslyckanden. Hantering av studsar är en viktig del av listhygienen. När ett visst e-postmeddelande har studsat flera gånger i rad flaggas det för undertryckning i den här processen. Antalet och typen av studsar som krävs för att utlösa inaktiveringen varierar från system till system. Den här processen förhindrar att system fortsätter att skicka ogiltiga e-postadresser. Satser är en av de viktigaste data som internetleverantörer använder för att fastställa IP-anseendet. Det är mycket viktigt att hålla ett öga på denna mätmetod. &quot;Levererat&quot; jämfört med &quot;studsat&quot; är förmodligen det vanligaste sättet att mäta leveransen av marknadsföringsmeddelanden: Ju högre procenttal som levereras, desto bättre.
+Studsar är resultatet av att en leverans har misslyckats, då internetleverantören meddelar misslyckanden. Studshantering är en viktig del av listhygienen. När ett visst e-postmeddelande har studsat flera gånger i rad flaggas det för undantag i den här processen. Antalet och typen av studsar som krävs för att utlösa undantaget varierar från system till system. Den här processen förhindrar att system fortsätter att skicka till ogiltiga e-postadresser. Studsar är en av de viktigaste uppgifterna som internetleverantörer använder för att fastställa IP-anseendet. Det är mycket viktigt att hålla ett öga på denna mätmetod. &quot;Levererat&quot; jämfört med &quot;studsat&quot; är förmodligen det vanligaste sättet att mäta leveransen av marknadsföringsmeddelanden: ju högre procenttal som levereras, desto bättre.
 
-Vi ska gräva i två olika typer av studsar.
+Vi ska titta närmare på två olika typer av studsar.
 
 ## Hårda studsar
 
-Hårda studsar är permanenta fel som genereras efter att en Internet-leverantör har fastställt att ett postförsök till en prenumerantadress inte kan levereras. Inom Adobe Campaign läggs hårda studsar som kategoriseras som olevererbara till i karantänen, vilket betyder att de inte kommer att försökas igen. Det finns vissa fall där ett hårt studsande skulle ignoreras om orsaken till felet är okänd.
+Hårda studsar är permanenta fel som genereras när en internetleverantör fastställer att e-post inte kan levereras till en prenumerantadress. Inom Adobe Campaign läggs hårda studsar som kategoriseras som olevererbara i karantänen, vilket innebär att inga fler försök att skicka dem görs. I vissa fall ignoreras en hård studs om orsaken till felet är okänd.
 Här är några vanliga exempel på hårda studsar:
 
 * Adressen finns inte
@@ -35,19 +35,19 @@ Här är några vanliga exempel på hårda studsar:
 
 ## Mjuka studsar
 
-Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Mjuka fel kommer att upprepas flera gånger (med olika variationer beroende på hur anpassade leveransinställningar eller leveransinställningar som är klara att användas) för att försöka leverera korrekt. Adresser som kontinuerligt mjuka studsar kommer inte att läggas till i karantän förrän det maximala antalet försök har gjorts (som återigen varierar beroende på inställningarna). Några vanliga orsaker till mjuka studsar är:
+Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de har svårt att leverera e-post. Vid mjuka fel upprepas försöket flera gånger (beroende på om leveransinställningarna är anpassade eller klara att användas) för att leveransen ska lyckas. Adresser som kontinuerligt genererar mjuka studsar kommer inte att läggas i karantän förrän det maximala antalet försök har gjorts (beroende på inställningarna). Några vanliga orsaker till mjuka studsar är:
 
 * Postlådan är full
-* Tar emot e-postserver nedåt
-* Problem med avsändarens rykte
+* Mottagande e-postserver är nere
+* Problem med avsändarens anseende
 
 ![studstyper](../assets/bounce-types.png)
 
 >[!NOTE]
 >
->Satser är en viktig indikator på ett renomméproblem eftersom de kan markera en dålig datakälla (hård studs) eller ett anseendeproblem med en Internet-leverantör (mjuk studsa).
+>Studsar är en viktig indikator på ett anseendeproblem eftersom de kan markera en dålig datakälla (hård studs) eller ett anseendeproblem med en internetleverantör (mjuk studs).
 >
->Mjuka studsar förekommer ofta som en del av e-postutskick och bör kunna lösas under återförsöksbearbetningen innan de karakteriseras som ett problem med äkta leverans. Om din låga avhoppsfrekvens är större än 30 procent för en enskild Internet-leverantör och inte kan lösas inom 24 timmar är det en bra idé att kontakta din Adobe Campaign-konsult.
+>Mjuka studsar förekommer ofta vid e-postutskick och bör försöka lösas genom återförsöksprocessen innan de betecknas som äkta levererbarhetsproblem. Om frekvensen för mjuka studsar är större än 30 % för en enskild internetleverantör och inte kan lösas inom 24 timmar är det en bra idé att kontakta din Adobe Campaign-konsult för levererbarhet.
 
 ## Produktspecifika resurser
 
