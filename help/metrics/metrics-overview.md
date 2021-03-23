@@ -1,6 +1,6 @@
 ---
-title: Mätvärden för leveransbarhet
-description: Förstå vilka nyckeltal för leveransförmåga som ska övervakas och hur de ska användas för att identifiera ett problem med anseende.
+title: Mätvärden för levererbarhet
+description: Lär dig vilka nyckeltal för leverbarhetsförmåga som ska övervakas och hur de ska användas för att identifiera problem som rör anseende.
 feature: Mätvärden
 topics: Deliverability
 kt: 5256
@@ -12,19 +12,19 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 15%
+ht-degree: 62%
 
 ---
 
 
-# Mätvärden för leveransbarhet
+# Mätvärden för levererbarhet
 
-Ett av de bästa sätten att identifiera ett utsändande anseendeproblem är genom mätvärdena. Låt oss titta på några viktiga mätvärden för leveransförmåga för att övervaka och använda dem för att identifiera ett problem med anseende.
+Ett av de bästa sätten att identifiera ett anseendeproblem avseende utskick är genom mätvärdena. Vi ska titta på några viktiga mätvärden för levererbarhet att övervaka och hur du kan använda dem för att identifiera problem som rör anseende.
 
 * [Studsar](/help/metrics/bounces.md)
 * [Klagomål](/help/metrics/complaints.md)
-* [Skräppostsvällning](/help/metrics/spam-traps.md)
-* [Massor och blockering](/help/metrics/bulking-and-blocking.md)
+* [Skräppostfällor](/help/metrics/spam-traps.md)
+* [Massutskick och blockering](/help/metrics/bulking-and-blocking.md)
 
 ## Produktspecifika resurser
 
