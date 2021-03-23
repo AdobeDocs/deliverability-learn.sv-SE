@@ -3,7 +3,7 @@ user-guide-title: Bästa praxis-guide för levererbarhet
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 80%
@@ -41,7 +41,7 @@ ht-degree: 80%
    + [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Fortlöpande övervakning](/help/ongoing-monitoring.md)
 + [I praktiken](/help/putting-it-in-practice.md)
-+ Vinkelräta: Ytterligare resurser {#additional-resources}
++ Bilaga: Ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
    + Allmänna resurser {#generic-resources}
       + [Allt om skräppostsvällning](/help/additional-resources/all-about-spam-traps.md)
