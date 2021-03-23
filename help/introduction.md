@@ -8,10 +8,10 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 6297a3331b458b88ce2141a6fa30bbc69190b524
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 1%
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
@@ -39,8 +39,11 @@ Denna handbok om bästa praxis för leverans innehåller följande ämnen:
 7. [Avsändarens varaktighet](/help/sender-permanence.md)
 8. [Specifikationer för Internetleverantör](/help/internet-service-provider-specifics/overview.md)
 9. [Pågående övervakning](/help/ongoing-monitoring.md)
-10. [I praktiken](/help/putting-it-in-practice/putting-it-in-practice.md)
-11. [Ytterligare resurser](/help/additional-resources/general-resources.md)
+10. [I praktiken](/help/putting-it-in-practice.md)
+
+>[!NOTE]
+>
+>Hämta [adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)
 
 ## Källor
 
@@ -50,4 +53,4 @@ Denna handbok om bästa praxis för leverans innehåller följande ämnen:
 
 ## Ytterligare resurser
 
-Hämta [adobe-deliverability-best-practice-guide.pdf](/help/assets/adobe-deliverability-best-practice-guide.pdf)
+[Bilaga: Ytterligare resurser](/help/additional-resources/general-resources.md)
