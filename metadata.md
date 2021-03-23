@@ -6,11 +6,11 @@ type: Självstudiekurs
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/deliverability-learn.sv-SE
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 004ab7179c37e3ad8b318020a49f41e8a5a9b9fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
