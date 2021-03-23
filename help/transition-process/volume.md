@@ -9,7 +9,7 @@ doc-type: article
 activity: understand
 team: ACS
 translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -47,9 +47,9 @@ I många fall följer inte transaktionsmarknadsföring den traditionella uppvär
 
 **Campaign**
 
-* Läs mer om hur du hanterar slutprodukter när du startar en ny plattform med Adobe Campaign i [det här avsnittet](/help/putting-it-in-practice/ac-starting-new-platform.md).
+* Läs mer om hur du hanterar slutprodukter när du startar en ny plattform med Adobe Campaign i [det här avsnittet](/help/additional-resources/ac-starting-new-platform.md).
 * Lär dig hur du skickar med flera vågor med Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
-* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/putting-it-in-practice/ac-domain-name-setup.md).
+* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
 * [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
 * [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 
