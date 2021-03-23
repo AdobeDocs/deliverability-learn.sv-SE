@@ -3,10 +3,10 @@ user-guide-title: Handbok om bästa praxis för leverans
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för leverans för att säkerställa att ert marknadsföringsprogram lyckas.
 translation-type: tm+mt
-source-git-commit: a823349a7619595c6dc3e0d135c253bc5150046e
+source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 10%
+source-wordcount: '165'
+ht-degree: 8%
 
 ---
 
@@ -40,19 +40,20 @@ ht-degree: 10%
    + [Microsoft (Hotmail, Outlook, Windows Live etc.)](/help/internet-service-provider-specifics/microsoft.md)
    + [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Pågående övervakning](/help/ongoing-monitoring.md)
-+ Placera den i praktiken {#putting-it-in-practice}
-   + [Översikt](/help/putting-it-in-practice/putting-it-in-practice.md)
-   + Campaign {#campaign}
-      + [Inställningar för domännamn](/help/putting-it-in-practice/ac-domain-name-setup.md)
-      + [SSL-certifikatbegäran](/help/putting-it-in-practice/ac-ssl-certificate-request.md)
-      + [Starta en ny plattform](/help/putting-it-in-practice/ac-starting-new-platform.md)
-      + [Campaign Classic - Tekniska rekommendationer](/help/putting-it-in-practice/acc-technical-recommendations.md)
-+ Ytterligare resurser {#additional-resources}
++ [I praktiken](/help/putting-it-in-practice.md)
++ Vinkelräta: Ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
-   + [Allt om skräppostsvällning](/help/additional-resources/all-about-spam-traps.md)
-   + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
-   + [Autentisering](/help/additional-resources/authentication.md)
-   + [Dubbletter](/help/additional-resources/duplicates.md)
-   + [Bästa praxis för förnyat engagemang](/help/additional-resources/re-engagement.md)
-   + [Svarthålslistor i realtid](/help/additional-resources/blocklist-databases.md)
-   + [Felsökning](/help/additional-resources/troubleshooting.md)
+   + Allmänna resurser {#generic-resources}
+      + [Allt om skräppostsvällning](/help/additional-resources/all-about-spam-traps.md)
+      + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
+      + [Autentisering](/help/additional-resources/authentication.md)
+      + [Dubbletter](/help/additional-resources/duplicates.md)
+      + [Bästa praxis för förnyat engagemang](/help/additional-resources/re-engagement.md)
+      + [Svarthålslistor i realtid](/help/additional-resources/blocklist-databases.md)
+      + [Felsökning](/help/additional-resources/troubleshooting.md)
+   + Produktspecifika resurser {#product-specific-resources}
+      + Campaign {#campaign}
+         + [Inställningar för domännamn](/help/additional-resources/ac-domain-name-setup.md)
+         + [SSL-certifikatbegäran](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
+         + [Campaign Classic - Tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
