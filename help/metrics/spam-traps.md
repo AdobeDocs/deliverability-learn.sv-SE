@@ -1,6 +1,6 @@
 ---
-title: Skräppostsvällning
-description: Lär dig mer om de olika typerna av skräppostsvällningar.
+title: Skräppostfällor
+description: Lär dig mer om de olika typerna av skräppostfällor.
 feature: Mätvärden
 topics: Deliverability
 kt: 7050
@@ -12,28 +12,28 @@ translation-type: tm+mt
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 2%
+ht-degree: 87%
 
 ---
 
 
-# Skräppostsvällning
+# Skräppostfällor
 
-Det finns svällning för skräppost som hjälper till att identifiera e-post från bedrägliga avsändare eller avsändare som inte följer vedertagna standarder för e-postmarknadsföring. E-postadressen för skräppostsvällning publiceras vanligtvis inte och är nästan omöjlig att identifiera. Om du levererar e-post till skräppostsvällningar kan det påverka ditt rykte med varierande svårighetsgrad beroende på typen av svällning och Internet-leverantör. Läs mer om de olika typerna av skräppostsvällning i följande avsnitt.
+Det finns fällor för skräppost som hjälper till att identifiera e-post från bedrägliga avsändare eller avsändare som inte följer vedertagna standarder för e-postmarknadsföring. E-postadressen för skräppostfällor publiceras vanligtvis inte offentligt och är nästan omöjlig att identifiera. Om ni levererar e-post till skräppostfällor kan det påverka ert anseende mer eller mindre, beroende på typen av fälla och internetleverantör. Läs mer om de olika typerna av skräppostfällor i följande avsnitt.
 
 ## Återvunnen
 
-Återvunna skräppostsvällningar är adresser som en gång var giltiga men som inte längre används. Ett viktigt sätt att hålla listorna så rena som möjligt är att regelbundet skicka e-post till hela listan och på lämpligt sätt utelämna utdragna e-postmeddelanden. Detta gör att övergivna e-postadresser kan sättas i karantän och inte längre kan användas.
+Återvunna skräppostfällor är adresser som en gång var giltiga men som inte längre används. Ett sätt att hålla listorna så rena som möjligt är att regelbundet skicka e-post till hela listan och undanta e-postadresser som studsar. På så sätt kan övergivna e-postadresser sättas i karantän och inte längre användas.
 
-I vissa fall kan en adress återvinnas inom 30 dagar. Att skicka regelbundet är en viktig aspekt av god listhygien, tillsammans med att regelbundet undertrycka inaktiva användare. **Återengagerande** kampanjer är vanligtvis en del av avancerade e-postmarknadsföringsprogram. Med den här kampanjstilen kan avsändaren försöka få tillbaka användare som annars inte längre skulle skickas med e-post.
+I vissa fall kan en adress återvinnas inom 30 dagar. Regelbundna utskick är en viktig aspekt av god listhygien, precis som att regelbundet undanta inaktiva användare. **Återengagerande** kampanjer är vanligtvis en del av avancerade e-postmarknadsföringsprogram. Med den här kampanjmodellen försöker avsändaren vinna tillbaka användare som annars inte längre skulle få någon e-post.
 
-## Typo
+## Stavfel
 
-Ett stavfel är en adress som innehåller en felstavning eller ett fel. Detta inträffar ofta med kända felstavningar i större domäner som Gmail (t.ex.: gmial är ett vanligt typo). Internetleverantörer och andra operatörer på blockeringslista registrerar kända dåliga domäner som ska användas som skräppostfälla för att identifiera spammare och mäta avsändarens hälsa. Det bästa sättet att förhindra skräppostsvällning är att använda en **process för dubbel anmälan** för listsamling.
+En stavfelsfälla är en adress som är felstavad eller innehåller ett fel. Detta är vanligt för kända felstavningar i större domäner som Gmail (t.ex. är gmial är ett vanligt stavfel). Internetleverantörer och andra operatörer av blockeringslistor registrerar kända ogiltiga domäner som ska användas som skräppostfälla för att identifiera spammare och mäta avsändarens hälsa. Det bästa sättet att förhindra skräppostsfällor är att använda en **process för dubbel anmälan** för listsamling.
 
-## Pristin
+## Ursprunglig
 
-En primär skräppostsvällning är en adress som inte har någon slutanvändare och som aldrig har haft någon slutanvändare. Det är en adress som skapades enbart för att identifiera skräppost. Det här är den mest effektiva typen av skräppostfälla eftersom det är praktiskt taget omöjligt att identifiera och skulle kräva en betydande ansträngning för att rensa från din lista. I de flesta blockeringslista används statiska skräppostsvällningar för att lista okända avsändare. Det enda sättet att undvika att pristine spam traps infekterar din breda e-postlista för marknadsföring är att använda en **process för dubbel anmälan** för listsamling.
+En ursprunglig skräppostfälla är en adress som inte har och aldrig har haft någon slutanvändare. Det är en adress som skapats enbart för att identifiera skräppost. Det här är den mest effektiva typen av skräppostfälla eftersom den är praktiskt taget omöjlig att identifiera och för att en betydande ansträngning skulle krävas för att rensa bort den från en lista. I de flesta blockeringslistor används statiska skräppostfällor för att lista avsändare med dåligt anseende. Det enda sättet att undvika att ursprungliga skräppostfällor smittar din e-postlista för bredare marknadsföring är att använda en **process för dubbel anmälan** för listsamling.
 
 ## Ytterligare resurser
 
@@ -49,6 +49,6 @@ En primär skräppostsvällning är en adress som inte har någon slutanvändare
 
 **Adobe Campaign Standard**
 
-* [Förhandsgranska e-post- och skräppostanalysen](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html#designing-content)
+* [Förhandsgranska e-post- och skräppostanalysen](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=sv#designing-content)
 * [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
 
