@@ -2,11 +2,11 @@
 user-guide-title: Bästa praxis-guide för levererbarhet
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a7e8ef210941b79bd5eb31b27041ca329e301f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -41,19 +41,19 @@ ht-degree: 80%
    + [Verizon Media Group (Yahoo, AOL, Verizon osv.)](/help/internet-service-provider-specifics/verizon-media-group.md)
 + [Fortlöpande övervakning](/help/ongoing-monitoring.md)
 + [I praktiken](/help/putting-it-in-practice.md)
-+ Bilaga: Ytterligare resurser {#additional-resources}
++ Bilaga: ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
-   + Allmänna resurser {#generic-resources}
-      + [Allt om skräppostsvällning](/help/additional-resources/all-about-spam-traps.md)
+   + Generiska resurser {#generic-resources}
+      + [Allt om skräppostfällor](/help/additional-resources/all-about-spam-traps.md)
       + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [Autentisering](/help/additional-resources/authentication.md)
       + [Dubbletter](/help/additional-resources/duplicates.md)
-      + [Bästa praxis för förnyat engagemang](/help/additional-resources/re-engagement.md)
-      + [Svarthålslistor i realtid](/help/additional-resources/blocklist-databases.md)
+      + [God praxis för återengagemang](/help/additional-resources/re-engagement.md)
+      + [Real-time Blackhole Lists](/help/additional-resources/blocklist-databases.md)
       + [Felsökning](/help/additional-resources/troubleshooting.md)
    + Produktspecifika resurser {#product-specific-resources}
       + Campaign {#campaign}
-         + [Inställningar för domännamn](/help/additional-resources/ac-domain-name-setup.md)
-         + [SSL-certifikatbegäran](/help/additional-resources/ac-ssl-certificate-request.md)
+         + [Konfiguration av domännamn](/help/additional-resources/ac-domain-name-setup.md)
+         + [Process för begäran av SSL-certifikat](/help/additional-resources/ac-ssl-certificate-request.md)
          + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
-         + [Campaign Classic - Tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
+         + [Campaign Classic – tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
