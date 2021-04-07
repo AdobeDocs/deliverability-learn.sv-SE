@@ -8,11 +8,11 @@ thumbnail: kt5256.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -30,12 +30,12 @@ Ett av de bästa sätten att identifiera ett anseendeproblem avseende utskick ä
 
 **Adobe Campaign Classic**
 
-* [Leveransövervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html)
-* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html)
-* [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)
+* [Leveransövervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv)
+* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html?lang=sv)
+* [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv)
 
 **Adobe Campaign Standard**
 
-* [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)
-* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/monitor-deliverability.html?lang=en#testing-and-sending)
-* [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html)
+* [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv)
+* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv#testing-and-sending)
+* [Förstå leveransfel](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=sv)
