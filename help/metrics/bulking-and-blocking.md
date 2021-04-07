@@ -8,11 +8,11 @@ thumbnail: kt7051.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ En blockeringslistning inträffar när en blockeringslistehanterare från en tre
 
 ## Ytterligare resurser
 
-* Läs mer på [Svarta listor i realtid](/help/additional-resources/blocklist-databases.md) som underhåller databaser med IP-adresser och domäner som kan komma att användas av spamrater.
+* Läs mer på [Real-time Blackhole Lists](/help/additional-resources/blocklist-databases.md) som underhåller databaser med IP-adresser och domäner som sannolikt kommer att användas av avsändare av skräppost.
