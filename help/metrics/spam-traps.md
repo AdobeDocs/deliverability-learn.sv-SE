@@ -8,11 +8,11 @@ thumbnail: kt7050.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 550821608eb7049f739a156536dd31b6b2faa2fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Det finns fällor för skräppost som hjälper till att identifiera e-post från
 
 Återvunna skräppostfällor är adresser som en gång var giltiga men som inte längre används. Ett sätt att hålla listorna så rena som möjligt är att regelbundet skicka e-post till hela listan och undanta e-postadresser som studsar. På så sätt kan övergivna e-postadresser sättas i karantän och inte längre användas.
 
-I vissa fall kan en adress återvinnas inom 30 dagar. Regelbundna utskick är en viktig aspekt av god listhygien, precis som att regelbundet undanta inaktiva användare. **Återengagerande** kampanjer är vanligtvis en del av avancerade e-postmarknadsföringsprogram. Med den här kampanjmodellen försöker avsändaren vinna tillbaka användare som annars inte längre skulle få någon e-post.
+I vissa fall kan en adress återvinnas inom 30 dagar. Regelbundna utskick är en viktig aspekt av god listhygien, precis som att regelbundet undanta inaktiva användare. **Återengagemangskampanjer** ingår ofta i avancerade e-postmarknadsföringsprogram. Med den här kampanjmodellen försöker avsändaren vinna tillbaka användare som annars inte längre skulle få någon e-post.
 
 ## Stavfel
 
@@ -37,18 +37,18 @@ En ursprunglig skräppostfälla är en adress som inte har och aldrig har haft n
 
 ## Ytterligare resurser
 
-* Läs mer om att identifiera och undvika skräppostsvällningar i [det här avsnittet](/help/additional-resources/all-about-spam-traps.md).
-* Läs mer om hur man förbättrar leveransen genom strategier för återengagemang i [det här avsnittet](/help/additional-resources/re-engagement.md).
+* Läs mer om att identifiera och undvika skräppostsfällor i [det här avsnittet](/help/additional-resources/all-about-spam-traps.md).
+* Läs mer om hur man förbättrar levererbarheten genom strategier för återengagemang i [det här avsnittet](/help/additional-resources/re-engagement.md).
 
 ## Produktspecifika resurser
 
 **Adobe Campaign Classic**
 
-* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=en#using-spamassassin)
-* [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+* [SpamAssassin](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/spamassassin.html?lang=sv#using-spamassassin)
+* [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases—web-forms.html?lang=sv#create-a-subscription—form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
 * [Förhandsgranska e-post- och skräppostanalysen](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/designing-content/email-designer/preview-your-email.html?lang=sv#designing-content)
-* [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
+* [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=sv#communication-channels)
 
