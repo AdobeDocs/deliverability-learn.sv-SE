@@ -8,11 +8,11 @@ thumbnail: kt7047.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -53,12 +53,12 @@ Mjuka studsar är tillfälliga fel som internetleverantörer genererar när de h
 
 **Adobe Campaign Classic**
 
-* [Typ av leveransfel och orsaker](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [E-posthantering](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-management)
-* [Rapport över olevererbara produkter och studsar](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html#non-deliverables-and-bounces)
+* [Typ av leveransfel och orsaker](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv#delivery-failure-types-and-reasons)
+* [Hantering av e-post som studsar](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv#bounce-mail-management)
+* [Rapport om ej levererbar e-post eller e-post som studsar](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/global-reports.html?lang=sv#non-deliverables-and-bounces)
 
 **Adobe Campaign Standard**
 
-* [Typ av leveransfel och orsaker](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#delivery-failure-types-and-reasons)
-* [Kvalifikation av studsmeddelanden](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html#bounce-mail-qualification)
-* [Studssammanfattningsrapport](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=en#reporting)
+* [Typ av leveransfel och orsaker](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=sv#delivery-failure-types-and-reasons)
+* [Kvalifikation av studsmeddelanden](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-delivery-failures.html?lang=sv#bounce-mail-qualification)
+* [Studssammanfattningsrapport](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/bounce-summary.html?lang=sv#reporting)
