@@ -1,7 +1,7 @@
 ---
 title: Adressinsamling och listökning
 description: 'Lär dig vilka de bästa källorna för nya e-postadresser är, hur du säkerställer hög datakvalitet och hur du anpassar dig till juridiska riktlinjer. '
-feature: Publiker
+feature: Audiences
 topics: Deliverability
 kt: 7063
 thumbnail: kt7063.jpg

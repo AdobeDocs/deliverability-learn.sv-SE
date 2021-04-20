@@ -1,7 +1,7 @@
 ---
 title: Volym - Tips för mjuk övergång
 description: Mängden post som du skickar är avgörande för att vi ska få ett gott rykte. Se vad du kan göra för en smidig övergång.
-feature: Övergångsprocess
+feature: Transition Process
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg

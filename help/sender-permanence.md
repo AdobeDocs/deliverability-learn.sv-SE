@@ -1,7 +1,7 @@
 ---
 title: Avsändarens varaktighet
 description: Sändningens varaktighet är processen att skapa en enhetlig sändningsvolym och strategi för att upprätthålla ISP:s anseende.
-feature: Avsändarens permanenta
+feature: Sender Permanence
 topics: Deliverability
 kt: 5261
 thumbnail: kt5261.jpg

@@ -1,7 +1,7 @@
 ---
 title: Felsökning av slutprodukter
 description: Lär dig att identifiera och åtgärda leveransproblem.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

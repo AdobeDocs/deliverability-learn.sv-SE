@@ -1,7 +1,7 @@
 ---
 title: Vad är levererbarhetstrategin och hur definierar jag levererbarheten?
 description: Förstå hur lervererbarhet definieras, varför det är viktigt och de viktigaste levererbarhetsvärdena.
-feature: Levererbarhet
+feature: Deliverability
 topics: Deliverability
 kt: 5255
 thumbnail: kt5255.jpg

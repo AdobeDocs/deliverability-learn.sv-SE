@@ -1,7 +1,7 @@
 ---
 title: Autentisering
 description: Läs mer om autentiseringsmetoderna SPF, DKIM och DMARC.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

@@ -1,7 +1,7 @@
 ---
 title: Allt om skräppostsvällning
 description: Lär dig hur du förstår, identifierar och undviker skräppostsvällningar när du hanterar leveranser.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

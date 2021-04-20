@@ -1,7 +1,7 @@
 ---
 title: Begäran om SSL-certifikat
 description: Lär dig hur du installerar SSL-certifikat på de underdomäner du har delegerat till Adobe.
-feature: I praktiken
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

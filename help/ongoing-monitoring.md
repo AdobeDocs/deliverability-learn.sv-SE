@@ -1,7 +1,7 @@
 ---
 title: Pågående övervakning
 description: Vilka problem behöver du leta efter.
-feature: Övervakning
+feature: Monitoring
 topics: Deliverability
 kt: 5263
 thumbnail: kt5263.jpg

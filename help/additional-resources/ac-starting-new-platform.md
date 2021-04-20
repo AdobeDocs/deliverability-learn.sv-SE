@@ -1,7 +1,7 @@
 ---
 title: Starta en ny plattform
 description: Läs mer om hur man hanterar slutprodukter när man startar en ny plattform med Adobe Campaign.
-feature: I praktiken
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

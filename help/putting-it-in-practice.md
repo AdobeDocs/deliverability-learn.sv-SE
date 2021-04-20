@@ -1,7 +1,7 @@
 ---
 title: I praktiken
 description: Sändningens varaktighet är processen att skapa en enhetlig sändningsvolym och strategi för att upprätthålla ISP:s anseende.
-feature: levererbarhet
+feature: Deliverability
 topics: Deliverability
 kt: 5264
 thumbnail: kt5264.jpg

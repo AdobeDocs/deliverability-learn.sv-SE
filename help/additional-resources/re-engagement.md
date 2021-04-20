@@ -1,7 +1,7 @@
 ---
 title: Bästa praxis för förnyat engagemang
 description: Lär dig hur ni kan förbättra leveransen genom strategier för återengagemang.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

@@ -1,7 +1,7 @@
 ---
 title: Engagemang
 description: Engagemang har blivit den enskilt viktigaste faktorn som påverkar beslut om placering av inkorgar.
-feature: Engagemang
+feature: Engagement
 topics: Deliverability
 kt: 5257
 thumbnail: kt5257.jpg

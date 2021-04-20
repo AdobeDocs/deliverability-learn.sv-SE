@@ -1,7 +1,7 @@
 ---
 title: Mätvärden för levererbarhet
 description: Lär dig vilka nyckeltal för leverbarhetsförmåga som ska övervakas och hur de ska användas för att identifiera problem som rör anseende.
-feature: Mätvärden
+feature: Metrics
 topics: Deliverability
 kt: 5256
 thumbnail: kt5256.jpg

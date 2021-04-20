@@ -1,7 +1,7 @@
 ---
 title: Bästa praxis för innehåll för optimal leverans
 description: Innehåll är nyckeln. Du har redan läst våra perspektiv om relevans, men här finns några tips som hjälper dig att optimera leveransen när det gäller innehåll.
-feature: Innehåll
+feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg

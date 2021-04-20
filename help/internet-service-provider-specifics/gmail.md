@@ -1,7 +1,7 @@
 ---
 title: Gmail
 description: Gmail utgör den största delen av de flesta avsändares e-postlistor. De brukar också behandla e-post lite annorlunda än alla andra.
-feature: Internetleverantörer
+feature: ISPs
 topics: Deliverability
 kt: 5262
 doc-type: article

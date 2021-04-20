@@ -1,7 +1,7 @@
 ---
 title: Campaign Classic - Tekniska rekommendationer
 description: Upptäck tekniker, konfigurationer och verktyg som du kan använda för att förbättra leveransfrekvensen med Adobe Campaign Classic.
-feature: I praktiken
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

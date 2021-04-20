@@ -1,7 +1,7 @@
 ---
 title: Målkriterier
 description: Lär dig hur ni kan etablera ett gott rykte från er resa för att effektivt bygga upp förtroende innan ni kan introducera era era mindre engagerade målgrupper.
-feature: Övergångsprocess
+feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg

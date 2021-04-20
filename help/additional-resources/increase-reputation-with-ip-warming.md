@@ -1,7 +1,7 @@
 ---
 title: Öka e-postens anseende med IP-uppvärmning
 description: Lär dig varför det är viktigt att förbättra ert e-postanseende med IP-uppvärmning och hur ni går vidare för optimala leveransmöjligheter.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

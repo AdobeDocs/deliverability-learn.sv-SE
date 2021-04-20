@@ -1,7 +1,7 @@
 ---
 title: Introduktion till bästa praxis för levererbarhet
 description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
-feature: levererbarhet
+feature: Deliverability
 kt: 5321
 thumbnail: kt5321.jpg
 doc-type: article

@@ -1,7 +1,7 @@
 ---
 title: Microsoft (Hotmail, Outlook, Windows Live etc.)
 description: Microsoft är vanligtvis den näst största eller tredje största leverantören beroende på hur din lista är uppbyggd, och de hanterar trafik något annorlunda jämfört med andra Internet-leverantörer.
-feature: Internetleverantörer
+feature: ISPs
 topics: Deliverability
 kt: 5319
 doc-type: article

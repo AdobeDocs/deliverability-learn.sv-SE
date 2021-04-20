@@ -1,7 +1,7 @@
 ---
 title: Första intrycken - lista över samling och välkomstmeddelanden
 description: 'Ta reda på hur du kan konfigurera dig själv för att köra ett lyckat e-postprogram genom att göra ett gott första intryck. '
-feature: Målgrupper, e-post
+feature: Audiences, Email
 topics: Deliverability
 kt: 5258
 thumbnail: kt5258.jpg

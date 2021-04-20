@@ -1,7 +1,7 @@
 ---
 title: Välkomstmeddelanden
 description: Förstå vilka viktiga delar du bör tänka på när du skapar välkomstmeddelanden.
-feature: E-post
+feature: Email
 topics: Deliverability
 kt: 7064
 thumbnail: kt7064.jpg

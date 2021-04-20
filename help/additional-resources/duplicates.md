@@ -1,7 +1,7 @@
 ---
 title: Dubbletter
 description: Lär dig identifiera och begränsa dubbletter för att förbättra slutresultatet.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

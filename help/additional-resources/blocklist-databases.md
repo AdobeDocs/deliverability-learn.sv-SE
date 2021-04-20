@@ -1,7 +1,7 @@
 ---
 title: Svarthålslistor i realtid
 description: Lär dig mer om organisationer som upprätthåller listor över IP-adresser och domäner som kan komma att användas av skräppost.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

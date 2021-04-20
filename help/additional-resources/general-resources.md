@@ -1,7 +1,7 @@
 ---
 title: Ytterligare resurser
 description: I det här avsnittet visas ett antal ytterligare resurser om leveransbarhet.
-feature: Ytterligare resurser
+feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null

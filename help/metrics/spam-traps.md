@@ -1,7 +1,7 @@
 ---
 title: Skräppostfällor
 description: Lär dig mer om de olika typerna av skräppostfällor.
-feature: Mätvärden
+feature: Metrics
 topics: Deliverability
 kt: 7050
 thumbnail: kt7050.jpg

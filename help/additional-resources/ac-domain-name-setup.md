@@ -1,7 +1,7 @@
 ---
 title: Inställningar för domännamn
 description: Lär dig hur du delegerar en underdomän till Adobe Campaign.
-feature: I praktiken
+feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null

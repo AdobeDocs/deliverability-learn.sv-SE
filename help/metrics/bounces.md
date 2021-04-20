@@ -1,7 +1,7 @@
 ---
 title: Studsar
 description: Lär dig mer om olika typer av studsar.
-feature: Mätvärden
+feature: Metrics
 topics: Deliverability
 kt: 7047
 thumbnail: kt7047.jpg

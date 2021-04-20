@@ -1,7 +1,7 @@
 ---
 title: Massutskick och blockering av e-postmeddelanden
 description: Lär dig varför internetleverantörer placerar e-postmeddelanden i mappar för massutskick eller blockerar dem.
-feature: Mätvärden
+feature: Metrics
 topics: Deliverability
 kt: 7051
 thumbnail: kt7051.jpg

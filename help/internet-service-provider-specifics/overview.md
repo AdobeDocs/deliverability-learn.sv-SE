@@ -1,7 +1,7 @@
 ---
 title: Specifikationer för Internetleverantör
 description: Alla internetleverantörer är inte likadana. De fokuserar på olika saker när de avgör vilken e-postadress som ska tillåtas till användarens inkorg och vilken e-postadress som ska filtreras till skräppostmappen eller inte skickas över huvud taget. Vi ska titta närmare på de viktiga skillnaderna mellan en handfull internetleverantörer. Det ska inte vara en fullständig lista över alla Internet-leverantörer eller täcka alla möjliga skillnader.
-feature: Internetleverantörer
+feature: ISPs
 topics: Deliverability
 kt: null
 doc-type: article

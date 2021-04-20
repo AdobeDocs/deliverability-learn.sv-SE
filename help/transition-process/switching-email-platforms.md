@@ -1,7 +1,7 @@
 ---
 title: Smidig övergång när du byter e-postplattform.
 description: 'När du flyttar ESP:er (e-postleverantörer) är det inte möjligt att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt. '
-feature: levererbarhet
+feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg
