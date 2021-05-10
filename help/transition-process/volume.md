@@ -1,21 +1,21 @@
 ---
 title: Volym - Tips för mjuk övergång
 description: Mängden post som du skickar är avgörande för att vi ska få ett gott rykte. Se vad du kan göra för en smidig övergång.
-feature: Transition Process
+feature: Övergångsprocess
 topics: Deliverability
 kt: 7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Volym
 
@@ -50,8 +50,8 @@ I många fall följer inte transaktionsmarknadsföring den traditionella uppvär
 * Läs mer om hur du hanterar slutprodukter när du startar en ny plattform med Adobe Campaign i [det här avsnittet](/help/additional-resources/ac-starting-new-platform.md).
 * Lär dig hur du skickar med flera vågor med Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
 * Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 
 ## Ytterligare resurser
 
