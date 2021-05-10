@@ -1,21 +1,21 @@
 ---
 title: Infrastruktur
 description: 'Lär dig vad som krävs för att skapa en e-postinfrastruktur på rätt sätt. '
-feature: Transition Process
+feature: Övergångsprocess
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
 team: ACS
+exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
 
 ---
-
 
 # Infrastruktur
 
@@ -66,8 +66,8 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 **Campaign**
 
 * Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 * Läs mer om hur du implementerar en feedbackslinga för en Campaign Classic-instans i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ytterligare resurser
