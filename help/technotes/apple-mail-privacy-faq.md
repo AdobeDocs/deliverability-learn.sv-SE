@@ -1,18 +1,18 @@
 ---
-title: Frågor och svar om Apple Mail Privacy Protection 23 juni 2021
-description: Frågor och svar om Apple Mail Privacy Protection 23 juni 2021
+title: Frågor och svar om Apples sekretesskydd
+description: Frågor och svar om Apples sekretesskydd
 feature: levererbarhet
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: fe42e3a1edfb48192fd1bb3b811247fcd528ab05
+source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
 
-# Frågor och svar om Apple Mail Privacy Protection 23 juni 2021
+# Frågor och svar om Apples sekretesskydd
 
 Vanliga frågor och svar ger inledande vägledning som svar på Apples meddelande om sin iOS 15-utgåva, inklusive [E-postsekretesskydd](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Dessa ändringar kommer i september, och vi kommer att fortsätta att uppdatera det här dokumentet och ge vägledning till våra kunder.
 
