@@ -5,7 +5,7 @@ feature: levererbarhet
 topics: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: cc0f8f4d8a5f4584d30b281492c2f948624ce1c1
+source-git-commit: 7b0f59aed1e4074cb93fdd762bab0b7302a6cbdd
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
@@ -30,8 +30,7 @@ Pixelspårning i Apple Mail inaktiveras, vilket innebär att marknadsförarna in
 
 ## Finns det andra effekter?
 
-Apple döljer som standard IP-adressinformation i sin ursprungliga e-postapp, webbläsaren Safari och iCloud-tjänster. Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apples skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Ändringarna innebär att marknadsförarna
-måste börja planera för att avgöra hur de här strategierna kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna tar hänsyn till detta. Adobe kommer att hjälpa våra kunder att hitta nya vägar med uppdateringar, vägledning och tankeledarskap.
+Apple döljer som standard IP-adressinformation i sin ursprungliga e-postapp, webbläsaren Safari och iCloud-tjänster. Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apples skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Dessa ändringar innebär att marknadsförarna måste börja planera för att avgöra hur dessa strategier kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna får det att falla. Adobe kommer att hjälpa våra kunder att hitta nya vägar med uppdateringar, vägledning och tankeledarskap.
 
 ## Gäller det här meddelandet alla e-postmeddelanden som öppnas på en Apple-enhet?
 
