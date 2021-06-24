@@ -1,23 +1,22 @@
 ---
 title: Begäran om SSL-certifikat
 description: Lär dig hur du installerar SSL-certifikat på de underdomäner du har delegerat till Adobe.
-feature: Putting it in practice
+feature: I praktiken
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
+source-git-commit: e3caa0e9fae0df983c05c7027406f9874174a8ba
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 0%
+source-wordcount: '2270'
+ht-degree: 1%
 
 ---
 
-
-# SSL-certifikatbegäran
+# Process för begäran av SSL-certifikat
 
 När du har delegerat en domän till Adobe för att skicka e-post (se [Inställning av domännamn](/help/additional-resources/ac-domain-name-setup.md)) skapar och använder Adobe vissa underdomäner för specifika funktioner.
 
@@ -80,14 +79,14 @@ Du måste identifiera domännamnen och funktionerna (spårning, spegelsidor, web
 
 Följ stegen nedan för att få en CSR-fil (Certificate Signing Request).
 
-* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) för att generera och hämta en CSR-fil från Kontrollpanelen.
+* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) för att generera och hämta en CSR-fil från Kontrollpanelen.
 
 * I annat fall skapar du en supportanmälan via https://adminconsole.adobe.com/ för att få en CSR-fil från Adobe kundtjänst för de underdomäner som behövs.
 
 Här följer några metodtips:
 
 * Generera en begäran per delegerad underdomän.
-* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic är till exempel marknadsföringsservern, [mittkällservern](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/mid-sourcing-server.html) och [körningsinstansen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/creating-a-shared-connection.html) tre separata miljöer.
+* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic är till exempel marknadsföringsservern, [mittkällservern](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) och [körningsinstansen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre separata miljöer.
 * Du måste skaffa en ny CSR innan du kan förnya SSL-certifikat. Använd inte en gammal CSR-fil från ett år sedan eller senare.
 
 Du måste ange följande information.
