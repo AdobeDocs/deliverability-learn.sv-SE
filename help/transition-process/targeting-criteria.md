@@ -1,21 +1,19 @@
 ---
 title: Målkriterier
 description: Lär dig hur ni kan etablera ett gott rykte från er resa för att effektivt bygga upp förtroende innan ni kan introducera era era mindre engagerade målgrupper.
-feature: Transition Process
 topics: Deliverability
 kt: 7053
 thumbnail: kt7053.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+exl-id: e6a855ba-a929-477f-a339-6861a755a529
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 1%
+source-wordcount: '206'
+ht-degree: 4%
 
 ---
-
 
 # Målkriterier
 
@@ -34,4 +32,3 @@ Normalt baseras en engagemangsfrekvens på en viss tidsperiod. Mätvärdet kan v
 **Campaign Standard**
 
 * [AI-baserade e-postmeddelanden: Prediktiv poängsättning av engagemang](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
-
