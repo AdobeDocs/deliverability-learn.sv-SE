@@ -1,23 +1,21 @@
 ---
-title: Inställningar för domännamn
+title: Konfiguration av domännamn
 description: Lär dig hur du delegerar en underdomän till Adobe Campaign.
-feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '2032'
-ht-degree: 1%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
-
-# Inställningar för domännamn
+# Konfiguration av domännamn
 
 I det här dokumentet beskrivs affärsmässiga och tekniska krav för konfiguration och delegering av domännamn. Du måste välja en e-postsändande underdomän och, om du vill, en externt riktad underdomän som värd för webbkomponenter (landningssidor, avanmälningssida) för den Adobe-plattform du använder.
 
@@ -125,7 +123,7 @@ När de e-postsändande underdomänerna har delegerats till Adobe Campaign skapa
 | Typ | Domän |
 |--- |--- |
 | Spegla sidor | m.`<subdomain>` |
-| Spårning | t.`<subdomain>` |
+| Spåra | t.`<subdomain>` |
 | Resurser | res.`<subdomain>` |
 
 ## Driftsättning i molnet (valfritt)
@@ -198,4 +196,4 @@ Mer information om detta hittar du i den [dedikerade dokumentationen](https://ex
 
 >[!NOTE]
 >
->[Kontrollpaneler ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html) är endast tillgängliga för kunder som använder Adobes hanterade tjänster.
+>[Kontrollpaneler ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) är endast tillgängliga för kunder som använder Adobes hanterade tjänster.
