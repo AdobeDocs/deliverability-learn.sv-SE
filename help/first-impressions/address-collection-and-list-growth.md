@@ -1,21 +1,19 @@
 ---
 title: Adressinsamling och listökning
 description: 'Lär dig vilka de bästa källorna för nya e-postadresser är, hur du säkerställer hög datakvalitet och hur du anpassar dig till juridiska riktlinjer. '
-feature: Audiences
 topics: Deliverability
 kt: 7063
 thumbnail: kt7063.jpg
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: ec0bb2f9ee514cc94c764744e0cc51e62e811c20
+exl-id: 350950dc-4703-402a-8e22-3862f4e21d52
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 0%
+source-wordcount: '1622'
+ht-degree: 3%
 
 ---
-
 
 # Adressinsamling och listökning
 
@@ -96,9 +94,8 @@ Lotteriet erbjuder snabbt ett stort antal e-postadresser. Men de här prenumeran
 
 **Adobe Campaign Classic**
 
-* [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
+* [Skapa ett prenumerationsformulär med dubbel anmälan](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases—web-forms.html?lang=sv#create-a-subscription—form-with-double-opt-in)
 
 **Adobe Campaign Standard**
 
-* [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=en#communication-channels)
-
+* [Dubbel anmälningsprocess](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/landing-pages/setting-up-a-double-opt-in-process.html?lang=sv#communication-channels)
