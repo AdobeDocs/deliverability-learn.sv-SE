@@ -1,21 +1,19 @@
 ---
-title: Svarthålslistor i realtid
+title: Real-time Blackhole Lists
 description: Lär dig mer om organisationer som upprätthåller listor över IP-adresser och domäner som kan komma att användas av skräppost.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 0%
+source-wordcount: '407'
+ht-degree: 6%
 
 ---
-
 
 # Svarthålslistor i realtid
 
@@ -33,7 +31,7 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste du agera omedelbart och varna för kommersiella tjänster, slutprodukter och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste du agera omedelbart och varna för kommersiella tjänster, slutprodukter och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
