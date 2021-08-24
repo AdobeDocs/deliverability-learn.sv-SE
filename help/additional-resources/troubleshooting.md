@@ -1,23 +1,21 @@
 ---
 title: Felsökning av slutprodukter
 description: Lär dig att identifiera och åtgärda leveransproblem.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 4cc85124-e7e4-4cd5-99a9-23d2d8cf08fe
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
 
-
-# Felsökning av leveransproblem {#troubleshooting}
+# Felsökning av slutprodukter {#troubleshooting}
 
 Nedan följer några tips som kan hjälpa dig att identifiera och åtgärda leveransproblem.
 
