@@ -1,23 +1,21 @@
 ---
-title: Pågående övervakning
+title: Fortlöpande övervakning
 description: Vilka problem behöver du leta efter.
-feature: Monitoring
 topics: Deliverability
 kt: 5263
 thumbnail: kt5263.jpg
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+exl-id: 2defe1ae-5148-46f9-aaa7-8034107980ee
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 9%
+source-wordcount: '202'
+ht-degree: 35%
 
 ---
 
-
-# Pågående övervakning
+# Fortlöpande övervakning
 
 Här är några sätt att hjälpa dig att identifiera ett eventuellt problem där du kan behöva expertsupport:
 
@@ -30,15 +28,15 @@ Här är några sätt att hjälpa dig att identifiera ett eventuellt problem dä
 
 **Adobe Campaign Classic**
 
-* [Leveransövervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html)
-* [Leveransrapporter](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html)
-* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html)
+* [Leveransövervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=sv)
+* [Leveransrapporter](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/delivery-reports.html?lang=sv)
+* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/monitoring-deliverability.html?lang=sv)
 
 **Adobe Campaign Standard**
 
-* [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)
+* [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv)
 * [Sammanfattning av leverans](https://docs-author-stg.corp.adobe.com/content/help/en/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
-* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/monitor-deliverability.html?lang=en#testing-and-sending)
+* [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv#testing-and-sending)
 
 ## Ytterligare resurser
 
