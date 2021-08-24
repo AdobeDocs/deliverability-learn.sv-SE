@@ -1,23 +1,21 @@
 ---
-title: Bästa praxis för innehåll för optimal leverans
+title: Bästa praxis för innehåll för optimal levererbarhet
 description: Innehåll är nyckeln. Du har redan läst våra perspektiv om relevans, men här finns några tips som hjälper dig att optimera leveransen när det gäller innehåll.
-feature: Content
 topics: Deliverability
 kt: 5260
 thumbnail: kt5260.jpg
 doc-type: article
 activity: understand
 team: TM
-translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+exl-id: f0172fa5-1c7e-4ccc-8ac5-4357611d13ec
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 4%
+source-wordcount: '195'
+ht-degree: 11%
 
 ---
 
-
-# Bästa praxis för innehåll för optimal leverans
+# Bästa praxis för innehåll för optimal levererbarhet
 
 Innehåll är nyckeln. Du har redan läst våra perspektiv om relevans, men här finns ytterligare några tips för att optimera leveransen när det gäller innehåll:
 
