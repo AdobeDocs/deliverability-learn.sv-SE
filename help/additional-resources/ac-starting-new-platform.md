@@ -1,21 +1,19 @@
 ---
 title: Starta en ny plattform
 description: Läs mer om hur man hanterar slutprodukter när man startar en ny plattform med Adobe Campaign.
-feature: Putting it in practice
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 1e539b5df54250a5927701009e7a9c84e5d73fae
+exl-id: 6c9ade01-3052-4311-af80-888294820024
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 3%
+source-wordcount: '603'
+ht-degree: 6%
 
 ---
-
 
 # Starta en ny plattform {#starting-new-platform}
 
@@ -54,7 +52,7 @@ Det händer ofta att en plattform startas när en adresslista används för för
 Mer information om de principer som anges ovan och hur de tillämpas med Adobe Campaign finns i följande avsnitt:
 
 * [Öka e-postens anseende med IP-uppvärmning](../../help/additional-resources/increase-reputation-with-ip-warming.md)
-* [Allt om skräppostsvällning](../../help/additional-resources/all-about-spam-traps.md)
+* [Allt om skräppostfällor](../../help/additional-resources/all-about-spam-traps.md)
 
 **Adobe Campaign Classic**
 
