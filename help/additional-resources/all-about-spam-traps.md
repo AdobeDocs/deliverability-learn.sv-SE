@@ -1,23 +1,21 @@
 ---
-title: Allt om skräppostsvällning
+title: Allt om skräppostfällor
 description: Lär dig hur du förstår, identifierar och undviker skräppostsvällningar när du hanterar leveranser.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 3696ec013014ea41c634ac4829ec40977d224ff1
+exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 0%
+source-wordcount: '440'
+ht-degree: 2%
 
 ---
 
-
-# Allt om skräppostsvällning
+# Allt om skräppostfällor
 
 En [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-postmeddelanden skickas till. En skräppostfälla har huvudsyftet: identifiera skräppost eller avsändare utan datahygienprocess.
 
@@ -25,7 +23,7 @@ En [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, uta
 
 Den första typen av skräppostsvällningsadresser är IP- och Domain blockeringslista-företag som SpamHaus, Sorbs och SpamCop. Dessa företag har ett stort nätverk av adresser som skickas på olika Internet-sidor som webbplatser, bloggar och forum så att deras adresser samlas in av skräppost.
 
-Den andra typen av skräppostsvällning baseras på gamla aktiva ISP-adresser. Dessa Internet-leverantörer har ett eget nätverk för skräppostsvällning som bygger på inaktiva adresser som konverteras i svällning och varje träff påverkar avsändarens IP-adress och domänens anseende.
+Den andra typen av skräppostsvällning är baserad på gamla aktiva ISP-adresser. Dessa Internet-leverantörer har ett eget nätverk för skräppostsvällning som bygger på inaktiva adresser som konverteras i svällning och varje träff påverkar avsändarens IP-adress och domänens anseende.
 
 ## Hur fungerar det?
 
