@@ -1,23 +1,21 @@
 ---
-title: Smidig övergång när du byter e-postplattform.
+title: Smidig övergång vid byte av e-postplattform.
 description: 'När du flyttar ESP:er (e-postleverantörer) är det inte möjligt att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt. '
-feature: Deliverability
 topics: Deliverability
 kt: 5259
 thumbnail: kt5259.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 9e4c4c56a09fb505a431d3799104c2684aed4a70
+exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 11%
 
 ---
 
-
-# Smidig övergång när du byter e-postplattform
+# Smidig övergång vid byte av e-postplattform
 
 När du flyttar ESP (e-postleverantörer) går det inte att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt. Eftersom de nya IP-adresserna som du kommer att använda ännu inte har något anseende kan internetleverantörerna inte helt lita på den post som kommer från dem och måste vara försiktiga med vad de tillåter att de levereras till sina kunder.
 
@@ -31,5 +29,5 @@ I nästa avsnitt kommer vi att undersöka några viktiga områden som vi ska fok
 
 1. [Infrastruktur](/help/transition-process/infrastructure.md)
 2. [Målkriterier](/help/transition-process/targeting-criteria.md)
-3. [ISP-specifika överväganden under IP-uppvärmning](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
+3. [Internetleverantörspecifika hänsyn under IP-uppvärmning](/help/transition-process/isp-specific-considerations-during-ip-warming.md)
 4. [Volym](/help/transition-process/volume.md)
