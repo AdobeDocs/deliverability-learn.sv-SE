@@ -1,23 +1,21 @@
 ---
-title: Bästa praxis för förnyat engagemang
+title: God praxis för återengagemang
 description: Lär dig hur ni kan förbättra leveransen genom strategier för återengagemang.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '926'
 ht-degree: 1%
 
 ---
 
-
-# Bästa praxis för förnyat engagemang {#re-engagement}
+# God praxis för återengagemang {#re-engagement}
 
 Vid implementering av leverans handlar några av de bästa sätten att försöka upprätthålla en sund prenumerantbas och förbättra leveransen genom återengagemang (eller återvinning).
 
