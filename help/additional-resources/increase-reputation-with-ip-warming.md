@@ -1,21 +1,19 @@
 ---
 title: Öka e-postens anseende med IP-uppvärmning
 description: Lär dig varför det är viktigt att förbättra ert e-postanseende med IP-uppvärmning och hur ni går vidare för optimala leveransmöjligheter.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: b553a13e-2055-4abc-b784-fd52792380d0
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 0%
+source-wordcount: '1600'
+ht-degree: 2%
 
 ---
-
 
 # Öka e-postens anseende med IP-uppvärmning
 
@@ -32,9 +30,9 @@ Adobe kräver att kunderna delar sin konfiguration för att hjälpa Adobe Delive
 Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). När du skickar e-post är en IP-adress den väg som används för att leverera e-postmeddelanden till dina kunder. IP-adresser och domäner används för att identifiera avsändare i ett nätverk till mottagande Internet-leverantörer. Adobe tilldelar rätt antal dedikerade IP-adresser för att skicka e-post, baserat på din sändningsvolym, e-postprogram, datasegmenteringsrutiner och ditt kontrakt.
 
 **Relaterade ämnen:**
-* [Smidig övergång när du byter e-postplattform](../../help/transition-process/switching-email-platforms.md)
+* [Smidig övergång vid byte av e-postplattform](../../help/transition-process/switching-email-platforms.md)
 * [IP-strategi](../../help/transition-process/infrastructure.md#ip-strategy)
-* [ISP-specifika överväganden under IP-uppvärmning](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
+* [Internetleverantörspecifika hänsyn under IP-uppvärmning](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
 ## IP-uppvärmning: Varför är det gjort? {#why-ip-warming}
 
