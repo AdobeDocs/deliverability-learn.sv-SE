@@ -1,7 +1,6 @@
 ---
 title: Infrastruktur
 description: 'Lär dig vad som krävs för att skapa en e-postinfrastruktur på rätt sätt. '
-feature: Övergångsprocess
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg
@@ -9,10 +8,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
-translation-type: tm+mt
-source-git-commit: 65eb1fd03e6a6617ef24661c371f850d1f8e6054
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 Framgångsrik leverans är beroende av en stark grund. E-postinfrastruktur är en viktig del. En korrekt konstruerad e-postinfrastruktur innehåller flera komponenter - nämligen domän(er) och IP-adress(er). Dessa komponenter är som maskinerna bakom de e-postmeddelanden du skickar och de är ofta navet för att skicka anseende. Produktionskonsulter ser till att dessa element är korrekt konfigurerade under implementeringen, men på grund av anseendeelementet är det viktigt för dig att ha denna grundläggande förståelse.
 
-## Domänkonfiguration och strategi {#domain-setup-and-strategy}
+## Domäninställningar och -strategi {#domain-setup-and-strategy}
 
 Tiderna har ändrats och vissa Internet-leverantörer (som Gmail och Yahoo) har nu lagt till domänens anseende som en extra poäng när det gäller att knyta e-postens anseende till en avsändare. Ditt domänrykte baseras på din avsändande domän i stället för på din IP-adress. Detta innebär att ert varumärke har företräde när det gäller beslut om filtrering av Internet-leverantörer.
 
