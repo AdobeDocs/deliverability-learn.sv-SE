@@ -1,21 +1,19 @@
 ---
 title: Engagemang
 description: Engagemang har blivit den enskilt viktigaste faktorn som påverkar beslut om placering av inkorgar.
-feature: Engagement
 topics: Deliverability
 kt: 5257
 thumbnail: kt5257.jpg
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 283f1cb2bb40818e11daa1a3753e8428b47e08ee
+exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '923'
 ht-degree: 2%
 
 ---
-
 
 # Engagemang
 
