@@ -1,23 +1,21 @@
 ---
 title: Dubbletter
 description: Lär dig identifiera och begränsa dubbletter för att förbättra slutresultatet.
-feature: Additional resources
 topics: Deliverability
 kt: null
 thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
-translation-type: tm+mt
-source-git-commit: 96ed84da391faaabd3001ddd6a411ddc1f46b033
+exl-id: f89dbb38-a8d4-4294-b017-6fed72591593
+source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 3%
+source-wordcount: '386'
+ht-degree: 4%
 
 ---
 
-
-# Duplicerar {#duplicates}
+# Dubbletter {#duplicates}
 
 Att ha dubbla e-postadresser kan få flera följder:
 
