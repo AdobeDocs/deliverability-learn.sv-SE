@@ -2,15 +2,13 @@
 title: Begäran om SSL-certifikat
 description: Lär dig hur du installerar SSL-certifikat på de underdomäner du har delegerat till Adobe.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -209,7 +207,7 @@ När du är säker på att de begärda SSL-certifikaten är korrekt installerade
 
 >[!NOTE]
 >
->För Campaign Classic finns de URL:er som ska uppdateras främst i [distributionsguiden](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/external-accounts.html#installing-campaign-classic) (spårnings-, speglingssida och offentliga resursdomäner). Mer Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>För Campaign Classic finns de URL:er som ska uppdateras främst i [distributionsguiden](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårnings-, speglingssida och offentliga resursdomäner). Mer Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-URL:er i stället för HTTP. Om du vill kontrollera att webbadresserna nu är säkra kan du snabbt utföra följande tester:
 
