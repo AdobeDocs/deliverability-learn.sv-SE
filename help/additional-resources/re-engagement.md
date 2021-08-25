@@ -2,15 +2,13 @@
 title: God praxis för återengagemang
 description: Lär dig hur ni kan förbättra leveransen genom strategier för återengagemang.
 topics: Deliverability
-kt: null
-thumbnail: null
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -30,7 +28,7 @@ Vid implementering av leverans handlar några av de bästa sätten att försöka
 
 I åratal har internetleverantörer använt feedback från sina användare för att bestämma var de ska skicka meddelanden, eller om de alls ska leverera dem. Användaren [engagemang](/help/engagement.md) består av både positiv och negativ feedback och Internet-leverantörer övervakar båda kontinuerligt. Att inte engagera sig är kanske en av de viktigaste aktörerna i ett negativt engagemang. Ur ett leveransperspektiv kan ni också sänka det totala anseendet för er IP-adress och domäner genom att kontinuerligt skicka kampanjer till användare som inte visar något engagemang.
 
-Internetleverantörer som Gmail, Microsoft och OATH ser att de inte är engagerade som oönskad e-post och börjar omdirigera meddelanden till skräppostmappen. Dessa prenumeranter kanske inte längre äger e-postkontot och detta kan användas som en&quot;återvunnen&quot; skräppostsvällning. Det innebär att adressen var ogiltig en tid och att alla meddelanden avvisades. Om prenumeranthanteringssystemet inte tar bort adresserna som &quot;studsar hårt&quot; är det troligt att skräppost skickas till svällningar som kan leda till betydande leveransproblem.
+Internetleverantörer som Gmail, Microsoft® och OATH ser att de inte är engagerade som oönskad e-post och börjar omdirigera meddelanden till skräppostmappen. Dessa prenumeranter kanske inte längre äger e-postkontot och detta kan användas som en&quot;återvunnen&quot; skräppostsvällning. Det innebär att adressen var ogiltig en tid och att alla meddelanden avvisas. Om prenumeranthanteringssystemet inte tar bort adresserna som &quot;studsar hårt&quot; är det troligt att skräppostsvällningar skickas som kan leda till betydande leveransproblem.
 
 ## Hur ska du närma dig inaktivitet? {#how-should-you-approach-inactivity-}
 
@@ -46,7 +44,7 @@ Enligt en studie av Return Path resulterade återengagemangskampanjer i en öppe
 
 ### Fas 1 {#phase-1}
 
-* Det första steget är att identifiera prenumeranter som har mycket lite till ingen öppnings- eller klickaktivitet och segmentera gruppen utifrån en bestämd tidsram. Regeln med tummen är att granska prenumeranter som inte har öppnat eller klickat på ett e-postmeddelande inom de senaste 90 dagarna. Detta varierar dock beroende på verksamhetens art (till exempel säsongsbunden sändning).
+* Det första steget är att identifiera prenumeranter som har lite till ingen öppnings- eller klickaktivitet och segmentera gruppen utifrån en bestämd tidsram. Regeln med tummen är att granska prenumeranter som inte har öppnat eller klickat på ett e-postmeddelande inom de senaste 90 dagarna. Detta varierar dock beroende på verksamhetens art (till exempel säsongsbunden sändning).
 * En annan sak som du bör tänka på när du definierar tidsramar är att internetleverantörer och företag som blocklist anser att engagemang är var som helst mellan 1,5 och 1,8 år. Beteendeaktiviteter som inköp och webbplatsaktivitet eller andra kontaktpunkter, som inställningar under registreringsfasen eller den första kontaktpunkten.
 
 ### Fas 2 {#phase-2}
@@ -64,12 +62,12 @@ Prenumeranter som interagerar med kampanjen genom att följa öppnings- eller kl
 
 ### Fas 4 {#phase-4}
 
-* Nästa fas är att identifiera abonnenter som ständigt inte uppvisar någon aktivitet och gradvis minska antalet utskick av e-post till dem under en tidsperiod. Om det inte finns någon aktivitet under det senaste året är det bra att spärra prenumeranternas e-postprenumeration. Även om de inte har visat något intresse för e-postinnehållet finns det alltid en sista möjlighet att få dem att återaktivera sin prenumeration genom att skicka en engångskampanj för återbekräftelse.
-* Återbekräftelsekampanjer är ett bra sätt att fråga prenumeranter som är inaktiva länge om de vill stanna kvar i prenumerationslistan. När du skapar kampanjen är det bättre att lägga till en&quot;klicka här&quot;-länk så att de kan bekräfta åtgärden och verifiera deras adress. På så sätt kan funktionsmakrot registreras i databasen. Nedan visas ett exempel på en e-postbekräftelse:
+* Nästa fas är att identifiera abonnenter som ständigt inte uppvisar någon aktivitet och gradvis minska antalet utskick av e-post till dem under en tidsperiod. Om det inte finns någon aktivitet under det senaste året är det bra att spärra prenumeranternas e-postprenumeration. Även om de inte har visat något intresse för e-postinnehållet finns det alltid en sista möjlighet att få dem att återaktivera sin prenumeration genom att skicka en engångsåterbekräftelsekampanj.
+* Bekräftelsekampanjer är ett bra sätt att fråga prenumeranter som är inaktiva länge om de vill stanna kvar i prenumerationslistan. När du skapar kampanjen är det bättre att lägga till en&quot;klicka här&quot;-länk så att de kan bekräfta åtgärden och verifiera deras adress. På så sätt kan funktionsmakrot registreras i databasen. Nedan visas ett exempel på en e-postbekräftelse:
 
    ![](../../help/assets/deliverability_implementation_3.png)
 
-   När abonnenten har vidtagit en åtgärd kan en landningssida med en bekräftelse på att han eller hon har gjort en ny prenumeration visas. Nedan visas ett exempel på landningssidan:
+   När abonnenten har vidtagit en åtgärd kan en landningssida med en bekräftelse på att han eller hon har betalat prenumerationen visas. Nedan visas ett exempel på landningssidan:
 
    ![](../../help/assets/deliverability_implementation_4.png)
 
@@ -82,4 +80,4 @@ Prenumeranter som interagerar med kampanjen genom att följa öppnings- eller kl
 
 **Adobe kundresehantering**
 
-* [Meddelandespårning](https://experienceleague.adobe.com/docs/customer-journey-management/using/reporting/message-tracking.html)
+* [Meddelandespårning](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html)
