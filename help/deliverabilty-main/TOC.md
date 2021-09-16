@@ -2,10 +2,10 @@
 user-guide-title: Bästa praxis-guide för levererbarhet
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
-source-git-commit: fb66dc0e4efc61b6303b7857b9c56b2c478642c4
-workflow-type: ht
-source-wordcount: '169'
-ht-degree: 100%
+source-git-commit: ab1595bac7ef136eb001609b9017950a2d01cbb4
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 98%
 
 ---
 
@@ -57,5 +57,5 @@ ht-degree: 100%
          + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
          + [Campaign Classic – tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
 + TechNotes (hidden){#technotes}
-   + [Apples integritetspolicy](/help/technotes/apple-mail-privacy-faq.md)
-
+   + [Apples integritetspolicy Vanliga frågor och svar ](/help/technotes/apple-mail-privacy-faq.md)
+   + [Implementera BIMI](/help/technotes/implement-bimi.md)
