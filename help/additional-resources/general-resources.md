@@ -6,14 +6,21 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: f441fe45b5b7309082c8eea7423d40003b913b7b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 39%
+source-wordcount: '126'
+ht-degree: 31%
 
 ---
 
 # Ytterligare resurser - översikt
+
+## Nyheter
+
+Läs följande om du vill veta mer om de senaste uppdateringarna om leveransbarhet.
+
+* [Implementera Gmail:s varumärkesidentifierare för meddelandeidentifiering (BIMI)](../technotes/implement-bimi.md)
+* [Frågor och svar om Apples sekretesskydd](../technotes/apple-mail-privacy-faq.md)
 
 ## Generiska resurser
 
@@ -35,7 +42,7 @@ I det här avsnittet visas ytterligare resurser om levererbarhet, t.ex. specifik
 
 Dessutom listas ett antal produktspecifika resurser som hjälper dig att implementera och nå framgång med Adobe.
 
-**Campaign**
+**[!DNL Adobe Campaign]**
 
 * [Konfiguration av domännamn](../../help/additional-resources/ac-domain-name-setup.md)
 * [CSR- och SSL-certifikatbegäran](../../help/additional-resources/ac-ssl-certificate-request.md)

@@ -2,21 +2,19 @@
 title: Implementera Gmail:s varumärkesidentifierare för meddelandeidentifiering (BIMI)
 description: Lär dig implementera BIMI
 topics: Deliverability
-hide: true
-hidefromtoc: true
-source-git-commit: ab1595bac7ef136eb001609b9017950a2d01cbb4
+exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
+source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
-# Implementera Gmail:s varumärkesidentifierare för meddelandeidentifiering (BIMI)
+# Implementera Gmail:s [!DNL Brand Indicators for Message Identification] (BIMI)
 
 Gmail meddelade nyligen att de skulle [lansera allmänt stöd för BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). Det finns ett antal saker du måste ta itu med innan du kan dra nytta av detta, bland annat: Verifierade Mark Certificates, varumärkesskyddade logotyper, logotyper med korrekt format, DMARC-inställningar och publicerar slutligen en BIMI-post till din DNS. Vi kommer att granska alla dessa steg i den här artikeln.
 
-Varumärkesindikatorer för meddelandeidentifiering (BIMI) är en branschstandard som gör att en godkänd logotyp kan visas bredvid en avsändares e-postadress på deltagande plattformar. Det är inte bara det här som kan öka engagemanget, det bidrar också till att bekräfta avsändarens autenticitet och minskar risken för nätfiske och andra skräptaktiker.
+[!DNL Brand Indicators for Message Identification] (BIMI) är en branschstandard som tillåter att en godkänd logotyp visas bredvid en avsändares e-postadress på deltagande plattformar. Det är inte bara det här som kan öka engagemanget, det bidrar också till att bekräfta avsändarens autenticitet och minskar risken för nätfiske och andra skräptaktiker.
 
 ## Verifierat märkescertifikat
 
@@ -26,7 +24,7 @@ VMC liknar SSL-certifikat på vissa sätt. Du behöver en VMC för varje logotyp
 
 ## Varumärke för logotyp
 
-Innan du kan hämta din VMC finns det ett annat nyckelsteg som måste slutföras: För att få en VMC måste den logotyp som du vill ha med vara registrerad på ett av åtta godkända globala varumärken och patentbyråer.
+Innan du kan hämta din VMC finns det ett annat nyckelsteg som måste slutföras. För att få en VMC måste den logotyp som du vill visa vara registrerad med ett av åtta godkända globala varumärken och patentbyråer.
 
 * United States Patent and Trademark Office (USPTO)
 * Canadian Intelligence Property Office
@@ -41,7 +39,9 @@ Om logotypen som du vill visa inte är registrerad eller inte är registrerad ho
 
 ## Bildformat för logotyp
 
-Det är också ett bra tillfälle att se till att din logotyp uppfyller kraven för BIMI-logotypen. Det måste vara i SVG-format och följa SVG Portable/Secure-profilen (SVG-P/S). Mer information om hur du gör detta finns i [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
+Det är också ett bra tillfälle att se till att din logotyp uppfyller kraven för BIMI-logotypen.
+
+Det måste vara i SVG-format och följa SVG Portable/Secure-profilen (SVG-P/S). Mer information om hur du gör detta finns i [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
 
 ## DMARC
 
@@ -64,7 +64,7 @@ Du kan få information om inlägget och till och med använda en kostnadsfri BIM
 
 ## Viktiga uppgifter
 
-Om du är en Adobe Campaign- eller Marketo-klient kan Adobe hjälpa dig att skapa BIMI DNS-uppdateringen: kontakta Adobe kundtjänst för att beställa en. Adobe kan även hjälpa dig med felsökning om BIMI inte fungerar som det ska för dig.
+Om du är en [!DNL Adobe Campaign]- eller Marketo-klient kan Adobe hjälpa dig att skapa BIMI DNS-uppdateringen: kontakta Adobe kundtjänst för att beställa en. Adobe kan även hjälpa dig med felsökning om BIMI inte fungerar som det ska för dig.
 
 Om du behöver hjälp med varumärken eller verifierade varumärkescertifikat kan du samarbeta med ditt juridiska team och en auktoriserad VMC-leverantör.
 

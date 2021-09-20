@@ -8,9 +8,9 @@ doc-type: article
 activity: understand
 team: TM
 exl-id: 2defe1ae-5148-46f9-aaa7-8034107980ee
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: e842a8aefa715da80325cb107c2d2092c64a699b
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '200'
 ht-degree: 35%
 
 ---
@@ -35,7 +35,7 @@ Här är några sätt att hjälpa dig att identifiera ett eventuellt problem dä
 **Adobe Campaign Standard**
 
 * [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv)
-* [Sammanfattning av leverans](https://docs-author-stg.corp.adobe.com/content/help/en/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
+* [Sammanfattning av leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
 * [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv#testing-and-sending)
 
 ## Ytterligare resurser
