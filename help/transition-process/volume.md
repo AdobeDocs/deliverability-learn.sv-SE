@@ -23,7 +23,7 @@ Volymtröskeln varierar mellan olika Internet-leverantörer och kan också varie
 
 Här är en lista med tips och tips för hur du smidigt kan övergå till nästa steg:
 
-* **Tillstånd** är grunden för alla framgångsrika e-postprogram.
+* **** Tillstånd är grunden för alla framgångsrika e-postprogram.
 * **Låg och långsam**  - börja med låga sändningsvolymer och öka sedan i takt med att du bekräftar ditt avsändarrykte.
 * Med en **strategi för tandem-postmarknadsföring** kan ni öka volymen på Campaign samtidigt som ni sluter er med den aktuella ESP-leverantören, utan att störa e-postkalendern.
 * **Engagemangsfrågor**  - börja med de prenumeranter som öppnar och klickar på era e-postmeddelanden regelbundet.

@@ -1,6 +1,6 @@
 ---
-title: Frågor och svar om Apples sekretesskydd
-description: Frågor och svar om Apples sekretesskydd
+title: Vanliga frågor om skydd av personuppgifter för Apple Mail
+description: Vanliga frågor om skydd av personuppgifter för Apple Mail
 topics: Deliverability
 exl-id: c4b9839d-db1a-4bbc-a1d5-385dddca95a8
 source-git-commit: c66a1d519ab844d103de5b6dd64c5f7f40c3d8d9
@@ -10,29 +10,29 @@ ht-degree: 0%
 
 ---
 
-# Frågor och svar om Apples sekretesskydd
+# Vanliga frågor om skydd av personuppgifter för Apple Mail
 
-Vanliga frågor och svar ger inledande vägledning som svar på Apples meddelande om sin iOS 15-utgåva, inklusive [E-postsekretesskydd](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Dessa ändringar kommer i september, och vi kommer att fortsätta att uppdatera det här dokumentet och ge vägledning till våra kunder.
+Vanliga frågor och svar ger inledande vägledning som svar på Apple meddelande om sin version av iOS 15, inklusive [E-postsekretesskydd](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/). Dessa ändringar kommer i september, och vi kommer att fortsätta att uppdatera det här dokumentet och ge vägledning till våra kunder.
 
-## Vad tillkännagav Apple?
+## Vad meddelade Apple?
 
-Den 7 juni, på Apples årliga utvecklarkonferens (WWDC 2021), meddelade de i sin iOS 15-utgåva att [integritetsskydd för e-post](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) skulle aktiveras för den inbyggda e-postappen på alla Apple-enheter - iPhone, iPad och Mac. Enligt Apple förhindrar e-postsekretesskydd avsändare från att använda osynliga pixlar för att samla in information om användaren, vilket förhindrar avsändare från att veta när de öppnar ett e-postmeddelande och maskerar deras IP-adress så att den inte kan länkas till annan onlineaktivitet eller användas för att avgöra var de finns. En konsekvens för marknadsförarna är att de inte vet när eller om en användare har öppnat sin e-post i Apples Mail-app. Begränsningen, som kräver användarens samtycke, gäller för alla e-postmeddelanden som öppnas i Apples Mail-app (Gmail, Yahoo, Outlook osv.).
+On June 7th, at the Apple annual Worldwide Developers Conference (WWDC 2021), they announced in their iOS 15 release that [Mail Privacy Protection](https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/) would be enabled on the native Mail app on all Apple devices – iPhone, iPad, and Mac. Enligt Apple hindrar e-postsekretesskydd avsändare från att använda osynliga pixlar för att samla in information om användaren, vilket förhindrar avsändare från att veta när de öppnar ett e-postmeddelande och maskerar deras IP-adress så att den inte kan länkas till annan onlineaktivitet eller användas för att avgöra var de finns. En konsekvens för marknadsförarna är att de inte vet när eller om en användare har öppnat sin e-post i Apple Mail-app. Begränsningen, som kräver användarens samtycke, gäller för alla e-postmeddelanden som öppnas i Apple Mail-app (Gmail, Yahoo, Outlook osv.).
 
 ## När kommer detta att träda i kraft?
 
-iOS 15 kommer att vara tillgänglig redan i september. Även om det inte finns någon omedelbar effekt på e-postprogram just nu måste marknadsförarna förstå vilken effekt den här förändringen kan ha och vilka strategier som kan höja nivån på e-postmarknadsföringsprogram. Adobe hjälper våra kunder att förstå effekten och navigera bland dessa ändringar med uppdateringar och tankeledarskap, så att deras e-postprogram inte tappar farten.
+Utgåvan av iOS 15 kommer att finnas tillgänglig redan i september. Även om det inte finns någon omedelbar effekt på e-postprogram just nu måste marknadsförarna förstå vilken effekt den här förändringen kan ha och vilka strategier som kan höja nivån på e-postmarknadsföringsprogram. Adobe hjälper våra kunder att förstå effekten och navigera bland dessa ändringar med uppdateringar och tankeledarskap, så att deras e-postprogram inte tappar farten.
 
 ## Vilken effekt kommer detta att ha på att spåra och mäta resultaten av e-postkampanjer?
 
-Pixelspårning i Apple Mail inaktiveras, vilket innebär att marknadsförarna inte längre kan avgöra när ett e-postmeddelande öppnas på ett tillförlitligt sätt. Även om det inte är nytt att inaktivera spårning av pixlar har flera leverantörer vidtagit liknande åtgärder tidigare. Apples Mail-app används av många olika leverantörer. Effekten kan därför bli större än tidigare när andra leverantörer har valt att inaktivera spårning av pixlar som standard. Sekretessskyddet, som kräver användarens samtycke, gäller för alla e-postmeddelanden som öppnas i Apples Mail-app (Gmail, Yahoo, Outlook osv.). Om användaren använder Gmail-appen eller en annan e-postapp påverkas inte sekretessinställningarna. Marknadsandelen för [Apple mobile device](https://www.counterpointresearch.com/global-smartphone-share/) för Q1 var 17 % globalt och 55 % i USA.
+Tracking pixels within Apple Mail will be disabled, which means that marketers will no longer reliably tell when an email is opened. Även om det inte är nytt att inaktivera spårning av pixlar har flera leverantörer vidtagit liknande åtgärder tidigare. Apple Mail-app används av många olika leverantörer. Effekten kan därför bli större än tidigare när andra leverantörer har valt att inaktivera spårning av pixlar som standard. Sekretessskyddet, som kräver användarens samtycke, gäller för alla e-postmeddelanden som öppnas i Apple Mail-app (Gmail, Yahoo, Outlook osv.). Om användaren använder Gmail-appen eller en annan e-postapp påverkas inte sekretessinställningarna. Marknadsandelen för [Apple mobila enheter](https://www.counterpointresearch.com/global-smartphone-share/) för Q1 var 17 % globalt och 55 % i USA.
 
 ## Finns det andra effekter?
 
-Apple döljer som standard IP-adressinformation i sin ursprungliga e-postapp, webbläsaren Safari och iCloud-tjänster. Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apples skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Dessa ändringar innebär att marknadsförarna måste börja planera för att avgöra hur dessa strategier kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna får det att falla. Adobe kommer att hjälpa våra kunder att hitta nya vägar med uppdateringar, vägledning och tankeledarskap.
+Apple döljer som standard IP-adressinformation i sin ursprungliga e-postapp, webbläsaren Safari och iCloud-tjänster. Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apple skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Ändringarna innebär att marknadsförarna måste börja planera för att avgöra hur dessa strategier kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna får det att falla. Adobe kommer att hjälpa våra kunder att hitta nya vägar med uppdateringar, vägledning och tankeledarskap.
 
 ## Gäller det här meddelandet alla e-postmeddelanden som öppnas på en Apple-enhet?
 
-Funktionen för skydd av e-postsekretess gäller för den användare som har iOS 15 OCH kontrollerar deras e-post i Apple Mail-appen. Om användaren kontrollerar e-post i Gmail-appen eller en annan e-postapp som inte är Apple Mail, gäller inte integritetskontrollerna även i iOS 15. Detta gör det viktigt för marknadsförarna att segmentera sina listor och databaser för att avgöra den potentiella effekten.
+E-postsekretessfunktionen gäller för den användare som har iOS 15 OCH kontrollerar sin e-post i Apple Mail-appen. Om användaren kontrollerar e-post i Gmail-appen eller en annan e-postapp som inte är Apple Mail, gäller inte sekretessreglerna även om den används i iOS 15. Detta gör det viktigt för marknadsförarna att segmentera sina listor och databaser för att avgöra den potentiella effekten.
 
 ## Vilken påverkan har det på att mäta öppningsfrekvenser, CTOR (klicka för att öppna priset) och intäkter, tillsammans med andra mätvärden?
 
@@ -40,11 +40,11 @@ Funktionen för skydd av e-postsekretess gäller för den användare som har iOS
 
 ## Förutom att mäta öppningar, vad mer påverkas?
 
-Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apples skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Sekretessbegränsningarna påverkar även e-postkampanjer som innehåller platsdata för personalisering. Dessa ändringar innebär att marknadsförarna måste börja planera för att avgöra hur dessa strategier kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna får det att falla. Adobe kommer att samarbeta med kunderna för att se till att det finns en lämplig strategi för att stödja dessa strategier och användningsfall.
+Att mäta öppningsfrekvenser är inte den enda aspekten av e-postmarknadsföring som påverkas av Apple skydd av personuppgifter. E-post öppnar för optimeringsstrategier för sändningstid, personalisering i realtid, återengagemangskampanjer och automatiserade flervågskampanjer. Sekretessbegränsningarna påverkar även e-postkampanjer som innehåller platsdata för personalisering. Ändringarna innebär att marknadsförarna måste börja planera för att avgöra hur dessa strategier kommer att se ut för Apple-användare när iOS 15 släpps och sekretessfunktionerna får det att falla. Adobe kommer att samarbeta med kunderna för att se till att det finns en lämplig strategi för att stödja dessa strategier och användningsfall.
 
-## Vad kan marknadsförare göra nu?
+## What can marketers do now?
 
-Om marknadsförarna inte redan gör det är en bra plats att fokusera på enhetsbaserad segmentering, vilket kan göras i Adobe Campaign, Marketo eller Journey Optimizer. Enhetsdata hjälper marknadsförarna att förstå vilka enheter era kunder använder för att läsa era e-postmeddelanden, vilket kan vara en bra utgångspunkt för att avgöra vilken effekt e-postprogram kan ha. Dessutom ger segmentering efter enhetstyp insikter i hur mycket av publiken använder Apple Mail för att läsa e-postmeddelanden. Det skulle också vara bra för marknadsföraren att förstå andra kampanjer och strategier som innehåller öppningar som en utlösare eller mätmetod (dvs. återengagemangskampanjer, optimering av sändningstid osv.). Adobe kommer att ge ytterligare vägledning när iOS 15 släpps närmare.
+Om marknadsförarna inte redan gör det är en bra plats att fokusera på enhetsbaserad segmentering, vilket kan göras i Adobe Campaign, Marketo eller Journey Optimizer. Enhetsdata hjälper marknadsförarna att förstå vilka enheter era kunder använder för att läsa era e-postmeddelanden, vilket kan vara en bra utgångspunkt för att avgöra vilken effekt e-postprogram kan ha. Dessutom ger segmentering efter enhetstyp insikter i hur mycket av publiken använder Apple Mail för att läsa e-postmeddelanden. Det skulle också vara bra för marknadsföraren att förstå andra kampanjer och strategier som innehåller öppningar som en utlösare eller mätmetod (dvs. återengagemangskampanjer, optimering av sändningstid osv.). Adobe kommer att ge ytterligare vägledning när releasen av iOS 15 närmar sig.
 
 ## Påverkar det den mobila push-spårningen?
 

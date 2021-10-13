@@ -1,6 +1,6 @@
 ---
 title: Öka e-postens anseende med IP-uppvärmning
-description: Lär dig varför det är viktigt att förbättra ert e-postanseende med IP-uppvärmning och hur ni går vidare för optimala leveransmöjligheter.
+description: Learn why it is important to improve your email reputation with IP warming, and how to proceed for optimal deliverability.
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -25,7 +25,7 @@ In the Adobe Deliverability Consulting and Deliverability Operations teams, we h
 
 Adobe kräver att kunderna delar sin konfiguration för att hjälpa Adobe Deliverability-teamet att förstå ert unika program. De frågor vi ställer är utformade för att hjälpa Adobe Deliverability-teamet att få en uppfattning om ditt rykte och din e-postvolym. Utan en konkret förståelse för er affärsmodell, era marknadsföringsmål för e-post och anseende kommer vi inte att kunna anpassa vår strategi och det finns risk för leveransproblem.
 
-Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). När du skickar e-post är en IP-adress den väg som används för att leverera e-postmeddelanden till dina kunder. IP-adresser och domäner används för att identifiera avsändare i ett nätverk till mottagande Internet-leverantörer. Adobe tilldelar rätt antal dedikerade IP-adresser för att skicka e-post, baserat på din sändningsvolym, e-postprogram, datasegmenteringsrutiner och ditt kontrakt.
+Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). När du skickar e-post är en IP-adress den väg som används för att leverera e-postmeddelanden till dina kunder. IP-adresser och domäner används för att identifiera avsändare i ett nätverk till mottagande Internet-leverantörer. Adobe assigns the appropriate number of dedicated IP addresses for sending emails, based on your sending volume, email programs, data segmentation practices, and your contract.
 
 **Relaterade ämnen:**
 * [Smidig övergång vid byte av e-postplattform](../../help/transition-process/switching-email-platforms.md)
@@ -34,11 +34,11 @@ Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). Nä
 
 ## IP-uppvärmning: Varför är det gjort? {#why-ip-warming}
 
-Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp. Internetleverantörer/MBP håller IP-adressen och den sändande domänen under hög granskning för att avgöra om e-postmeddelanden som skickas från den här IP-adressen och domänen är skräppost eller inte.  Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
+Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp. ISPs/MBPs put the IP and sending domain under high scrutiny to determine if the emails being sent from this IP and domain are spam or not.  Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
 
 Internetleverantörer granskar noggrant sändningsvolymen, sändningsfrekvensen, klagomål och avhoppsfrekvensen som genererats av dessa utskick. De kontrolleras noga eftersom de är tecken på avsändarens anseende - vare sig det är bra eller dåligt.
 
-Denna process med att undersöka dessa datapunkter tar naturligtvis tid och kan inte göras på en dag eller två. Anseendet byggs över tid. Det här är som att låta en främling vara hemma. Har du reservationer för att någon du aldrig träffat ska komma in i ditt hem?
+Denna process med att undersöka dessa datapunkter tar naturligtvis tid och kan inte göras på en dag eller två. Anseendet byggs över tid. This process is like letting a stranger in your home. Would you have reservations about having someone you have never met enter your home?
 
 Troligen är svaret ja. Du skulle vilja analysera den här personen och deras motiv. Betyder de skada? Är de ett hot? Internet-leverantörer gör samma sak för att skydda sitt nätverk från skadlig eller oönskad trafik. Positiva anseendevärden hjälper er att komma långt i en framgångsrik process för IP-uppvärmning. Därför betonar vi vikten av att börja med att skicka små e-postvolymer och börja skicka till era engagerade kunder först. Mer information om detta finns i [Målvillkor när du skickar ny trafik](/help/transition-process/targeting-criteria.md).
 
@@ -69,7 +69,7 @@ Autentisering gör det möjligt för Internet-leverantörer att validera att det
 
 På Adobe kommer vi att konfigurera SPF och DKIM som standard och vi kommer att konfigurera DMARC på begäran. Internetleverantörer refererar SPF och DKIM som de primära autentiseringsuppgifterna. Många Internet-leverantörer införlivar också DMARC (domänbaserad meddelandeautentisering, rapportering och överensstämmelse) i sina filtreringsbeslut. Oautentiserade e-postmeddelanden är inte nödvändigtvis blockerade, men de går igenom ytterligare filtrering.
 
-## IP-uppvärmning: Vad du kan förvänta dig
+## IP Warming: What to expect
 
 ### Begränsad eller blockerad e-post
 
@@ -85,33 +85,33 @@ Kom ihåg att konsekvens är avgörande här. Oregelbundna sändningsmönster oc
 
 ### Klagomål
 
-[När en prenumerant ](/help/metrics/complaints.md) märker ett e-postmeddelande som skräppost via sitt e-postprogram är det här ett komplement. Detta skickar ett meddelande till Internet-leverantören om klagomålet. Om det finns tillräckligt många klagomål som kommer in i Internet-leverantören kommer Internet-leverantören att agera för att skydda sina kunder - eventuellt blockera många e-postmeddelanden från att komma åt prenumeranterna eller dirigera en del e-postmeddelanden till huvudmappen i motsats till prenumerantens inkorgar. Om ditt leveransproblem orsakas av klagomål är det viktigt att fastställa varför mottagarna klagar.
+[](/help/metrics/complaints.md) Slutför när en prenumerant märker ett e-postmeddelande som skräppost via sitt e-postprogram. Detta skickar ett meddelande till Internet-leverantören om klagomålet. Om det finns tillräckligt många klagomål som kommer in i Internet-leverantören kommer Internet-leverantören att agera för att skydda sina kunder - eventuellt blockera många e-postmeddelanden från att komma åt prenumeranterna eller dirigera en del e-postmeddelanden till huvudmappen i motsats till prenumerantens inkorgar. Om ditt leveransproblem orsakas av klagomål är det viktigt att fastställa varför mottagarna klagar.
 
-Prenumeranter klagar av olika anledningar. Ibland vill en prenumerant inte få mer e-post från dig, kanske för att de tror att de får för många meddelanden om samma ämne, inte förväntade sig meddelandet eller inte kommer ihåg att registrera sig för att ta emot e-postmeddelanden.
+Prenumeranter klagar av olika anledningar. Sometimes a subscriber doesn’t want to receive any more email from you, perhaps because they feel they’re getting too many messages on the same topic, they weren’t expecting the message, or don’t remember signing up to receive your emails.
 
-### Datasäkerhet
+### Data validity
 
-Hårda studsar inträffar när du skickar till en adress som inte kan levereras hos en Internet-leverantör. En adress kan vara olevererbar av många anledningar, t.ex. ett misstag vid inskrivning av adressen eller utskick till en adress som tidigare var aktiv men som har stängts eller avslutats efter en inaktivitetsperiod.
+Hårda studsar inträffar när du skickar till en adress som inte kan levereras hos en Internet-leverantör. An address can be undeliverable for many reasons, such as a mistake in typing the address or mailing to an address that was previously active but has been closed or terminated after a period of inactivity.
 
-Om du stöter på ett stort antal hårda studsar är det viktigt att förstå varför. Granska hur adresserna samlades in och bekräfta att behörighet gavs. Ibland stänger man e-postkontot och meddelar inte de som har den adressen i marknadsföringslistan.
+If you encounter a substantial number of hard bounces, it’s important to understand why. Granska hur adresserna samlades in och bekräfta att behörighet gavs. Sometimes people close their email account and don’t notify those who have that address on their marketing list.
 
 ### Engagemang
 
-Internetleverantörer letar efter enhetlig volym och god datakvalitet. Ni kommer att öka trafiken långsamt och stadigt under de kommande fyra till åtta veckorna. Ibland tar det mer eller mindre tid att utföra en avbildning baserat på volym och mål, men vanligtvis är det minst en 8-veckorsprocess.
+Internetleverantörer letar efter enhetlig volym och god datakvalitet. Ni kommer att öka trafiken långsamt och stadigt under de kommande fyra till åtta veckorna. Sometimes ramp-ups require more or less time based on your volume and goals, but typically, it is at least an 8-week process.
 
-E-posttrafiken bör ske långsamt och stadigt, och öka varje vecka tills hela listan har skickats. Dessutom följer varje segment schemat tills det är klart. Börja med de senaste prenumeranterna först och avsluta med de minst engagerade prenumeranterna sist. Observera också att vissa internetleverantörer kan behöva en mer anpassad strategi på grund av hur de hanterar ny trafik.
+Email traffic should deploy in a slow and steady progression, increasing each week until the entire list has been sent. Dessutom följer varje segment schemat tills det är klart. Start with the most recent subscribers first, and finish with the least engaged subscribers last. Observera också att vissa internetleverantörer kan behöva en mer anpassad strategi på grund av hur de hanterar ny trafik.
 
-Läs mer om [engagemang](/help/engagement.md).
+Learn more on [engagement](/help/engagement.md).
 
-## Stanna kvar på kursen
+## Stay the course
 
-Du kan vara benägen att skynda på processen med IP-uppvärmning genom att skicka fler volymer än vad som rekommenderas. Du slipper lägga tid på att identifiera dina mest engagerade prenumeranter och inte skicka e-post till dessa prenumeranter först i ett försök att skapa ett positivt rykte. Snälla motstå detta begär! Det kommer inte att hjälpa dig på lång sikt.
+You may be tempted to rush the process of IP warming by sending more volume than is recommended, neglecting to spend time identifying your most-engaged subscribers and failing to mail these subscribers first in an effort to build a positive reputation. Please resist this urge! Det kommer inte att hjälpa dig på lång sikt.
 
-Det är mycket viktigt att du börjar skicka e-post med ditt mycket engagerade innehåll (med e-post!) prenumeranter endast för de inledande faserna av IP-uppvärmningen. Dessa kunder är era mest värdefulla och deras benägenhet att öppna era e-postmeddelanden hjälper er att börja visa internetleverantörer som ni är en marknadsförare som skickar intresseväckande och eftersökta e-postmeddelanden. Här visas även internetleverantörer som ni följer reglerna och följer bästa praxis.
+Det är mycket viktigt att du börjar skicka e-post med ditt mycket engagerade innehåll (med e-post!) prenumeranter endast för de inledande faserna av IP-uppvärmningen. Dessa kunder är era mest värdefulla och deras benägenhet att öppna era e-postmeddelanden hjälper er att börja visa internetleverantörer som ni är en marknadsförare som skickar intresseväckande och eftersökta e-postmeddelanden. It also shows ISPs that you are playing by the rules and following best practices.
 
 ## Slutsats
 
-Kom ihåg: IP-uppvärmning är en maraton - inte en sprint!  Processen kan verka betungande och tidskrävande, men det skulle vara mer värt att försöka reparera ett rykte som skadats genom att inte följa beprövade och sanna e-postrutiner.
+Remember: IP Warming is a marathon - not a sprint!  Processen kan verka betungande och tidskrävande, men det skulle vara mer värt att försöka reparera ett rykte som skadats genom att inte följa beprövade och sanna e-postrutiner.
 
 Ju bättre sändningsrutiner är, och ju högre anseendepoängen är hos Internet-leverantörer, desto troligare blir det att era e-postmeddelanden levereras. IP-uppvärmning och förstärkning, tillsammans med bästa praxis för utformning av e-postmeddelanden, hjälper dig att optimera leveransen till inkorgen.
 

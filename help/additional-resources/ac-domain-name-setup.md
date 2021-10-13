@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2061'
 ht-degree: 2%
 
 ---
@@ -54,10 +54,22 @@ För att kunna tillhandahålla en molnbaserad hanterad tjänst rekommenderar Ado
 | MX | Ange e-postservrar för inkommande meddelanden | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF (TXT) | Ramverk för avsändarpolicy | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM (TXT) | Identifierad e-post för DomainKeys | <i>klient._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot;&quot;DKIMPUBLICKEY HERE&quot; |
-| DMARC (TXT) | Domänbaserad meddelandeautentisering | Rapportering och överensstämmelse | _dmarc.email.example.com</br>&quot;v=DMARC1; p=ingen; rua=mailto:mailauth-reports@myemail.com&quot; |
 | Värdposter (A) | Spegla sidor, bildvärdskap och spårningslänkar, alla sändande domäner | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | Omvänd DNS (PTR) | Mappar klientens IP-adresser till ett klientprofilerat värdnamn | 18.101.100.192.in-addr.arpa domännamnpekare r18.email.example.com |
-| CNAME | Anger ett alias för ett annat domännamn | t1.email.example.com är ett alias för | t1.email.example.campaign.adobe.com |
+| CNAME | Anger ett alias för ett annat domännamn | t1.email.example.com är ett alias för t1.email.example.campaign.adobe.com |
+
+
+Domänbaserad Message Authentication, Reporting och Conformance (DMARC) rekommenderas för att autentisera e-postavsändare och säkerställa att e-postmeddelanden som skickas från din domän är betrodda.
+
+Exempel på DMARC TXT-post:
+
+```
+_dmarc.email.example.com
+
+“v=DMARC1; p=none; rua=mailto:mailauth-reports@myemail.com” 
+```
+
+Du kan implementera DMARC manuellt eller kontakta Adobe för att få hjälp med att konfigurera DMARC för ditt varumärke.
 
 ## Installationskrav
 

@@ -19,8 +19,8 @@ ht-degree: 11%
 
 Innehåll är nyckeln. Du har redan läst våra perspektiv om relevans, men här finns ytterligare några tips för att optimera leveransen när det gäller innehåll:
 
-* **Undvik för stor HTML-fil**. Håll dig under 100 kB, men försök att ligga mellan 60 och 80 kB för att förhindra långsam leverans.
-* **Använd alt-taggar till din fördel**. Alt-taggar finns inuti HTML-bildkoden och visar text om bilden inte är synlig eller läser in. I stället för att ha en enkel beskrivning som&quot;produktbild&quot; kanske du vill säga något mer övertygande som&quot;Köp nu och få 30 % rabatt&quot;.
+* **Undvik att filen** är för stor för HTML. Håll dig under 100 kB, men försök att ligga mellan 60 och 80 kB för att förhindra långsam leverans.
+* **Använd alt-taggar till din fördel**. Alt-taggar finns i bildkoden för HTML och visar text om bilden inte visas eller läses in. I stället för att ha en enkel beskrivning som&quot;produktbild&quot; kanske du vill säga något mer övertygande som&quot;Köp nu och få 30 % rabatt&quot;.
 * **Undvik för många bilder.** De flesta Internet-leverantörer blockerar nu bilder som standard. Du vill ha ett sätt att fånga målgruppen utan att bilderna är aktiverade, så att de sedan kan aktiveras.
 
 ## Produktspecifika resurser

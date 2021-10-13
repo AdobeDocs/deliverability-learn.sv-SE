@@ -5,7 +5,7 @@ topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
 source-git-commit: a4d2a75e85f37f48aa3246707b98e473682e13f6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Om logotypen som du vill visa inte är registrerad eller inte är registrerad ho
 
 Det är också ett bra tillfälle att se till att din logotyp uppfyller kraven för BIMI-logotypen.
 
-Det måste vara i SVG-format och följa SVG Portable/Secure-profilen (SVG-P/S). Mer information om hur du gör detta finns i [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
+Det måste vara i SVG-format och följa SVG Portable/Secure-profil (SVG-P/S). Mer information om hur du gör detta finns i [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
 
 ## DMARC
 

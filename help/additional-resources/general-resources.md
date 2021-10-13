@@ -20,7 +20,7 @@ ht-degree: 31%
 Läs följande om du vill veta mer om de senaste uppdateringarna om leveransbarhet.
 
 * [Implementera Gmail:s varumärkesidentifierare för meddelandeidentifiering (BIMI)](../technotes/implement-bimi.md)
-* [Frågor och svar om Apples sekretesskydd](../technotes/apple-mail-privacy-faq.md)
+* [Vanliga frågor om skydd av personuppgifter för Apple Mail](../technotes/apple-mail-privacy-faq.md)
 
 ## Generiska resurser
 

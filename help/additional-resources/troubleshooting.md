@@ -44,7 +44,7 @@ Ställ följande frågor för att identifiera möjliga orsaker till leveransprob
 
 ### Klagomål
 
-[Komplement definieras av ](/help/metrics/complaints.md) prenumeranter som rapporterar e-post som skräppost genom att klicka på motsvarande knapp i sin inkorg.
+[](/help/metrics/complaints.md) Kompletterande åtgärder definieras av prenumeranter som rapporterar e-post som skräppost genom att klicka på motsvarande knapp i sin inkorg.
 
 Om ditt leveransproblem har orsakats av klagomål:
 * Du måste försöka avgöra varför mottagarna klagar.

@@ -135,9 +135,9 @@ Du kan också använda kommandot *OpenSSL* lokalt på en Linux-dator. Mer inform
 
 När CSR-filen har angetts måste du köpa och generera ett SSL-certifikat för rätt domäner med hjälp av CSR-filen.
 
-* SSL-certifikatet:
+* The SSL certificate:
    * måste vara i Apache PEM-format.
-   * får inte vara längre än 2048 bitar.
+   * should not be longer than 2048 bits;
    * ska vara signerat av en giltig certifikatutfärdare (certifikatutfärdare),
    * måste innehålla alla SAN-nätverk (Subject Alternative Names) som anges i CSR-filen.
 * Om det finns ett eller flera mellanliggande certifikat måste du ange rotcertifikatet och alla mellanliggande certifikat till Adobe.
@@ -203,7 +203,7 @@ Det är ditt ansvar att kontrollera giltighetsperioden. Adobe rekommenderar att 
 
 ### Steg 8 - Uppdatera en specifik konfiguration {#update-configuration}
 
-När du är säker på att de begärda SSL-certifikaten är korrekt installerade kan du uppdatera alla referenser i Adobe Campaign från HTTP till HTTPS.
+Once you are confident the requested SSL certificates are installed properly, you can update all references in Adobe Campaign from HTTP to HTTPS.
 
 >[!NOTE]
 >

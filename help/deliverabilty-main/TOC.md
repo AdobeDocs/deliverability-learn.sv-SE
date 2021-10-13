@@ -56,5 +56,5 @@ ht-degree: 95%
       + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic – tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
    + Tekniska anmärkningar{#technotes}
-      + [Frågor och svar om Apples sekretess](/help/technotes/apple-mail-privacy-faq.md)
+      + [Vanliga frågor om Apple sekretess](/help/technotes/apple-mail-privacy-faq.md)
       + [Implementera BIMI](/help/technotes/implement-bimi.md)

@@ -1,6 +1,6 @@
 ---
 title: Allt om skräppostfällor
-description: Lär dig hur du förstår, identifierar och undviker skräppostsvällningar när du hanterar leveranser.
+description: Learn how to understand, identify, and avoid spam traps when managing deliverability.
 topics: Deliverability
 doc-type: article
 activity: understand
