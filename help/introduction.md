@@ -8,7 +8,7 @@ activity: understand
 team: ACS
 exl-id: 929e325a-514d-49e3-91cf-c8383bb9465e
 source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -28,11 +28,11 @@ Använd den här vägledningen när du vill lära dig viktiga termer, koncept oc
 
 Denna bästa praxis-guide för levererbarhet innehåller följande ämnen:
 
-1. [Levererbarhetsstrategi och definition](/help/deliverability-strategy-and-definition.md)
+1. [Strategi för levererbarhet och definition](/help/deliverability-strategy-and-definition.md)
 2. [Mätvärden för levererbarhet](/help/metrics/metrics-overview.md)
 3. [Engagemang](/help/engagement.md)
-4. [Övergångsprocess – byta e-postplattform](/help/transition-process/switching-email-platforms.md)
-5. [Första intrycket – Listsamling och välkomstmeddelanden](/help/first-impressions/address-collection-and-list-growth.md)
+4. [Övergångsprocess – byta e-postplattformar](/help/transition-process/switching-email-platforms.md)
+5. [Första intrycket – listsamling och välkomstmeddelanden](/help/first-impressions/address-collection-and-list-growth.md)
 6. [Bästa praxis för innehåll för optimal levererbarhet](/help/content-best-practices-for-optimal-delivery.md)
 7. [Avsändarens beständighet](/help/sender-permanence.md)
 8. [Information om internetleverantör](/help/internet-service-provider-specifics/overview.md)
