@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ---
 
-# [!DNL Microsoft] ([!DNL Hotmail],  [!DNL Outlook],  [!DNL Windows Live]osv.)
+# [!DNL Microsoft] ([!DNL Hotmail], [!DNL Outlook], [!DNL Windows Live], osv.)
 
 [!DNL Microsoft] är vanligtvis den näst största eller tredje största leverantören beroende på hur listan är uppbyggd, och de hanterar trafik något annorlunda jämfört med andra Internet-leverantörer.
 
@@ -26,7 +26,7 @@ Här är några högdagrar:
 
 ## Vilka data finns tillgängliga?
 
-[!DNL Microsoft]Med sitt eget rapporteringsverktyg för avsändare,  [!DNL Smart Network Data Services] (SNDS), kan ni se mätvärden för hur mycket e-post ni skickar och hur mycket e-post som accepteras, liksom för klagomål och skräppostfällor. Tänk på att delade data är ett exempel och inte återspeglar exakta tal, men det bästa är att visa hur [!DNL Microsoft] ser dig som avsändare. [!DNL Microsoft] lämnar ingen offentlig information om sin betrodda användargrupp, men dessa data är tillgängliga via  [!DNL Return Path Certification] programmet mot en extra avgift.
+[!DNL Microsoft]det leverantörsspecifika rapportverktyget för avsändare, [!DNL Smart Network Data Services] (SNDS), kan du se mätvärden för hur mycket e-post du skickar och hur mycket e-post som accepteras, samt klagomål och skräppostsvällning. Tänk på att delade data är ett exempel och inte återspeglar exakta tal, men det är bäst att visa hur [!DNL Microsoft] visar dig som avsändare. [!DNL Microsoft] lämnar ingen offentlig information om sin betrodda användargrupp, men dessa data är tillgängliga via [!DNL Return Path Certification] för en ytterligare avgift.
 
 ## Avsändarens rykte
 
@@ -34,6 +34,6 @@ Här är några högdagrar:
 
 ## Insikter
 
-[!DNL Microsoft] kombinerar alla sina mottagande domäner för att etablera och spåra sändningens anseende. Detta inkluderar [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live] och så vidare, samt alla e-postmeddelanden som skickas till Office 365. [!DNL Microsoft] kan vara särskilt känslig för volymvariationer, så överväg att tillämpa specifika strategier för att öka och minska från stora sändningar i stället för att tillåta volymbaserade plötsliga förändringar.
+[!DNL Microsoft] kombinerar alla sina mottagande domäner för att etablera och spåra sändningens anseende. Detta inkluderar [!DNL Hotmail], [!DNL Outlook], MSN, [!DNL Windows Live]och så vidare, liksom alla e-postmeddelanden från Office 365. [!DNL Microsoft] kan vara särskilt känslig för volymvariationer, så överväg att tillämpa specifika strategier för att öka och minska från stora sändningar i stället för att tillåta volymbaserade plötsliga förändringar.
 
 [!DNL Microsoft] är också särskilt strikt under IP-värmarnas första dagar, vilket vanligtvis innebär att de flesta postmeddelanden filtreras först. De flesta internetleverantörer anser att avsändarna är oskyldiga tills de har bevisats skyldiga. [!DNL Microsoft] är motsatsen och ser dig skyldig tills du bevisar dig oskyldig.

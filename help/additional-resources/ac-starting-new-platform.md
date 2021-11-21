@@ -31,16 +31,16 @@ Nedan anges de huvudprinciper som ska följas när en ny plattform startas.
 
 * Konfigurera en dedikerad underdomän som är specifik för e-postkampanjer som skickas från Adobe.
 
-* Om du har den här informationen kan du **importera ogiltiga adresser till karantäntabellen**.
-Det händer ofta att en plattform startas när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
+* Om du har den här informationen **importera ogiltiga adresser till karantänregistret**.
+Att starta en plattform sker ofta när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
 
-   * Om du har en lista med ogiltiga adresser är det bäst att importera den till karantäntabellen innan du skickar den första gången. Karantäntabellen är tillgänglig via menyerna **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard).
+   * Om du har en lista med ogiltiga adresser är det bäst att importera den till karantäntabellen innan du skickar den första gången. Karantänregistret är tillgängligt via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard) menyer.
 
    * Om du ändå vill ange de ogiltiga adresserna är det bäst att göra detta när plattformens rykte väl har etablerats och bitvis för att &quot;tona ned&quot; användningen av dåliga adresser över tiden.
 
-* **Begränsa** genomströmningshastigheten genom att begränsa antalet matriser. Kontakta Adobe Campaign-administratören om du vill ha mer information om hur du justerar sådana tekniska inställningar.
+* **Begränsa dataöverföringshastigheten** genom att begränsa antalet matriser. Kontakta Adobe Campaign-administratören om du vill ha mer information om hur du justerar sådana tekniska inställningar.
 
-* **Öka volymen gradvis** för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor.
+* **Öka volymen som skickas progressivt** för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor.
 
 * **Skicka regelbundet**. I viss utsträckning är det bättre att skicka små tagningar regelbundet i stället för stora kampanjer sporadiskt.
 * **Var noga med leveransrapporterna**. Höga felindikatorer kan innebära att en teknisk inställning är felaktigt konfigurerad.

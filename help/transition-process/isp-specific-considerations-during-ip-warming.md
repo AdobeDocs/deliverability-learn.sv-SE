@@ -19,7 +19,7 @@ ht-degree: 16%
 
 Internetleverantörer har olika regler och olika sätt att se på sin trafik. Gmail är till exempel en av de mest sofistikerade internetleverantörerna eftersom de tittar mycket strikt på engagemang (öppnar och klickar) utöver alla andra anseendeåtgärder. Detta kräver en anpassad plan som endast riktar sig till de mest engagerade användarna vid starten. Andra Internet-leverantörer kan kräva samma sak. Samarbeta med er Adobe-konsult för en specifik plan.
 
-Mer information om de viktiga skillnaderna mellan följande valda grupper av leverantörer finns i [Specifikationer för leverantören av Internet-tjänster](/help/internet-service-provider-specifics/overview.md):
+Se [Specifikationer för Internetleverantör](/help/internet-service-provider-specifics/overview.md) för mer information om de viktiga skillnaderna mellan följande valda grupp av leverantörer:
 
 * [Gmail](/help/internet-service-provider-specifics/gmail.md)
 * [Microsoft (Hotmail, Outlook, Windows Live etc.)](/help/internet-service-provider-specifics/microsoft.md)
@@ -27,4 +27,4 @@ Mer information om de viktiga skillnaderna mellan följande valda grupper av lev
 
 ## Ytterligare resurser
 
-* Lär dig mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* Lär dig mer om hur du ökar ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).

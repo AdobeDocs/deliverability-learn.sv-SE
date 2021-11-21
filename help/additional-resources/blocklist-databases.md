@@ -13,23 +13,23 @@ ht-degree: 6%
 
 ---
 
-# Real-time Blackhole Lists
+# Svarthålslistor i realtid
 
-Several organizations maintain databases of IP addresses and domains that are reputed to be used by spammers. Att konsultera dessa webbplatser kan vara användbart för att förstå varför vissa meddelanden avvisades som skräppost. Det är i allmänhet möjligt att begära att en adress som felaktigt lagts till i dessa listor tas bort.
+Flera organisationer har databaser med IP-adresser och domäner som används av skräppost. Att konsultera dessa webbplatser kan vara användbart för att förstå varför vissa meddelanden avvisades som skräppost. Det är i allmänhet möjligt att begära att en adress som felaktigt lagts till i dessa listor tas bort.
 
 Dessa databaser kallas för RBL (BlackHill Lists i realtid) och söks igenom via en DNS-mekanism. Det finns tre typer av RBL:
 
 * Efter IP-adress: listar IP-adresser som skickar skräppost eller som sannolikt kommer att vidarebefordra skräppost.
 * Efter avsändardomän: listar avsändardomäner (den fullständiga domänen för den studsande e-postadressen) som skickar skräppost eller felaktigt konfigurerad.
-* Efter webbdomän: listar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i skräppostinnehållet. In Adobe solutions, the domain to be considered is generally the address used for tracking.
+* Efter webbdomän: listar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i skräppostinnehållet. I Adobe är den domän som ska beaktas vanligtvis den adress som används för spårning.
 
-Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns i [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
+Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns på [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 
 * **Spamhaus**
 
    Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   The database is more important. Being classified on this list is generally a serious situation. Om detta händer måste du agera omedelbart och varna för kommersiella tjänster, slutprodukter och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna de kommersiella tjänsterna, leveransmöjligheterna och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
@@ -47,11 +47,11 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [http://www.surbl.org/](http://www.surbl.org/)
 
-   SURBL identifierar de webbplatser som regelbundet visas i skräppost. If your domain appears on this list, it can significantly affect your deliverability. You should inform the deliverability services and [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) immediately.
+   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **iX Manitu**
 
-   Detta är en lista över IP-adresser och används ofta i Tyskland. Refer to [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+   Detta är en lista över IP-adresser och används ofta i Tyskland. Se [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

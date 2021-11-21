@@ -36,7 +36,7 @@ Apple döljer som standard IP-adressinformation i sin ursprungliga e-postapp, we
 
 E-postsekretessfunktionen gäller för den användare som har iOS 15 OCH kontrollerar sin e-post i Apple Mail-appen. Om användaren kontrollerar e-post i Gmail-appen eller en annan e-postapp som inte är Apple Mail, gäller inte sekretessreglerna även om den används i iOS 15. Detta gör det viktigt för marknadsförarna att segmentera sina listor och databaser för att avgöra den potentiella effekten.
 
-## Vilken påverkan har det på att mäta öppningsfrekvenser, CTOR (klicka för att öppna priset) och intäkter, tillsammans med andra mätvärden?
+## Vilken påverkan har det på mätning av öppna frekvenser, CTOR (klicka för att öppna priset) och intäkter, tillsammans med andra mätvärden?
 
 Öppningsfrekvensen för e-post har inte alltid varit ett tillförlitligt mått, där vissa leverantörer blockerar bilder som standard och andra läser in bilder i förväg. Därför är det inte bra att enbart bedöma öppningsfrekvensen som en barometer för att analysera hur effektiv en e-postkampanj är, men det kan vara användbart om det beaktas tillsammans med andra e-postmått. Med det nya integritetsskyddet måste marknadsförarna minska beroendet av öppna frekvenser och överväga andra prestandamått som studsar, inkorgsplacering, klick och transaktioner efter klickningen. Tänk också på vad du mäter: Öppen ränta är en funktion av ämnesraden. klick är en funktion av erbjudandet eller innehållet; efter klickningen är en funktion för dina produkter/tjänster/din webbplats.
 

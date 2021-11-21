@@ -21,15 +21,15 @@ De bästa källorna till nya e-postadresser är direktkällor som registreringar
 
 Några anteckningar om dessa registreringsmetoder:
 
-**Insamlingen av fysiska** arkivlistor kan medföra problem på grund av muntliga eller skriftliga adressindata som orsakar felstavning i adresserna. Du bör skicka ett bekräftelsemeddelande via e-post så fort som möjligt efter det att du registrerat dig i butik.
+**Fysiskt lager** listsamlingen kan medföra problem på grund av att indata från muntliga eller skriftliga adresser orsakar felstavning i adresserna. Du bör skicka ett bekräftelsemeddelande via e-post så fort som möjligt efter det att du registrerat dig i butik.
 
-Den vanligaste formen för **webbplatsregistrering** är&quot;single opt-in&quot;. Det är den absoluta minimistandarden som du bör använda för att hämta e-postadresser. Ett fristående deltagande är när innehavaren av en viss e-postadress ger en avsändare tillstånd att skicka marknadsföring via e-post till dem, vanligen genom att skicka adressen via ett webbformulär eller butiksregistreringar. Det går att köra en lyckad e-postkampanj med den här metoden, men det kan bero på vissa problem.
+Den vanligaste formen av **webbplatsregistrering** är ett fristående deltagande. Det är den absoluta minimistandarden som du bör använda för att hämta e-postadresser. Ett fristående deltagande är när innehavaren av en viss e-postadress ger en avsändare tillstånd att skicka marknadsföring via e-post till dem, vanligen genom att skicka adressen via ett webbformulär eller butiksregistreringar. Det går att köra en lyckad e-postkampanj med den här metoden, men det kan bero på vissa problem.
 
 * Obekräftade e-postadresser kan innehålla stavfel, vara felaktiga eller ha skadligt format. Typos och felformaterade adresser orsakar höga studsfrekvenser, vilket kan och gör att blockeringar som utfärdas av Internet-leverantörer eller IP-adresser inte fungerar som de ska.
 
 * Skadlig inlämning av kända skräppostfällor (kallas ibland&quot;listförgiftning&quot;) kan orsaka stora problem med leveransen och anseendet om ägaren till fällan vidtar åtgärder. Det är omöjligt att veta om mottagaren verkligen vill bli medlem i en marknadsföringslista utan att bekräfta det. Detta gör det lika omöjligt att ställa in mottagarens förväntningar och kan leda till fler skräppostklagomål - och ibland blocklist om det insamlade e-postmeddelandet råkar vara en skräppostfälla.
 
-Mer information om hur du minimerar problemen i både fysisk lagring och fristående deltagande finns i [Datakvalitet och hygien](#data-quality-and-hygiene)-avsnittet i den här handboken där du hittar information om och fördelar med dubbel anmälan.
+Om du vill ha vägledning om hur du minimerar problemen i både den fysiska butiken och ett fristående deltagande går du till [Datakvalitet och hygien](#data-quality-and-hygiene) i den här handboken för information om och fördelar med dubbel anmälan.
 
 >[!NOTE]
 >
@@ -58,8 +58,8 @@ Här är några lösningar på vanliga problem som du kan stöta på med dina e-
 
 DOI består av att skicka ett bekräftelsemeddelande via e-post till prenumerantens e-postadress, som har registrerat sig för ditt e-postprogram och som innehåller en länk som måste klickas för att bekräfta samtycke. Med den här förvärvsmetoden kan avsändaren inte skicka fler e-postmeddelanden om prenumeranten inte bekräftar det. Informera nya prenumeranter om att du gör detta på webbplatsen och uppmuntra dem att slutföra registreringen innan de fortsätter. Den här metoden ser en minskning av antalet registreringar, men de som registrerar sig tenderar att vara mycket engagerade och stanna på lång sikt. Det ger oftast en mycket högre avkastning för avsändaren.
 
-**Dolt**
-fältAtt använda ett dolt fält i registreringsformuläret är ett bra sätt att skilja automatiserade startsregistreringar från verkliga humanprenumeranter. Eftersom datafältet inte är synligt, dolt i HTML-koden, kommer en robot att ange data där en människa inte skulle göra det. Med den här metoden kan du skapa regler för att inaktivera registreringar som innehåller data i det dolda fältet.
+**Dolt fält**
+Att använda ett dolt fält i registreringsformuläret är ett bra sätt att skilja automatiserade startinloggningar från verkliga humanprenumeranter. Eftersom datafältet inte är synligt, dolt i HTML-koden, kommer en robot att ange data där en människa inte skulle göra det. Med den här metoden kan du skapa regler för att inaktivera registreringar som innehåller data i det dolda fältet.
 
 **[!DNL re-CAPTCHA] är en valideringsmetod som du kan använda för att minska riskerna för att prenumeranten är en robot och inte en riktig person. Det finns olika versioner, varav vissa innehåller nyckelordsidentifiering eller bilder. Vissa versioner är effektivare än andra, och det ni får när det gäller att förhindra problem med säkerhet och leverans är mycket större än någon negativ effekt på konverteringarna.
 
@@ -75,16 +75,16 @@ Kontakta era advokater för att tolka lokal och nationell lagstiftning om e-post
 
 Det finns många andra sätt att samla in adresser, vart och ett med sina egna möjligheter, utmaningar och nackdelar. Adobe rekommenderar inte dessa i allmänhet, eftersom användningen ofta begränsas via leverantörens policy för godtagbar användning. Vi ska titta på några vanliga exempel så att du kan lära dig farorna som hjälper dig att begränsa eller undvika riskerna:
 
-**Köp eller hyra en**
-listaDet finns många typer av e-postadresser där ute. Primär e-post, e-post till arbetet, e-post till skolan, sekundära e-postmeddelanden och inaktiva e-postmeddelanden för att nämna några. De typer av adresser som samlas in och delas ut via köpta eller hyrda listor är sällan primära e-postkonton, där nästan all engagemangs- och inköpsaktivitet sker.
+**Köp eller hyra en lista**
+Det finns många typer av e-postadresser där ute. Primär e-post, e-post till arbetet, e-post till skolan, sekundära e-postmeddelanden och inaktiva e-postmeddelanden för att nämna några. De typer av adresser som samlas in och delas ut via köpta eller hyrda listor är sällan primära e-postkonton, där nästan all engagemangs- och inköpsaktivitet sker.
 
 Om du har tur får du ett sekundärt konto, där folk letar efter erbjudanden när de är redo att köpa något. Detta resulterar vanligtvis i låga engagemangsnivåer - om sådana finns. Om du inte har tur är listan full av inaktiva e-postmeddelanden som nu kan vara skräppostsvällningar. Du får ofta en blandning av både sekundära och inaktiva e-postmeddelanden. I allmänhet är kvaliteten på dessa typer av listor mer skadlig än bra för e-postprogram. Detta är förbjudet enligt [Adobe Campaign policy för godtagbar användning](https://www.adobe.com/legal/terms/aup.html).
 
 **Bifogade listor**
 Det här är kunder som har valt att interagera med ert varumärke, vilket är bra. Men de valde att engagera sig via en annan metod än e-post (butiker, sociala medier osv.). De kunde inte vara mottagliga för att få ett oönskat e-postmeddelande från dig och kanske också bekymra sig om hur du fick deras e-postadress eftersom de inte tillhandahöll den. Den här metoden riskerar att förvandla en kund eller potentiell kund som interagerade med ert varumärke till en traktor som inte längre litar på ert varumärke och som istället går in i er konkurrens. Detta är förbjudet enligt [Adobe Campaign policy för godtagbar användning](https://www.adobe.com/legal/terms/aup.html).
 
-**Det kan vara praktiskt att**
-samla in tävlingsadresser både vid ett eller flera officiella och tydligt märkta mässor. Risken är att många händelser, som detta, samlar in alla adresser och distribuerar dem via eventleverantören eller värden. Det innebär att ägarna av dessa e-postadresser aldrig har begärt e-post från ert varumärke. Dessa prenumeranter kommer troligen att klaga och markera din e-post som skräppost, och de kanske inte har angett korrekt kontaktinformation.
+**Handelsshow eller annan evenemangsinsamling**
+Det kan vara praktiskt att samla in adresser både på en tjänsteman eller med en annan tydligt märkt metod. Risken är att många händelser, som detta, samlar in alla adresser och distribuerar dem via eventleverantören eller värden. Det innebär att ägarna av dessa e-postadresser aldrig har begärt e-post från ert varumärke. Dessa prenumeranter kommer troligen att klaga och markera din e-post som skräppost, och de kanske inte har angett korrekt kontaktinformation.
 
 **Lotteriet**
 

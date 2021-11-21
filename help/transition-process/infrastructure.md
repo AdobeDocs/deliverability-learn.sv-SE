@@ -34,8 +34,8 @@ En del av introduktionsprocessen för nya avsändare på Adobe-plattformar är b
 
 Det är viktigt att utforma en välstrukturerad IP-strategi för att skapa ett gott rykte. Antalet IP-adresser och inställningar varierar beroende på er affärsmodell och era marknadsföringsmål. Samarbeta med en expert för att ta fram en tydlig strategi för att komma igång. Tänk på följande saker som är viktiga att tänka på:
 
-* **Alltför många** IPscan utlöser anseendeproblem eftersom det är en vanlig taktik hos skräppost till  **snöskon**, vilket är en taktik som används av skräppost där trafiken sprids över många IP-adresser för att maximera leveransen av skräppost. Även om du inte är skräppost kan du se ut som en om du använder för många IP-adresser, särskilt om dessa IP-adresser inte har haft någon tidigare trafik.
-* **Alltför få** IPscan orsakar dataflödesproblem och kan ge upphov till anseendeproblem. Dataflödet varierar beroende på Internet-leverantör. Hur mycket och hur snabbt en Internet-leverantör är villig att acceptera baseras vanligtvis på sin infrastruktur och sina anseendetrösklar.
+* **För många IP-adresser** kan utlösa anseendeproblem eftersom det är en vanlig taktik hos skräppost att **snowshoe**, som används av skräppost där trafiken sprids över många IP-adresser för att maximera leveransen av skräppost. Även om du inte är skräppost kan du se ut som en om du använder för många IP-adresser, särskilt om dessa IP-adresser inte har haft någon tidigare trafik.
+* **För få IP-adresser** kan orsaka genomströmningsproblem och potentiellt orsaka problem med anseendet. Dataflödet varierar beroende på Internet-leverantör. Hur mycket och hur snabbt en Internet-leverantör är villig att acceptera baseras vanligtvis på sin infrastruktur och sina anseendetrösklar.
 * Det är viktigt att separera trafiken för meddelandetyper. Det är viktigt att i minsta möjliga mån avgränsa marknadsföring och transaktionell post i separata IP-pooler.
 * Beroende på er e-poststrategi kan det även vara tillrådligt att separera olika produkter eller marknadsföringsströmmar från olika IP-pooler om ert rykte är drastiskt annorlunda. Vissa marknadsförare segmenterar också efter region. Att separera IP-adressen för trafik med lägre anseende löser inte problemet med anseende, men det förhindrar problem med e-postleveranser med gott anseende. Ni vill trots allt inte offra er goda publik för en mer riskfylld.
 
@@ -64,11 +64,11 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 **Campaign**
 
 * Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) -  *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic.*
+* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard.*
 * Läs mer om hur du implementerar en feedbackslinga för en Campaign Classic-instans i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ytterligare resurser
 
 * Läs mer om autentiseringsmetoderna SPF, DKIM och DMARC i [det här avsnittet](/help/additional-resources/authentication.md).
-* Lär dig mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* Lär dig mer om hur du ökar ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).

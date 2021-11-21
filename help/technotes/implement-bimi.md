@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Implementera Gmail:s [!DNL Brand Indicators for Message Identification] (BIMI)
+# Implementera Gmail [!DNL Brand Indicators for Message Identification] (BIMI)
 
 Gmail meddelade nyligen att de skulle [lansera allmänt stöd för BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace). Det finns ett antal saker du måste ta itu med innan du kan dra nytta av detta, bland annat: Verifierade Mark Certificates, varumärkesskyddade logotyper, logotyper med korrekt format, DMARC-inställningar och publicerar slutligen en BIMI-post till din DNS. Vi kommer att granska alla dessa steg i den här artikeln.
 
@@ -41,7 +41,7 @@ Om logotypen som du vill visa inte är registrerad eller inte är registrerad ho
 
 Det är också ett bra tillfälle att se till att din logotyp uppfyller kraven för BIMI-logotypen.
 
-Det måste vara i SVG-format och följa SVG Portable/Secure-profil (SVG-P/S). Mer information om hur du gör detta finns i [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
+Det måste vara i SVG-format och följa SVG Portable/Secure-profil (SVG-P/S). Vägledning om hur du gör detta finns på [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released).
 
 ## DMARC
 
@@ -59,12 +59,12 @@ Det här är ett enkelt inlägg som ska se ut ungefär så här:
 default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
 ```
 
-Du kan få information om inlägget och till och med använda en kostnadsfri BIMI-kontroll på [BIMI Working group site](https://bimigroup.org/implementation-guide).
+Du kan få information om inlägget och till och med använda en kostnadsfri BIMI-kontroll på [BIMI - arbetsgruppsplats](https://bimigroup.org/implementation-guide).
 
 
 ## Viktiga uppgifter
 
-Om du är en [!DNL Adobe Campaign]- eller Marketo-klient kan Adobe hjälpa dig att skapa BIMI DNS-uppdateringen: kontakta Adobe kundtjänst för att beställa en. Adobe kan även hjälpa dig med felsökning om BIMI inte fungerar som det ska för dig.
+Om du är en [!DNL Adobe Campaign] För Marketo-klienter kan Adobe hjälpa dig att skapa DNS-uppdateringen för BIMI: kontakta Adobe kundtjänst för att beställa en. Adobe kan även hjälpa dig med felsökning om BIMI inte fungerar som det ska för dig.
 
 Om du behöver hjälp med varumärken eller verifierade varumärkescertifikat kan du samarbeta med ditt juridiska team och en auktoriserad VMC-leverantör.
 

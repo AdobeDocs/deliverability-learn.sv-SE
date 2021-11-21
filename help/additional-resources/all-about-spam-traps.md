@@ -1,6 +1,6 @@
 ---
 title: Allt om skräppostfällor
-description: Learn how to understand, identify, and avoid spam traps when managing deliverability.
+description: Lär dig hur du förstår, identifierar och undviker skräppostsvällningar när du hanterar leveranser.
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Allt om skräppostfällor
 
-En [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-postmeddelanden skickas till. En skräppostfälla har huvudsyftet: identifiera skräppost eller avsändare utan datahygienprocess.
+A [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-post skickas till. En skräppostfälla har huvudsyftet: identifiera skräppost eller avsändare utan datahygienprocess.
 
 ## Vem hanterar de här skräppostfällorna?
 

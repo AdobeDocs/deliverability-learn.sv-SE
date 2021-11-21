@@ -27,7 +27,7 @@ Normalt baseras en engagemangsfrekvens på en viss tidsperiod. Mätvärdet kan v
 
 **Analytics** 
 
-* [Så här ökar du engagemanget och kundlojaliteten (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics):  *Identifiera engagerade målgrupper genom deras beteende med Cohorts och se vilka bakomliggande orsaker som driver detaljrikedomen i era mobilappar. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
+* [Öka engagemanget och kundlojaliteten (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Identifiera engagerade målgrupper genom deras beteende med Cohorts och se vilka bakomliggande orsaker som driver detaljrikedomen i era mobilappar. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
 
 **Campaign Standard**
 

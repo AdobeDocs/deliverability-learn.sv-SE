@@ -25,7 +25,7 @@ I det här dokumentet beskrivs affärsmässiga och tekniska krav för konfigurat
 
 Med Adobe kan digital marknadsföring bli den kontextuella motor som driver ert varumärkes marknadsföringsprogram för kundengagemang.  E-post är fortfarande grunden för digitala marknadsföringsprogram. Det har dock blivit svårare än någonsin att nå inkorgen.
 
-Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring jämfört med företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp [processen för IP-uppvärmning](../../help/additional-resources/increase-reputation-with-ip-warming.md) och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet.  Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
+Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp [IP-uppvärmningsprocess](../../help/additional-resources/increase-reputation-with-ip-warming.md) och förbättra den övergripande leveransen. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet.  Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
 ### Delegering
 
@@ -35,8 +35,7 @@ Detta innebär att Adobe Campaign DNS-servrar endast har fullständig behörighe
 
 Genom att delegera en underdomän för användning med Adobe Campaign kan klienterna förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschens krav på levererbarhet för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.  Deldomänsdelegering tillåter:
 
-Klienter som vill behålla sin varumärkesavbildning genom att använda ett DNS-alias med sina domännamn
-Adobe ska självständigt implementera alla bästa tekniska metoder för att optimera leveransmöjligheterna under e-postutskick
+Klienter som vill behålla sin image genom att använda ett DNS-alias med sina domännamn Adobe för att självständigt implementera alla tekniska standarder för att optimera leveransen under e-postutskick
 
 ## Alternativ för DNS-konfiguration
 
@@ -52,7 +51,7 @@ För att kunna tillhandahålla en molnbaserad hanterad tjänst rekommenderar Ado
 | Posttyp | Syfte | Exempel på post/innehåll |
 |--- |--- |--- |
 | MX | Ange e-postservrar för inkommande meddelanden | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
-| SPF (TXT) | Ramverk för avsändarpolicy | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
+| SPF (TXT) | Princip för avsändare | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
 | DKIM (TXT) | Identifierad e-post för DomainKeys | <i>klient._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot;&quot;DKIMPUBLICKEY HERE&quot; |
 | Värdposter (A) | Spegla sidor, bildvärdskap och spårningslänkar, alla sändande domäner | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | Omvänd DNS (PTR) | Mappar klientens IP-adresser till ett klientprofilerat värdnamn | 18.101.100.192.in-addr.arpa domännamnpekare r18.email.example.com |
@@ -112,7 +111,7 @@ Fyll i tabellen nedan. Första raden är bara ett exempel.
 >[!NOTE]
 >
 >* Syftet med fältet Svara till adress är när du vill att mottagaren ska svara på en annan adress än Från adress.  Adobe rekommenderar att svarsadressen är giltig och länkad till en övervakad postlåda, men inget obligatoriskt fält krävs.  Kunden måste vara värd för den här postlådan.  Det kan vara en supportpostlåda, till exempel customercare@customer.com, där e-postmeddelanden läses och besvaras.
->* Om kunden inte väljer&quot;Svara till adress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
+>* Om kunden inte väljer &quot;Svara till adress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
 >* När Svara-till-adressen har konfigurerats på det här sättet skickas svar till en oövervakad postlåda.
 >* När du skickar e-postmeddelanden från Adobe Campaign övervakas inte postlådan&quot;Från adress&quot; och marknadsföringsanvändare kan inte komma åt den här postlådan. Adobe Campaign erbjuder inte heller möjlighet att svara automatiskt eller vidarebefordra e-postmeddelanden som tas emot i den här postlådan.
 >* Adressen för Campaign From/Sender och Feladressen får inte vara &quot;missbruk&quot; eller &quot;postmaster&quot;.
@@ -124,7 +123,7 @@ De underdomäner som valts för Adobe Campaign-plattformen måste delegeras geno
 
 | Delegerad underdomän | DNS-instruktioner |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.  </br> `<subdomain>` NS b.ns.campaign.adobe.com.  </br> `<subdomain>` NS c.ns.campaign.adobe.com.  </br> `<subdomain>` NS d.ns.campaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com. </br> `<subdomain>` NS b.ns.campaign.adobe.com. </br> `<subdomain>` NS c.ns.campaign.adobe.com. </br> `<subdomain>` NS d.ns.campaign.adobe.com. |
 
 ## Spårning, spegelsidor, resurser
 
@@ -167,7 +166,7 @@ Om några formulär behöver lagras på säkra sidor (HTTPS) krävs ytterligare 
 
 | Delegerad underdomän | DNS-instruktioner |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` CNAME  `<internal customer server>` |
+| `<subdomain>` | `<subdomain>` CNAME `<internal customer server>` |
 
 ## Återgivna tjänster
 
@@ -180,7 +179,7 @@ Parametrar som har upprättats av Adobe är endast giltiga från den tidpunkt d�
 
 ## Fakturerings- och implementeringsvillkor
 
-* I enlighet med det ursprungliga kontraktet och den typ av paket som valts kan även andra delegeringar utöver dem som ingår som standard utöver den ursprungliga delegeringen inkluderas.
+* I enlighet med det ursprungliga kontraktet och den typ av paket som valts kan även andra delegationer utöver de som ingår som standard utöver denna ursprungliga delegering ingå.
 * Utöver dessa inkluderade delegationer kommer ytterligare delegationer att faktureras.
 * Faktureringsmetoden för dessa ytterligare delegeringar är en extra månadskostnad, som anges i det ursprungliga kontraktet.
 
@@ -206,4 +205,4 @@ Mer information om detta hittar du i den [dedikerade dokumentationen](https://ex
 
 >[!NOTE]
 >
->[Kontrollpaneler ](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) är endast tillgängliga för kunder som använder Adobes hanterade tjänster.
+>[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) är endast tillgängligt för kunder som använder Adobes hanterade tjänster.

@@ -3,7 +3,7 @@ user-guide-title: Bästa praxis-guide för levererbarhet
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
 source-git-commit: 3e933104107cd4f62eab99c66957ccd9acb51409
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 

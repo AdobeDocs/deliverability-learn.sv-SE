@@ -27,19 +27,19 @@ E-postinteraktion är också en term som används för att beskriva en typ av m�
 
 ## Kvalitet över kvantitet
 
-**Organisk lista** gör detta till hörnstenen i en sund lista. Många marknadsförare fokuserar mycket på listtillväxt, men ur ett leveransperspektiv är det viktigt att skapa en kvalitetslista över engagerade prenumeranter. Att kontinuerligt skicka e-post till en till stor del oengagerad publik kan minska ert sändningsrykte och avsevärt öka sannolikheten för att din e-post hamnar i skräppostmappen.
+**Organisk listtillväxt** är hörnstenen i en sund lista. Många marknadsförare fokuserar mycket på listtillväxt, men ur ett leveransperspektiv är det viktigt att skapa en kvalitetslista över engagerade prenumeranter. Att kontinuerligt skicka e-post till en till stor del oengagerad publik kan minska ert sändningsrykte och avsevärt öka sannolikheten för att din e-post hamnar i skräppostmappen.
 
-**Det är viktigt att** tänka på hur ofta e-post ska skickas när du skapar och underhåller ett marknadsföringsprogram. Att ställa in mottagarnas förväntningar under välkomstmeddelandet är en mycket användbar strategi som folk vill veta vad de ska förvänta sig. Men dessa förväntningar måste uppfyllas: att skicka e-post för ofta kan orsaka trötthet och i vissa fall leda till fler klagomål och att prenumerationen avbryts.
+**Utskicksfrekvens** är viktigt att tänka på när du skapar och underhåller ett e-postmarknadsföringsprogram. Att ställa in mottagarnas förväntningar under välkomstmeddelandet är en mycket användbar strategi som folk vill veta vad de ska förvänta sig. Men dessa förväntningar måste uppfyllas: att skicka e-post för ofta kan orsaka trötthet och i vissa fall leda till fler klagomål och att prenumerationen avbryts.
 
 Rätt frekvens är något varje marknadsförare måste hitta för sitt specifika marknadsföringsprogram. Vi föreslår att du testar olika frekvenser för att hitta rätt balans för ett visst marknadsföringsprogram. Att hålla mottagarna engagerade och aktiva är en av de viktigaste sakerna en marknadsförare kan göra för att e-postmarknadsföringsprogrammet ska lyckas.
 
 ## Ändrade intressen
 
-Prenumerantens intressen utvecklas hela tiden, och marknadsförarna måste förstå att ett varumärkes engagemang kan vara tillfälligt. Vissa prenumeranter kommer att avanmäla sig, men många kommer bara att ta bort eller ignorera oönskade e-postmeddelanden. Ur kundens perspektiv uppfattas budskap som oönskade eller oönskade som skräppost. Därför måste marknadsförarna förlita sig på **behörighetsbaserad marknadsföring** och **övervaka engagemanget** för att förlora intresse. För att uppnå optimal placering av inkorgen rekommenderar vi att marknadsförarna strategiskt återengagerar prenumeranterna med hjälp av reaktiveringskampanjer och en strategi för återvinning, som kan vara mycket användbara verktyg för en e-postmarknadsförare.
+Prenumerantens intressen utvecklas hela tiden, och marknadsförarna måste förstå att ett varumärkes engagemang kan vara tillfälligt. Vissa prenumeranter kommer att avanmäla sig, men många kommer bara att ta bort eller ignorera oönskade e-postmeddelanden. Ur kundens perspektiv uppfattas budskap som oönskade eller oönskade som skräppost. Därför måste marknadsförarna förlita sig på **behörighetsbaserad marknadsföring** och **övervaka engagemang** för förlust av ränta. För att uppnå optimal placering av inkorgen rekommenderar vi att marknadsförarna strategiskt återengagerar prenumeranterna med hjälp av reaktiveringskampanjer och en strategi för återvinning, som kan vara mycket användbara verktyg för en e-postmarknadsförare.
 
-En **win-back-strategi** är när ett särskilt incitament regelbundet skickas till en viss del av en marknadsföringsdatabas i ett försök att återengagera en lista som har haft låg öppnings- och klickaktivitet. Positiva svar behålls och den del av listan som inte svarar flyttas till en inaktiv status och skickas inte längre till e-post.
+A **strategi för återvinnande** är när ett särskilt incitament regelbundet skickas till en viss del av en marknadsföringsdatabas i ett försök att återanvisa en lista som har haft låg öppnings- och klickaktivitet. Positiva svar behålls och den del av listan som inte svarar flyttas till en inaktiv status och skickas inte längre till e-post.
 
-En **reaktiveringskampanj** påminner om den som används för att bekräfta en lista en gång, vilket är användbart vid hantering av gamla inaktuella listor - som inte har skickats till e-post på över 12 månader eller till och med år. Den här typen av kampanj framtvingas också av blockeringslista för att matcha ett block. Abonnenter som inte kan återkopplas genom den här processen bör uteslutas från framtida e-postkampanjer.
+A **reaktiveringskampanj** liknar varandra men används för att bekräfta en lista en gång, vilket är användbart när du hanterar gamla inaktuella listor - listor som inte har skickats till e-post på över 12 månader eller till och med år. Den här typen av kampanj framtvingas också av blockeringslista för att matcha ett block. Abonnenter som inte kan återkopplas genom den här processen bör uteslutas från framtida e-postkampanjer.
 
 Det bästa sättet att implementera en återaktiverings- eller återaktiveringskampanj är unikt för e-postprogrammet och bör vara helt anpassat efter företagets behov och situation.
 
@@ -47,7 +47,7 @@ Det bästa sättet att implementera en återaktiverings- eller återaktiveringsk
 
 Det är enkelt att bara ange att ditt svar ska vara en svarsadress, men det skulle vara ett misstag som missar helhetsbilden.
 
-När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att aktivera ett **svars- och svarssystem** kan du förbättra ditt avsändarrykte. Detta ökar sannolikheten för positiv leverans och placeringsfrekvens för inkorgen.
+När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att aktivera **svars- och svarssystem** hjälper du till att förbättra avsändarens anseende. Detta ökar sannolikheten för positiv leverans och placeringsfrekvens för inkorgen.
 
 Det är också en mycket bättre kundupplevelse och kommer att bidra till att öka konsumenternas positiva uppfattning av ert varumärke. Det står trots allt inget &quot;snälla, gör affärer med oss&quot; som &quot;vi vill höra från dig&quot;.
 
