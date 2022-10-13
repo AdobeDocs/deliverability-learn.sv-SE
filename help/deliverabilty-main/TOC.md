@@ -3,7 +3,7 @@ user-guide-title: Bästa praxis-guide för levererbarhet
 user-guide-breadcrumb: Deliverability Best Practice Guide
 user-guide-description: Lär dig viktiga termer, koncept och metoder för levererbarhet för att säkerställa att ert marknadsföringsprogram blir framgångsrikt.
 source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
@@ -55,5 +55,5 @@ ht-degree: 100%
       + [Process för begäran av SSL-certifikat](/help/additional-resources/ac-ssl-certificate-request.md)
       + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic – tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
-   + Teknisk notering{#technotes}
+   + Teknisk notering {#technotes}
       + [Implementera BIMI](/help/technotes/implement-bimi.md)
