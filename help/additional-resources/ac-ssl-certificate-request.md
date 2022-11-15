@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 1%
+source-wordcount: '2253'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 
 >[!CAUTION]
 >
->Innan du installerar ett SSL-certifikat bör du kontrollera att du är medveten om de krav som anges på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate).
+>Innan du installerar ett SSL-certifikat bör du kontrollera att du är medveten om de krav som anges på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#installing-ssl-certificate).
 >
 >Adobe stöder endast upp till 2 048-bitars certifikat. 4096-bitars certifikat stöds ännu inte.
 
@@ -126,7 +126,7 @@ Texten i den resulterande CSR-filen måste börja med **&quot;—BEGIN CERTIFIAT
 När du har fått CSR-filen från Adobe följer du stegen nedan:
 
 1. Kopiera och klistra in CSR-filens text i en onlineavkodare som https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> eller https://www.entrust.net/ssl-technical/csr-viewer.cfm.
-Du kan också använda *OpenSSL* lokalt på en Linux-dator. Mer information finns i [den här externa sidan](https://www.question-defense.com/2009/09/22/use-openssl-to-verify-the-contents-of-a-csr-before-submitting-for-a-ssl-certificate).
+Du kan också använda *OpenSSL* lokalt på en Linux-dator.
 1. Kontrollera att alla kontroller är slutförda.
 1. Kontrollera att rätt parametrar och domännamn finns med.
 1. Kontrollera att alla andra data överensstämmer med de uppgifter du angav när du skickade din begäran.
@@ -222,4 +222,4 @@ När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-U
 
 **Campaign Standard**
 
-* [Kontrollpanelen: Lägga till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
+* [Kontrollpanelen: Lägga till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=sv) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
