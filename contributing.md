@@ -1,38 +1,37 @@
 ---
-source-git-commit: 321dc7eb5ec9e3d82d7d133689104282b553efd1
+source-git-commit: 8ccd915f558f3b06e9ac4b97dc45aefd6b27a4f1
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '296'
-ht-degree: 24%
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
-# Bidrar
+# Bidra
 
 Tack för att du väljer att bidra!
 
-Nedan följer ett antal riktlinjer som du kan följa när du bidrar till projektet.
+Nedan följer ett antal riktlinjer som du bör följa när du bidrar till projektet.
 
-## Regler för uppförande
+## Uppförandekod
 
-Detta projekt följer Adobes [uppförandekod](code-of-conduct.md). Genom att delta förväntas du respektera den här koden. Rapportera oacceptabla beteenden till
+Detta projekt följer Adobes [uppförandekod](code-of-conduct.md). Genom att delta förväntas du respektera den här koden. Du rapporterar oacceptabla beteenden till
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Dokumentation för Contributor-handboken
+## Dokumentation för användarhandboken för bidragsgivare
 
-Se [Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Se [Användarhandboken för bidragsgivare](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv).
 
 ## Har du en fråga?
 
-Börja med att lämna in ett ärende. Befintliga committers i det här projektet arbetar för att nå
-konsensus om projektriktning och skicka ut lösningar inom problemtrådar
-(i tillämpliga fall).
+Börja med att lämna in ett ärende. Befintliga projektansvariga i detta projekt arbetar för att nå 
+samförstånd om projektriktning och utfärda lösningar inom problemtrådar 
+(när det är lämpligt).
 
-## Licensavtal för deltagare
+## Licensavtal för bidragsgivare
 
-Alla bidrag från tredje part till detta projekt måste åtföljas av en undertecknad bidragsgivare
-licensavtal. Detta ger Adobe tillstånd att återdistribuera dina bidrag som en del av projektet. [Underteckna vårt CLA](http://opensource.adobe.com/cla.html). Du
-behöver bara skicka ett Adobe CLA en gång, så om du har skickat in ett tidigare,
-Du är redo att gå!
+Alla bidrag från tredje part till detta projekt måste åtföljas av ett undertecknat licensavtal 
+för bidragsgivare. Detta ger Adobe tillstånd att återdistribuera dina bidrag som en del av projektet. [Signera vårt licensavtal för bidragsgivare](http://opensource.adobe.com/cla.html). Du 
+behöver bara skicka ett licensavtal för bidragsgivare hos Adobe en gång, så om du redan har skickat ett tidigare 
+är du klar!
 
 ## Kodgranskningar
 
@@ -43,15 +42,15 @@ Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
 submitting a pull request!
 -->
 
-## Från medarbetare till committer
+## Från bidragsgivare till projektansvarig
 
-Vi älskar bidrag från vår community! Om du vill gå ett steg längre än medverkande
-och bli en committer med fullständig skrivåtkomst och en medarbetare i projektet, måste du
-bli inbjuden till projektet. Befintliga committers använder en intern nominering
-processer som måste uppnå lat samförstånd (tystnad innebär godkännande) före inbjudningar
-utfärdas. Om du känner att du är kvalificerad och vill bli mer involverad,
-Jag kan kontakta befintliga committers för att diskutera det.
+Vi älskar bidrag från vår community! Om du vill gå ett steg längre än bidragsgivare 
+och bli projektansvarig med fullständig skrivbehörighet och ha inflytande i projektet måste du 
+bli inbjuden till projektet. Befintliga projektansvariga använder en intern nomineringsprocess 
+som måste uppnå underförstått samförstånd (tystnad är godkännande) innan inbjudningar 
+utfärdas. Om du anser att du är kvalificerad och vill bli mer involverad 
+kan du kontakta befintliga projektansvariga för att ha ett samtal om detta.
 
 ## Säkerhetsproblem
 
-Säkerhetsproblem ska inte rapporteras i den här felspåraren. [skicka i stället ett ärende till våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html)
+Säkerhetsproblem ska inte rapporteras i den här felspåraren. Istället [skickar du ett ärende till våra säkerhetsexperter](https://helpx.adobe.com/se/security/alertus.html)
