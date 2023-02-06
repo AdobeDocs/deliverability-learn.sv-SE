@@ -2,7 +2,7 @@
 title: Uppdatera studskompetens efter avbrott i Italia Online
 description: Lär dig hur du uppdaterar studentkvalificering efter avbrott i Italia Online
 feature: Deliverability
-source-git-commit: 4494363c060b7e2e1efde46f7ab8260fa900ffd7
+source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Adobe Campaign har automatiskt lagt till de här mottagarna i karantänlistan me
 Om du vill hitta de mottagare som påverkades av problemet, eller om det skulle inträffa igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan:
 
 * För Campaign Classic v7 och Campaign v8, se [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Campaign Standard finns i [den här sidan](https://experienceleague.corp.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* Campaign Standard finns i [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
 
 
