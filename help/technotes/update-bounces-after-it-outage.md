@@ -2,9 +2,10 @@
 title: Uppdatera studskompetens efter avbrott i Italia Online
 description: Lär dig hur du uppdaterar studentkvalificering efter avbrott i Italia Online
 feature: Deliverability
-source-git-commit: 489a153c72b364bd59b3bace5aa9206d4d888c38
+exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
+source-git-commit: e4efde4b7caac1bcf11d24632ec9982f98f958a2
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,8 @@ Symtomen var:
 
 ## Process som ska uppdateras{#outage-update}
 
+### Adobe Campaign{#ac-update}
+
 Adobe Campaign har automatiskt lagt till de här mottagarna i karantänlistan med en **[!UICONTROL Status]** inställning för **[!UICONTROL Quarantine]**. För att korrigera detta måste du uppdatera din karantäntabell i Campaign genom att hitta och ta bort de här mottagarna eller ändra deras **[!UICONTROL Status]** till **[!UICONTROL Valid]** så att nattrensningsarbetsflödet tar bort dem.
 
 Om du vill hitta de mottagare som påverkades av problemet, eller om det skulle inträffa igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan:
@@ -41,5 +44,11 @@ Om du vill hitta de mottagare som påverkades av problemet, eller om det skulle 
 * För Campaign Classic v7 och Campaign v8, se [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 * Campaign Standard finns i [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
 
+### Adobe Journey Optimizer{#ajo-update}
 
+Med hjälp av standardlogik för studshantering har Adobe Journey Optimizer automatiskt lagt till dessa e-postadresser i listan över utelämnanden med en **[!UICONTROL Reason]** inställning för **[!UICONTROL Invalid Recipient]**. För att korrigera detta måste du uppdatera listan över inaktiveringar genom att hitta och ta bort dessa e-postadresser.
+
+När adresserna har identifierats kan de tas bort manuellt från listan med **[!UICONTROL Delete]** -knappen. Dessa adresser kan sedan inkluderas i framtida e-postkampanjer.
+
+Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
 
