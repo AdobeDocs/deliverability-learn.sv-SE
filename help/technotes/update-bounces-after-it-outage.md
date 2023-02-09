@@ -5,9 +5,9 @@ feature: Deliverability
 exl-id: a11e88cf-bf37-42cc-9c09-1d58360459b7
 hide: true
 hidefromtoc: true
-source-git-commit: 016d7f9da67193d893e762fbe6e191cf87d5b030
+source-git-commit: aca77fb9326e34455a6fec7ffc9a7ad8e1750467
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Läs mer i det officiella meddelandet [här](https://tecnologia.libero.it/avviat
 
 ## Effekt{#outage-impact}
 
-Precis som i de flesta fall när det uppstår ett avbrott i en Internet-leverantör markerades vissa e-postmeddelanden som skickades via Campaign felaktigt som studsar. Detta påverkade inte bara Adobe, utan alla som försökte få e-post levererad till Italia Online under driftstoppet.
+Precis som i de flesta fall när ett avbrott inträffar i en Internet-leverantör (ISP) markerades vissa e-postmeddelanden som skickades via Campaign eller Journey Optimizer felaktigt som studsar. Detta påverkade inte bara Adobe, utan alla som försökte få e-post levererad till Italia Online under driftstoppet.
 
 Symtomen var:
 
-* **Periodiseringsgränser** med meddelandet `452 requested action aborted: try again later` - dessa prövades automatiskt igen och inga åtgärder behövs.
+* **Mjuka studsar** med meddelandet `452 requested action aborted: try again later` - dessa prövades automatiskt igen och inga åtgärder behövs.
 
 * **Hårda studsar** med meddelandet `550 <email address> recipient rejected` har returnerats av Internet-leverantören den 26 januari, mellan 8.00 och 2.00 lokal tid, för att förhindra att avsändare fortsätter överbelasta sina servrar. Som Italia Online Postmaster har bekräftat är dessa inte riktigt hårda studsar, så vi rekommenderar att alla e-postadresser som uteslöts den 26 januari 2023 på grund av det meddelandet tas bort från karantänen.
 
