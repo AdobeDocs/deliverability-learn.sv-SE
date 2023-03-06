@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
-source-git-commit: b89bdd05d6b96af8c5520a4c500be76db46ea820
+source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2252'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 Du måste identifiera domännamnen och funktionerna (spårning, spegelsidor, webbprogram osv.) för att skydda.
 >[!NOTE]
 >
->Adobe kan hjälpa dig att definiera de domännamn och funktioner som ska ingå. Mer information får du av Adobe Customer Success Manager.
+>Adobe kan hjälpa dig att definiera de domännamn och funktioner som ska ingå. Kontakta kontoteamet på Adobe om du vill ha mer information.
 
 ### Steg 1 - Hämta en CSR-fil
 
@@ -160,11 +160,11 @@ Du kan också använda *OpenSSL* lokalt på en Linux-dator. Mer information finn
 
 ### Steg 5 - Begär installation av SSL-certifikat
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate) för att överföra certifikatet till Kontrollpanelen.
+* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#installing-ssl-certificate) för att överföra certifikatet till Kontrollpanelen.
 
 * I annat fall skapar du en ny supportanmälan via https://adminconsole.adobe.com/ för att begära att Adobe installerar certifikatet på Adobe-servrar.
 
-Du måste ange följande:
+Du måste ange:
 
 * Certifikatfilen, rotcertifikatet och eventuella mellanliggande certifikat (bifogade till biljetten), helst i Apache PEM-format.
 * Antalet tidigare supportärenden som tagits upp för CSR.
@@ -199,7 +199,7 @@ Det är ditt ansvar att kontrollera giltighetsperioden. Adobe rekommenderar att 
 
 * Skapa en supportanmälan om du vill begära ett uppdaterat certifikat minst två veckor före certifikatets förfallodatum. Du behöver inte begära ytterligare en CSR, såvida inte CSR-informationen har ändrats.
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)och om din miljö hanteras av Adobe i en AWS-miljö kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)och om din miljö hanteras av Adobe i en AWS-miljö kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
 
 ### Steg 8 - Uppdatera en specifik konfiguration {#update-configuration}
 
