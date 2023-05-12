@@ -3,71 +3,109 @@ title: Implementera Gmail:s varumärkesidentifierare för meddelandeidentifierin
 description: Lär dig implementera BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 683ffd3c87a4849aa9fa48fbf50db9ade97991af
+source-git-commit: 05f6cd331f4e610e2442d43405333823644d349e
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
 
-# Implementera Gmail [!DNL Brand Indicators for Message Identification] (BIMI)
+# Implementera [!DNL Brand Indicators for Message Identification] (BIMI)
 
-Gmail meddelade nyligen att de skulle [lansera allmänt stöd för BIMI](https://cloud.google.com/blog/products/identity-security/bringing-bimi-to-gmail-in-google-workspace){target=&quot;_blank&quot;}. Det finns ett antal saker du måste ta itu med innan du kan dra nytta av detta, bland annat: Verifierade Mark Certificates, varumärkesskyddade logotyper, logotyper med korrekt format, DMARC-inställningar och publicerar slutligen en BIMI-post till din DNS. Vi kommer att granska alla dessa steg i den här artikeln.
+[!DNL Brand Indicators for Message Identification] (BIMI) är en branschstandard som tillåter att en godkänd logotyp visas bredvid en avsändares e-postadress på deltagande plattformar.
 
-[!DNL Brand Indicators for Message Identification] (BIMI) är en branschstandard som tillåter att en godkänd logotyp visas bredvid en avsändares e-postadress på deltagande plattformar. Det är inte bara det här som kan öka engagemanget, det bidrar också till att bekräfta avsändarens autenticitet och minskar risken för nätfiske och andra skräptaktiker.
+Med den här standarden kan ett varumärke fastställa en logotyp som ska visas i postlådans leverantörers inkorgar. När den publicerats i en så kallad BIMI DNS-post (Domain Name System) kan en postlådeleverantör hämta den här logotypen och visa den i inkorgen om vissa villkor uppfylls.
 
-## Verifierat märkescertifikat
+Olika leverantörer gör olika implementeringar, men fördelarna är uppenbara: som sticker ut i inkorgen, bygger upp förtroende och har kontroll över vad som visas.
 
-En av huvudkomponenterna i Gmail:s BIMI-program är kravet att avsändarna har ett verifierat Mark Certificate (VMC) utfärdat av en giltig certifikatutfärdare. För närvarande är de här VMC:erna bara tillgängliga från Entrust och DigiCert, men listan över leverantörer kommer sannolikt att växa efter Gmail:s meddelande.
+BIMI förbättrar inte direkt leveransen eller ditt rykte. Men det kan hjälpa er att bygga upp större förtroende med era mottagare och därmed öka engagemanget.
 
-VMC liknar SSL-certifikat på vissa sätt. Du behöver en VMC för varje logotyp som du vill visa, så om du har många varumärken bör du planera för att behöva flera VMC. Varje VMC kan dock vara giltigt över flera domäner om du får en VMC med flera SAN. Om du vill att en logotyp ska visas i flera sändande domäner behöver du bara en VMC.
+## Hur ser det ut?
 
-## Varumärke för logotyp
+Du kan hitta exempel på implementeringar från olika leverantörer och mer information om vilka leverantörer som visar logotypen på [BIMI-gruppens sida](https://bimigroup.org/where-is-my-bimi-logo-displayed/).
 
-Innan du kan hämta din VMC finns det ett annat nyckelsteg som måste slutföras. För att få en VMC måste den logotyp som du vill visa vara registrerad med ett av åtta godkända globala varumärken och patentbyråer.
+## Vem är BIMI-gruppen?
 
-* United States Patent and Trademark Office (USPTO)
-* Canadian Intelligence Property Office
-* Europeiska unionens byrå för immaterialrätt
-* UK Intelligence Property Office
-* Deutsches Patent- und Markenamt
-* Japan Trademark Office
-* Spansk patentbyrå och varumärkesbyrå
-* IP Australia
+BIMI-gruppen är en arbetsgrupp som utvecklar BIMI eftersom den inte bara omfattar logotypen utan också tekniska, rättsliga och efterlevnadsmässiga krav.
 
-Om logotypen som du vill visa inte är registrerad eller inte är registrerad hos någon av dessa åtta organisationer måste du arbeta med ditt juridiska team för att åtgärda det innan du ansöker om VMC.
+BIMI-gruppen består av flera intressenter från olika branschområden: Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail och Validity.
 
-## Bildformat för logotyp
+## Vem stöder BIMI?
 
-Det är också ett bra tillfälle att se till att din logotyp uppfyller kraven för BIMI-logotypen.
+Postlådeleverantörernas lista som stöder BIMI växer stadigt. En aktuell lista finns [här](https://bimigroup.org/bimi-infographic/) för både stödleverantörer och leverantörer som överväger BIMI.
 
-Det måste vara i SVG-format och följa SVG Portable/Secure-profil (SVG-P/S). Vägledning om hur du gör detta finns på [BIMI Working Group](https://bimigroup.org/svg-conversion-tools-released){target=&quot;_blank&quot;}.
+Från och med april 2023 innehåller listan Gmail, Yahoo, La Poste, Fastmail, Onet.pl och Zone, Proofpoint som antispam-enhet och Apple Mail (från och med iOS 16).
 
-## DMARC
+De mest framträdande namnen på den listan är uppenbarligen Yahoo, Gmail och en nybörjare: Apple med iOS 16. Apple har en speciell roll i mixen eftersom de inte är postlådeleverantör, men de har lagt till BIMI-stöd i sin e-postapp. E-post som är kompatibel med BIMI visas som&quot;digitalt certifierad e-post&quot;, vilket ökar förtroendet för varumärket.
 
-När din varumärkeslogotyp är korrekt formaterad och ditt verifierade Mark-certifikat måste du också se till att DMARC är fullständigt konfigurerat för alla sändande domäner som du vill att BIMI ska fungera för.
+## Implementering
 
-Detta inkluderar att se till att P= är inställt på antingen Karantän eller Avvisa. Om din DMARC använder P=None är den inte berättigad till BIMI. Inställningen P=Ingen rekommenderas för att säkerställa att du vet vilken e-post som kommer ut från en domän och att inget skulle blockeras av misstag om du ändrade till antingen &quot;Karantän&quot; eller &quot;Avvisa&quot;, tänk på det som testnings- och informationsinsamlingsfasen. Du måste gå steget längre än så till att genomdriva BIMI innan du har tillgång till det.
+Att implementera BIMI går i flera steg:
 
-## DNS-post
+1. DMARC-implementering (domänbaserad meddelandeautentisering, rapportering och överensstämmelse) på efterlevnadsnivå för både den sändande domänen och dess organisationsdomän - [Läs mer](#dmarc)
 
-När allt annat är klart är det dags att uppdatera DNS-posten med BIMI.
+1. Skapa din logotyp i SVG TinyPS-format - [Läs mer](#create-brand-logo)
 
-Det här är ett enkelt inlägg som ska se ut ungefär så här:
+1. Registrera dig för ett verifierat varumärkescertifikat (krävs endast för vissa leverantörer) - [Läs mer](#vmc)
+
+1. Publicera en BIMI DNS-post med logotypen och certifikatet - [Läs mer](#publish-bimi-record)
+
+1. Har gott rykte - [Läs mer](#good-reputation)
+
+>[!NOTE]
+>
+>Observera att alla steg måste vara avmarkerade.
+
+
+### DMARC {#dmarc}
+
+DMARC är en standard som gör det möjligt för varumärket att bestämma vad en postlådeleverantör ska göra med ett e-postmeddelande som misslyckas [autentisering](../additional-resources/authentication.md). De så kallade profilerna sträcker sig från&quot;ingen&quot; över&quot;karantän&quot; (placering av skräppostmappen) till&quot;avvisa&quot; (blockera e-post helt). Det är bara de senare två policyerna som kallas&quot;genomförande&quot; och som är kvalificerade för BIMI. E-post som skickas av Adobe skickar autentisering eftersom SPF (Sender Policy Framework) och DKIM (Domain Keys Identified Mail) är inställda som standard. Adobe konfigurerar DMARC på din sändande domän på begäran.
+
+Förutom DMARC på den sändande domänen måste DMARC också användas på efterlevnadsnivå för organisationsdomänen (om den sändande domänen är news.example.com är example.com organisationsdomänen).
+
+### Skapa din logotyp {#create-brand-logo}
+
+Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI Groups riktlinjer](https://bimigroup.org/creating-bimi-svg-logo-files/).
+
+Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp med en solid färg som bakgrund och andra. Rekommendationerna är till för bästa visualisering.
+Observera att bristande efterlevnad kan leda till att logotypen inte visas.
+
+### Verifierat varumärkescertifikat (VMC) {#vmc}
+
+Ett Verified Mark Certificate (VMC) behövs bara för vissa postlådeproviders som Gmail och Apple, och är därför valfritt. Vi rekommenderar att du skaffar en VMC för att verkligen utnyttja BIMI.
+
+Ett verifierat varumärkescertifikat är en giltig validering av att varumärket kan använda logotypen. En certifikatutfärdare kommer att kontrollera detta via det varumärkeskontor där varumärkeslogotypen är registrerad. Denna process innefattar flera juridiska valideringar och kontroller, och kan ta en stund. För närvarande utfärdar två certifikatutfärdare (certifikatutfärdare) VMC: Digicert och Entrust. Den första uppsättningen varumärkeskontor är USA, Kanada, EU, Storbritannien, Tyskland, Japan, Australien och Spanien.
+
+Som tumregel behöver du en VMC per logotyp. En VMC för din organisationsdomän omfattar underdomäner och har en tillagd funktion som till och med skiljer sig åt. Om du har olika logotyper behövs mer än en VMC. Den certifikatutfärdare eller den partner du väljer att arbeta med hjälper dig att konfigurera detta.
+
+>[!NOTE]
+>
+>Observera att VMC har en årsavgift.
+
+### Publicera BIMI-posten {#publish-bimi-record}
+
+När de andra stegen är klara kan BIMI DNS-posten publiceras. Posten ser ut så här:
 
 ```
-default._bimi.[domain] IN TXT “v=BIMI1; l=[SVG URL] 
+default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
 ```
 
-Du kan få information om inlägget och till och med använda en kostnadsfri BIMI-kontroll på [BIMI - arbetsgruppsplats](https://bimigroup.org/implementation-guide){target=&quot;_blank&quot;}.
+&quot;PEM URL&quot; är den plats där det verifierade märkescertifikatet finns.
 
+För den sändande domänen måste detta göras av Adobe.
 
-## Viktiga uppgifter
+### Bra rykte {#good-reputation}
 
-Om du är en [!DNL Adobe Campaign]kan Adobe hjälpa dig att skapa en BIMI DNS-uppdatering: kontakta Adobe kundtjänst för att beställa en. Adobe kan även hjälpa dig med felsökning om BIMI inte fungerar som det ska för dig.
+Förtroende är avgörande för BIMI. Användaren litar på sin postlådeleverantör för att endast visa logotypen för berättigade avsändare, så postlådeprovidern måste lita på varumärket, och detta görs av avsändarens rykte. Om du har ett gott rykte är allt bra, men om du inte gör det visas inte logotypen. Tyvärr finns det inga uppgifter eller mätvärden som vi kan undersöka för att ta reda på om ryktet är tillräckligt högt.
 
-Om du är Marketo-kund kan du läsa [det här blogginlägget](https://nation.marketo.com/t5/support-blogs/how-to-bimi/ba-p/296966){target=&quot;_blank&quot;} om du vill ha hjälp med att skapa BIMI-posten.
+Även om en VMC går igenom arbetet och kostnaderna tar inte bort den här delen. Om postlådeprovidern inte litar på varumärket visas inte logotypen.
 
-Om du behöver hjälp med varumärken eller verifierade varumärkescertifikat kan du samarbeta med ditt juridiska team och en auktoriserad VMC-leverantör.
+## Tips och tricks
 
-Det kanske inte går snabbt att få BIMI-inställningar för Gmail, men det kan ha betydande fördelar både ur ett marknadsförings- och säkerhetsperspektiv.
+* BIMI-gruppen har ett praktiskt valideringsverktyg för BIMI. Om du vill dubbelkontrollera om allt är klart eller klart, eller bara vill se om logotypen är kompatibel, går du till [den här länken](https://bimigroup.org/bimi-generator/). För den senare klickar du bara på **[!UICONTROL Generate BIMI]** och ange en platshållardomän men rätt logotyps-URL. Inspektören talar om för dig om logotypen är kompatibel.
+
+* Du kan börja utan en VMC utan problem, men det skadar inte ditt rykte om BIMI-posten inte innehåller någon VMC-URL, men logotypen kan redan visas i Yahoo.
+
+* Att införa DMARC på organisationsnivå är ett stort företag. Vissa företag är specialiserade på att hjälpa varumärken att uppnå en fullständig DMARC-användning.
+
+* En omfattande lista över vanliga frågor och svar publiceras [här](https://bimigroup.org/faqs-for-senders-esps/).
