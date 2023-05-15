@@ -3,9 +3,9 @@ title: Implementera Gmail:s varumärkesidentifierare för meddelandeidentifierin
 description: Lär dig implementera BIMI
 topics: Deliverability
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 7b8fbb09883b34b66c2729b6b5cfa1292ae1814e
+source-git-commit: aca2bfff9f0315b735cf0a97f2177083c58e0875
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Ett Verified Mark Certificate (VMC) behövs bara för vissa postlådeproviders s
 
 Ett verifierat varumärkescertifikat är en giltig validering av att varumärket kan använda logotypen. En certifikatutfärdare kommer att kontrollera detta via det varumärkeskontor där varumärkeslogotypen är registrerad. Denna process innefattar flera juridiska valideringar och kontroller, och kan ta en stund. För närvarande utfärdar två certifikatutfärdare (certifikatutfärdare) VMC: Digicert och Entrust. Den första uppsättningen varumärkeskontor är USA, Kanada, EU, Storbritannien, Tyskland, Japan, Australien och Spanien.
 
-Som tumregel behöver du en VMC per logotyp. En VMC för din organisationsdomän omfattar underdomäner och har en tillagd funktion som till och med skiljer sig åt. Om du har olika logotyper behövs mer än en VMC. Den certifikatutfärdare eller den partner du väljer att arbeta med hjälper dig att konfigurera detta.
+Som regel behöver du en VMC per logotyp. En VMC för din organisationsdomän omfattar underdomäner och har en tillagd funktion som till och med skiljer sig åt. Om du har olika logotyper behövs mer än en VMC. Den certifikatutfärdare eller den partner du väljer att arbeta med hjälper dig att konfigurera detta.
 
 >[!NOTE]
 >
