@@ -111,7 +111,7 @@ Fyll i tabellen nedan. Första raden är bara ett exempel.
 >[!NOTE]
 >
 >* Syftet med fältet Svara till adress är när du vill att mottagaren ska svara på en annan adress än Från adress.  Adobe rekommenderar att svarsadressen är giltig och länkad till en övervakad postlåda, men inget obligatoriskt fält krävs.  Kunden måste vara värd för den här postlådan.  Det kan vara en supportpostlåda, till exempel customercare@customer.com, där e-postmeddelanden läses och besvaras.
->* Om kunden inte väljer &quot;Svara till adress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
+>* Om kunden inte väljer&quot;Svara till adress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
 >* När Svara-till-adressen har konfigurerats på det här sättet skickas svar till en oövervakad postlåda.
 >* När du skickar e-postmeddelanden från Adobe Campaign övervakas inte postlådan&quot;Från adress&quot; och marknadsföringsanvändare kan inte komma åt den här postlådan. Adobe Campaign erbjuder inte heller möjlighet att svara automatiskt eller vidarebefordra e-postmeddelanden som tas emot i den här postlådan.
 >* Adressen för Campaign From/Sender och Feladressen får inte vara &quot;missbruk&quot; eller &quot;postmaster&quot;.

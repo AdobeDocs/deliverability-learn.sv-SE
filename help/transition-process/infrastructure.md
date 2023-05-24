@@ -1,6 +1,6 @@
 ---
 title: Infrastruktur
-description: 'Lär dig vad som krävs för att skapa en e-postinfrastruktur på rätt sätt. '
+description: Lär dig vad som krävs för att skapa en e-postinfrastruktur på rätt sätt.
 topics: Deliverability
 kt: 7052
 thumbnail: kt7052.jpg

@@ -1,6 +1,6 @@
 ---
 title: Klagomål
-description: 'Lär dig mer om klagomål som registreras när en användare anger att ett e-postmeddelande är oönskat eller oväntat. '
+description: Lär dig mer om klagomål som registreras när en användare anger att ett e-postmeddelande är oönskat eller oväntat.
 topics: Deliverability
 kt: 7048
 thumbnail: kt7048.jpg

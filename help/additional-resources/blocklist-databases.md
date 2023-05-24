@@ -13,7 +13,7 @@ ht-degree: 6%
 
 ---
 
-# Svarthålslistor i realtid
+# Real-time Blackhole Lists
 
 Flera organisationer har databaser med IP-adresser och domäner som används av skräppost. Att konsultera dessa webbplatser kan vara användbart för att förstå varför vissa meddelanden avvisades som skräppost. Det är i allmänhet möjligt att begära att en adress som felaktigt lagts till i dessa listor tas bort.
 
@@ -41,13 +41,13 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
    Se [https://www.uribl.com/](https://www.uribl.com/)
 
-   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
+   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **SURBL**
 
    Se [https://surbl.org/](https://surbl.org/)
 
-   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
+   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **iX Manitu**
 
