@@ -2,13 +2,13 @@
 title: Volym - Tips för mjuk övergång
 description: Mängden post som du skickar är avgörande för att vi ska få ett gott rykte. Se vad du kan göra för en smidig övergång.
 topics: Deliverability
-kt: 7055
+jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 68c403f915287e1a50cd276b67b3f48202f45446
+source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%
