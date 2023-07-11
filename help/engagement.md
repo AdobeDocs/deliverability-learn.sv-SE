@@ -6,9 +6,11 @@ jira: KT-5257
 thumbnail: kt5257.jpg
 doc-type: article
 activity: understand
+role: Leader, User
+level: Beginner
 team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 2%
@@ -27,7 +29,7 @@ E-postinteraktion är också en term som används för att beskriva en typ av m�
 
 ## Kvalitet över kvantitet
 
-**Organisk listtillväxt** är hörnstenen i en sund lista. Många marknadsförare fokuserar mycket på listtillväxt, men ur ett leveransperspektiv är det viktigt att skapa en kvalitetslista över engagerade prenumeranter. Att kontinuerligt skicka e-post till en till stor del oengagerad publik kan minska ert sändningsrykte och avsevärt öka sannolikheten för att din e-post hamnar i skräppostmappen.
+**Organisk listtillväxt** är hörnstenen i en sund lista. Många marknadsförare fokuserar mycket på listtillväxt, men ur leveranssynpunkt är det viktigt att skapa en kvalitetslista över engagerade prenumeranter. Att kontinuerligt skicka e-post till en till stor del oengagerad publik kan minska ert sändningsrykte och avsevärt öka sannolikheten för att din e-post hamnar i skräppostmappen.
 
 **Utskicksfrekvens** är viktigt att tänka på när du skapar och underhåller ett e-postmarknadsföringsprogram. Att ställa in mottagarnas förväntningar under välkomstmeddelandet är en mycket användbar strategi som folk vill veta vad de ska förvänta sig. Men dessa förväntningar måste uppfyllas: att skicka e-post för ofta kan orsaka trötthet och i vissa fall leda till fler klagomål och att prenumerationen avbryts.
 
@@ -51,7 +53,7 @@ När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att 
 
 Det är också en mycket bättre kundupplevelse och kommer att bidra till att öka konsumenternas positiva uppfattning av ert varumärke. Det står trots allt inget &quot;snälla, gör affärer med oss&quot; som &quot;vi vill höra från dig&quot;.
 
-En sista viktig del av svarsstrategin är att om du har en riktig e-postadress som de kan svara på måste du se till att någon övervakar den och det är inte bara ett automatiskt svar. Om de inte övervakas kan de missade förväntningarna frustrera kunden och leda till klagomål eller lägre engagemang.
+En sista viktig del av svarsstrategin är att om du har en riktig e-postadress som de kan svara på, se till att någon övervakar den och det inte bara är ett automatiskt svar. Om de inte övervakas kan de missade förväntningarna frustrera kunden och leda till klagomål eller lägre engagemang.
 
 ## Produktspecifika resurser
 

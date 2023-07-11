@@ -6,9 +6,11 @@ jira: KT-7055
 thumbnail: kt7055.jpg
 doc-type: article
 activity: understand
+role: Admin,User
+level: Beginner
 team: ACS
 exl-id: 1bc56061-0c64-4033-b49c-66618916bca6
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%
@@ -17,11 +19,11 @@ ht-degree: 1%
 
 # Volym
 
-Mängden post som du skickar är avgörande för att vi ska få ett gott rykte. Ställ dig själv i en Internet-leverantörs skor - om du börjar se en massa trafik från någon du inte vet skulle det vara alarmerande. Det är riskabelt att skicka stora mängder post direkt och det kommer troligen att orsaka problem med anseendet som ofta är svåra att lösa. Det kan vara frustrerande, tidskrävande och kostsamt att gräva sig ur dåligt rykte och bränna och blockera problem som uppstår när man skickar för mycket för tidigt.
+Mängden post som du skickar är avgörande för att vi ska få ett gott rykte. Ställ dig i en Internet-leverantörs skor - om du börjar se en massa trafik från någon du inte vet skulle det vara oroväckande. Det är riskabelt att skicka stora mängder post direkt och det kommer troligen att orsaka problem med anseendet som ofta är svåra att lösa. Det kan vara frustrerande, tidskrävande och kostsamt att gräva sig ur dåligt rykte och bränna och blockera problem som uppstår när man skickar för mycket för tidigt.
 
 Volymtröskeln varierar mellan olika Internet-leverantörer och kan också variera beroende på era genomsnittliga engagemangsmått. Vissa avsändare kräver en mycket låg och långsam volymavgång, medan andra kan tillåta en brantare volymavgång. Vi rekommenderar att du arbetar med en expert, som en Adobe-konsult, för att ta fram en skräddarsydd volymplan.
 
-Här följer en lista med tips och tips för hur du smidigt kan övergå till nästa steg:
+Här är en lista med tips och tips för hur du smidigt kan gå över:
 
 * **Behörighet** är grunden för alla framgångsrika e-postprogram.
 * **Låg och långsam** - börja med låga sändningsvolymer och sedan öka i takt med att du bekräftar ditt avsändarrykte.
@@ -34,7 +36,7 @@ Här följer en lista med tips och tips för hur du smidigt kan övergå till n�
    * Om din företagsdomän till exempel är xyz.com ger email.xyz.com mer trovärdighet åt internetleverantörerna än xyzemail.com
 * **Öppenhet** — Registreringsinformation för din e-postdomän ska vara tillgänglig för allmänheten och inte vara privat.
 
-I många fall följer inte transaktionsmarknadsföring den traditionella uppvärmningsmetoden. Det är uppenbart svårt att styra volymen i transaktionsmejl på grund av dess natur, eftersom det i allmänhet krävs en användarinteraktion för att utlösa e-postberöringen. I vissa fall kan transaktionsmejl enkelt överföras utan en formell plan. I andra fall kan det vara bättre att övergå varje meddelandetyp över tiden för att sakta utöka volymen. Du kan till exempel använda följande övergångar:
+I många fall följer inte transaktionsmejl den traditionella uppvärmningsmetoden. Det är uppenbart svårt att styra volymen i transaktionsmejl på grund av dess natur, eftersom det i allmänhet krävs en användarinteraktion för att utlösa e-postberöringen. I vissa fall kan transaktionsmejl enkelt överföras utan en formell plan. I andra fall kan det vara bättre att övergå varje meddelandetyp över tiden för att sakta utöka volymen. Du kan till exempel använda följande övergångar:
 
 1. Inköpsbekräftelser - engagemang i allmänhet
 2. Övergivna kundvagnar - medelhög - hög engagemang i allmänhet

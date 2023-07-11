@@ -5,9 +5,11 @@ topics: Deliverability
 jira: KT-5262
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: TM
 exl-id: a7319c85-32b5-4a9e-bee9-24f13630c408
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%
@@ -22,7 +24,7 @@ Här är några högdagrar:
 
 ## Vilka data är viktiga
 
-[!DNL Gmail] fokuserar på användarnas feedback på mycket av deras filterbeslut. Även om vi inte vet vilken hemlig sås som är inblandad i dessa beslut, finns det gemensamma standarder som de flesta marknadsförare kan övervaka. Öppet och klickfrekvensen ger insikt i målgruppens engagemang och kan användas för att skapa ett positivt rykte och hög inkorgsplacering.
+[!DNL Gmail] fokuserar på användarens feedback för mycket av deras filterbeslut. Även om vi inte vet vilken hemlig sås som är inblandad i dessa beslut, finns det gemensamma standarder som de flesta marknadsförare kan övervaka. Öppet och klickfrekvensen ger insikt i målgruppens engagemang och kan användas för att skapa ett positivt rykte och hög inkorgsplacering.
 
 ## Vilka data finns tillgängliga?
 
@@ -30,7 +32,7 @@ Här är några högdagrar:
 
 >[!NOTE]
 >
->[!DNL Gmail] visar inte data om alla klagomål och underlättar inte heller en traditionell FBL. De tillhandahåller i stället endast uppgifter under vissa omständigheter, som vanligen omfattar både stora volymer och mycket höga klagomål. Även om det är avgörande för god levererbarhet att hålla klagomål så få som möjligt är det naturligt att en del klagomål filtreras in. Om klagomål regelbundet blockeras vid noll kan det tyda på ett problem som kräver ytterligare utredning.
+>[!DNL Gmail] visar inte data om alla klagomål och underlättar inte heller en traditionell FBL. De tillhandahåller i stället endast uppgifter under vissa omständigheter, som vanligen omfattar både stora volymer och mycket höga klagomål. Att hålla klagomål så få som möjligt är avgörande för god levererbarhet, men det är naturligt för vissa klagomål att filtrera in. Om klagomål regelbundet blockeras vid noll kan det tyda på ett problem som kräver ytterligare utredning.
 
 ## Avsändarens rykte
 
@@ -40,6 +42,6 @@ Här är några högdagrar:
 
 [!DNL Gmail] visar engagerade prenumeranter på ett annat sätt än vad de flesta avsändare traditionellt gör. En avsändare kan definiera en aktiv eller engagerad lista som någon som har öppnat ett e-postmeddelande inom 30, 90 eller 180 dagar (beroende på affärsmodell). [!DNL Gmail]å andra sidan tittar vi på hur ofta deras användare interagerar med era meddelanden.
 
-Om du till exempel skickar 3 e-postmeddelanden i veckan under 90 dagar blir det cirka 39 e-postmeddelanden. Med den traditionella metoden kan prenumeranten öppna ett av dessa 39 e-postmeddelanden, och de är engagerade. Till [!DNL Gmail]innebär det att de ignorerade 38 e-postmeddelanden och inte är engagerade. Ni kan få en ungefärlig känsla för era egna användares engagemang på [!DNL Gmail] genom att betygsätta dem på öppet papper under de senaste 10 mejlen. En prenumerant som är associerad med 7 öppningar av dina senaste 10 e-postmeddelanden är därför mer engagerad än någon som öppnat 2 av 10. Om du skickar e-post mindre ofta till användare som är mindre engagerade kan du förbättra ditt sändningsanseende på [!DNL Gmail].
+Om du till exempel skickar 3 e-postmeddelanden i veckan under 90 dagar blir det cirka 39 e-postmeddelanden. Om prenumeranten öppnade ett av dessa 39 e-postmeddelanden med den traditionella metoden är han eller hon engagerad. Till [!DNL Gmail]innebär det att de ignorerade 38 e-postmeddelanden och inte är engagerade. Ni kan få en ungefärlig känsla för era egna användares engagemang på [!DNL Gmail] genom att betygsätta dem på öppet papper under de senaste 10 mejlen. En prenumerant som är associerad med 7 öppningar av dina senaste 10 e-postmeddelanden är därför mer engagerad än någon som öppnat 2 av 10. Om du skickar e-post mindre ofta till användare som är mindre engagerade kan du förbättra ditt sändningsanseende på [!DNL Gmail].
 
 [!DNL Gmail] använder olika flikar för att användarna ska kunna skilja olika typer av e-post åt. Dessa är *Inkorg*, *Social* och *Kampanj*. Även om e-post levereras till fliken Kampanj betraktas det fortfarande som leverans i inkorgen. Användarna kan ändra sina vyer och flikar.

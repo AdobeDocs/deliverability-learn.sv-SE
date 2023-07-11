@@ -1,13 +1,15 @@
 ---
 title: Verizon Media Group (Yahoo, AOL, Verizon osv.)
-description: "[!DNL Verizon Media Group] är vanligtvis en av de tre toppdomänerna för de flesta B2C-listor. De beter sig ganska unikt, eftersom de i allmänhet stryper massbrev om det uppstår några problem med anseendet."
+description: "[!DNL Verizon Media Group] är vanligtvis en av de tre toppdomänerna för de flesta B2C-listor. De beter sig ganska unikt, eftersom de i allmänhet stryper massbrev om det uppstår problem med anseendet."
 topics: Deliverability
 jira: KT-5320
 doc-type: article
 activity: understand
+role: Admin, Leader, User
+level: Beginner
 team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 2%
@@ -16,7 +18,7 @@ ht-degree: 2%
 
 # [!DNL Verizon Media Group] (Yahoo, AOL, Verizon osv.)
 
-[!DNL Verizon Media Group] är vanligtvis en av de tre toppdomänerna för de flesta B2C-listor. De beter sig ganska unikt, eftersom de i allmänhet stryper massbrev om det uppstår några problem med anseendet.
+[!DNL Verizon Media Group] är vanligtvis en av de tre toppdomänerna för de flesta B2C-listor. De uppför sig något unika, eftersom de i allmänhet kommer att strypa eller massutskick om det uppstår några problem med anseendet.
 
 Här är några högdagrar:
 

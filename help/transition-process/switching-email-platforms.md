@@ -1,14 +1,16 @@
 ---
 title: Smidig övergång vid byte av e-postplattform.
-description: När du flyttar ESP:er (e-postleverantörer) är det inte möjligt att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt.
+description: När du flyttar ESP (e-postleverantörer) är det inte möjligt att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt.
 topics: Deliverability
 jira: KT-5259
 thumbnail: kt5259.jpg
 doc-type: article
 activity: understand
+role: Admin
+level: Beginner
 team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 11%
@@ -19,7 +21,7 @@ ht-degree: 11%
 
 När du flyttar ESP (e-postleverantörer) går det inte att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt. Eftersom de nya IP-adresserna som du kommer att använda ännu inte har något anseende kan internetleverantörerna inte lita fullständigt på den post som kommer från dem och måste vara försiktiga med vad de tillåter att de levereras till sina kunder.
 
-Att skapa ett gott rykte är en process. Men när det väl är fastställt kommer små negativa indikatorer att ha mindre betydelse för er och era postutskick.
+Att skapa ett gott rykte är en process. Men när det väl är fastställt har små negativa indikatorer mindre betydelse för er och er postutskick.
 
 ![Övergångsprocess](../assets/transition-process.png)
 

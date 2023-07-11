@@ -6,9 +6,11 @@ jira: KT-7052
 thumbnail: kt7052.jpg
 doc-type: article
 activity: understand
+role: Admin, Leader
+level: Beginner
 team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
-source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
+source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%
@@ -37,7 +39,7 @@ Det är viktigt att utforma en välstrukturerad IP-strategi för att skapa ett g
 * **För många IP-adresser** kan utlösa anseendeproblem eftersom det är en vanlig taktik hos skräppost att **snowshoe**, som används av skräppost där trafiken sprids över många IP-adresser för att maximera leveransen av skräppost. Även om du inte är skräppost kan du se ut som en om du använder för många IP-adresser, särskilt om dessa IP-adresser inte har haft någon tidigare trafik.
 * **För få IP-adresser** kan orsaka genomströmningsproblem och potentiellt orsaka problem med anseendet. Dataflödet varierar beroende på Internet-leverantör. Hur mycket och hur snabbt en Internet-leverantör är villig att acceptera baseras vanligtvis på sin infrastruktur och sina anseendetrösklar.
 * Det är viktigt att separera trafiken för meddelandetyper. Det är viktigt att i minsta möjliga mån avgränsa marknadsföring och transaktionell post i separata IP-pooler.
-* Beroende på er e-poststrategi kan det även vara tillrådligt att separera olika produkter eller marknadsföringsströmmar från olika IP-pooler om ert rykte är drastiskt annorlunda. Vissa marknadsförare segmenterar också efter region. Att separera IP-adressen för trafik med lägre anseende löser inte problemet med anseende, men det förhindrar problem med e-postleveranser med gott anseende. Ni vill trots allt inte offra er goda publik för en mer riskfylld.
+* Beroende på er e-poststrategi kan det även vara tillrådligt att separera olika produkter eller marknadsföringsströmmar från olika IP-pooler om ert rykte är drastiskt annorlunda. Vissa marknadsförare segmenterar också efter region. Att separera IP-adressen för trafik med lägre anseende löser inte problemet med anseende, men det förhindrar problem med e-postleveranser med gott anseende. Trots allt vill ni inte offra er goda publik för en mer riskfylld.
 
 ## Feedback-slingor {#feedback-loops}
 
