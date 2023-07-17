@@ -11,15 +11,15 @@ level: Beginner
 team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Levererbarhet strategi och definition
+# Levererbarhetsstrategi och definition
 
-Att utforma framgångsrika e-postmarknadsföringskampanjer kräver en tydlig förståelse för marknadsföringsmålen, oavsett om det gäller prospektering eller CRM-initiativ (customer relationship management). Detta hjälper dig att avgöra vilka som ingår i målgruppen, vad som ska marknadsföras och när tillfället är idealiskt.
+För att utforma framgångsrika e-postmarknadsföringskampanjer krävs en klar förståelse av marknadsföringsmålen, oavsett om det gäller prospektering eller CRM-hantering (customer relationship management). Detta hjälper dig att avgöra vilka som ingår i målgruppen, vad som ska marknadsföras och när tillfället är idealiskt.
 
 Här är några exempel på strategiska mål för e-postmarknadsföring:
 
@@ -32,17 +32,17 @@ Här är några exempel på strategiska mål för e-postmarknadsföring:
 
 ## Definition av levererbarhet
 
-Det finns två viktiga mätvärden för definitionen av levererbarhet. The *levererad ränta* är procentandelen e-postmeddelanden som inte studsar och som accepteras av Internet-leverantören. Det andra är *inkorgsplaceringen* som gäller för meddelanden som accepteras av internetleverantören och visar om e-postmeddelandet hamnar i inkorgen eller i skräppostmappen.
+Det finns två viktiga mätvärden för definitionen av levererbarhet. Det första är *leveransfrekvensen* som är procentandelen av e-postmeddelanden som inte studsar och som accepteras av internetleverantören. Det andra är *inkorgsplaceringen* som gäller för meddelanden som accepteras av internetleverantören och visar om e-postmeddelandet hamnar i inkorgen eller i skräppostmappen.
 
-Det är viktigt att förstå både leveransfrekvensen och inkorgsplaceringsfrekvensen i förhållande till varandra när du mäter e-postprestandan. En hög leveransfrekvens är inte den enda aspekten av levererbarheten. Bara för att ett meddelande tas emot via en Internet-leverantörs första kontrollpunkt behöver det inte nödvändigtvis innebära att din prenumerant faktiskt såg och interagerade med din kommunikation.
+Det är viktigt att förstå både leveransfrekvensen och inkorgsplaceringsfrekvensen i förhållande till varandra när du mäter e-postprestandan. En hög leveransfrekvens är inte den enda aspekten av levererbarheten. Att ett meddelande tas emot via en internetleverantörs första kontrollpunkt innebär inte nödvändigtvis att din prenumerant faktiskt såg och interagerade med din kommunikation.
 
 ## Varför levererbarhet är viktigt
 
-Om du inte vet om dina e-postmeddelanden levereras eller om de landar i inkorgen jämfört med skräppostmappen bör du göra det. Här är varför.
+Om du inte vet om dina e-postmeddelanden levereras eller om de landar i inkorgen eller skräppostmappen borde du veta det. Här är anledningen.
 
-Otaliga timmar går åt till att planera och producera era e-postkampanjer. Om e-postmeddelandena studsar eller till slut hamnar i era prenumeranters skräppostmapp kommer kunderna förmodligen inte att läsa dem, din uppmaning att vidta åtgärder kommer inte att godkännas och du kommer inte att få några intäkter på grund av förlorade konverteringar. Kort och gott: du har inte råd att ignorera slutresultatet. Den är avgörande för hur framgångsrika dina e-postmarknadsföringssatsningar blir och för ditt slutresultat.
+Otaliga timmar går åt till att planera och producera era e-postkampanjer. Om e-postmeddelandena studsar eller i slutändan hamnar i prenumeranternas skräppostmapp kommer kunderna förmodligen inte att läsa dem, din handlingsuppmaning kommer inte att följas och du får inga intäkter på grund av uteblivna konverteringar. Kort och gott: du har inte råd att ignorera levererbarheten. Den är avgörande för hur framgångsrika dina e-postmarknadsföringssatsningar blir och för ditt slutresultat.
 
-Genom att följa bästa praxis för levererbarhet kan du säkerställa att din e-post får bästa möjliga chans att öppnas och klickas, och att du når det ultimata målet: konvertering. Du kan skriva en lysande ämnesrubrik och ha vackra bilder och engagerande innehåll. Men om e-postmeddelandet inte levereras har kunden inte möjlighet att konvertera. När det gäller e-postlevererbarhet är varje steg i processen för mottagande av e-post beroende av det föregående steget för att programmet ska lyckas.
+Genom att följa bästa praxis för levererbarhet kan du säkerställa att din e-post får bästa möjliga chans att öppnas och klickas, och att du når det ultimata målet: konvertering. Du kan skriva en lysande ämnesrubrik och ha vackra bilder och engagerande innehåll. Men om e-postmeddelandet inte levereras har du inte möjlighet att konvertera kunden. När det gäller e-postlevererbarhet är varje steg i processen för mottagande av e-post beroende av det föregående steget för att programmet ska lyckas.
 
 ### Steg 1: E-post levererad
 
