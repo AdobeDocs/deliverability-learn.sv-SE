@@ -27,31 +27,31 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
 * **Spamhaus**
 
-   Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
+  Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-   Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna de kommersiella tjänsterna, leveransmöjligheterna och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna de kommersiella tjänsterna, leveransmöjligheterna och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 
-   Se [https://www.spamcop.net/](https://www.spamcop.net/)
+  Se [https://www.spamcop.net/](https://www.spamcop.net/)
 
-   Det är en av de mest kända databaserna. Om en av dina IP-adresser placeras i den här listan betyder det vanligtvis att SpamCop-användarna har deklarerat dina meddelanden som skräppost eller att du har skickat meddelanden till en SpamCop-honeypot.
+  Det är en av de mest kända databaserna. Om en av dina IP-adresser placeras i den här listan betyder det vanligtvis att SpamCop-användarna har deklarerat dina meddelanden som skräppost eller att du har skickat meddelanden till en SpamCop-honeypot.
 
 * **URIBL**
 
-   Se [https://www.uribl.com/](https://www.uribl.com/)
+  Se [https://www.uribl.com/](https://www.uribl.com/)
 
-   Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
+  Den här listan identifierar de domäner som regelbundet visas i meddelanden som deklarerats som skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **SURBL**
 
-   Se [https://surbl.org/](https://surbl.org/)
+  Se [https://surbl.org/](https://surbl.org/)
 
-   SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
+  SURBL identifierar de webbplatser som regelbundet visas i skräppost. Om din domän visas i den här listan kan det påverka leveransmöjligheterna avsevärt. Du bör informera om leveranstjänster och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) omedelbart.
 
 * **iX Manitu**
 
-   Detta är en lista över IP-adresser och används ofta i Tyskland. Se [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
+  Detta är en lista över IP-adresser och används ofta i Tyskland. Se [https://www.heise.de/ix/nixspam/](https://www.heise.de/ix/nixspam/)
 
 <!--* SORBS
 

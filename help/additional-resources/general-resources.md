@@ -33,7 +33,7 @@ I det här avsnittet visas ytterligare resurser om levererbarhet, t.ex. specifik
 * [Real-time Blackhole Lists](../../help/additional-resources/blocklist-databases.md)
 * [Felsökning](../../help/additional-resources/troubleshooting.md)
 
-   <!--
+  <!--
     [IP Certification](../../help/additional-resources/ip-certification.md)
     [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
 

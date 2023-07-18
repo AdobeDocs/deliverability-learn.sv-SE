@@ -116,7 +116,6 @@ Fyll i tabellen nedan. Första raden är bara ett exempel.
 >* När du skickar e-postmeddelanden från Adobe Campaign övervakas inte postlådan&quot;Från adress&quot; och marknadsföringsanvändare kan inte komma åt den här postlådan. Adobe Campaign erbjuder inte heller möjlighet att svara automatiskt eller vidarebefordra e-postmeddelanden som tas emot i den här postlådan.
 >* Adressen för Campaign From/Sender och Feladressen får inte vara &quot;missbruk&quot; eller &quot;postmaster&quot;.
 
-
 ## Delegera underdomäner
 
 De underdomäner som valts för Adobe Campaign-plattformen måste delegeras genom att fyra NS-poster (Name Server) skapas.  Detta gör att underdomänen kan delegeras korrekt till Adobe.  Nedan visas ett exempel på en underdomänsdelegering och respektive DNS-instruktioner.  Ersätt&quot;emails.customer.com&quot; med den underdomän som du vill delegera.  Observera att underdomänen måste vara unik och inte redan kan användas av en annan part (till exempel en befintlig ESP eller MSP).

@@ -9,7 +9,7 @@ exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
 source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
 source-wordcount: '2252'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,7 @@ Du måste identifiera domännamnen och funktionerna (spårning, spegelsidor, web
 
 Följ stegen nedan för att få en CSR-fil (Certificate Signing Request).
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#subdomains-and-certificates) om du vill generera och hämta en CSR-fil från Kontrollpanelen.
+* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#subdomains-and-certificates) om du vill generera och hämta en CSR-fil från Kontrollpanelen.
 
 * I annat fall skapar du en supportanmälan via https://adminconsole.adobe.com/ för att få en CSR-fil från Adobe kundtjänst för de underdomäner som behövs.
 
