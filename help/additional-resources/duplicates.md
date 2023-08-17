@@ -25,7 +25,7 @@ Förutom detta steg i anmälningsförfarandet kommer denna situation sannolikt a
 Du måste vara särskilt försiktig när du utför åtgärder i databasen:
 
 * Import måste konfigureras noggrant, särskilt när du väljer avstämningsnyckel.
-* Ändrade e-postadresser kan också vara en källa till dubbletter. Två adresser med olika domäner kan dirigeras till samma postlåda, till exempel om ett företag har ändrat namn och har underhållit den tidigare domänen under en viss tid: joe.doe@amce-co.com och joe.doe@acme-rebranded.com.
+* Ändrade e-postadresser kan också vara en källa till dubbletter. Två adresser med olika domäner kan dirigeras till samma postlåda, t.ex. om ett företag har ändrat namn och har underhållit den tidigare domänen under en viss tid: joe.doe@amce-co.com och joe.doe@acme-rebranded.com.
 * Automatisk import, oavsett om det gäller listor eller från andra databaser, är element som ska beaktas vid hantering av profiler. Vad händer när du tar bort eller flyttar en profil i en annan partition? Den kan återskapas i den inledande partitionen med en automatisk import, till exempel när en inköpsorder placeras.
 * Det går att implementera lagring av profiler i olika mappar med hjälp av vyer i stället för partitioner. På så sätt är du säker på att profilerna finns i samma fysiska partition samtidigt som du fortfarande aktiverar rätt behörigheter för att visas och hanteras.
 

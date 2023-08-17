@@ -23,7 +23,7 @@ In the Adobe Deliverability Consulting and Deliverability Operations teams, we h
 
 ## Komma igång
 
-Adobe kräver att kunderna delar sin konfiguration för att hjälpa Adobe Deliverability-teamet att förstå ert unika program. De frågor vi ställer är utformade för att hjälpa Adobe Deliverability-teamet att få en uppfattning om ditt rykte och din e-postvolym. Utan en konkret förståelse för er affärsmodell, era marknadsföringsmål för e-post och anseende kommer vi inte att kunna anpassa vår strategi och det finns risk för leveransproblem.
+Adobe kräver att kunderna delar sin konfiguration för att hjälpa Adobe Deliverability-teamet att förstå ert unika program. De frågor vi ställer är utformade för att hjälpa Adobe Deliverability-teamet att få en uppfattning om ditt sändningsrykte och din e-postvolym. Utan en konkret förståelse för er affärsmodell, era marknadsföringsmål för e-post och anseende kommer vi inte att kunna anpassa vår strategi och det finns risk för leveransproblem.
 
 Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). När du skickar e-post är en IP-adress den väg som används för att leverera e-postmeddelanden till dina kunder. IP-adresser och domäner används för att identifiera avsändare i ett nätverk till mottagande Internet-leverantörer. Adobe tilldelar rätt antal dedikerade IP-adresser för att skicka e-post, baserat på din sändningsvolym, e-postprogram, datasegmenteringsrutiner och ditt kontrakt.
 
@@ -32,9 +32,9 @@ Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). Nä
 * [IP-strategi](../../help/transition-process/infrastructure.md#ip-strategy)
 * [Internetleverantörspecifika hänsyn under IP-uppvärmning](../../help/transition-process/isp-specific-considerations-during-ip-warming.md)
 
-## IP-uppvärmning: Varför är det gjort? {#why-ip-warming}
+## IP-värmare: Varför är det klart? {#why-ip-warming}
 
-Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp. Internetleverantörer/MBP:er håller IP-adressen och den sändande domänen under hög granskning för att avgöra om e-postmeddelanden som skickas från den här IP-adressen och domänen är skräppost eller inte.  Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
+Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp. Internetleverantörer/MBP håller IP-adressen och den sändande domänen under hög granskning för att avgöra om e-postmeddelanden som skickas från den här IP-adressen och domänen är skräppost eller inte.  Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
 
 Internetleverantörer granskar noggrant sändningsvolymen, sändningsfrekvensen, klagomål och avhoppsfrekvensen som genererats av dessa utskick. De kontrolleras noga eftersom de är tecken på avsändarens anseende - vare sig det är bra eller dåligt.
 
@@ -52,14 +52,14 @@ Detta är den viktigaste komponenten när det gäller att hantera och utöka en 
 
 Läs mer på [Adobe policy för godtagbar användning](https://www.adobe.com/legal/terms/aup.html).
 
-## Anseendemått: Vad letar internetleverantörer efter?
+## Anseendemått: Vad är Internet-leverantörer som letar efter?
 
 Internet-leverantörer använder avancerad teknik för att fatta väl underbyggda beslut om huruvida de ska leverera e-post de får från externa nätverk eller inte. De har ibland komplicerade och egenutvecklade algoritmer i sin verktygslåda som kan hjälpa dem i den här processen.
 
 Några av de granskade datapunkterna är:
 
 * Skräppostfällor
-* Blockeringslista träffar
+* Träffar i Blockeringslista
 * E-poststudsar
 * Prenumerationsengagemang
 
@@ -69,7 +69,7 @@ Autentisering gör det möjligt för Internet-leverantörer att validera att det
 
 På Adobe kommer vi att konfigurera SPF och DKIM som standard och vi kommer att konfigurera DMARC på begäran. Internetleverantörer refererar SPF och DKIM som de primära autentiseringsuppgifterna. Många Internet-leverantörer införlivar också DMARC (domänbaserad meddelandeautentisering, rapportering och överensstämmelse) i sina filtreringsbeslut. Oautentiserade e-postmeddelanden är inte nödvändigtvis blockerade, men de går igenom ytterligare filtrering.
 
-## IP-uppvärmning: Vad du kan förvänta dig
+## IP-uppvärmning: Vad kan man förvänta sig
 
 ### Begränsad eller blockerad e-post
 
@@ -87,7 +87,7 @@ Kom ihåg att konsekvens är avgörande här. Oregelbundna sändningsmönster oc
 
 [Klagomål](/help/metrics/complaints.md) inträffar när en prenumerant märker ett e-postmeddelande som skräppost via sitt e-postprogram. Detta skickar ett meddelande till Internet-leverantören om klagomålet. Om det finns tillräckligt många klagomål som kommer in i Internet-leverantören kommer Internet-leverantören att agera för att skydda sina kunder - eventuellt blockera många e-postmeddelanden från att komma åt prenumeranterna eller dirigera en del e-postmeddelanden till huvudmappen i motsats till prenumerantens inkorgar. Om ditt leveransproblem orsakas av klagomål är det viktigt att fastställa varför mottagarna klagar.
 
-Prenumeranter klagar av olika anledningar. Ibland vill en prenumerant inte få mer e-post från dig, kanske för att de tror att de får för många meddelanden om samma ämne, inte förväntade sig meddelandet eller inte kommer ihåg att registrera sig för att ta emot e-postmeddelanden.
+Prenumeranter klagar av olika anledningar. Ibland vill en prenumerant inte få mer e-post från dig, kanske för att de känner att de får för många meddelanden om samma ämne, inte förväntade sig meddelandet eller inte kommer ihåg att registrera sig för att ta emot e-postmeddelanden.
 
 ### Datasäkerhet
 

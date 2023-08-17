@@ -19,9 +19,9 @@ Flera organisationer har databaser med IP-adresser och domäner som används av 
 
 Dessa databaser kallas för RBL (BlackHill Lists i realtid) och söks igenom via en DNS-mekanism. Det finns tre typer av RBL:
 
-* Efter IP-adress: listar IP-adresser som skickar skräppost eller som sannolikt kommer att vidarebefordra skräppost.
-* Efter avsändardomän: listar avsändardomäner (den fullständiga domänen för den studsande e-postadressen) som skickar skräppost eller felaktigt konfigurerad.
-* Efter webbdomän: listar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i skräppostinnehållet. I Adobe är den domän som ska beaktas vanligtvis den adress som används för spårning.
+* Efter IP-adress: visar IP-adresser som skickar skräppost eller som sannolikt kommer att skicka skräppost vidare.
+* Efter avsändardomän: visar avsändardomäner (den fullständiga domänen för den studsande e-postadressen) som skickar skräppost eller felaktigt konfigurerad.
+* Efter webbdomän: visar de domäner (högnivådomäner som är registrerade hos registratorerna) som finns i URL:erna för länkarna och bilderna i spaminnehållet. I Adobe är den domän som ska beaktas vanligtvis den adress som används för spårning.
 
 Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista finns på [https://www.dnsstuff.com/](https://tools.dnsstuff.com/).
 

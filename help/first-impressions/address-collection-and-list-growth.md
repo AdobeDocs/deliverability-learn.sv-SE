@@ -23,13 +23,13 @@ Några anteckningar om dessa registreringsmetoder:
 
 **Fysiskt lager** listsamlingen kan medföra problem på grund av att indata från muntliga eller skriftliga adresser orsakar felstavning i adresserna. Du bör skicka ett bekräftelsemeddelande via e-post så fort som möjligt efter det att du registrerat dig i butik.
 
-Den vanligaste formen av **webbplatsregistrering** är ett fristående deltagande. Det är den absoluta minimistandarden som du bör använda för att hämta e-postadresser. Ett fristående deltagande är när innehavaren av en viss e-postadress ger en avsändare tillstånd att skicka marknadsföring via e-post till dem, vanligen genom att skicka adressen via ett webbformulär eller butiksregistreringar. Det går att köra en lyckad e-postkampanj med den här metoden, men det kan bero på vissa problem.
+Den vanligaste formen av **webbplatsregistrering** är &quot;single opt-in&quot;. Det är den absoluta minimistandarden som du bör använda för att hämta e-postadresser. Ett fristående deltagande är när innehavaren av en viss e-postadress ger en avsändare tillstånd att skicka marknadsföring via e-post till dem, vanligen genom att skicka adressen via ett webbformulär eller butiksregistreringar. Det går att köra en lyckad e-postkampanj med den här metoden, men det kan bero på vissa problem.
 
 * Obekräftade e-postadresser kan innehålla stavfel, vara felaktiga eller ha skadligt format. Typos och felformaterade adresser orsakar höga studsfrekvenser, vilket kan och gör att blockeringar som utfärdas av Internet-leverantörer eller IP-adresser inte fungerar som de ska.
 
-* Skadlig inlämning av kända skräppostfällor (kallas ibland&quot;listförgiftning&quot;) kan orsaka stora problem med leveransen och anseendet om ägaren till fällan vidtar åtgärder. Det är omöjligt att veta om mottagaren verkligen vill bli medlem i en marknadsföringslista utan att bekräfta det. Detta gör det lika omöjligt att ställa in mottagarens förväntningar och kan leda till fler skräppostklagomål - och ibland blocklist om det insamlade e-postmeddelandet råkar vara en skräppostfälla.
+* Skadlig inlämning av kända skräppostfällor (kallas ibland&quot;listförgiftning&quot;) kan orsaka stora problem med leveransen och anseendet om den som äger fällan gör något. Det är omöjligt att veta om mottagaren verkligen vill bli medlem i en marknadsföringslista utan att bekräfta det. Detta gör det lika omöjligt att ställa in mottagarens förväntningar och kan leda till fler skräppostklagomål - och ibland blocklist om det insamlade e-postmeddelandet råkar vara en skräppostfälla.
 
-Om du vill ha vägledning om hur du minimerar problemen i både den fysiska butiken och ett fristående deltagande går du till [Datakvalitet och hygien](#data-quality-and-hygiene) i den här handboken för information om och fördelar med dubbel anmälan.
+Om du vill ha vägledning om hur du minimerar problemen i både den fysiska butiken och ett fristående deltagande går du till [Datakvalitet och hygien](#data-quality-and-hygiene) i den här handboken för mer ingående information om och fördelar med dubbel anmälan.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Kontakta era advokater för att tolka lokal och nationell lagstiftning om e-post
 
 * Se till att samla in en abonnents platsinformation så att du följer abonnentens landslagstiftning. Utan den detaljrikedomen kan ni begränsa hur ni kan marknadsföra till abonnenten.
 * Alla lagar som är relevanta bestäms av var mottagaren befinner sig, inte avsändaren. Så ni måste känna till och följa lagarna i alla länder där ni kan ha en abonnent.
-* Det är ofta svårt att med total säkerhet veta i vilket land abonnenten bor. Data som tillhandahålls av kunden kan vara inaktuella och pixelplatsdata kan vara felaktiga på grund av VPN eller bildlagring, som med Gmail och Yahoo. Det är säkrast att tillämpa striktaste möjliga lagar och riktlinjer.
+* Det är ofta svårt att med total säkerhet veta i vilket land abonnenten bor. Data som tillhandahålls av kunden kan vara inaktuella, och pixelplatsdata kan vara felaktiga på grund av VPN eller bildlagring, som med Gmail och Yahoo. Det är säkrast att tillämpa striktaste möjliga lagar och riktlinjer.
 
 ## Andra icke-rekommenderade metoder för listsamling
 

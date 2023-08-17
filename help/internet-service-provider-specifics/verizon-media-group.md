@@ -32,7 +32,7 @@ VMG har en FBL som används för att skicka in klagomål till avsändare. De utf
 
 ## Avsändarens rykte
 
-Avsändarens rykte består av en kombination av IP-adress, domän och adress. Anseendet beräknas med de traditionella komponenterna, inklusive klagomål, skräppostfällor, inaktiva eller felformade adresser samt engagemang. I VMG används hastighetsbegränsning (kallas även strypning) tillsammans med massvikning för att skydda mot skräppost. De kompletterar sina interna filtreringssystem med vissa [!DNL Spamhaus] svarta listor, inklusive PBL, SBL och XBL för att skydda användarna.
+Avsändarens rykte består av en kombination av IP-adress, domän och adress. Anseendet beräknas med hjälp av de traditionella komponenterna, inklusive klagomål, skräppostfällor, inaktiva eller felformade adresser samt engagemang. I VMG används hastighetsbegränsning (kallas även strypning) tillsammans med massvikning för att skydda mot skräppost. De kompletterar sina interna filtreringssystem med vissa [!DNL Spamhaus] svarta listor, inklusive PBL, SBL och XBL för att skydda sina användare.
 
 ## Insikter
 

@@ -31,7 +31,7 @@ E-postinteraktion är också en term som används för att beskriva en typ av m�
 
 **Organisk listtillväxt** är hörnstenen i en sund lista. Många marknadsförare fokuserar mycket på listtillväxt, men ur leveranssynpunkt är det viktigt att skapa en kvalitetslista över engagerade prenumeranter. Att kontinuerligt skicka e-post till en till stor del oengagerad publik kan minska ert sändningsrykte och avsevärt öka sannolikheten för att din e-post hamnar i skräppostmappen.
 
-**Utskicksfrekvens** är viktigt att tänka på när du skapar och underhåller ett e-postmarknadsföringsprogram. Att ställa in mottagarnas förväntningar under välkomstmeddelandet är en mycket användbar strategi som folk vill veta vad de ska förvänta sig. Men dessa förväntningar måste uppfyllas: att skicka e-post för ofta kan orsaka trötthet och i vissa fall leda till fler klagomål och att prenumerationen avbryts.
+**Utskicksfrekvens** är viktigt att tänka på när du skapar och underhåller ett e-postmarknadsföringsprogram. Att ställa in mottagarnas förväntningar under välkomstmeddelandet är en mycket användbar strategi som folk vill veta vad de ska förvänta sig. Men dessa förväntningar måste uppfyllas: att skicka e-post för ofta kan leda till trötthet hos kunderna och kan i vissa fall leda till fler klagomål och avbeställningar.
 
 Rätt frekvens är något varje marknadsförare måste hitta för sitt specifika marknadsföringsprogram. Vi föreslår att du testar olika frekvenser för att hitta rätt balans för ett visst marknadsföringsprogram. Att hålla mottagarna engagerade och aktiva är en av de viktigaste sakerna en marknadsförare kan göra för att e-postmarknadsföringsprogrammet ska lyckas.
 
@@ -47,7 +47,7 @@ Det bästa sättet att implementera en återaktiverings- eller återaktiveringsk
 
 ## Svar är engagemang också
 
-Det är enkelt att bara ange att ditt svar ska vara en svarsadress, men det skulle vara ett misstag som missar helhetsbilden.
+Det är enkelt att bara ange att ditt svar till e-postmeddelande ska vara en&quot;inget svar&quot;-adress, men det skulle vara ett misstag som missar helhetsbilden.
 
 När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att aktivera **svars- och svarssystem** hjälper du till att förbättra avsändarens anseende. Detta ökar sannolikheten för positiv leverans och placeringsfrekvens för inkorgen.
 

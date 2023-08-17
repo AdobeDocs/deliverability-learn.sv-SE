@@ -15,9 +15,9 @@ ht-degree: 2%
 
 # Allt om skräppostfällor
 
-A [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-post skickas till. En skräppostfälla har huvudsyftet: identifiera skräppost eller avsändare utan datahygienprocess.
+A [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-post skickas till. En skräppostfälla har ett huvuduppdrag: identifiera spammare eller avsändare utan datahygienprocess.
 
-## Vem hanterar de här skräppostfällorna?
+## Vem hanterar de här skräppostlådadresserna?
 
 Den första typen av skräppostsvällningsadresser är IP- och Domain blockeringslista-företag som SpamHaus, Sorbs och SpamCop. Dessa företag har ett stort nätverk av adresser som skickas på olika Internet-sidor som webbplatser, bloggar och forum så att deras adresser samlas in av skräppost.
 
@@ -29,7 +29,7 @@ Den andra typen av skräppostsvällning är baserad på gamla aktiva ISP-adresse
 
 **En e-postadress som överges av en användare**: Efter en tids inaktivitet inaktiveras adresser av Internet-leverantörer. Studentmeddelanden skickas till avsändare för att informera dem om den nya statusen. Avsändare måste skicka in dessa adresser i karantän eller ta bort dem från framtida kommunikation. Internetleverantörer använder dessa adresser som har omvandlats till&quot;skräppostfällor&quot; för att övervaka avsändare med dåliga rutiner.
 
-## Hur känner du igen eller identifierar en skräppostfälla?
+## Hur man känner igen eller identifierar en skräppostfälla?
 
 Det är svårt att identifiera skräppostfällor. Adresserna måste vara anonyma eftersom de används för att identifiera dåliga avsändare. De flesta internetleverantörer har inte något öppet system och klickar på systemet för att övervaka felaktiga avsändarträffar. Enligt tidigare definitioner är det möjligt att fastställa ett pod med misstänkta adresser och testa effektiviteten i podvalet.
 

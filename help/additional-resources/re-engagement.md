@@ -63,7 +63,7 @@ Prenumeranter som interagerar med kampanjen genom att följa öppnings- eller kl
 ### Fas 4 {#phase-4}
 
 * Nästa fas är att identifiera abonnenter som ständigt inte uppvisar någon aktivitet och gradvis minska antalet utskick av e-post till dem under en tidsperiod. Om det inte finns någon aktivitet under det senaste året är det bra att spärra prenumeranternas e-postprenumeration. Även om de inte har visat något intresse för e-postinnehållet finns det alltid en sista möjlighet att få dem att återaktivera sin prenumeration genom att skicka en engångsåterbekräftelsekampanj.
-* Bekräftelsekampanjer är ett bra sätt att fråga prenumeranter som är inaktiva länge om de vill stanna kvar i prenumerationslistan. När du skapar kampanjen är det bättre att lägga till en&quot;klicka här&quot;-länk så att de kan bekräfta åtgärden och verifiera deras adress. På så sätt kan funktionsmakrot registreras i databasen. Nedan visas ett exempel på en e-postbekräftelse:
+* Bekräftelsekampanjer är ett bra sätt att fråga prenumeranter som är inaktiva länge om de vill stanna kvar i prenumerationslistan. När du skapar kampanjen är det bättre att lägga till en&quot;klicka här&quot;-länk så att de kan bekräfta åtgärden och verifiera deras adress. På så sätt kan funktionsmakrot spelas in i databasen. Nedan visas ett exempel på en e-postbekräftelse:
 
   ![](../../help/assets/deliverability_implementation_3.png)
 

@@ -33,4 +33,4 @@ Normalt baseras en engagemangsfrekvens på en viss tidsperiod. Mätvärdet kan v
 
 **Campaign Standard**
 
-* [AI-baserade e-postmeddelanden: Prediktiv poängsättning av engagemang](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI-baserade e-postmeddelanden: Prediktiv poängsättning för engagemang](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)

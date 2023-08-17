@@ -38,7 +38,7 @@ Ställ följande frågor för att identifiera möjliga orsaker till leveransprob
 * Skickas jag ofta tillräckligt för att behålla värma IP-adresser?
 * Segmenterar jag mina utskick efter aktivitet/engagemang, eller skickar jag fullständiga filer?
 * Vad är det &quot;säkra&quot; segmentet i min fil i termer av senaste användning?
-* Har jag strategier för omaktivering och återbekräftelse för segment som inte definieras som säkra?
+* Har jag strategier för omaktivering och återbekräftelse för segment som inte är definierade som säkra?
 
 ## Åtgärda problemet {#address-issue}
 
@@ -48,7 +48,7 @@ Ställ följande frågor för att identifiera möjliga orsaker till leveransprob
 
 Om ditt leveransproblem har orsakats av klagomål:
 * Du måste försöka avgöra varför mottagarna klagar.
-* Du kanske också vill flytta länken för att avbryta prenumerationen till det övre av e-postmeddelandet. Detta uppmuntrar prenumeranter att avbryta prenumerationen i stället för att klaga på skräppostknappen.
+* Du kan också överväga att flytta länken för att avbryta prenumerationen till det övre av e-postmeddelandet. Detta uppmuntrar prenumeranter att avbryta prenumerationen i stället för att klaga på skräppostknappen.
 
 Avsändare kan samla in mycket information från sina [feedback-slinga](/help/transition-process/infrastructure.md#feedback-loops) klagomål:
 * Det är viktigt att lagra data och leta efter mönster i saker som anmälningskälla, hur länge adressen har prenumererats eller till och med vissa beteendedemografiska profiler.
@@ -63,14 +63,14 @@ Klagomålen kommer också från prenumeranter som inte längre vill ha e-post:
 
 **Hårda studsar** inträffar när du skickar till en **adress som inte kan levereras** på en Internet-leverantör. En adress kan vara olevererbar av många orsaker, till exempel:
 * Felstavad adress. Detta kan åtgärdas med en datavalideringstjänst i realtid eller genom att kräva en bekräftad anmälan innan marknadsföringsmeddelanden skickas till den adressen.
-* Felaktig lista eller datakälla. Om det kommer från en ny källa kontrollerar du hur adresserna samlades in och att det fanns behörighet.
+* Ogiltig lista eller datakälla. Om det kommer från en ny källa kontrollerar du hur adresserna samlades in och att det fanns behörighet.
 * Posta till en adress som vid ett tillfälle var aktiv, men som har stängts eller avslutats efter en inaktivitetsperiod.
 
 ### Engagemang
 
-Förutom klagomål och informationskvalitet har internetleverantörerna mer koncentrerat sig än någonsin på **positivt engagemang** för att fatta leveransbeslut. De vill se om era prenumeranter öppnar era e-postmeddelanden eller tar bort dem utan att läsa dem. Eftersom de inte delar dessa data med avsändare måste vi använda den information vi har och översätta öppningar/klick/transaktioner som engagemang.
+Förutom klagomål och informationskvalitet har internetleverantörer mer koncentrerat sig på **positivt engagemang** för att fatta leveransbeslut. De vill se om era prenumeranter öppnar era e-postmeddelanden eller tar bort dem utan att läsa dem. Eftersom de inte delar dessa data med avsändare måste vi använda den information vi har och översätta öppningar/klick/transaktioner som engagemang.
 
-Som en del av det pågående anseendeunderhållet är det viktigt att förstå hur engagerade prenumeranter finns på din lista och utveckla en **riskhierarki** för prenumeranterna på varje fil. Senaste tid definieras som senaste öppnings-/klicknings-/transaktionsdatum eller registreringsdatum. Tidsramen kan skilja sig åt lodrätt. Så här gör du:
+Som en del av det pågående anseendeunderhållet är det viktigt att förstå hur engagerade prenumeranter finns på din lista och utveckla en **riskhierarki för senaste nytt** för prenumeranterna på varje fil. Senaste tid definieras som senaste öppnings-/klicknings-/transaktionsdatum eller registreringsdatum. Tidsramen kan skilja sig åt lodrätt. Så här gör du:
 
 1. Fastställ aktiva (&quot;säkra&quot;) segment för varje vertikal. Detta är vanligtvis prenumeranter som har varit aktiva under de senaste 3-6 månaderna.
 1. Minska frekvensen för inaktivitet.

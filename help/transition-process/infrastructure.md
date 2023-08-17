@@ -27,7 +27,7 @@ Tiderna har ändrats och vissa Internet-leverantörer (som Gmail och Yahoo) har 
 
 En del av introduktionsprocessen för nya avsändare på Adobe-plattformar är bland annat att konfigurera dina sändande domäner och se till att din infrastruktur är korrekt etablerad. Du bör samarbeta med en expert om vilka domäner du tänker använda på lång sikt. Här följer några tips som utgör en bra domänstrategi:
 
-* Var så tydlig och reflekterande som möjligt av varumärket med den domän du väljer, så att användarna inte felaktigt identifierar posten som skräppost. Några exempel är nyhetsbrev.foo.com, kvitton.foo.com och så vidare.
+* Var så tydlig och reflekterande som möjligt av varumärket med den domän du väljer, så att användarna inte felaktigt identifierar posten som skräppost. Några exempel är newsletter.foo.com, receipts.foo.com och så vidare.
 * Du bör inte använda din förälder eller företagsdomän eftersom det kan påverka leveransen av post från organisationen till Internet-leverantörer.
 * Använd en underdomän till din överordnade domän för att legitimera den sändande domänen.
 * Separera dina underdomäner för meddelandekategorierna Transactional och Marketing. Detta gör att e-posttrafiken kan flöda på ett mer tillförlitligt sätt eftersom internetleverantörer letar efter den här sändningsmetoden, som är en känd e-postmetod och som rekommenderas varmt.
@@ -47,7 +47,7 @@ Bakom kulisserna behandlar Adobe-plattformarna data om studsar, klagomål, avanm
 
 ## Autentisering {#authentication}
 
-Autentisering är den process som Internet-leverantörer använder för att validera en avsändares identitet. De två vanligaste autentiseringsprotokollen är [!DNL Sender Policy Framework] (SPF) och [!DNL DomainKeys Identified Mail] (DKIM). Dessa är inte synliga för slutanvändaren, men hjälper Internet-leverantörer att filtrera e-post från verifierade avsändare. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) blir allt populärare, även om dess policyer ännu inte införlivats av alla internetleverantörer i deras anseende.
+Autentisering är den process som Internet-leverantörer använder för att validera en avsändares identitet. De två vanligaste autentiseringsprotokollen är [!DNL Sender Policy Framework] (SPF) [!DNL DomainKeys Identified Mail] (DKIM). Dessa är inte synliga för slutanvändaren, men hjälper Internet-leverantörer att filtrera e-post från verifierade avsändare. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) blir allt populärare, även om dess policyer ännu inte införlivats av alla internetleverantörer i deras anseende.
 
 ### SPF
 
@@ -59,7 +59,7 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. DMARC använder SPF eller DKIM eller båda för att tillåta en domänägare att kontrollera vad som händer med e-post som inte kan autentiseras: levererat, i karantän eller avvisat.
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. DMARC använder SPF eller DKIM eller båda för att tillåta en domänägare att kontrollera vad som händer med e-post som inte kan autentiseras: levererad, i karantän eller avvisad.
 
 ## Produktspecifika resurser
 

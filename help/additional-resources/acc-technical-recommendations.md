@@ -35,7 +35,7 @@ Domänvalet för en omvänd DNS har betydelse när vissa Internet-leverantörer 
 
 MX-regler (Mail eXchanger) är de regler som hanterar kommunikation mellan en sändande server och en mottagande server.
 
-Mer exakt används de för att styra hur snabbt Adobe Campaign MTA (Message Transfer Agent) skickar e-postmeddelanden till varje enskild e-postdomän eller ISP (till exempel hotmail.com, comcast.net). Dessa regler baseras vanligtvis på gränser som publiceras av Internet-leverantörer (t.ex. inkluderar inte mer än 20 meddelanden per varje SMTP-anslutning).
+Mer exakt används de för att styra hur snabbt Adobe Campaign MTA (Message Transfer Agent) skickar e-post till varje enskild e-postdomän eller Internet-leverantör (till exempel hotmail.com, comcast.net). Dessa regler baseras vanligtvis på gränser som publiceras av Internet-leverantörer (t.ex. inkluderar inte mer än 20 meddelanden per varje SMTP-anslutning).
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ definierar de två IP-adresserna 12.34.56.78 och 12.34.56.79 som auktoriserade a
 Recommendations för att definiera en SPF-post:
 
 * Lägg till **~alla** (SoftFail) eller **-all** (Misslyckades) till slutet för att avvisa alla servrar utom de som definierats. Utan detta kan servrar förfalska den här domänen (med en neutral utvärdering).
-* Lägg inte till **ptr** (openspf.org rekommenderar att man inte gör detta eftersom det är kostsamt och otillförlitligt).
+* Lägg inte till **ptr** (openspf.org rekommenderar att detta inte blir kostsamt och otillförlitligt).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Använda [DKIM](/help/additional-resources/authentication.md#dkim) med Adobe Cam
 
 En feedback-slinga fungerar genom att på Internet-nivå deklarera en given e-postadress för ett intervall av IP-adresser som används för att skicka meddelanden. Internet-leverantören skickar till den här postlådan, på ungefär samma sätt som för studsmeddelanden, de meddelanden som rapporteras av mottagarna som skräppost. Plattformen bör konfigureras för att blockera framtida leveranser till användare som har klagat. Det är viktigt att du inte längre kontaktar dem även om de inte använde rätt avanmälningslänk. Det baseras på dessa klagomål på att en Internet-leverantör lägger till en IP-adress till blockeringslista. Beroende på Internet-leverantören kommer en klagofrekvens på ungefär 1 % att leda till att en IP-adress blockeras.
 
-En standard håller på att utarbetas för att definiera formatet för meddelanden med feedback-slingor: den [Format för rapportering av missbruk av feedback (ARF)](https://tools.ietf.org/html/rfc6650).
+En standard håller på att utarbetas för att definiera formatet för meddelanden om feedbackslingor: [Format för rapportering av missbruk av feedback (ARF)](https://tools.ietf.org/html/rfc6650).
 
 Implementering av en feedbackslinga för en instans kräver:
 
@@ -125,7 +125,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
 
 * Replikera de meddelanden som tas emot på så många postlådor som det finns instanser av,
 * få varje postlåda upphämtad i en enda instans,
-* Konfigurera instanserna så att de endast bearbetar de meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet i meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara **checkInstanceName** parameter i instanskonfigurationsfilen (instansen kontrolleras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
+* Konfigurera instanserna så att de endast bearbetar meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet för meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara **checkInstanceName** parameter i instanskonfigurationsfilen (instansen kontrolleras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
 
   ```
   <serverConf>
@@ -133,7 +133,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
   </serverConf>
   ```
 
-Adobe Campaign Deliverability-tjänst hanterar din prenumeration på tjänster för feedbackloopar för följande Internet-leverantörer: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Telenor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
+Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster för feedback-slingor för följande Internetleverantörer: AOL, BlueTie, Comcast, Cox, EarthLink, FastMail, Gmail, Hotmail, HostedEmail, Libero, Mail.ru, MailTrust, OpenSRS, QQ, RoadRunner, Synacor, Terra, UnitedOnline, USA, XS4ALL, Yahoo, Yandex, Zoho.
 
 ## List-Unsubscribe {#list-unsubscribe}
 
@@ -161,7 +161,7 @@ Följande kommandorad kan användas för att skapa en dynamisk **List-Unsubscrib
 List-Unsubscribe: mailto: %=errorAddress%?subject=unsubscribe%=message.mimeMessageId%
 ```
 
-Gmail, Outlook.com och Microsoft Outlook har stöd för den här metoden och en avanmälningsknapp är tillgänglig direkt i gränssnittet. Den här tekniken minskar antalet klagomål.
+Gmail, Outlook.com och Microsoft Outlook har stöd för den här metoden och en avbeställningsknapp är tillgänglig direkt i gränssnittet. Den här tekniken minskar antalet klagomål.
 
 Du kan implementera **List-Unsubscribe** antingen
 
@@ -180,7 +180,7 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 
 >[!NOTE]
 >
->Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs automatiskt till i varje e-postmeddelande.
+>Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs till automatiskt i varje e-postmeddelande.
 
 1. List-Unsubscribe: &lt;mailto:unsubscribe domain.com=&quot;&quot;>
 

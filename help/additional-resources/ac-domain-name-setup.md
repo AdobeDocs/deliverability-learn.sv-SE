@@ -1,6 +1,6 @@
 ---
 title: Konfiguration av domännamn
-description: Lär dig hur du delegerar en underdomän till Adobe Campaign.
+description: Lär dig delegera en underdomän till Adobe Campaign.
 topics: Deliverability
 doc-type: article
 activity: understand
@@ -29,7 +29,7 @@ Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olik
 
 ### Delegering
 
-Delegering av domännamn är en metod som tillåter ägaren av ett domännamn (tekniskt: en DNS-zon) för att delegera en indelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan entitet. Om en kund hanterar zonen&quot;example.com&quot; kan han delegera underzonen&quot;marketing.example.com&quot; till Adobe Campaign.
+Domännamnsdelegering är en metod som gör att ägaren av ett domännamn (tekniskt: en DNS-zon) kan delegera en underavdelning av den (tekniskt: en DNS-zon under den, som kan kallas en underzon) till en annan enhet. Om en kund hanterar zonen&quot;example.com&quot; kan han delegera underzonen&quot;marketing.example.com&quot; till Adobe Campaign.
 
 Detta innebär att Adobe Campaign DNS-servrar endast har fullständig behörighet för den zonen och inte för den översta domänen. Adobe Campaign DNS-servrar kommer att ge auktoritativa svar på frågor om domännamn i den zonen, till exempel&quot;t.marketing.example.com&quot;, men inte&quot;www.example.com&quot;.
 
@@ -52,13 +52,13 @@ För att kunna tillhandahålla en molnbaserad hanterad tjänst rekommenderar Ado
 |--- |--- |--- |
 | MX | Ange e-postservrar för inkommande meddelanden | <i>email.example.com</i></br><i>10 inbound.email.example.com</i> |
 | SPF (TXT) | Princip för avsändare | <i>email.example.com</i></br>&quot;v=spf1 redirect=__spf.campaign.adobe.com&quot; |
-| DKIM (TXT) | Identifierad e-post för DomainKeys | <i>klient._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot;&quot;DKIMPUBLICKEY HERE&quot; |
+| DKIM (TXT) | Identifierad e-post för DomainKeys | <i>klient._domainkey.email.example.com</i></br>&quot;v=DKIM1; k=rsa;&quot; &quot;DKIMPUBLICKEY HERE&quot; |
 | Värdposter (A) | Spegla sidor, bildvärdskap och spårningslänkar, alla sändande domäner | m.email.example.com IN A 123.111.100.99</br>t.email.example.com IN A 123.111.100.98</br>email.example.com IN A 123.111.100.97 |
 | Omvänd DNS (PTR) | Mappar klientens IP-adresser till ett klientprofilerat värdnamn | 18.101.100.192.in-addr.arpa domännamnpekare r18.email.example.com |
 | CNAME | Anger ett alias för ett annat domännamn | t1.email.example.com är ett alias för t1.email.example.campaign.adobe.com |
 
 
-Domänbaserad Message Authentication, Reporting och Conformance (DMARC) rekommenderas för att autentisera e-postavsändare och säkerställa att e-postmeddelanden som skickas från din domän är betrodda.
+Domänbaserad Message Authentication, Reporting och Conformance (DMARC) rekommenderas för att autentisera e-postavsändare och se till att e-postmeddelanden som skickas från din domän är betrodda i destinationssystemet.
 
 Exempel på DMARC TXT-post:
 
@@ -101,7 +101,7 @@ Dessa krav hanteras via komponenter som finns både på Adobe och hos kunden, me
 
 Bestäm vilka underdomäner som ska användas för profilerade URL:er (spegelsidor och URL:er för spårning) från Adobe Campaign-programmet.  Bestäm också vad&quot;Från adress&quot;,&quot;Från namn&quot; och&quot;Till adress&quot; ska vara för varje underdomän för e-postleveranser.
 
-Fyll i tabellen nedan. Första raden är bara ett exempel.
+Fyll i tabellen nedan. Den första raden är bara ett exempel.
 
 | Underdomän | Från adress | Från namn | Svarsadress |
 |--- |--- |--- |--- |
@@ -122,7 +122,7 @@ De underdomäner som valts för Adobe Campaign-plattformen måste delegeras geno
 
 | Delegerad underdomän | DNS-instruktioner |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com. </br> `<subdomain>` NS b.ns.campaign.adobe.com. </br> `<subdomain>` NS c.ns.campaign.adobe.com. </br> `<subdomain>` NS d.ns.campaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` a.ns.campaign.adobe.com. </br> `<subdomain>` b.ns.campaign.adobe.com. </br> `<subdomain>` c.ns.campaign.adobe.com. </br> `<subdomain>` d.ns.campaign.adobe.com. |
 
 ## Spårning, spegelsidor, resurser
 
@@ -138,11 +138,11 @@ När de e-postsändande underdomänerna har delegerats till Adobe Campaign skapa
 
 Detta gäller endast om Adobe Campaign Classic ligger helt och hållet i molnet av Adobe.  Detta är en valfri konfiguration.
 
-Alla enkäter, webbformulär och landningssidor som ska utvecklas hanteras via Adobe Campaign som är fullt värd i molnet.  Om det behövs kan ytterligare en underdomän delegeras till Adobe (till exempel web.customer.com) som ska användas för alla webbkomponenter i verktyget.  Observera att underdomänen måste vara unik och inte kan användas av en annan part (till exempel en befintlig ESP eller MSP).
+Alla enkäter, webbformulär och landningssidor som ska utvecklas hanteras via Adobe Campaign som är fullt värd i molnet.  Om det behövs kan ytterligare en underdomän delegeras till Adobe (t.ex. web.customer.com) som ska användas för alla webbkomponenter i verktyget.  Observera att underdomänen måste vara unik och inte kan användas av en annan part (till exempel en befintlig ESP eller MSP).
 
 | Delegerad underdomän | DNS-instruktioner |
 |--- |--- |
-| `<subdomain>` | `<subdomain>` NS a.ns.campaign.adobe.com.</br>`<subdomain>` NS b.ns.campaign.adobe.com.</br>`<subdomain>` NS c.ns.campaign.adobe.com.</br>`<subdomain>` NS d.ns.campaign.adobe.com. |
+| `<subdomain>` | `<subdomain>` a.ns.campaign.adobe.com.</br>`<subdomain>` b.ns.campaign.adobe.com.</br>`<subdomain>` c.ns.campaign.adobe.com.</br>`<subdomain>` d.ns.campaign.adobe.com. |
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ Om Adobe Campaign Classic Marketing Instance ligger hos kunden måste kunden gö
 
 Alla enkäter, webbformulär och landningssidor som ska utvecklas hanteras via Adobe Campaign marknadsföringsinstans, där mottagaruppgifterna finns.
 
-Ytterligare DNS-konfiguration för CNAME krävs för att distribuera externt tillvända webbkomponenter som finns hos Adobe Campaign marknadsinstans.  På så sätt blir webbkomponenter (till exempel web.customer.com) tillgängliga för allmänheten på Internet och märkta med kundens domän.
+Ytterligare DNS-konfiguration för CNAME krävs för att distribuera externt tillvända webbkomponenter som finns hos Adobe Campaign marknadsinstans.  Detta gör att webbkomponenter (t.ex. web.customer.com) blir tillgängliga för allmänheten på Internet och profileras med kundens domän.
 
 Brandväggen måste också konfigureras så att den ger åtkomst till den Adobe Campaign-marknadsinstans som är värd för dessa webbkomponenter (på port 80 eller 443).
 
-**Best Practice Recommendations:**
+**Best Practice Recommendations**
 
 Den underdomän som ska vara värd för webbkomponenter är synlig för kunderna, så se till att göra den korrekt varumärkesprofilerad och enkel att komma ihåg eftersom den kan behöva skrivas in manuellt, till exempel: https://web.customer.com.
 Om några formulär behöver lagras på säkra sidor (HTTPS) krävs ytterligare teknisk konfiguration, vilket beskrivs nedan.
@@ -204,4 +204,4 @@ Mer information om detta hittar du i den [dedikerade dokumentationen](https://ex
 
 >[!NOTE]
 >
->[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) är endast tillgängligt för kunder som använder Adobes hanterade tjänster.
+>[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) endast för kunder som använder Adobe Managed Services.

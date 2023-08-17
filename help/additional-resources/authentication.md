@@ -25,16 +25,16 @@ SPF (Sender Policy Framework) är en standard för e-postautentisering som gör 
 
 SPF är en teknik som i viss utsträckning gör att du kan kontrollera att domännamnet som används i ett e-postmeddelande inte är falskt. När ett meddelande tas emot från en domän tillfrågas domänens DNS-server. Svaret är en kort post (SPF-posten) som anger vilka servrar som har behörighet att skicka e-post från den här domänen. Om vi antar att bara ägaren av domänen har möjlighet att ändra den här posten, kan vi tänka oss att den här metoden inte tillåter att avsändaradressen förfalskas, åtminstone inte delen från höger om&quot;@&quot;.
 
-I slutet [RFC 4408-specifikation](https://www.rfc-editor.org/info/rfc4408)används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: den domän som anges av SMTP-kommandot &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. vi rekommenderar att du ser till att båda källorna anger samma domän.
+I slutet [RFC 4408-specifikation](https://www.rfc-editor.org/info/rfc4408), används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: den domän som anges av kommandot SMTP &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. Vi rekommenderar att du ser till att båda källorna anger samma domän.
 
 Om du kontrollerar SPF-filen utvärderas giltigheten för avsändarens domän:
 
 * **Ingen**: Ingen utvärdering kunde utföras.
 * **Neutral**: Domänen som efterfrågas aktiverar inte utvärdering.
-* **Pass**: Domänen anses vara autentisk.
+* **Godkänd**: Domänen anses vara autentisk.
 * **Misslyckades**: Domänen är förfalskad och meddelandet bör avvisas.
 * **SoftFail**: Domänen är antagligen förfalskad, men meddelandet bör inte avvisas enbart baserat på det här resultatet.
-* **TempError**: Ett tillfälligt fel stoppade utvärderingen. Meddelandet kan avvisas.
+* **TempError**: Ett tillfälligt fel avbröt utvärderingen. Meddelandet kan avvisas.
 * **PermError**: SPF-posterna för domänen är ogiltiga.
 
 Det är värt att notera att det kan ta upp till 48 timmar att ta hänsyn till poster gjorda på DNS-servernivå. Den här fördröjningen beror på hur ofta DNS-cachen för de mottagande servrarna uppdateras.
@@ -50,15 +50,15 @@ DKIM ersatt **DomainKeys** autentisering.
 DKIM kräver vissa förutsättningar:
 
 * **Säkerhet**: Kryptering är ett nyckelelement i DKIM. För att säkerställa att DKIM:s säkerhetsnivå är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
-* **Anseende**: Anseendet baseras på IP och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: Undvik att behålla&quot;standardinställningen&quot; som kan användas av vem som helst och därför har ett svagt anseende. Du måste implementera en annan väljare för **kundlojalitet jämfört med kundvärvningskommunikation** och för autentisering.
+* **Anseende**: Anseendet baseras på IP och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: undvik att behålla standardinställningen som kan användas av alla och därför har ett svagt anseende. Du måste implementera en annan väljare för **kundlojalitet jämfört med kundvärvningsinformation** och för autentisering.
 
-Läs mer om DKIM-krav när du använder Campaign Classic in [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
+Läs mer om DKIM-krav när du använder Campaign Classic i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
 ## DMARC {#dmarc}
 
 DMARC (Domain-based Message Authentication, Reporting and Conformance) är den senaste formen av e-postautentisering, och den förlitar sig på både SPF- och DKIM-autentisering för att avgöra om ett e-postmeddelande godkänns eller misslyckas. DMARC är unikt och kraftfullt på två viktiga sätt:
 
-* Överensstämmelse - Avsändaren kan instruera Internet-leverantörer om vad de ska göra med meddelanden som inte kan autentiseras (till exempel: acceptera det inte).
+* Överensstämmelse - Avsändaren kan instruera Internet-leverantörer om vad de ska göra med meddelanden som inte kan autentiseras (till exempel: acceptera inte).
 * Rapportering - Den ger avsändaren en detaljerad rapport som visar alla meddelanden som inte kunde verifieras av DMARC, tillsammans med domänen Från och IP-adressen som används för varje. Detta gör att ett företag kan identifiera giltig e-post som inte kan autentiseras och som behöver någon typ av &quot;fix&quot; (till exempel att lägga till IP-adresser i sin SPF-post) samt källorna till och förekomsten av nätfiskeförsök i sina e-postdomäner.
 
 >[!NOTE]

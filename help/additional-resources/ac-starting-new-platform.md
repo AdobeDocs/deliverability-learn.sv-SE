@@ -32,9 +32,9 @@ Nedan anges de huvudprinciper som ska följas när en ny plattform startas.
 * Konfigurera en dedikerad underdomän som är specifik för e-postkampanjer som skickas från Adobe.
 
 * Om du har den här informationen **importera ogiltiga adresser till karantänregistret**.
-Att starta en plattform sker ofta när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
+Det händer ofta att en plattform startas när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
 
-   * Om du har en lista med ogiltiga adresser är det bäst att importera den till karantäntabellen innan du skickar den första gången. Karantänregistret är tillgängligt via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard) menyer.
+   * Om du har en lista med ogiltiga adresser är det bäst för dig att importera den till karantäntabellen innan du skickar den första gången. Karantänregistret är tillgängligt via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard) menyer.
 
    * Om du ändå vill ange de ogiltiga adresserna är det bäst att göra detta när plattformens rykte väl har etablerats och bitvis för att &quot;tona ned&quot; användningen av dåliga adresser över tiden.
 

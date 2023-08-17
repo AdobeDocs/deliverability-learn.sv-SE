@@ -23,7 +23,7 @@ Läs följande om du vill veta mer om de senaste uppdateringarna om leveransbarh
 
 ## Generiska resurser
 
-I det här avsnittet visas ytterligare resurser om levererbarhet, t.ex. specifika rekommendationer och bästa praxis, andra verktyg eller felsökningsprocedurer.
+I det här avsnittet visas ytterligare resurser om levererbarhet, som specifika rekommendationer och bästa praxis, andra verktyg eller felsökningsprocedurer.
 
 * [Allt om skräppostfällor](../../help/additional-resources/all-about-spam-traps.md)
 * [Öka e-postens anseende med IP-uppvärmning](../../help/additional-resources/increase-reputation-with-ip-warming.md)

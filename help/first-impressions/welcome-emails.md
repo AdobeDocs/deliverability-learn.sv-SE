@@ -42,7 +42,7 @@ Alla varumärken har en röst. Låt din e-postadress visas tydligt i ditt välko
 **Håll det kortfattat**
 Du har mycket att säga och ett örat i din nya prenumerant. Men det första budskapet ska vara kort, enkelt och inte överväldigande.
 
-**Skicka en serie e-postmeddelanden**
+**Skicka en serie mejl**
 Som tidigare nämnts har ni mycket att säga till en uppmärksam målgrupp. Genom att skapa en komplett välkomstserie (3-5 e-postmeddelanden) kan du hålla var och en av dem till sin rätt samtidigt som du fortfarande täcker all information du vill dela. Det främjar också abonnentens fortsatta intresse, vilket leder till fortsatt positivt engagemang, ökat rykte och förbättrad leveransbarhet.
 
 **Bli personlig**

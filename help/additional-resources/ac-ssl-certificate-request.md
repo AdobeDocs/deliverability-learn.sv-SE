@@ -22,7 +22,7 @@ Om du till exempel har delegerat *email.example.com* till Adobe för att skicka 
 * *m.email.example.com* - för spegelsidor
 * *res.email.example.com* - för värdbaserade resurser (t.ex. bilder)
 
-Vi rekommenderar att du **skydda dessa domäner via SSL (HTTPS)**. Osäkra länkar (HTTP) är sårbara för avlyssning och kommer att flagga för varningar i moderna webbläsare.
+Vi rekommenderar **skydda dessa domäner via SSL (HTTPS)**. Osäkra länkar (HTTP) är sårbara för avlyssning och kommer att flagga för varningar i moderna webbläsare.
 
 Om du vill installera SSL-certifikat på dessa underdomäner måste du begära en CSR-fil och sedan köpa SSL-certifikat för Adobe för att kunna installera eller förnya.
 
@@ -49,7 +49,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 | Rotcertifikat | En certifikatutfärdare utfärdar certifikat i form av en trädstruktur. Rotcertifikatet är det översta certifikatet för trädet. |
 | SAN (alternativt ämnesnamn) | Alternativa ämnesnamn är ytterligare värdnamn (webbplatser, IP-adresser, vanliga namn osv.) som ska signeras som en del av ett enda SSL-certifikat. |
 | Självsignerat certifikat | Ett certifikat som signeras av den person som skapar det i stället för en betrodd certifikatutfärdare. Självsignerade certifikat kan aktivera samma krypteringsnivå som ett certifikat signerat av en certifikatutfärdare, men det finns två stora nackdelar:<ul><li>En besökares anslutning kan kapas så att en angripare kan se alla data som skickas (vilket kan motverka syftet med krypteringen)</li><li> Certifikatet kan inte återkallas på samma sätt som ett betrott certifikat.</li></ul> |
-| SSL (Secure Sockets Layer) | Standardsäkerhetstekniken som används för att skapa en krypterad länk mellan en webbserver och en webbläsare. |
+| SSL (Secure Sockets Layer) | Standardsäkerhetstekniken för att skapa en krypterad länk mellan en webbserver och en webbläsare. |
 | Jokertecken | Ett jokertecken kan skydda ett obegränsat antal underdomäner på första nivån på ett domännamn, till exempel *.adobe.com. |
 
 ## Huvudsteg
@@ -83,7 +83,7 @@ Följ stegen nedan för att få en CSR-fil (Certificate Signing Request).
 Här följer några metodtips:
 
 * Generera en begäran per delegerad underdomän.
-* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic, till exempel, marknadsföringsservern, [server med mellanleverantörer](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html)och [körningsinstans](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre olika miljöer.
+* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic, till exempel marknadsföringsservern, [server med mellanleverantörer](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html)och [körningsinstans](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre olika miljöer.
 * Du måste skaffa en ny CSR innan du kan förnya SSL-certifikat. Använd inte en gammal CSR-fil från ett år sedan eller senare.
 
 Du måste ange följande information.
@@ -96,10 +96,10 @@ Du måste ange följande information.
 
 | Information att lämna | Exempelvärde | Anteckning |
 |--- |--- |--- |
-| Klientnamn | My Company Inc. | Organisationens namn. Det här fältet används av Adobe för att spåra din begäran (det kommer inte att ingå i CSR/SSL-certifikatet). |
+| Klientnamn | My Company Inc. | Organisationens namn. Det här fältet används av Adobe för att spåra din begäran (det ingår inte i CSR/SSL-certifikatet). |
 | Adobe Campaign Environment URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaign instans-URL. |
-| Gemensamt namn [CN] | t.subdomain.customer.com | Detta kan vara någon av de relevanta domänerna, men vanligtvis spårningsdomänen. |
-| Alternativt namn på ämne [SAN] | t.subdomain.customer.com | Se till att inkludera spårningsunderdomän som ett SAN-nätverk. |
+| Namn [CN] | t.subdomain.customer.com | Detta kan vara någon av de relevanta domänerna, men vanligtvis spårningsdomänen. |
+| Alternativt namn på ämne [SAN] | t.subdomain.customer.com | Se till att inkludera spårningsunderdomän som ett SAN. |
 | Alternativt namn på ämne [SAN] | m.subdomain.customer.com |
 | Alternativt namn på ämne [SAN] | res.subdomain.customer.com |
 
@@ -107,7 +107,7 @@ Du måste ange följande information.
 
 | Information att lämna | Exempelvärde | Anteckning |
 |--- |--- |--- |
-| Land [C] | USA | Det här måste vara en kod med två bokstäver. Åtkomst till den fullständiga listan över länder [här](https://www.ssl.com/csrs/country_codes/).</br>*Obs! För Storbritannien använder du GB (inte UK).* |
+| Land [C] | USA | Det här måste vara en kod med två bokstäver. Åtkomst till den fullständiga listan över länder [här](https://www.ssl.com/csrs/country_codes/).</br>*Obs! För Storbritannien ska du använda GB (inte Storbritannien).* |
 | Stat (eller provinsnamn) [ST] | Illinois | Om tillämpligt. Värdet måste vara ett fullständigt namn, inte förkortat. |
 | Ort/platsnamn [L] | Chicago |
 | Organisationsnamn [O] | KOM |
@@ -156,7 +156,7 @@ När SSL-certifikatet har genererats måste du validera det innan du skickar det
 1. Kopiera certifikattexten till en onlineavkodare, till exempel https://www.sslshopper.com/certificate-decoder.html eller https://www.entrust.net/ssl-technical/csr-viewer.cfm.
 Du kan också använda *OpenSSL* lokalt på en Linux-dator. Mer information finns i [den här externa sidan](https://www.shellhacks.com/decode-ssl-certificate/).
 1. Kontrollera att certifikatet löses korrekt, inklusive Common Name, SAN, Issuer och Validity Period.
-1. Om SSL-certifikatverifieringen lyckas kontrollerar du att certifikatet matchar CSR:n med [den här webbplatsen](https://www.sslshopper.com/certificate-key-matcher.html): välj **Kontrollera om en CSR och ett certifikat matchar** och ange ditt certifikat och din CSR i motsvarande fält. De borde matcha.
+1. Om SSL-certifikatverifieringen lyckas kontrollerar du att certifikatet matchar CSR:n med [den här webbplatsen](https://www.sslshopper.com/certificate-key-matcher.html): select **Kontrollera om en CSR och ett certifikat matchar** och ange ditt certifikat och din CSR i motsvarande fält. De borde matcha.
 
 ### Steg 5 - Begär installation av SSL-certifikat
 
@@ -178,7 +178,7 @@ Utför testerna nedan innan du stänger installationsbiljetten för SSL. Se äve
 
 Navigera till följande URL:er i webbläsaren (ersätt&quot;subdomain.customer.com&quot; med din underdomän):
 
-* https://subdomain.customer.com/r/test (för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) endast underdomäner - gäller inte e-postunderdomäner)
+* https://subdomain.customer.com/r/test (för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) endast underdomäner - gäller inte för e-postunderdomäner)
 * https://t.subdomain.customer.com/r/test
 * https://m.subdomain.customer.com/r/test
 * https://res.subdomain.customer.com/r/test
@@ -193,7 +193,7 @@ Om SSL-certifikatet inte är korrekt installerat visas följande varning:
 
 ### Steg 7 - Kontrollera certifikatets giltighetsperiod
 
-Du kan kontrollera certifikatets giltighetsperiod i webbläsaren. I Google Chrome klickar du till exempel på **Säker** > **Certifikat**.
+Du kan kontrollera certifikatets giltighetsperiod i webbläsaren. I Google Chrome klickar du på **Säker** > **Certifikat**.
 
 Det är ditt ansvar att kontrollera giltighetsperioden. Adobe rekommenderar att du implementerar en process för att övervaka certifikatets förfallodatum. Läs mer om vad som händer när ditt SSL-certifikat upphör att gälla i [den här artikeln](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/).
 
@@ -207,12 +207,12 @@ När du är säker på att de begärda SSL-certifikaten är korrekt installerade
 
 >[!NOTE]
 >
->För Campaign Classic finns de URL:er som ska uppdateras huvudsakligen i [Distributionsguide](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [Externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårning, spegelsida och offentliga resursdomäner). Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>För Campaign Classic finns URL:erna som ska uppdateras huvudsakligen i [Distributionsguide](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [Externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårning, spegelsida och offentliga resursdomäner). Mer Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-URL:er i stället för HTTP. Om du vill kontrollera att webbadresserna nu är säkra kan du snabbt utföra följande tester:
 
 * Överför en bild från Adobe Campaign. När bilden har överförts ska URL:en som returneras vara HTTPS.
-* Skapa ett test-e-postmeddelande som innehåller en länk till en spegelsida, bilder, text och en länk för att avbryta prenumerationen. Skicka e-postmeddelandet till ett externt e-post-ID (till exempel din Gmail-adress). Öppna e-postmeddelandet när det tagits emot och kontrollera att alla länkar i e-postmeddelandet öppnas korrekt i HTTPS-formuläret (inte HTTP), utan några SSL-certifikatvarningar eller fel.
+* Skapa ett test-e-postmeddelande som innehåller en länk till en spegelsida, bilder, text och en länk för att avbryta prenumerationen. Skicka ut e-postmeddelandet till ett externt e-post-ID (till exempel din Gmail-adress). Öppna e-postmeddelandet när det tagits emot och kontrollera att alla länkar i e-postmeddelandet öppnas korrekt i HTTPS-formuläret (inte HTTP), utan några SSL-certifikatvarningar eller fel.
 
 ## Produktspecifika resurser
 

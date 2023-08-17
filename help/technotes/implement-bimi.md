@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Med den här standarden kan ett varumärke fastställa en logotyp som ska visas i postlådans leverantörers inkorgar. När den publicerats i en så kallad BIMI DNS-post (Domain Name System) kan en postlådeleverantör hämta den här logotypen och visa den i inkorgen om vissa villkor uppfylls.
 
-Olika leverantörer gör olika implementeringar, men fördelarna är uppenbara: som sticker ut i inkorgen, bygger upp förtroende och har kontroll över vad som visas.
+Olika leverantörer gör olika implementeringar, men fördelarna är uppenbara: att sticka ut i inkorgen, bygga upp förtroende och ha kontroll över vad som visas.
 
 BIMI förbättrar inte direkt leveransen eller ditt rykte. Men det kan hjälpa er att bygga upp större förtroende med era mottagare och därmed öka engagemanget.
 
@@ -30,7 +30,7 @@ Du kan hitta exempel på implementeringar från olika leverantörer och mer info
 
 BIMI-gruppen är en arbetsgrupp som utvecklar BIMI eftersom den inte bara omfattar logotypen utan också tekniska, rättsliga och efterlevnadsmässiga krav.
 
-BIMI-gruppen består av flera intressenter från olika branschområden: Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail och Validity.
+BIMI Group består av flera intressenter från olika delar av branschen: Google, Yahoo, Fastmail, Proofpoint, Mailchimp, Sendgrid, Valimail och Validity.
 
 ## Vem stöder BIMI?
 
@@ -63,13 +63,13 @@ Att implementera BIMI går i flera steg:
 
 DMARC är en standard som gör det möjligt för varumärket att bestämma vad en postlådeleverantör ska göra med ett e-postmeddelande som misslyckas [autentisering](../additional-resources/authentication.md). De så kallade profilerna sträcker sig från&quot;ingen&quot; över&quot;karantän&quot; (placering av skräppostmappen) till&quot;avvisa&quot; (blockera e-post helt). Det är bara de senare två policyerna som kallas&quot;genomförande&quot; och som är kvalificerade för BIMI. E-post som skickas av Adobe skickar autentisering eftersom SPF (Sender Policy Framework) och DKIM (Domain Keys Identified Mail) är inställda som standard. Adobe konfigurerar DMARC på din sändande domän på begäran.
 
-Förutom DMARC på den sändande domänen måste DMARC också användas på efterlevnadsnivå för organisationsdomänen (om den sändande domänen är news.example.com är example.com organisationsdomänen).
+Förutom DMARC på den sändande domänen måste DMARC även användas på efterlevnadsnivå för organisationsdomänen (om den sändande domänen är news.example.com är example.com organisationsdomänen).
 
 ### Skapa din logotyp {#create-brand-logo}
 
 Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI Groups riktlinjer](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
-Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp med en solid färg som bakgrund och andra. Rekommendationerna är till för bästa visualisering.
+Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering.
 Observera att bristande efterlevnad kan leda till att logotypen inte visas.
 
 ### Verifierat varumärkescertifikat (VMC) {#vmc}
@@ -86,7 +86,7 @@ Som regel behöver du en VMC per logotyp. En VMC för din organisationsdomän om
 
 ### Publicera BIMI-posten {#publish-bimi-record}
 
-När de andra stegen är klara kan BIMI DNS-posten publiceras. Posten ser ut så här:
+När de andra stegen är klara kan BIMI-DNS-posten publiceras. Posten ser ut så här:
 
 ```
 default._bimi.[domain] IN TXT "v=BIMI1; l=[SVG URL]; a=[PEM URL]
