@@ -4,10 +4,11 @@ description: Lär dig implementera BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
+jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
+source-git-commit: d23a0477b908427c4e9d889d5d9ed896a6ac8322
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -68,6 +69,8 @@ Förutom DMARC på den sändande domänen måste DMARC även användas på efter
 ### Skapa din logotyp {#create-brand-logo}
 
 Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI Groups riktlinjer](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+
+Logotypen måste lagras på en säker plats (HTTPS) om ett leveransnätverk (CDN) används för att skydda postlådeprovidrar från att hämta logotypen (t.ex. punktskydd).
 
 Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering.
 Observera att bristande efterlevnad kan leda till att logotypen inte visas.
