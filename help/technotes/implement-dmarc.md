@@ -4,10 +4,11 @@ description: Lär dig implementera BIMI
 topics: Deliverability
 role: Admin
 level: Beginner
-source-git-commit: 5ac5bc90b5a9bf3ce9b390821476c7222983b818
+exl-id: f1c14b10-6191-4202-9825-23f948714f1e
+source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 0%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -43,11 +44,11 @@ DMARC är valfritt, och även om det inte krävs är det kostnadsfritt och gör 
 
 ## Bästa metoder för att implementera DMARC {#best-practice}
 
-Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Som en god praxis rekommenderas att långsamt införa DMARC-implementering genom att eskalera din DMARC-policy från p=none till p=karantän, till p=reject när du får DMARC-förståelse för DMARC:s potentiella påverkan.
+Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Som bästa praxis rekommenderas att långsamt införa DMARC-implementering genom att eskalera din DMARC-princip från p=none till p=quarantine, till p=reject när du får DMARC-förståelse för DMARC:s potentiella påverkan.
 
-1. Analysera den feedback du får och använder (p=none), som instruerar mottagaren att inte utföra några åtgärder mot meddelanden som inte kan autentiseras, men ändå skicka e-postrapporter till avsändaren. Granska och åtgärda även problem med SPF/DKIM om legitimt meddelande inte kan autentiseras.
+1. Analysera den feedback du får och använder (p=none), som instruerar mottagaren att inte utföra några åtgärder mot meddelanden som inte kan autentiseras, men ändå skicka e-postrapporter till avsändaren. Granska och åtgärda även problem med SPF/DKIM om giltiga meddelanden inte kan autentiseras.
 1. Kontrollera om SPF och DKIM är justerade och skickar autentisering för alla giltiga e-postmeddelanden, och flytta sedan principen till (p=karantän), vilket anger att den mottagande e-postservern ska placera e-postmeddelanden som inte kan autentiseras (detta innebär vanligtvis att meddelandena placeras i skräppostmappen).
-1. Justera princip till (p=avvisa). p= avvisningsprincipen innebär att mottagaren helt nekar (studsar) alla e-postmeddelanden för domänen som inte kan autentiseras. När den här principen är aktiverad har bara e-post som verifieras som 100 % autentiserad av din domän en chans att skickas till Inkorgen.
+1. Justera princip till (p=avvisa). Principen p=reject om att avvisa innebär att mottagaren helt nekar (studsar) alla e-postmeddelanden för domänen som inte kan autentiseras. När den här principen är aktiverad är det bara e-postmeddelanden som verifieras som 100 % autentiserade av din domän som har en chans att skickas till Inkorgen.
 
    >[!NOTE]
    >
@@ -90,6 +91,10 @@ DMARC-poster har flera komponenter som kallas DMARC-taggar. Varje tagg har ett v
 | aspf | Valfritt | Kan vara Strikt (Strikt) eller Avspänd (r). Avspänd justering innebär att ReturnPath-domänen kan vara en underdomän till Från adress. Strikta justeringar innebär att domänen Return-Path måste vara exakt densamma som Från-adressen. | aspf=r | r |
 
 ## DMARC &amp; Adobe Campaign {#campaign}
+
+>[!NOTE]
+>
+>Om din Campaign-instans finns på AWS kan du implementera DMARC för dina underdomäner med Kontrollpanelen. [Lär dig implementera DMARC-poster med hjälp av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 En vanlig orsak till DMARC-fel är felpassning mellan adressen&quot;Från&quot; och&quot;Fel till&quot; eller&quot;Retursökväg&quot;. För att undvika detta bör du kontrollera adressinställningarna&quot;Från&quot; och&quot;Fel till&quot; i leveransmallarna när du konfigurerar DMARC.
 
