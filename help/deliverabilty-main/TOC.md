@@ -6,7 +6,7 @@ feature: Deliverability
 role: Leader, User
 level: Beginner
 auto-video-transcripts: true
-source-git-commit: 7d8c1229b421471f7908c1e13bb80af5b14e42ff
+source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 96%
@@ -46,7 +46,7 @@ ht-degree: 96%
 + [I praktiken](/help/putting-it-in-practice.md)
 + Bilaga: ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
-   + [Uppdateringar om Yahoo och Gmail](/help/guidence-around-changes-to-google-and-yahoo.md)
+   + [Uppdateringar om Yahoo och Gmail](/help/guidance-around-changes-to-google-and-yahoo.md)
    + Generiska resurser {#generic-resources}
       + [Allt om skräppostfällor](/help/additional-resources/all-about-spam-traps.md)
       + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
