@@ -7,9 +7,9 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: acf2686d59bc27063a255a02de52cbaa3734d5ed
+source-git-commit: 0aeff034f6ca2a3dce065240384d1b0e7922fa31
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,9 @@ Undvik panik. [!DNL Google] och [!DNL Yahoo] talar inte om länkar för att avbr
 Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&quot;http/URL&quot;-alternativet med namnet&quot;1-Click&quot;, vilket är avsiktligt. Med det ursprungliga alternativet&quot;http/URL&quot; kunde du tekniskt omdirigera mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda hänvisar till den uppdaterade RFC8058 som fokuserar på att bearbeta avbeställningen via en HTTPS-POST i stället för en webbplats, vilket gör den till&quot;1-klickning&quot;.
 För Marketo Engage har Adobe redan aktiverat alternativet&quot;mailto&quot; och stöder för närvarande inte alternativet&quot;http/URL&quot;. Ytterligare uppdateringar om detta kommer att ske.
 För Adobe Campaign och Adobe Journey Optimizer Adobe rekommenderar vi att du använder både&quot;mailto&quot; och&quot;1-Click&quot;.
-Om du vill ha mer information om hur du kan avbeställa en lista kan du avbeställa den här för Adobe Campaign Classic, Adobe Campaign Standard och Adobe Journey Optimizer eller kontakta Adobe kundsupport när du vill.
+Om du vill ha mer information om hur du implementerar en lista för att avbryta prenumerationen kan du kontrollera [här] (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for Adobe Campaign Classic, [here] (https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for Adobe Campaign Standard, and [here] (https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} för Adobe Journey Optimizer eller kontakta Adobe kundsupport när som helst.
 Behovet av rubriker för att avbryta prenumerationen på listor gäller inte transaktionsmeddelanden. Observera att utlösta meddelanden som övergiven kundvagn och liknande kommunikation som inte genererats av prenumeranten anses vara marknadsföring av postlådeleverantörer som [!DNL Google] och [!DNL Yahoo] och dessa behöver inte längre prenumerera.
+![bild](https://git.corp.adobe.com/storage/user/38257/files/a2da6bdb-524d-46a7-b765-718c1fe407b0)
 
 ## Bearbeta Avbeställ inom 2 dagar:
 
