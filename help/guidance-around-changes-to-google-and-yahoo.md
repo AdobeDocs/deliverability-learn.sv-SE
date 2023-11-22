@@ -7,9 +7,9 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: d237d0dd921d84461a4edd47d8da501c23576d58
+source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -51,9 +51,16 @@ Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&q
 För Marketo Engage har Adobe redan aktiverat alternativet&quot;mailto&quot; och stöder för närvarande inte alternativet&quot;http/URL&quot;. Ytterligare uppdateringar om detta kommer att ske.
 För Adobe Campaign och Adobe Journey Optimizer Adobe rekommenderar vi att du använder både&quot;mailto&quot; och&quot;1-Click&quot;.
 
-Om du vill ha mer information om hur du implementerar en lista för att avbryta prenumerationen kan du kontrollera [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} for **[!DNL Adobe Campaign Classic]**, [here](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} for **[!DNL Adobe Campaign Standard]**, and [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} for **[!DNL Adobe Journey Optimizer]** eller kontakta Adobe kundsupport när som helst.
-
 Behovet av rubriker för att avbryta prenumerationen på listor gäller inte transaktionsmeddelanden. Observera att utlösta meddelanden som övergiven kundvagn och liknande kommunikation som inte genererats av prenumeranten anses vara marknadsföring av postlådeleverantörer som [!DNL Google] och [!DNL Yahoo] och dessa behöver inte längre prenumerera.
+
+>[!INFO]
+> Mer information om hur du implementerar en lösning för att avbryta prenumerationen finns i:
+> * [!DNL Adobe Campaign Classic]: [Tekniska rekommendationer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
+>* [!DNL Adobe Campaign Standard]: [Vad är rubriken List-Unsubscribe? Och hur kan detta implementeras i ACS?](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]: [Hantering av avanmälan via e-post](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
+>
+> Eller kontakta Adobe kundsupport när som helst.
+
 
 ## Bearbeta Avbeställ inom 2 dagar:
 
