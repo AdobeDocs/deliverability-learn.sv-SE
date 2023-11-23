@@ -7,13 +7,13 @@ doc-type: Article
 last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
-source-git-commit: 059e57ac5b40c8e7c8562d0dca5c51de01c6b041
+exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
+source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
 
 ---
-
 
 # Vägledning om de aviserade ändringarna på [!DNL Google] och [!DNL Yahoo]
 
@@ -42,7 +42,7 @@ Om du är Adobe-kund är det mesta av det de behöver redan en del av din konfig
 [!DNL Google] och [!DNL Yahoo] kommer båda att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. De kräver för närvarande INTE en inställning för p=avvisa eller p=karantän, så en inställning på p=none, som vanligtvis kallas &quot;övervakning&quot;, är helt godtagbar. Detta ändrar inte hur dina e-postmeddelanden behandlas, de gör som de normalt skulle göra utan DMARC. Att konfigurera detta är första steget mot att skydda dig med DMARC, och utöver den nya fördelen med att hjälpa dig att skicka e-post till [!DNL Google] och [!DNL Yahoo] kan det också hjälpa dig att se om det finns autentiseringsproblem någonstans i e-postens ekosystem.
 DMARC stöds fullt ut i Adobe, men är inte obligatoriskt. Använd en kostnadsfri DMARC-kontroll för att se om du har DMARC-inställningar för dina underdomäner, och om du inte gör det, prata med ditt supportteam på Adobe för att se hur du bäst får tag i den konfigurationen.
 
-Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign and Adobe Journey Optimizer Adobe or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
+Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
 
 ## 1-klicka (lista) Avbeställ:
 
