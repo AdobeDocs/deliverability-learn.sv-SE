@@ -8,16 +8,16 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: be133b442284b39daa8e2dd276c2942402b4936d
+source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Vägledning om de aviserade ändringarna på [!DNL Google] och [!DNL Yahoo]
 
-3 oktober [!DNL Google] och [!DNL Yahoo] tillsammans presenterade planerade ändringar via sina bloggar. Dessa ändringar är utformade för att göra användarna säkrare och ge en bättre e-postupplevelse genom att följa några vanliga branschstandarder som nya krav från och med februari 2024.
+3 oktober [!DNL Google] och [!DNL Yahoo] tillsammans presenterade planerade ändringar via sina bloggar. Dessa ändringar är utformade för att skydda sina användare och ge dem en bättre e-postupplevelse genom att följa några vanliga branschstandarder som nya krav från och med 1 februari 2024.
 
 [https://blog.google/products/gmail/gmail-security-authentication-spam-protection/](https://blog.google/products/gmail/gmail-security-authentication-spam-protection/){target="_blank"}
 
@@ -40,6 +40,9 @@ Om du är Adobe-kund är det mesta av det de behöver redan en del av din konfig
 ## DMARC:
 
 [!DNL Google] och [!DNL Yahoo] kommer båda att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. De kräver för närvarande INTE en inställning för p=avvisa eller p=karantän, så en inställning på p=none, som vanligtvis kallas &quot;övervakning&quot;, är helt godtagbar. Detta ändrar inte hur dina e-postmeddelanden behandlas, de gör som de normalt skulle göra utan DMARC. Att konfigurera detta är första steget mot att skydda dig med DMARC, och utöver den nya fördelen med att hjälpa dig att skicka e-post till [!DNL Google] och [!DNL Yahoo] kan det också hjälpa dig att se om det finns autentiseringsproblem någonstans i e-postens ekosystem.
+
+Reglerna för DMARC ändras inte, vilket innebär att om de inte har konfigurerats för att förhindra det ärvs en DMARC-post på den överordnade domänen (adobe.com som exempel) och täcker alla underdomäner (som email.adobe.com). Du behöver inte olika DMARC-poster för dina underdomäner, såvida du inte vill eller behöver lägga till dem av olika affärsskäl.
+
 DMARC stöds fullt ut i Adobe, men är inte obligatoriskt. Använd en kostnadsfri DMARC-kontroll för att se om du har DMARC-inställningar för dina underdomäner, och om du inte gör det, prata med ditt supportteam på Adobe för att se hur du bäst får tag i den konfigurationen.
 
 Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
@@ -48,10 +51,19 @@ Du kan även hitta mer information om DMARC och hur du implementerar det [här](
 
 Bli inte panikslagen. [!DNL Google] och [!DNL Yahoo] talar inte om länkar för att avbryta prenumerationen i e-postmeddelandets brödtext eller sidfot som användaren kan klicka på av en säkerhetsrobot som bara gör sitt jobb eller av misstag. De är rubrikfunktionen List-Unsubscribe för någon av versionerna&quot;mailto&quot; eller&quot;http/URL&quot;. Det här är funktionen i [!DNL Yahoo] och Gmail-gränssnitt där användarna kan klicka på Avbeställ. Gmail uppmanar till och med användare som klickar på&quot;Rapportera skräppost&quot; att se om de hade för avsikt att avbeställa prenumerationen istället, vilket kan minska antalet klagomål du får (klagomål som skadar ditt rykte) genom att omvandla dem till att avbeställa prenumerationer istället (vilket inte skadar ditt rykte).
 Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&quot;http/URL&quot;-alternativet med namnet&quot;1-Click&quot;, vilket är avsiktligt. Med det ursprungliga alternativet&quot;http/URL&quot; kunde du tekniskt omdirigera mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda hänvisar till den uppdaterade RFC8058 som fokuserar på att bearbeta avbeställningen via en HTTPS-POST i stället för en webbplats, vilket gör den till&quot;1-klickning&quot;.
+
+Idag [!DNL Gmail] godkänner alternativet &quot;mailto&quot; list-unsubscribe. [!DNL Gmail] har sagt att&quot;mailto&quot; inte uppfyller deras förväntningar och från och med februari måste avsändarna ha alternativet&quot;post&quot; list-unsubscribe aktiverat.
+
+[!DNL Yahoo] har sagt att de kommer att fortsätta att respektera&quot;mailto&quot;-alternativet, för tillfället, men att de också kommer att behöva&quot;post&quot; i framtiden.
+
+Adobe rekommenderar att du använder alternativen&quot;mailto&quot; och&quot;post/1-Click&quot; för att avbryta prenumerationen. Adobe arbetar på att aktivera&quot;postsupport&quot; på alla våra e-postsändningsplattformar för att hjälpa våra användare att uppfylla dessa krav, och ytterligare uppdateringar kommer att göras.
+
 För Marketo Engage har Adobe redan aktiverat alternativet&quot;mailto&quot; och stöder för närvarande inte alternativet&quot;http/URL&quot;. Ytterligare uppdateringar om detta kommer att ske.
 För Adobe Campaign och Adobe Journey Optimizer Adobe rekommenderar vi att du använder både&quot;mailto&quot; och&quot;1-Click&quot;.
 
 Behovet av rubriker för att avbryta prenumerationen på listor gäller inte transaktionsmeddelanden. Observera att utlösta meddelanden som övergiven kundvagn och liknande kommunikation som inte genererats av prenumeranten anses vara marknadsföring av postlådeleverantörer som [!DNL Google] och [!DNL Yahoo] och dessa behöver inte längre prenumerera.
+
+[!DNL Google] och [!DNL Yahoo] är båda medvetna om att en mottagare i vissa fall kommer att avbryta prenumerationen och sedan återprenumerera vid ett senare datum. De är inte villiga att dela den hemliga såsen om hur de identifierar dessa situationer, men de arbetar med metoder för att undvika att straffa avsändare felaktigt i dessa fall.
 
 >[!INFO]
 > Mer information om hur du implementerar en lösning för att avbryta prenumerationen finns i:
@@ -77,6 +89,8 @@ Det har länge varit bra att behålla låga klagomål under 0,2 procent. [!DNL G
 * På samma sätt kommer en hög skräppostfrekvens att leda till ökad skräppostklassificering. Det kan ta tid för förbättringar av skräpposthastigheten att reflektera positivt på skräppostklassificeringen.
   [!DNL Yahoo] har uppgett att tröskelvärdet för deras klagomål också kommer att ligga i intervallet 0,30 %.
 
+[!DNL Google] och [!DNL Yahoo]Målet är inte att straffa avsändare för en enda dålig dag eller ett misstag som orsakar en tillfällig topp i klagomål. I stället fokuserar de på avsändare som har höga klagomål under en längre period eller ett mönster av dåligt sändningsbeteende.
+
 Om du behöver hjälp med att övervaka dina klagomål, eller vill ha hjälp med strategier för att minska antalet klagomål, kan du tala med Adobe Deliverability Consultant eller prata med ditt kontoteam om hur du lägger till en Deliverability Consultant om du inte redan har en sådan.
 
 ## Hur kommer det här att påverka mig som marknadsförare?
@@ -88,3 +102,8 @@ Vi är här för att hjälpa dig, så om du har några frågor eller behöver su
 ## Finns det sätt att kringgå det här?
 
 Även om detta alltid är en fråga som kommer fram är verkligheten den att dessa ändringar är förnuftiga för slutanvändarna av [!DNL Google] och [!DNL Yahoo]på sina plattformar. De är motiverade av dessa användares förväntningar på att följa dessa regler. Vi rekommenderar inte att du försöker kringgå dessa ändringar, utan snarare att du tar ett steg tillbaka och tänker efter hur du ska hantera dessa ändringar.
+
+## Slutlig anteckning:
+
+Detta gäller för närvarande inte e-postmeddelanden som skickas till [!DNL Yahoo].JP eller [!DNL Gmail] Konton på arbetsytan gäller dock e-post som kommer från dessa platser.
+
