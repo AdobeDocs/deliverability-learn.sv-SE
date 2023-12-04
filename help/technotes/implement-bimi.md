@@ -6,7 +6,7 @@ role: Admin
 level: Beginner
 jira: KT-14079
 exl-id: 6b911bcc-a531-466a-8bd3-7fa469b96cc7
-source-git-commit: ad0646da88f2b1474e74b6c741d0dd5701e88978
+source-git-commit: b96539608acd51ce76ef5bdaf5afd07b5a4208b7
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI Groups riktlinjer](
 
 Logotypen måste lagras på en säker plats (HTTPS) om ett leveransnätverk (CDN) används för att skydda postlådeprovidrar från att hämta logotypen (t.ex. punktskydd).
 
-Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering. Vissa leverantörer har egna krav som är utöver dem som ställs av BIMI-arbetsgruppen. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"}. logotypen måste till exempel vara minst 96 x 96 pixlar.
+Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering. Vissa leverantörer har egna krav som är utöver dem som ställs av BIMI-arbetsgruppen. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"} logotypen måste till exempel vara minst 96 x 96 pixlar.
 Observera att bristande efterlevnad kan leda till att logotypen inte visas.
 
 ### Verifierat varumärkescertifikat (VMC) {#vmc}
