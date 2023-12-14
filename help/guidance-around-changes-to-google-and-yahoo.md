@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 0ad2e59948aa94008ae5c3f6eec7914223bdb02a
+source-git-commit: e7c3164acb1eb2ee46938cea333f416e0376f5b6
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1595'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,9 @@ E-postexperterna på Adobe har läst igenom dessa blogginlägg och all länkad d
 
 ## Så vad exakt är [!DNL Google] och [!DNL Yahoo] gör du?
 
-I e-postvärlden finns det juridiska krav, praktiska krav och allmänna bästa metoder. Juridiska krav varierar mycket mellan olika platser och är inte en del av detta ämne. Istället [!DNL Google] och [!DNL Yahoo] använder bästa praxis och omvandlar dem till praktiska krav. Inget av objekten [!DNL Google] och [!DNL Yahoo] kommer att börja kräva nya erbjudanden i februari och har ofta varit rekommendationer om god praxis i åratal, men användningen har varit långsam och ojämn i branschen. Det här är [!DNL Google] och [!DNL Yahoo]Det är ett sätt att hjälpa till att utveckla den acceptansprocessen genom att säga&quot;Om du vill distribuera e-post till våra användare (detta kan utgöra en betydande del av din e-postlista, i vissa fall upp till 70 %, beroende på region och bransch) måste du göra det här&quot;.
+I e-postvärlden finns det juridiska krav, praktiska krav och allmänna bästa metoder. Juridiska krav varierar mycket mellan olika platser och är inte en del av detta ämne. Istället [!DNL Google] och [!DNL Yahoo] använder bästa praxis och omvandlar dem till praktiska krav.
+
+Inget av objekten [!DNL Google] och [!DNL Yahoo] kommer att börja kräva nya erbjudanden i februari och har ofta varit rekommendationer om god praxis i åratal, men användningen har varit långsam och ojämn i branschen. Det här är [!DNL Google] och [!DNL Yahoo]Det är ett sätt att hjälpa till att utveckla den acceptansprocessen genom att säga&quot;Om du vill distribuera e-post till våra användare (detta kan utgöra en betydande del av din e-postlista, i vissa fall upp till 70 %, beroende på region och bransch) måste du göra det här&quot;.
 
 ## Vilka är detaljerna?
 
@@ -50,9 +52,10 @@ Du kan även hitta mer information om DMARC och hur du implementerar det [här](
 ## 1-klicka (lista) Avbeställ:
 
 Bli inte panikslagen. [!DNL Google] och [!DNL Yahoo] talar inte om länkar för att avbryta prenumerationen i e-postmeddelandets brödtext eller sidfot som användaren kan klicka på av en säkerhetsrobot som bara gör sitt jobb eller av misstag. De är rubrikfunktionen List-Unsubscribe för någon av versionerna&quot;mailto&quot; eller&quot;http/URL&quot;. Det här är funktionen i [!DNL Yahoo] och Gmail-gränssnitt där användarna kan klicka på Avbeställ. Gmail uppmanar till och med användare som klickar på&quot;Rapportera skräppost&quot; att se om de hade för avsikt att avbeställa prenumerationen istället, vilket kan minska antalet klagomål du får (klagomål som skadar ditt rykte) genom att omvandla dem till att avbeställa prenumerationer istället (vilket inte skadar ditt rykte).
-Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&quot;http/URL&quot;-alternativet med namnet&quot;1-Click&quot;, vilket är avsiktligt. Med det ursprungliga alternativet&quot;http/URL&quot; kunde du tekniskt omdirigera mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda hänvisar till den uppdaterade RFC8058 som fokuserar på att bearbeta avbeställningen via en HTTPS-POST i stället för en webbplats, vilket gör den till&quot;1-klickning&quot;.
 
-Idag [!DNL Gmail] godkänner alternativet &quot;mailto&quot; list-unsubscribe. [!DNL Gmail] har sagt att&quot;mailto&quot; inte uppfyller deras förväntningar och från och med februari måste avsändarna ha alternativet&quot;post&quot; list-unsubscribe aktiverat.
+Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&quot;http/URL&quot;-alternativet med namnet&quot;1-Click&quot;, vilket är avsiktligt. Med det ursprungliga alternativet&quot;http/URL&quot; kunde du tekniskt omdirigera mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda refererar till den uppdaterade [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} som fokuserar på att bearbeta avbeställningen via en HTTPS-POST istället för en webbplats, vilket innebär att den&quot;1-klickas&quot;.
+
+Idag accepterar Gmail alternativet &quot;mailto&quot; list-unsubscribe. Gmail har sagt att&quot;mailto&quot; inte uppfyller deras förväntningar och avsändarna måste ha alternativet&quot;post&quot; list-unsubscribe aktiverat. Avsändare som redan har en lista över avbrutna prenumerationer av någon typ kommer fram till 1 juni 2024 att ha en lista över avbeställningar.
 
 [!DNL Yahoo] har sagt att de kommer att fortsätta att respektera&quot;mailto&quot;-alternativet, för tillfället, men att de också kommer att behöva&quot;post&quot; i framtiden.
 
@@ -96,7 +99,9 @@ Om du behöver hjälp med att övervaka dina klagomål, eller vill ha hjälp med
 ## Hur kommer det här att påverka mig som marknadsförare?
 
 Gmail och [!DNL Yahoo] förväntas resultera i att e-postmeddelanden landar i skräppostmappen eller blockeras (d.v.s. att en studsa tillbaka från MBP som anger att e-postmeddelandet inte levererades).
+
 Därför rekommenderar Adobe starkt att du går igenom de ändringar som beskrivs ovan och ser till att du börjar följa dem så snart som möjligt. Nu är det också ett bra tillfälle att testa prestandan på [!DNL Yahoo] och [!DNL Google] för att du ska kunna se om det finns några väsentliga förändringar i mätvärdena från februari.
+
 Vi är här för att hjälpa dig, så om du har några frågor eller behöver support kan du prata med din Adobe-konsult eller prata med ditt kontoteam om hur du lägger till en slutproduktskonsult om du inte redan har en.
 
 ## Finns det sätt att kringgå det här?
@@ -107,3 +112,12 @@ Vi är här för att hjälpa dig, så om du har några frågor eller behöver su
 
 Detta gäller för närvarande inte e-postmeddelanden som skickas till [!DNL Yahoo].JP eller [!DNL Gmail] Konton på arbetsytan gäller dock e-post som kommer från dessa platser.
 
+## Ytterligare resurser (inte specifikt för dessa ändringar):
+
+[!DNL Google Sender Guidelines](https://support.google.com/mail/answer/81126){target="_blank"}
+
+[!DNL Google FAQ](https://support.google.com/a/answer/14229414?sjid=2864589551334481470-NC){target="_blank"}
+
+[!DNL Yahoo Sender Guidelines](https://senders.yahooinc.com/best-practices/){target="_blank"}
+
+[!DNL Yahoo FAQ](https://senders.yahooinc.com/faqs/){target="_blank"}
