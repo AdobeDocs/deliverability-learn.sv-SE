@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
+source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Det har länge varit bra att behålla låga klagomål under 0,2 procent. [!DNL G
 * Om du behåller en låg skräppostfrekvens blir avsändarna mer överkänsliga för tillfälliga toppar i användarfeedback.
 * På samma sätt kommer en hög skräppostfrekvens att leda till ökad skräppostklassificering. Det kan ta tid för förbättringar av skräpposthastigheten att reflektera positivt på skräppostklassificeringen.
 
-[!DNL Yahoo] har uppgett att tröskelvärdet för deras klagomål också kommer att ligga i intervallet 0,30 %.
+[!DNL Yahoo] har uppgett att tröskelvärdet för deras klagomål också kommer att vara 0,30 %.
 
 [!DNL Google] och [!DNL Yahoo]Målet är inte att straffa avsändare för en enda dålig dag eller ett misstag som orsakar en tillfällig topp i klagomål. I stället fokuserar de på avsändare som har höga klagomål under en längre period eller ett mönster av dåligt sändningsbeteende.
 
