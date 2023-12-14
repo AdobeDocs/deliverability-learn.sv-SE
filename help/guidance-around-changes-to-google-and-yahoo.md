@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 2bda5d5369d239fac849e57286450a853dd94953
+source-git-commit: 16ff60cdcb1ca1558b8021d27b235b6977c2f40a
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,6 @@ Idag accepterar Gmail alternativet &quot;mailto&quot; list-unsubscribe. Gmail ha
 
 Adobe rekommenderar att du använder alternativen&quot;mailto&quot; och&quot;post/1-Click&quot; för att avbryta prenumerationen. Adobe arbetar på att aktivera&quot;postsupport&quot; på alla våra e-postsändningsplattformar för att hjälpa våra användare att uppfylla dessa krav, och ytterligare uppdateringar kommer att göras.
 
-För Marketo Engage har Adobe redan aktiverat alternativet&quot;mailto&quot; och stöder för närvarande inte alternativet&quot;http/URL&quot;. Ytterligare uppdateringar om detta kommer att ske.
-För Adobe Campaign och Adobe Journey Optimizer Adobe rekommenderar vi att du använder både&quot;mailto&quot; och&quot;1-Click&quot;.
-
 Behovet av rubriker för att avbryta prenumerationen på listor gäller inte transaktionsmeddelanden. Observera att utlösta meddelanden som övergiven kundvagn och liknande kommunikation som inte genererats av prenumeranten anses vara marknadsföring av postlådeleverantörer som [!DNL Google] och [!DNL Yahoo] och dessa behöver inte längre prenumerera.
 
 [!DNL Google] och [!DNL Yahoo] är båda medvetna om att en mottagare i vissa fall kommer att avbryta prenumerationen och sedan återprenumerera vid ett senare datum. De är inte villiga att dela den hemliga såsen om hur de identifierar dessa situationer, men de arbetar med metoder för att undvika att straffa avsändare felaktigt i dessa fall.
@@ -80,6 +77,7 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 ## Bearbeta Avbeställ inom 2 dagar:
 
 Detta har varit en rekommenderad metod en stund, eftersom varje e-postmeddelande som du distribuerar till någon som avbeställer normalt leder till skräppost, så ju tidigare du slutar skicka e-post desto bättre. Även här kan juridiska krav vara mycket längre i vissa fall, men [!DNL Google] och [!DNL Yahoo] kommer att veta att användaren avbeställer prenumerationen via List-Unsubscribe och att du fortfarande skickar e-post på dag 3, och de har angett att de inte tillåter avsändare som gör det att fortsätta skicka e-post till NÅGON av sina användare.
+
 Detta tvådagarskrav gäller för alla avbeställningar via olika metoder för att avsluta prenumerationen. I vissa fall (som&quot;mailto&quot;) innebär det att Adobe kommer att bearbeta dem. Adobe bearbetar alla avbeställningar omedelbart efter det att begäran mottagits, inom tvådagarsgränsen. I andra fall kanske du bearbetar dem. Om du bearbetar dessa förfrågningar kan du behöva göra ändringar i slutet för att den här 2-dagars tidslinjen ska uppfyllas.
 
 ## Klagomålen:
@@ -90,7 +88,8 @@ Det har länge varit bra att behålla låga klagomål under 0,2 procent. [!DNL G
 * Undvik en skräppostfrekvens på 0,30 procent eller högre, särskilt under en längre tidsperiod.
 * Om du behåller en låg skräppostfrekvens blir avsändarna mer överkänsliga för tillfälliga toppar i användarfeedback.
 * På samma sätt kommer en hög skräppostfrekvens att leda till ökad skräppostklassificering. Det kan ta tid för förbättringar av skräpposthastigheten att reflektera positivt på skräppostklassificeringen.
-  [!DNL Yahoo] har uppgett att tröskelvärdet för deras klagomål också kommer att ligga i intervallet 0,30 %.
+
+[!DNL Yahoo] har uppgett att tröskelvärdet för deras klagomål också kommer att ligga i intervallet 0,30 %.
 
 [!DNL Google] och [!DNL Yahoo]Målet är inte att straffa avsändare för en enda dålig dag eller ett misstag som orsakar en tillfällig topp i klagomål. I stället fokuserar de på avsändare som har höga klagomål under en längre period eller ett mönster av dåligt sändningsbeteende.
 
