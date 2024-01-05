@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
+source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Idag accepterar Gmail alternativet &quot;mailto&quot; list-unsubscribe. Gmail ha
 
 [!DNL Yahoo] har sagt att de kommer att fortsätta att respektera&quot;mailto&quot;-alternativet, för tillfället, men att de också kommer att behöva&quot;post&quot; i framtiden.
 
-Adobe rekommenderar att du använder alternativen&quot;mailto&quot; och&quot;post/1-Click&quot; för att avbryta prenumerationen. Adobe arbetar på att aktivera&quot;postsupport&quot; på alla våra e-postsändningsplattformar för att hjälpa våra användare att uppfylla dessa krav, och ytterligare uppdateringar kommer att göras.
+Adobe rekommenderar att du använder alternativen&quot;mailto&quot; och&quot;post/1-Click&quot; för att avbryta prenumerationen. Adobe arbetar med att aktivera&quot;postsupport&quot; på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav. Se informationen nedan.
 
 Behovet av rubriker för att avbryta prenumerationen på listor gäller inte transaktionsmeddelanden. Observera att utlösta meddelanden som övergiven kundvagn och liknande kommunikation som inte genererats av prenumeranten anses vara marknadsföring av postlådeleverantörer som [!DNL Google] och [!DNL Yahoo] och dessa behöver inte längre prenumerera.
 
