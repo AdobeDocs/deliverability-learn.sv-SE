@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 60c3e42c480ec4d438c51753bc6c37a01b1550e7
+source-git-commit: 1f2a6c7b53a5f5110250c8aecac349c5b72feb6b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Om du är Adobe-kund är det mesta av det de behöver redan en del av din konfig
 
 ## DMARC:
 
-[!DNL Google] och [!DNL Yahoo] kommer båda att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. De kräver för närvarande INTE en inställning för p=avvisa eller p=karantän, så en inställning på p=none, som vanligtvis kallas &quot;övervakning&quot;, är helt godtagbar. Detta ändrar inte hur dina e-postmeddelanden behandlas, de gör som de normalt skulle göra utan DMARC. Att konfigurera detta är första steget mot att skydda dig med DMARC, och utöver den nya fördelen med att hjälpa dig att skicka e-post till [!DNL Google] och [!DNL Yahoo] kan det också hjälpa dig att se om det finns autentiseringsproblem någonstans i e-postens ekosystem.
+[!DNL Google] och [!DNL Yahoo] kommer båda att kräva att du har en DMARC-post för alla domäner som du använder för att skicka e-post till dem. De kräver för närvarande INTE en inställning för p=avvisa eller p=karantän, så en inställning på p=none, som vanligtvis kallas &quot;övervakning&quot;, är helt acceptabel för tillfället. Detta ändrar inte hur dina e-postmeddelanden behandlas, de gör som de normalt skulle göra utan DMARC. Att konfigurera detta är första steget mot att skydda dig med DMARC, och utöver den nya fördelen med att hjälpa dig att skicka e-post till [!DNL Google] och [!DNL Yahoo] kan det också hjälpa dig att se om det finns autentiseringsproblem någonstans i e-postens ekosystem.
 
 Reglerna för DMARC ändras inte, vilket innebär att om de inte har konfigurerats för att förhindra det ärvs en DMARC-post på den överordnade domänen (adobe.com som exempel) och täcker alla underdomäner (som email.adobe.com). Du behöver inte olika DMARC-poster för dina underdomäner, såvida du inte vill eller behöver lägga till dem av olika affärsskäl.
 
@@ -66,12 +66,12 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 [!DNL Google] och [!DNL Yahoo] är båda medvetna om att en mottagare i vissa fall kommer att avbryta prenumerationen och sedan återprenumerera vid ett senare datum. De är inte villiga att dela den hemliga såsen om hur de identifierar dessa situationer, men de arbetar med metoder för att undvika att straffa avsändare felaktigt i dessa fall.
 
 >[!INFO]
-> Mer information om hur du implementerar en lösning för att avbryta prenumerationen finns i:
-> * [!DNL Adobe Campaign Classic]: [Tekniska rekommendationer](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}
->* [!DNL Adobe Campaign Standard]: [Vad är rubriken List-Unsubscribe? Och hur kan detta implementeras i ACS?](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: [Hantering av avanmälan via e-post](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"}
+> Adobe arbetar med att aktivera&quot;post&quot;-support på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav:
+> * [!DNL Adobe Campaign Classic V7/V8]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari
+>* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning. Kom tillbaka snart och fråga efter uppdateringar. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
+>* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} senast i mitten av januari
 >
-> Eller kontakta Adobe kundsupport när som helst.
+> Marketo: Uppdateras med stöd för POST 1-klickning. När det är klart tillämpas det automatiskt där det behövs.
 
 
 ## Bearbeta Avbeställ inom 2 dagar:
@@ -94,6 +94,22 @@ Det har länge varit bra att behålla låga klagomål under 0,2 procent. [!DNL G
 [!DNL Google] och [!DNL Yahoo]Målet är inte att straffa avsändare för en enda dålig dag eller ett misstag som orsakar en tillfällig topp i klagomål. I stället fokuserar de på avsändare som har höga klagomål under en längre period eller ett mönster av dåligt sändningsbeteende.
 
 Om du behöver hjälp med att övervaka dina klagomål, eller vill ha hjälp med strategier för att minska antalet klagomål, kan du tala med Adobe Deliverability Consultant eller prata med ditt kontoteam om hur du lägger till en Deliverability Consultant om du inte redan har en sådan.
+
+## Vilka tidslinjer tittar vi på?
+
+Uppdateringar av tidslinjer har gjorts sedan det ursprungliga meddelandet i oktober. De senaste tidslinjerna ser ut så här:
+
+[!DNL Gmail]:
+
+Februari 2024 - Tillfälliga studsar avsedda att varna för bristande efterlevnad börjar. E-postmeddelanden kommer fortfarande att levereras som vanligt efter en kort fördröjning om du ännu inte uppfyller kraven. Om ni uppfyller alla krav kommer det inte att finnas några tillfälliga studsar och ni kommer inte att märka någonting.
+
+April 2024 - Blocken börjar för avsändare som inte uppfyller allt utom List-Unsubscribe 1-Click. Endast en del av e-postmeddelandet som inte uppfyller kraven blockeras först, där procentandelen blockeras med tiden.
+
+1 juni 2024 - Alla avsändare som inte uppfyller alla krav, inklusive List-Unsubscribe 1-Click, blockeras.
+
+[!DNL Yahoo]:
+
+Har inte angett några exakta datum, men har sagt att&quot;genomförandet av lagstiftningen kommer att börja i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
 
 ## Hur kommer det här att påverka mig som marknadsförare?
 
