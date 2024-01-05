@@ -8,7 +8,7 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 69c95855786408f32de2f72e7f1deb122fb369ea
+source-git-commit: c1aebdc34c3cc38325e9160360f7847f276bd53e
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 0%
@@ -68,9 +68,10 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 >[!INFO]
 > Adobe arbetar med att aktivera&quot;post&quot;-support på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav:
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari
->* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning. Kom tillbaka snart och fråga efter uppdateringar. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}
->* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} senast i mitten av januari
+> 
+> * [!DNL Adobe Campaign Classic V7/V8]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari.
+>* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning. Kom tillbaka snart och fråga efter uppdateringar. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}.
+>* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} senast i mitten av januari.
 > * [!DNL Marketo]: Uppdateras med stöd för POST 1-klickning. När det är klart tillämpas det automatiskt där det behövs.
 
 
@@ -99,7 +100,7 @@ Om du behöver hjälp med att övervaka dina klagomål, eller vill ha hjälp med
 
 Uppdateringar av tidslinjer har gjorts sedan det ursprungliga meddelandet i oktober. De senaste tidslinjerna ser ut så här:
 
-## [!DNL Gmail]:
+[!DNL Gmail]:
 
 Februari 2024 - Tillfälliga studsar avsedda att varna för bristande efterlevnad börjar. E-postmeddelanden kommer fortfarande att levereras som vanligt efter en kort fördröjning om du ännu inte uppfyller kraven. Om ni uppfyller alla krav kommer det inte att finnas några tillfälliga studsar och ni kommer inte att märka någonting.
 
@@ -107,7 +108,7 @@ April 2024 - Blocken börjar för avsändare som inte uppfyller allt utom List-U
 
 1 juni 2024 - Alla avsändare som inte uppfyller alla krav, inklusive List-Unsubscribe 1-Click, blockeras.
 
-## [!DNL Yahoo]:
+[!DNL Yahoo]:
 
 Har inte angett några exakta datum, men har sagt att&quot;genomförandet av lagstiftningen kommer att börja i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
 
