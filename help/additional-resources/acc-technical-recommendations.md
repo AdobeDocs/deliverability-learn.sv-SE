@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 1f3391430fa5a86973b8a1bd811b856dea23402e
+source-git-commit: 22e47edbef3f8388e4cd3a01524091458d27ed43
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -212,8 +212,11 @@ Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 * Gå till avsnittet SMTP i Leveransegenskaper.
 * Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
 
-,,, List-Unsubscribe-Post: List-Unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
-,,
+```
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https//domain.com/webApp/unsubNoClick?id=<%= recipient.cryptidcamp %>>, <mailto: %=errorAddress%?
+subject=unsubscribe%=message.mimeMessageId%>
+```
 
 Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder URL list-unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
 
