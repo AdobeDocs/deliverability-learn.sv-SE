@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 81f7f1b98a1393e265d6881b889fe2aa2ea35e02
+source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 0%
@@ -203,8 +203,9 @@ Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna 
 
 Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
-・ Lägg till följande webbprogram 1:&quot;Avbeställ mottagarnas no-click&quot;: Gå till Resources -> Online -> Webbprogram 2; Ladda upp XML:en &quot;Avbeställ mottagarnas no-click&quot; ・ Konfigurera List-Unsubscribe och List-Unsubscribe-Post 1; Gå till avsnittet SMTP i Leveransegenskaper.
-2. Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
+* Lägg till följande webbprogram för&quot;Avbeställ mottagare utan att klicka&quot; 1* Gå till Resurser -> Online -> Webbprogram 2* Ladda upp XML-filen&quot;Avbeställ mottagare utan att klicka&quot;
+* Konfigurera List-Unsubscribe och List-Unsubscribe-Post 1* Gå till SMTP-delen i Delivery Properties.
+2* Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
 
 List-unsubscribe-Post: List-unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
