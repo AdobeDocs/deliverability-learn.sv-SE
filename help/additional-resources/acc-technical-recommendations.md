@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 9ef6a2d18a7ab580822ca6a0ff8d485354ff71d4
+source-git-commit: c99e860507df99fdd4e4fad567eb5e9433ab56ef
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1722'
 ht-degree: 0%
 
 ---
@@ -175,12 +175,12 @@ Kommandoraden måste läggas till i det extra avsnittet i e-postmeddelandets SMT
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-1; List-Unsubscribe: <mailto:unsubscribe@domain.com>
+* List-Unsubscribe: <mailto:unsubscribe@domain.com>
 Om du klickar på länken för att avbryta prenumerationen öppnas användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
 
-2; List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+* List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Om du klickar på länken för att avbryta prenumerationen dirigeras användaren till ditt formulär för att avbryta prenumerationen.
-![bild](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![bild](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
 
 
 ### Skapa en typologiregel {#creating-a-typology-rule}
@@ -199,13 +199,18 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 
 Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. För att uppfylla kravet på ett klick för att avbryta prenumerationen måste avsändaren:
 
-1; Lägg till i en List-Unsubscribe-Post: List-Unsubscribe=One-Click 2; Inkludera en URI för att avbryta prenumerationen Link 3; Support mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder.
+* Lägg till i en&quot;List-Unsubscribe-Post: List-Unsubscribe=One-Click&quot;
+* Inkludera en länk för att avbeställa en URI
+* Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder.
 
 Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
-* Lägg till följande webbprogram för&quot;Avbeställ mottagare utan att klicka&quot; 1* Gå till Resurser -> Online -> Webbprogram 2* Ladda upp XML-filen&quot;Avbeställ mottagare utan att klicka&quot;
-* Konfigurera List-Unsubscribe och List-Unsubscribe-Post 1* Gå till SMTP-delen i Delivery Properties.
-2* Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
+* Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
+* Gå till Resurser -> Online -> Webbprogram
+* Ladda upp XML-filen&quot;Unsubscribe Mottagare no-click&quot;
+* Konfigurera List-Unsubscribe och List-Unsubscribe-Post
+* Gå till avsnittet SMTP i Leveransegenskaper.
+* Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
 
 List-unsubscribe-Post: List-unsubscribe=One-Click List-Unsubscribe: &lt;https: domain.com=&quot;&quot; webapp=&quot;&quot; unsubnoclick=&quot;&quot; id=&quot;&lt;%=&quot; recipient.cryptidcamp=&quot;&quot;>>, &lt;mailto: erroraddress=&quot;&quot; subject=&quot;unsubscribe%=message.mimeMessageId%&quot;>
 
