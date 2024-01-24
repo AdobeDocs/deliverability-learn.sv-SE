@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d8cc8e3ee8b1a0fc6beaec1a7bc357f3a9f52e0f
+source-git-commit: acb2f0c5c983445b538381833f3596251938480a
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
@@ -241,7 +241,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 >
 
 I det här exemplet beskrivs hur du:
-* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http:…>
+* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http://…>
 * Lägg till i sidhuvudet List-Unsubscribe-Post
 
 I exemplet med post-URL används var headerUnsubUrl = &quot;/campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;;
