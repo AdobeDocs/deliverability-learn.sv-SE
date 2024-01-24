@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
+source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -245,15 +245,13 @@ Koda javascript-koden för typologiregeln:
 >[!NOTE]
 >
 >Koden som beskrivs nedan ska endast refereras som exempel.
+>I det här exemplet beskrivs hur du:
+>* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http://…>
+>* Lägg till i sidhuvudet List-Unsubscribe-Post
+>I exemplet med post-URL används var headerUnsubUrl = &quot;/campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;;
+>* Du kan lägga till andra parametrar (som &amp;service = ...)
 >
 
-I det här exemplet beskrivs hur du:
-* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http://…>
-* Lägg till i sidhuvudet List-Unsubscribe-Post
-
-I exemplet med post-URL används var headerUnsubUrl = &quot;/campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;;
-
-Du kan lägga till andra parametrar (som &amp;service = ...)
 
 ```
 // Function to add or replace a header in the provided headers 
