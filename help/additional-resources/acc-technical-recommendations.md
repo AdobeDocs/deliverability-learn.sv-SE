@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f7c2dcbf1bb86d7018c31b1ae2ef29903fb758aa
+source-git-commit: 4389ac3135223c0d363e67fe7403656a17ee3f6a
 workflow-type: tm+mt
 source-wordcount: '1871'
 ht-degree: 1%
@@ -223,18 +223,20 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 ### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
-* Skapa den nya typologiregeln
+# Skapa den nya typologiregeln
 * Klicka på nytt i navigeringsträdet för att skapa en ny typ
   ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
-* Fortsätt med att konfigurera typologiregeln
+
+# Fortsätt med att konfigurera typologiregeln
 * Regeltyp: kontroll
 * Kanal: e-post
 * Fas: I början av personaliseringen
 * Nivå: Ditt val
 * Aktiv
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
 
-* Koda javascript-koden för typologiregeln.
+![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+
+# Koda javascript-koden för typologiregeln.
 
 >[!NOTE]
 >
@@ -345,17 +347,17 @@ return true;
 ```
 ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
 
-* Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK).
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+# Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK).
+![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
 
-* Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma).
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+# Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma).
+![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
 
-* Kontrollera under leveransförberedelsen att din nya typologiregel används.
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+# Kontrollera under leveransförberedelsen att din nya typologiregel används.
+![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
-* Kontrollera att List-Unsubscribe finns
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+# Kontrollera att List-Unsubscribe finns
+![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
 
 
 
