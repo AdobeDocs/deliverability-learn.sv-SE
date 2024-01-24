@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
+source-git-commit: 2eceddf12ce2baea1113d2688f9f8e75f7d31923
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -207,7 +207,7 @@ Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
 * Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
 * Gå till Resurser -> Online -> Webbprogram
-* Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml)
+* Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 
 * Konfigurera List-Unsubscribe och List-Unsubscribe-Post
 * Gå till avsnittet SMTP i Leveransegenskaper.
@@ -224,13 +224,13 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 ### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
-Skapa den nya typologiregeln
+Skapa den nya typologiregeln:
 
-Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
+* Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
-Fortsätt med att konfigurera typologiregeln
+Fortsätt med att konfigurera typologiregeln:
 
 * Regeltyp: kontroll
 * Kanal: e-post
@@ -240,7 +240,7 @@ Fortsätt med att konfigurera typologiregeln
 
 ![bild](/help/assets/CreatingTypologyRules2.png)
 
-Koda javascript-koden för typologiregeln.
+Koda javascript-koden för typologiregeln:
 
 >[!NOTE]
 >
@@ -356,7 +356,7 @@ Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
-Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma).
+Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
 
