@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
+source-git-commit: f9dc4fb190557e2698891853965936ef32124f4a
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 1%
@@ -207,7 +207,8 @@ Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
 * Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
 * Gå till Resurser -> Online -> Webbprogram
-* Ladda upp XML-filen&quot;Unsubscribe Mottagare no-click&quot;
+* Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml)
+
 * Konfigurera List-Unsubscribe och List-Unsubscribe-Post
 * Gå till avsnittet SMTP i Leveransegenskaper.
 * Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
