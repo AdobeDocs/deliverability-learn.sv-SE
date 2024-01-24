@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 0f61e0c36f979372f05772ad5a37114dcb05e8e5
+source-git-commit: 443f8e0c68705e481e7a3b2dbc6d3618d20e6f32
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 Skapa den nya typologiregeln
 
-Klicka på nytt i navigeringsträdet för att skapa en ny typ
+Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
@@ -237,7 +237,7 @@ Fortsätt med att konfigurera typologiregeln
 * Nivå: Ditt val
 * Aktiv
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules2.png)
+![bild](/help/assets/CreatingTypologyRules2.png)
 
 Koda javascript-koden för typologiregeln.
 
@@ -349,23 +349,23 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules3.png)
+![bild](/help/assets/CreatingTypologyRules3.png)
 
 Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK).
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules4.png)
+![bild](/help/assets/CreatingTypologyRules4.png)
 
 Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma).
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules5.png)
+![bild](/help/assets/CreatingTypologyRules5.png)
 
 Kontrollera under leveransförberedelsen att din nya typologiregel används.
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![bild](/help/assets/CreatingTypologyRules6.png)
 
 Verifiera att List-Unsubscribe finns.
 
-![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules6.png)
+![bild](/help/assets/CreatingTypologyRules7.png)
 
 ## E-postoptimering {#email-optimization}
 
