@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
+source-git-commit: 9175a3ded10ce4ea06712855ae3d2119f945c389
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 1%
@@ -225,8 +225,9 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 Skapa den nya typologiregeln
 
-* Klicka på nytt i navigeringsträdet för att skapa en ny typ
-  ![typologyrues1](/help/assets/CreatingTypologyRules1.png)
+Klicka på nytt i navigeringsträdet för att skapa en ny typ
+
+![typologyrues1](/help/assets/CreatingTypologyRules1.png)
 
 Fortsätt med att konfigurera typologiregeln
 
