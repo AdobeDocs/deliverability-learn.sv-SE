@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b192fc5a3287f4e20269f668ff71f328edf94482
+source-git-commit: e310c94334dae232f6f31cc5e188906862f563bd
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1870'
 ht-degree: 1%
 
 ---
@@ -226,7 +226,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 Skapa den nya typologiregeln
 
 * Klicka på nytt i navigeringsträdet för att skapa en ny typ
-  ![bild](https://git.corp.adobe.com/AdobeDocs/deliverability-learn.en/blob/main/help/assets/CreatingTypologyRules1.png)
+  ![typologyrues1](/help/assets/CreatingTypologyRules1.png)
 
 Fortsätt med att konfigurera typologiregeln
 
