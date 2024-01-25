@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b9c8beefe577c8c0943bab31323d5778f1930606
+source-git-commit: 097f41c29e189c2a8abf79e65ec322d39a2213db
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Om du klickar på länken för att avbryta prenumerationen öppnas användarens 
 
 * List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Om du klickar på länken för att avbryta prenumerationen dirigeras användaren till ditt formulär för att avbryta prenumerationen.
-  ![bild](https://git.corp.adobe.com/storage/user/38257/files/3b46450f-2502-48ed-87b9-f537e1850963)
+  ![bild](/help/assets/ListUnsubscribe1.png)
 
 
 ### Skapa en typologiregel {#creating-a-typology-rule}
@@ -228,7 +228,7 @@ Skapa den nya typologiregeln:
 
 * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
-![bild](/help/assets/CreatingTypologyRules1.png)
+![bild](/help/assets/CreatingTypologyRules1.png){width="50%"}{hight="50%"}
 
 Fortsätt med att konfigurera typologiregeln:
 
@@ -248,7 +248,7 @@ Koda javascript-koden för typologiregeln:
 >I det här exemplet beskrivs hur du:
 >* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http://…>
 >* Lägg till i sidhuvudet List-Unsubscribe-Post
->I exemplet med post-URL används var headerUnsubUrl = &quot;/campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;;
+>I exemplet med post-URL används var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;:
 >* Du kan lägga till andra parametrar (som &amp;service = ...)
 >
 
