@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 2de69c2def1abfc4107feb80ad973f689af8b27e
+source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Reglerna för DMARC ändras inte, vilket innebär att om de inte har konfigurera
 
 DMARC stöds fullt ut i Adobe, men är inte obligatoriskt. Använd en kostnadsfri DMARC-kontroll för att se om du har DMARC-inställningar för dina underdomäner, och om du inte gör det, prata med ditt supportteam på Adobe för att se hur du bäst får tag i den konfigurationen.
 
-Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
+Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
 
 ## 1-klicka (lista) Avbeställ:
 
@@ -69,9 +69,9 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 > Adobe arbetar med att aktivera&quot;post&quot;-support på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav:
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari.
->* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning. Kom tillbaka snart och fråga efter uppdateringar. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"}.
->* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning fullt ut idag. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} senast i mitten av januari.
+> * [!DNL Adobe Campaign Classic V7/V8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari.
+>* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning i slutet av februari. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} en gång.
+>* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning idag, men några viktiga förbättringar pågår. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} en gång.
 > * [!DNL Marketo]: Uppdateras med stöd för POST 1-klickning. När det är klart tillämpas det automatiskt där det behövs.
 
 
@@ -110,7 +110,9 @@ April 2024 - Blocken börjar för avsändare som inte uppfyller allt utom List-U
 
 [!DNL Yahoo]:
 
-Har inte angett några exakta datum, men har sagt att&quot;genomförandet av lagstiftningen kommer att börja i februari 2024. Tvingande åtgärder kommer att successivt sättas ut&quot;.
+Februari 2024 - Den successiva utrullningen av indrivningen för alla krav utom 1-klicksregistrering börjar i februari 2024.
+
+Juni 2024 - 1-Click List-Unsubscribe enforcement will begin in juni 2024.
 
 ## Hur kommer det här att påverka mig som marknadsförare?
 
