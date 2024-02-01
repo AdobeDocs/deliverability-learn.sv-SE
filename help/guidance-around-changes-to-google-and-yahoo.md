@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 73d0722bb0b40ea9cad9d50a805396fdfac27c49
+source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1760'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 > Adobe arbetar med att aktivera&quot;post&quot;-support på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav:
 > 
 > 
-> * [!DNL Adobe Campaign Classic V7/V8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"} senast i mitten av januari.
+> * [!DNL Adobe Campaign Classic V7/V8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning i slutet av februari. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} en gång.
 >* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning idag, men några viktiga förbättringar pågår. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} en gång.
 > * [!DNL Marketo]: Uppdateras med stöd för POST 1-klickning. När det är klart tillämpas det automatiskt där det behövs.
