@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 66526ebad0914ef9afa995f7d826e644c0350182
+source-git-commit: 3dc1d2f352346fa2ef7b5c883da6a3e243cb32c0
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1858'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera s
 
 Om du använder den här funktionen kan du skydda ditt rykte och få feedback som du kan avbeställa.
 
-Om du vill använda List-Unsubscribe måste du ange en kommandorad som ser ut så här:
+Om du vill använda List-Unsubscribe måste du ange en kommandorad som liknar:
 
 ```
 List-Unsubscribe: <mailto: client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
@@ -180,7 +180,7 @@ Om du klickar på länken för att avbryta prenumerationen öppnas användarens 
 
 * List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
 Om du klickar på länken för att avbryta prenumerationen dirigeras användaren till ditt formulär för att avbryta prenumerationen.
-  ![bild](/help/assets/ListUnsubscribe1.png)
+  ![bild](/help/assets/UTF-8-1.png)
 
 
 ### Skapa en typologiregel {#creating-a-typology-rule}
@@ -206,12 +206,11 @@ Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna 
 Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
 * Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
-* Gå till Resurser -> Online -> Webbprogram
-* Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
-
+   1. Gå till Resurser -> Online -> Webbprogram
+   2. Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
 * Konfigurera List-Unsubscribe och List-Unsubscribe-Post
-* Gå till avsnittet SMTP i Leveransegenskaper.
-* Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
+   1. Gå till avsnittet SMTP i Leveransegenskaper.
+   2. Under Ytterligare SMTP-rubriker anger du följande på kommandoraden (varje rubrik ska vara på en separat rad):
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
