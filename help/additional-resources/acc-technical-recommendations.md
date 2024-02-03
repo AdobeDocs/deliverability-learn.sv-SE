@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
+source-git-commit: 98ec94935810c060ec0ad7c70336276104072ee3
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,7 +224,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 ### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
-* **Skapa den nya typologiregeln:**
+1. **Skapa den nya typologiregeln:**
 
    * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
