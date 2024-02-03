@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 238c67562ebbe179b326e4093b90b0ee05a070ae
+source-git-commit: 0c735dcf872728be6131b5a185f4b6973b26dcd3
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1867'
 ht-degree: 1%
 
 ---
@@ -228,7 +228,9 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
     * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
+
 ![bild](/help/assets/CreatingTypologyRules1.png)
+
 
 
 **2. **Fortsätt med att konfigurera typologiregeln:**
@@ -239,10 +241,12 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
     * Nivå: Ditt val
     * Aktiv
 
+
 ![bild](/help/assets/CreatingTypologyRules2.png)
 
 
 **Koda javascript-koden för typologiregeln:**
+
 
 >[!NOTE]
 >
@@ -350,25 +354,30 @@ if ( headerUnsubPost === "" ) {
 return true; 
 ```
 
+
 ![bild](/help/assets/CreatingTypologyRules3.png)
 
 
-* **Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
+
+**3. Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
 
-* **Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
+
+**4. Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
 
 
-* **Kontrollera under leveransförberedelsen att din nya typologiregel används.**
+
+**5. Kontrollera under leveransförberedelsen att din nya typologiregel används.**
 
 ![bild](/help/assets/CreatingTypologyRules6.png)
 
 
-* **Verifiera att List-Unsubscribe finns.**
+
+**6. Verifiera att List-Unsubscribe finns.**
 
 ![bild](/help/assets/CreatingTypologyRules7.png)
 
