@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d9b3505de11cc7c50db2a318274b73a758348578
+source-git-commit: 5cd9a1d2296041b11c966cafdfd6b75a71286c3f
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,31 +224,33 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 ### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
-Skapa den nya typologiregeln:
+1. **Skapa den nya typologiregeln:**
 
-* Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
+   * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
-Fortsätt med att konfigurera typologiregeln:
 
-* Regeltyp: kontroll
-* Kanal: e-post
-* Fas: I början av personaliseringen
-* Nivå: Ditt val
-* Aktiv
+2. **Fortsätt med att konfigurera typologiregeln:**
+
+   * Regeltyp: kontroll
+   * Kanal: e-post
+   * Fas: I början av personaliseringen
+   * Nivå: Ditt val
+   * Aktiv
 
 ![bild](/help/assets/CreatingTypologyRules2.png)
 
-Koda javascript-koden för typologiregeln:
+
+**Koda javascript-koden för typologiregeln:**
 
 >[!NOTE]
 >
 >Koden som beskrivs nedan ska endast refereras som exempel.
 >I det här exemplet beskrivs hur du:
->* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>>, http://..
+>* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>>, https://..
 >* Lägg till i sidhuvudet List-Unsubscribe-Post
->I exemplet med post-URL används var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;:
+>I exemplet med post-URL används var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= mottagare.cryptedId %>&quot; max
 >* Du kan lägga till andra parametrar (som &amp;service = ...)
 >
 
@@ -319,7 +321,7 @@ function getHeader(headers, header) {
   
   
 // Define the unsubscribe URL 
-var headerUnsubUrl = "http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
   
 // Get the value of the List-Unsubscribe header 
 var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
@@ -350,21 +352,26 @@ return true;
 
 ![bild](/help/assets/CreatingTypologyRules3.png)
 
-Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK).
+
+3. **Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
-Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)
+
+4. **Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
 
-Kontrollera under leveransförberedelsen att din nya typologiregel används.
+
+5. **Kontrollera under leveransförberedelsen att din nya typologiregel används.**
 
 ![bild](/help/assets/CreatingTypologyRules6.png)
 
-Verifiera att List-Unsubscribe finns.
+
+6. **Verifiera att List-Unsubscribe finns.**
 
 ![bild](/help/assets/CreatingTypologyRules7.png)
+
 
 ## E-postoptimering {#email-optimization}
 
