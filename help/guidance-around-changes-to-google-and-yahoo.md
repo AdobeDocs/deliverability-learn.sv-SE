@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: ef6152550bf56395dd9e57e1286b1bebf141128c
+source-git-commit: 8de2247f78f8c6e8467ffe51ffdf1b6107d30118
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Om du är Adobe-kund är det mesta av det de behöver redan en del av din konfig
 
 Reglerna för DMARC ändras inte, vilket innebär att om de inte har konfigurerats för att förhindra det ärvs en DMARC-post på den överordnade domänen (adobe.com som exempel) och täcker alla underdomäner (som email.adobe.com). Du behöver inte olika DMARC-poster för dina underdomäner, såvida du inte vill eller behöver lägga till dem av olika affärsskäl.
 
-DMARC stöds fullt ut i Adobe, men är inte obligatoriskt. Använd en kostnadsfri DMARC-kontroll för att se om du har DMARC-inställningar för dina underdomäner, och om du inte gör det, prata med ditt supportteam på Adobe för att se hur du bäst får tag i den konfigurationen.
+Konfigurering av DMARC TXT-poster stöds för närvarande helt i Adobe för Campaign och AJO, men är inte obligatoriskt. Använd en kostnadsfri DMARC-kontroll för att se om du har DMARC-inställningar för dina underdomäner, och om du inte gör det, prata med ditt supportteam på Adobe för att se hur du bäst får tag i den konfigurationen.
 
 Du kan även hitta mer information om DMARC och hur du implementerar det [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=sv){target="_blank"} for Adobe Campaign, [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/dmarc-record-update.html?lang=en){target="_blank"} for AJO, or [here](https://experienceleague.adobe.com/docs/marketo/using/getting-started-with-marketo/setup/configure-protocols-for-marketo.html){target="_blank"} för Marketo Engage.
 
@@ -53,7 +53,7 @@ Du kan även hitta mer information om DMARC och hur du implementerar det [här](
 
 Bli inte panikslagen. [!DNL Google] och [!DNL Yahoo] talar inte om länkar för att avbryta prenumerationen i e-postmeddelandets brödtext eller sidfot som användaren kan klicka på av en säkerhetsrobot som bara gör sitt jobb eller av misstag. De är rubrikfunktionen List-Unsubscribe för någon av versionerna&quot;mailto&quot; eller&quot;http/URL&quot;. Det här är funktionen i [!DNL Yahoo] och Gmail-gränssnitt där användarna kan klicka på Avbeställ. Gmail uppmanar till och med användare som klickar på&quot;Rapportera skräppost&quot; att se om de hade för avsikt att avbeställa prenumerationen istället, vilket kan minska antalet klagomål du får (klagomål som skadar ditt rykte) genom att omvandla dem till att avbeställa prenumerationer istället (vilket inte skadar ditt rykte).
 
-Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda syftar på&quot;http/URL&quot;-alternativet med namnet&quot;1-Click&quot;, vilket är avsiktligt. Med det ursprungliga alternativet&quot;http/URL&quot; kunde du tekniskt omdirigera mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda refererar till den uppdaterade [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} som fokuserar på att bearbeta avbeställningen via en HTTPS-POST istället för en webbplats, vilket innebär att den&quot;1-klickas&quot;.
+Det är viktigt att notera att [!DNL Google] och [!DNL Yahoo] båda hänvisar till alternativet &quot;http/URI&quot; med namnet &quot;1-Click&quot;, och detta är avsiktligt. Tekniskt sett kunde du med det ursprungliga alternativet &quot;http/URI&quot; dirigera om mottagare till en webbplats. Det är inte fokus för [!DNL Yahoo] och [!DNL Google], som båda refererar till den uppdaterade [RFC8058](https://datatracker.ietf.org/doc/html/rfc8058){target="_blank"} som fokuserar på att bearbeta avbeställningen via en HTTPS-POST istället för en webbplats, vilket innebär att den&quot;1-klickas&quot;.
 
 Idag accepterar Gmail alternativet &quot;mailto&quot; list-unsubscribe. Gmail har sagt att&quot;mailto&quot; inte uppfyller deras förväntningar och avsändarna måste ha alternativet&quot;post&quot; list-unsubscribe aktiverat. Avsändare som redan har en lista över avbrutna prenumerationer av någon typ kommer fram till 1 juni 2024 att ha en lista över avbeställningar.
 
@@ -71,8 +71,8 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 > 
 > * [!DNL Adobe Campaign Classic V7/V8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
 >* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning i slutet av februari. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} en gång.
->* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning idag, men några viktiga förbättringar pågår. Uppdateringar till steg för steg kommer att publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} en gång.
-> * [!DNL Marketo]: Uppdateras med stöd för POST 1-klickning. När det är klart tillämpas det automatiskt där det behövs.
+>* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning idag, men vissa viktiga förbättringar pågår och förväntas äga rum i mars 2024. Uppdateringar av dokumentationen publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} en gång.
+> * [!DNL Marketo]: Från och med den 31 januari 2024 stöder fullt ut POST 1-Click-List-Unsubscribe. Ingen åtgärd krävs av användaren.
 
 
 ## Bearbeta Avbeställ inom 2 dagar:
