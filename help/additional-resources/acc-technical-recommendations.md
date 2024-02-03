@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 5cd9a1d2296041b11c966cafdfd6b75a71286c3f
+source-git-commit: 5ce1c499d897ccbec7713ef2ad03ef0a810971b4
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 1%
@@ -224,14 +224,14 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 ### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
-1. **Skapa den nya typologiregeln:**
+* **Skapa den nya typologiregeln:**
 
    * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
 
-2. **Fortsätt med att konfigurera typologiregeln:**
+* **Fortsätt med att konfigurera typologiregeln:**
 
    * Regeltyp: kontroll
    * Kanal: e-post
@@ -353,22 +353,22 @@ return true;
 ![bild](/help/assets/CreatingTypologyRules3.png)
 
 
-3. **Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
+* **Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
 
-4. **Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
+* **Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
 
 
-5. **Kontrollera under leveransförberedelsen att din nya typologiregel används.**
+* **Kontrollera under leveransförberedelsen att din nya typologiregel används.**
 
 ![bild](/help/assets/CreatingTypologyRules6.png)
 
 
-6. **Verifiera att List-Unsubscribe finns.**
+* **Verifiera att List-Unsubscribe finns.**
 
 ![bild](/help/assets/CreatingTypologyRules7.png)
 
