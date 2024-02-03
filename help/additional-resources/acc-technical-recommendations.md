@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: f8aaa0c21daf93953fb0daa6a5d9262c8d1654a0
+source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -175,10 +175,10 @@ Kommandoraden måste läggas till i det extra avsnittet i e-postmeddelandets SMT
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-1. List-Unsubscribe: <mailto:unsubscribe@domain.com>
+    1. Lista-Avbeställ: mailto:unsubscribe@domain.com
 Om du klickar på länken för att avbryta prenumerationen öppnas användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
 
-2. List-Unsubscribe: <https://domain.com/unsubscribe.jsp>
+    2. Lista-Avbeställ: https://domain.com/unsubscribe.jsp
 Om du klickar på länken för att avbryta prenumerationen dirigeras användaren till ditt formulär för att avbryta prenumerationen.
 
 ![bild](/help/assets/UTF-8-1.png)
@@ -246,7 +246,7 @@ Koda javascript-koden för typologiregeln:
 >
 >Koden som beskrivs nedan ska endast refereras som exempel.
 >I det här exemplet beskrivs hur du:
->* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, <http://…>
+>* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>>, http://..
 >* Lägg till i sidhuvudet List-Unsubscribe-Post
 >I exemplet med post-URL används var headerUnsubUrl = &quot;http://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= receive.cryptedId %>&quot;:
 >* Du kan lägga till andra parametrar (som &amp;service = ...)
