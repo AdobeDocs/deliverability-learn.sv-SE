@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: c14b1eecbe522c650a8be376f8f133901497216a
+source-git-commit: 8fe2a9de16a7856c66a643ce7aaf22bae016246e
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1861'
 ht-degree: 1%
 
 ---
@@ -175,11 +175,9 @@ Kommandoraden måste läggas till i det extra avsnittet i e-postmeddelandets SMT
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-    1. Lista-Avbeställ: mailto:unsubscribe@domain.com
-Om du klickar på länken för att avbryta prenumerationen öppnas användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
+1.List-Unsubscribe: mailto:unsubscribe@domain.com Klicka på länken för att avbryta prenumerationen för att öppna användarens standardklient för e-post. Den här typologiregeln måste läggas till i en typologi som används för att skapa e-post.
 
-    2. Lista-Avbeställ: https://domain.com/unsubscribe.jsp
-Om du klickar på länken för att avbryta prenumerationen dirigeras användaren till ditt formulär för att avbryta prenumerationen.
+2.List-Unsubscribe: https://domain.com/unsubscribe.jsp Klicka på länken för att avbryta prenumerationen dirigerar om användaren till ditt formulär för att avbryta prenumerationen.
 
 ![bild](/help/assets/UTF-8-1.png)
 
