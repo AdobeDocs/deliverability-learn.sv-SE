@@ -1,23 +1,18 @@
 ---
-source-git-commit: 5de602d6b75e524dac8688e40db0e96bdbafceba
+source-git-commit: 945a7ba5e3c3ac9544199e1bb62273933a82f04a
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 4%
 
 ---
-### Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
+# Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
 **1. Skapa den nya typologiregeln:**
-
 * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
-
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
-
-
 **2. Fortsätt med att konfigurera typologiregeln:**
-
 * Regeltyp: Kontroll
 * Fas: Vid början av målinriktningen
 * Kanal: E-post
@@ -140,19 +135,13 @@ return true;
 
 ![bild](/help/assets/CreatingTypologyRules3.png)
 
-
-
 **3. Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
-
-
 **4. Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
-
-
 
 **5. Kontrollera under leveransförberedelsen att din nya typologiregel används.**
 
