@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 73ce12a86176e59ff4112c19382f7a62714b41e7
+source-git-commit: b4be656998890f9c98b8417835ae7c5bda2bc499
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 1%
@@ -235,9 +235,9 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 **2. Fortsätt med att konfigurera typologiregeln:**
 
-* Regeltyp: kontroll
-* Kanal: e-post
-* Fas: I början av personaliseringen
+* Regeltyp: Kontroll
+* Fas: Vid början av målinriktningen
+* Kanal: E-post
 * Nivå: Ditt val
 * Aktiv
 
