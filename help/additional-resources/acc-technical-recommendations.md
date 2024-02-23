@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: bfdf87937d001791701884d29db2da1fd7a0e8ee
+source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster
 
 ### Om List-Unsubscribe {#about-list-unsubscribe}
 
-Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering.Från och med 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. Mer information om hur du konfigurerar One-Click List-Unsubscribe finns nedan.
+Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering. Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. Mer information om hur du konfigurerar One-Click List-Unsubscribe finns i [det här avsnittet](#one-click-list-unsubscribe).
 
 
 Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en länk för att avbryta prenumerationen i e-postgränssnittet.
@@ -181,7 +181,7 @@ Lista-Avbeställ: mailto:unsubscribe@domain.com
 Lista-Avbeställ: https://domain.com/unsubscribe.jsp
 * Klicka på **avbeställ** link dirigerar om användaren till ditt formulär för att avbryta prenumerationen.
 
-![bild](/help/assets/UTF-8-1.png)
+![bild](../assets/UTF-8-1.png)
 
 
 ### Skapa en typologiregel {#creating-a-typology-rule}
@@ -196,7 +196,7 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 >
 >Lär dig hur du skapar typologiregler i Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
-### Avbeställ prenumeration med ett klick
+### Avbeställ prenumeration med ett klick {#one-click-list-unsubscribe}
 
 Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. För att uppfylla kravet på ett klick för att avbryta prenumerationen måste avsändaren:
 
@@ -215,7 +215,7 @@ Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
 
 ```
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-List-Unsubscribe: https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
 
 Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder URL list-unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
@@ -227,9 +227,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
-
-![bild](/help/assets/CreatingTypologyRules1.png)
-
+![bild](../assets/CreatingTypologyRules1.png)
 
 
 **2. Fortsätt med att konfigurera typologiregeln:**
@@ -241,7 +239,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 * Aktiv
 
 
-![bild](/help/assets/CreatingTypologyRules2.png)
+![bild](../assets/CreatingTypologyRules2.png)
 
 
 **Koda javascript-koden för typologiregeln:**
@@ -354,31 +352,31 @@ return true;
 ```
 
 
-![bild](/help/assets/CreatingTypologyRules3.png)
+![bild](../assets/CreatingTypologyRules3.png)
 
 
 
 **3. Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
 
-![bild](/help/assets/CreatingTypologyRules4.png)
+![bild](../assets/CreatingTypologyRules4.png)
 
 
 
 **4. Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
-![bild](/help/assets/CreatingTypologyRules5.png)
+![bild](../assets/CreatingTypologyRules5.png)
 
 
 
 **5. Kontrollera under leveransförberedelsen att din nya typologiregel används.**
 
-![bild](/help/assets/CreatingTypologyRules6.png)
+![bild](../assets/CreatingTypologyRules6.png)
 
 
 
 **6. Verifiera att List-Unsubscribe finns.**
 
-![bild](/help/assets/CreatingTypologyRules7.png)
+![bild](../assets/CreatingTypologyRules7.png)
 
 
 ## E-postoptimering {#email-optimization}
