@@ -1,12 +1,11 @@
 ---
-source-git-commit: edb580cc635a8cdfc7b8aedc89e56ce0b907545f
+source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
 
 ---
-### Avbeställ Do’s och Do Not’s
-###
+# Avbeställ Do’s och Do Not’s
 
 Syftet med det här dokumentet är att granska rekommenderade metoder för att avbryta prenumerationen av e-post.
 
@@ -29,7 +28,7 @@ GÖR: Gör processen enkel och transparent. Exempel:
 
 + &quot;Klicka här om du vill avbryta prenumerationen på alla marknadsföringsmejl&quot;. Detta bör vara det första alternativet som användaren får.
 
-+ &quot;Klicka här om du vill ändra dina inställningar.&quot;
++ &quot;Klicka här om du vill ändra dina inställningar&quot;.
 
 GÖR: Inkludera e-postadressen på startsidan för avbeställningen.
 
