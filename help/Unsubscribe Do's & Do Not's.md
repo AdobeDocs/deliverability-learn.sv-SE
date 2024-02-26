@@ -1,5 +1,5 @@
 ---
-source-git-commit: d30c3e96a9e341f34d471af35692da9e1c0b72d4
+source-git-commit: 5e7c7bf626b6277abf8d50181826deb2e21c868f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -48,7 +48,7 @@ GÖR: Låt prenumeranterna styra relationen.
 
 GÖR: Använd rubriken Lista avslut i e-postmallarna så att e-postklienter (till exempel: gmail.com) som visar avregistreringslänkar högst upp i e-postmeddelandet enkelt kan hitta var användaren är van vid att söka efter avanmälan.
 
-+ Klicka här (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ för att avbeställa en prenumeration med ett klick.
++ Klicka [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ med ett enda klick.
 
 The Do Not&#39;s
 
