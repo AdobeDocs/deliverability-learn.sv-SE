@@ -1,5 +1,5 @@
 ---
-source-git-commit: 73776a83c10a1c871ffaae38371fa2c48b5bf308
+source-git-commit: edb580cc635a8cdfc7b8aedc89e56ce0b907545f
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -8,10 +8,10 @@ ht-degree: 0%
 ### Avbeställ Do’s och Do Not’s
 ###
 
-
 Syftet med det här dokumentet är att granska rekommenderade metoder för att avbryta prenumerationen av e-post.
 
 Avbeställningar är en naturlig del av e-postlivscykeln. Men det är svårt för marknadsförarna att ta farväl ibland. Ni arbetar så hårt för att skapa de mest engagerande e-postmeddelandena och presentera de bästa erbjudandena om produkter och tjänster som ert varumärke erbjuder. Det är dock helt normalt, och bör förväntas, att vissa prenumeranter går vidare. Det kan bero på ett antal orsaker, men slutresultatet är att de inte längre är intresserade av att höra från dig.
+
 Vi har skapat en lista över saker som ska göras och saker som ska undvikas när du hanterar avanmälan från dina e-postlistor - läs vidare för mer information.
 
 The Do’s
@@ -51,8 +51,7 @@ GÖR: Använd rubriken Lista avslut i e-postmallarna så att e-postklienter (til
 
 + Klicka här (https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ för att avbeställa en prenumeration med ett klick.
 
-# The Do Not&#39;s
-#
+The Do Not&#39;s
 
 
 DO NOT: Bury the unsubscribe link in your content in the hopp to be subscribers will end’ out of frustration.
@@ -86,4 +85,3 @@ GÖR INTE: Tvinga dem att ge dig en anledning till varför de avanmälde sig inn
 + Ett bättre sätt är att informera dem om att de har avbeställt prenumerationen och sedan ge dem möjlighet att ange orsaken/orsakerna.
 
 Kom ihåg att avanmälan är bättre än klagomål. Personer som inte engagerar sig positivt i e-postprogrammet kan få negativa effekter på både leveransens anseende och mätvärden. Nu är det dags för er att fokusera på att utveckla djupare relationer med era nuvarande prenumeranter genom att behandla dem för engagerade, relevanta meddelanden som de inte kan vänta på att öppna, klicka igenom och göra ett inköp!
-
