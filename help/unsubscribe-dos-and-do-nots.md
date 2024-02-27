@@ -8,7 +8,7 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
+source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -30,7 +30,8 @@ Vi har skapat en lista över saker som ska göras och saker som ska undvikas nä
 
 **DO:** Låt avbeställaren länka till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan
 
-+ Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräfta min avanmälan&quot; och kanske en annan länk där det står&quot;Låt mig avanmäla mig och ange en lägre frekvens för den post jag får från dig&quot;. Även om detta inte är en avbeställningsmetod med ett enda klick, kan det hjälpa till att undvika båda klick som resulterar i ett felaktigt avbeställningsförsök.
+Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräfta min avanmälan&quot; och kanske en annan länk där det står&quot;Låt mig avanmäla mig och ange en lägre frekvens för den post jag får från dig&quot;. Även om detta inte är en avbeställningsmetod med ett enda klick, kan det hjälpa till att undvika båda klick som resulterar i ett felaktigt avbeställningsförsök.
+
 + Om din avbeställning tar en användare till en landningssida ska du se till att landningssidan har ett klick på sig att avbryta prenumerationen när användaren har landat på sidan.
 
 **DO:** Gör processen enkel och transparent. Exempel:
@@ -57,7 +58,7 @@ Vi har skapat en lista över saker som ska göras och saker som ska undvikas nä
 
 **DO:** Använd rubriken för att avbeställa en lista i e-postmallarna så att e-postklienter (till exempel: gmail.com) som visar länkar för att avbryta prenumerationen överst i e-postmeddelandet enkelt kan hitta var användaren är van vid att avbeställa prenumerationen.
 
-+ Klicka [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ med ett enda klick.
+Klicka [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ med ett enda klick.
 
 ## The Do Not&#39;s
 
@@ -90,6 +91,7 @@ Vi har skapat en lista över saker som ska göras och saker som ska undvikas nä
 **GÖR INTE:** Tvinga dem att ge dig en anledning till varför de avanmälde sig innan du bearbetar begäran.
 
 + Att ge kunden en plats att lägga till den här informationen kan vara praktiskt för er när det gäller framtida insikter, men göra det till ett valfritt fält på landningssidan för att avbryta prenumerationen.
+
 + Ett bättre sätt är att informera dem om att de har avbeställt prenumerationen och sedan ge dem möjlighet att ange orsaken/orsakerna.
 
 Kom ihåg att avanmälan är bättre än klagomål. Personer som inte engagerar sig positivt i e-postprogrammet kan få negativa effekter på både leveransens anseende och mätvärden. Nu är det dags för er att fokusera på att utveckla djupare relationer med era nuvarande prenumeranter genom att behandla dem för engagerade, relevanta meddelanden som de inte kan vänta på att öppna, klicka igenom och göra ett inköp!
