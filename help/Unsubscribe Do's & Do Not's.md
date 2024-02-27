@@ -1,13 +1,11 @@
 ---
-source-git-commit: 34a7b7c8d6a2bda2f5b131bbbd9570c0b577c02c
+source-git-commit: 214036c89a3c0b3ebcdfc66bc8a4e4bd2ede5766
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 # Avbeställ Do’s och Do Not’s
-
-Syftet med det här dokumentet är att granska rekommenderade metoder för att avbryta prenumerationen av e-post.
 
 Avbeställningar är en naturlig del av e-postlivscykeln. Men det är svårt för marknadsförarna att ta farväl ibland. Ni arbetar så hårt för att skapa de mest engagerande e-postmeddelandena och presentera de bästa erbjudandena om produkter och tjänster som ert varumärke erbjuder. Det är dock helt normalt, och bör förväntas, att vissa prenumeranter går vidare. Det kan bero på ett antal orsaker, men slutresultatet är att de inte längre är intresserade av att höra från dig.
 
