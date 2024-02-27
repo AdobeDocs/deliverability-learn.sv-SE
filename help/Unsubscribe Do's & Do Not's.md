@@ -1,5 +1,5 @@
 ---
-source-git-commit: fcf836681561221bdf8b96593813c26b2d8bc399
+source-git-commit: 34a7b7c8d6a2bda2f5b131bbbd9570c0b577c02c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -15,22 +15,22 @@ Vi har skapat en lista över saker som ska göras och saker som ska undvikas nä
 
 ## The Do’s
 
-Gör: Ha en tydlig länk för att avsluta prenumerationen. Detta kan förhindra användare från att klicka på&quot;this is spam&quot;-klagomålet (även kallat en feedbackslinga)
+**DO:** Ha en tydlig länk för att avsluta prenumerationen. Detta kan förhindra användare från att klicka på&quot;this is spam&quot;-klagomålet (även kallat en feedbackslinga)
 
 + Några idéer om hur du får länken för att avbryta prenumerationen att sticka ut: Centrera den, stryk under den och fet, placera den antingen längst upp eller längst ned i e-postmeddelandet så att den får en annan teckenfärg Använd det enda ordet -&quot;UNSUBSCRIBE&quot; - i användarens språkinställning. Använd inte blomma eller överdrivet verbiage.
 
-GÖR: Ha en länk till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan
+**DO:** Låt avbeställaren länka till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan
 
 + Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräfta min avanmälan&quot; och kanske en annan länk där det står&quot;Låt mig avanmäla mig och ange en lägre frekvens för den post jag får från dig&quot;. Även om detta inte är en avbeställningsmetod med ett enda klick, kan det hjälpa till att undvika båda klick som resulterar i ett felaktigt avbeställningsförsök.
 + Om din avbeställning tar en användare till en landningssida ska du se till att landningssidan har ett klick på sig att avbryta prenumerationen när användaren har landat på sidan.
 
-GÖR: Gör processen enkel och transparent. Exempel:
+**DO:** Gör processen enkel och transparent. Exempel:
 
 + &quot;Klicka här om du vill avbryta prenumerationen på alla marknadsföringsmejl&quot;. Detta bör vara det första alternativet som användaren får.
 
 + &quot;Klicka här om du vill ändra dina inställningar&quot;.
 
-GÖR: Inkludera e-postadressen på startsidan för avbeställningen.
+**DO:** Inkludera e-postadressen på landningssidan för avanmälan.
 
 + Viktigt: Beroende på var dina användare befinner sig kan det finnas sekretessproblem med att ta med den fullständiga e-postadressen - du kan behöva fylla i en hashad version av e-postadressen i förväg. Detta beror på att e-postmeddelandet kan ha vidarebefordrats från den ursprungliga prenumerationsadressen. Kontakta er juridiska grupp för att få en förståelse för era specifika behov.
 
