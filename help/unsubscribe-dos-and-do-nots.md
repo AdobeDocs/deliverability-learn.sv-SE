@@ -1,10 +1,21 @@
 ---
-source-git-commit: 68580661062e1e323ff728c09ebf3a5103544fff
+title: Avbeställ Do's och Do Not's
+description: Använd en lista över saker som du bör göra och saker som du inte bör göra när du hanterar avanmälan.
+feature: Deliverability
+role: Admin
+level: Beginner
+doc-type: Feature Video
+duration: 0
+last-substantial-update: 2024-02-27T00:00:00Z
+jira: KT-15029
+source-git-commit: 77de42d30ce01ab66323da1731a4a0bf96a94f44
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
+
+
 # Avbeställ Do’s och Do Not’s
 
 Avbeställningar är en naturlig del av e-postlivscykeln. Men det är svårt för marknadsförarna att ta farväl ibland. Ni arbetar så hårt för att skapa de mest engagerande e-postmeddelandena och presentera de bästa erbjudandena om produkter och tjänster som ert varumärke erbjuder. Det är dock helt normalt, och bör förväntas, att vissa prenumeranter går vidare. Det kan bero på ett antal orsaker, men slutresultatet är att de inte längre är intresserade av att höra från dig.
