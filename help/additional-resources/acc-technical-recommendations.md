@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: b5e1d878c889112e08da0969d50bdb3c72e48f8c
+source-git-commit: 466b775442964e2d8cad133280e6b9f8af148b25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -139,8 +139,11 @@ Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster
 
 ### Om List-Unsubscribe {#about-list-unsubscribe}
 
-Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering. Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. Mer information om hur du konfigurerar One-Click List-Unsubscribe finns i [det här avsnittet](#one-click-list-unsubscribe).
+Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering.
 
+>[!CAUTION]
+>
+>Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. Mer information om hur du konfigurerar One-Click List-Unsubscribe finns i [det här avsnittet](#one-click-list-unsubscribe).
 
 Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en länk för att avbryta prenumerationen i e-postgränssnittet.
 
@@ -191,20 +194,18 @@ Regeln måste innehålla skriptet som genererar kommandoraden och den måste ink
 >[!NOTE]
 >
 >Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs till automatiskt i varje e-postmeddelande.
-
->[!NOTE]
 >
->Lär dig hur du skapar typologiregler i Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+>Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
 
 ### Avbeställ prenumeration med ett klick {#one-click-list-unsubscribe}
 
-Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. För att uppfylla kravet på ett klick för att avbryta prenumerationen måste avsändaren:
+Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. För att uppfylla detta krav måste avsändarna
 
-1. Lägg till i en&quot;List-Unsubscribe-Post: List-Unsubscribe=One-Click&quot;
-2. Inkludera en länk för att avbeställa en URI
-3. Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder.
+1. Lägg till följande kommandorad:`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+1. Inkludera en länk för att avbryta prenumerationen för URI.
+1. Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder.
 
-Så här konfigurerar du ett klick för att avbryta prenumeration direkt:
+Så här konfigurerar du en-klicklista-avbryt prenumeration direkt i Adobe Campaign v7/v8:
 
 * Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
    1. Gå till Resurser -> Online -> Webbprogram

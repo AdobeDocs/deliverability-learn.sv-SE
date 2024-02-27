@@ -8,9 +8,9 @@ last-substantial-update: 2023-11-06T00:00:00Z
 jira: KT-14320
 thumbnail: KT-14320.jpeg
 exl-id: 879e9124-3cfe-4d85-a7d1-64ceb914a460
-source-git-commit: 50017358f7f88f5579de282a1f528916ecb17493
+source-git-commit: e2c2fbfee5e404e1eef25dd0068a6bdd560ed977
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1770'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,11 @@ Behovet av rubriker för att avbryta prenumerationen på listor gäller inte tra
 
 >[!INFO]
 > Adobe arbetar med att aktivera&quot;post&quot;-support på alla våra e-postsändningsplattformar för att ge stöd åt våra användare så att de uppfyller dessa krav:
-> 
-> 
-> * [!DNL Adobe Campaign Classic V7/V8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
->* [!DNL Adobe Campaign Standard]: Uppdateras med stöd för POST 1-klickning i slutet av februari. Installationsanvisningar ges [här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-14778.html?lang=en){target="_blank"} en gång.
+>
+> * [!DNL Adobe Campaign v7/v8]: Fullt stöd för POST 1-klickning idag, instruktioner finns [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=en#list-unsubscribe){target="_blank"}.
+>* [!DNL Adobe Campaign Standard]: Från och med den 19 februari stöder POST 1-Click fullt ut. Mer information finns [här](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel.html#email-channel-parameters){target="_blank"}.
 >* [!DNL Adobe Journey Optimizer]: Stöder POST 1-klickning idag, men vissa viktiga förbättringar pågår och förväntas äga rum i mars 2024. Uppdateringar av dokumentationen publiceras [här](https://experienceleague.adobe.com/docs/journey-optimizer/using/email/email-opt-out.html?lang=en){target="_blank"} en gång.
-> * [!DNL Marketo]: Från och med den 31 januari 2024 stöder fullt ut POST 1-Click-List-Unsubscribe. Ingen åtgärd krävs av användaren.
-
+> * [!DNL Marketo]: Från och med den 31 januari 2024 stöds POST 1-Click List-Unsubscribe. Ingen åtgärd krävs av användaren.
 
 ## Bearbeta Avbeställ inom 2 dagar:
 
