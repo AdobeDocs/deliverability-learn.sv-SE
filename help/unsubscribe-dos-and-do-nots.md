@@ -8,9 +8,9 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: d4af9b039e2f8f140124cf21edec825e803c1308
+source-git-commit: 7f1e756683bfc5c8587101fcbf86db010a5b6a7e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,6 @@ Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräf
 
 **DO:** Använd rubriken för att avbeställa en lista i e-postmallarna så att e-postklienter (till exempel: gmail.com) som visar länkar för att avbryta prenumerationen överst i e-postmeddelandet enkelt kan hitta var användaren är van vid att avbeställa prenumerationen.
 
-Klicka [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ med ett enda klick.
 
 ## The Do Not&#39;s
 
