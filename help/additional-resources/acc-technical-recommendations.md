@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: dd2de465850181cf72085328352c38bcefd59458
+source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2060'
 ht-degree: 1%
 
 ---
@@ -139,11 +139,11 @@ Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster
 
 Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering.
 
-Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en&quot;Unsubscribe&quot;-länk i Internet-leverantörens e-postgränssnitt. Exempel:
+Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en&quot;Unsubscribe&quot;-länk i Internet-leverantörens e-postgränssnitt.
+
+Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länken&quot;Avbeställ&quot; finns direkt i gränssnittet. Exempel:
 
 ![bild](../assets/List-Unsubscribe-example-Gmail.png)
-
-Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länken&quot;Avbeställ&quot; finns direkt i gränssnittet.
 
 >[!NOTE]
 >
@@ -161,7 +161,6 @@ Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
 <!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
 
-och
 * **&quot;One-Click&quot; List-Unsubscribe** - Klicka på **Avbeställ** avbeställer du prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
 
 >[!CAUTION]
@@ -172,23 +171,17 @@ och
 
 ### mailto List-Unsubscribe {#mailto-list-unsubscribe}
 
-Om du vill använda&quot;mailto&quot; List-Unsubscribe måste du ange en kommandorad som liknar:
+Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet.
 
-```
-List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
-```
+Om du vill använda&quot;mailto&quot; List-Unsubscribe måste du ange en kommandorad där du anger en e-postadress, till exempel: `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
 >Exemplet ovan baseras på mottagartabellen. Om databasimplementeringen görs från en annan tabell måste du skriva om kommandoraden med rätt information.
 
-Du kan också skapa en dynamisk&quot;mailto&quot; List-Unsubscribe med en kommandorad som:
+Du kan också skapa en dynamisk&quot;mailto&quot; List-Unsubscribe med en kommandorad som: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-```
-List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
-```
-
-Att implementera **mailto List-Unsubscribe** kan du antingen:
+Att implementera **mailto List-Unsubscribe** i Campaign kan du antingen:
 
 * Lägg till kommandoraden direkt i leverans- eller leveransmallen - [Lär dig mer](#adding-a-command-line-in-a-delivery-template)
 
@@ -200,7 +193,7 @@ Kommandoraden måste läggas till i **[!UICONTROL Additional SMTP headers]** i e
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`
+Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]** fält: `List-Unsubscribe: mailto:unsubscribe@domain.com`
 
 Klicka på **avbeställ** skickar ett e-postmeddelande till unsubscribe@domain.com.
 
@@ -229,7 +222,9 @@ Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnitt
 >
 >Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs till automatiskt i varje e-postmeddelande med den här typologiregeln.
 
-### Avbeställ prenumeration med ett klick {#one-click-list-unsubscribe}
+### One-Click List-Unsubscribe {#one-click-list-unsubscribe}
+
+Klicka på **Avbeställ** som säger upp prenumerationen direkt, vilket kräver endast en åtgärd.
 
 Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer One-Click List-Unsubscribe. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
 
@@ -245,7 +240,7 @@ Om du vill ha stöd för ett enklickssvar för List-Unsubscribe PSOT direkt i Ad
 
 1. Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip) -fil.
 
-Konfigurera **One-Click List-Unsubscribe** kan du antingen:
+Konfigurera **One-Click List-Unsubscribe** i Campaign kan du antingen:
 
 * Lägg till kommandoraden i leverans- eller leveransmallen - [Lär dig mer](#one-click-delivery-template)
 * Skapa en typologiregel - [Lär dig mer](#one-click-typology-rule)
@@ -265,7 +260,7 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 
 ![bild](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
-Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder&quot;mailto&quot; List-Unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
+Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click, samtidigt som mottagare som inte stöder mailto fortfarande kan begära att prenumerationen avbryts via e-post.
 
 #### Skapa en typologiregel som stöder One-Click List-Unsubscribe {#one-click-typology-rule}
 
