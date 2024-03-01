@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ea91b7285814eca254590f2aff128fb6e5f77520
+source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2086'
 ht-degree: 1%
 
 ---
@@ -141,6 +141,8 @@ Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt fö
 
 Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en&quot;Unsubscribe&quot;-länk i Internet-leverantörens e-postgränssnitt.
 
+Om du använder den här funktionen minskar du antalet klagomål och hjälper dig att skydda ditt rykte. Feedback kommer att utföras som en avbeställning.
+
 Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länken&quot;Avbeställ&quot; finns direkt i gränssnittet. Exempel:
 
 ![bild](../assets/List-Unsubscribe-example-Gmail.png)
@@ -153,8 +155,6 @@ Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länk
 >* Under Internet-leverantörernas tröskel för skräppostklagomål
 >* Fullt autentiserad
 
-Om du använder den här funktionen minskar du antalet klagomål och hjälper dig att skydda ditt rykte. Feedback kommer att utföras som en avbeställning.
-
 Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
 * **mailto List-Unsubscribe** - Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet. [Läs mer](#mailto-list-unsubscribe)
@@ -163,7 +163,7 @@ Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
 * **&quot;One-Click&quot; List-Unsubscribe** - Klicka på **Avbeställ** avbeställer du prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
 >
@@ -193,9 +193,7 @@ Kommandoraden måste läggas till i **[!UICONTROL Additional SMTP headers]** i e
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]** fält: `List-Unsubscribe: mailto:unsubscribe@domain.com`
-
-Klicka på **avbeställ** skickar ett e-postmeddelande till unsubscribe@domain.com.
+Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]** fält: `List-Unsubscribe: mailto:unsubscribe@domain.com`. Klicka på **avbeställ** skickar ett e-postmeddelande till unsubscribe@domain.com.
 
 Du kan också använda en dynamisk adress. Om du till exempel vill skicka ett e-postmeddelande till den feladress som definierats för plattformen kan du använda följande skript: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -247,6 +245,8 @@ Konfigurera **One-Click List-Unsubscribe** i Campaign kan du antingen:
 
 #### Configuring One-Click List-Unsubscribe in the delivery or template {#one-click-delivery-template}
 
+Följ stegen nedan för att konfigurera en klickning för att avbryta prenumerationen i leverans- eller leveransmallen.
+
 1. Gå till **[!UICONTROL SMTP]** i leveransegenskaperna.
 
 1. Under **[!UICONTROL Additional SMTP Headers]** anger du kommandoraden som i exemplet nedan. Varje rubrik ska vara på en separat rad.
@@ -263,6 +263,8 @@ List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.crypt
 Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click, samtidigt som mottagare som inte stöder mailto fortfarande kan begära att prenumerationen avbryts via e-post.
 
 #### Skapa en typologiregel som stöder One-Click List-Unsubscribe {#one-click-typology-rule}
+
+Följ stegen nedan om du vill konfigurera en enklickslista för att avbryta prenumerationen med en typologiregel.
 
 1. Gå till **[!UICONTROL Typolgy rules]** och klicka **[!UICONTROL New]**.
 
