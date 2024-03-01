@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
+source-git-commit: dd2de465850181cf72085328352c38bcefd59458
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 1%
@@ -166,7 +166,7 @@ och
 
 >[!CAUTION]
 >
->Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. [Läs mer om den här ändringen](guidance-around-changes-to-google-and-yahoo.md)
+>Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
 >
 >Lär dig hur du konfigurerar One-Click List-Unsubscribe i [det här avsnittet](#one-click-list-unsubscribe).
 
@@ -231,7 +231,7 @@ Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnitt
 
 ### Avbeställ prenumeration med ett klick {#one-click-list-unsubscribe}
 
-Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer One-Click List-Unsubscribe. [Läs mer om den här ändringen](guidance-around-changes-to-google-and-yahoo.md)
+Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer One-Click List-Unsubscribe. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
 
 För att uppfylla detta krav måste avsändarna
 
