@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0332be5688f9d0375d1dba97c39a87d0e8d28c52
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 4%
@@ -8,11 +8,13 @@ ht-degree: 4%
 # Skapar en typologiregel som stöder ett klick för att avbryta prenumeration:
 
 **1. Skapa den nya typologiregeln:**
+
 * Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
 
 ![bild](/help/assets/CreatingTypologyRules1.png)
 
 **2. Fortsätt med att konfigurera typologiregeln:**
+
 * Regeltyp: Kontroll
 * Fas: Vid början av målinriktningen
 * Kanal: E-post

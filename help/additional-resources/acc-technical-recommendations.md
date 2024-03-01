@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 56a8bb69be854ede21385ef35179b90f95cb1f6e
+source-git-commit: d105a5b7d81aa14144b9d01f28a5e24c1110ae6c
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 1%
@@ -262,6 +262,7 @@ Exempel:
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
+
 ![bild](../assets/List-Unsubscribe-1-click-template-SMTP.png)
 
 Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder&quot;mailto&quot; List-Unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
