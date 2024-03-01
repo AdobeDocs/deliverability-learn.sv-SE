@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 570f64fee87db7df8be8dfdd0ae1c6e6101058f7
+source-git-commit: 56a8bb69be854ede21385ef35179b90f95cb1f6e
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '2014'
 ht-degree: 1%
 
 ---
@@ -139,17 +139,40 @@ Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster
 
 Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering.
 
+Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en&quot;Unsubscribe&quot;-länk i Internet-leverantörens e-postgränssnitt. Exempel:
+
+![bild](../assets/List-Unsubscribe-example-Gmail.png)
+
+Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länken&quot;Avbeställ&quot; finns direkt i gränssnittet.
+
+>[!NOTE]
+>
+>Länken &quot;Avbeställ&quot; kanske inte alltid visas. Det kan bero på varje enskild Internet-leverantörs specifika kriterier och policy. Kontrollera därför att dina meddelanden skickas av en avsändare:
+>
+>* Med gott rykte
+>* Under Internet-leverantörernas tröskel för skräppostklagomål
+>* Fullt autentiserad
+
+Om du använder den här funktionen minskar du antalet klagomål och hjälper dig att skydda ditt rykte. Feedback kommer att utföras som en avbeställning.
+
+Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
+
+* **mailto List-Unsubscribe** - Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet. [Läs mer](#mailto-list-unsubscribe)
+
+<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
+
+och
+* **&quot;One-Click&quot; List-Unsubscribe** - Klicka på **Avbeställ** avbeställer du prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
+
 >[!CAUTION]
 >
->Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. Mer information om hur du konfigurerar One-Click List-Unsubscribe finns i [det här avsnittet](#one-click-list-unsubscribe).
+>Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. [Läs mer om den här ändringen](guidance-around-changes-to-google-and-yahoo.md)
+>
+>Lär dig hur du konfigurerar One-Click List-Unsubscribe i [det här avsnittet](#one-click-list-unsubscribe).
 
-### Om List-Unsubscribe {#about-list-unsubscribe}
+### mailto List-Unsubscribe {#mailto-list-unsubscribe}
 
-Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en länk för att avbryta prenumerationen i e-postgränssnittet.
-
-Om du använder den här funktionen kan du skydda ditt rykte och få feedback som du kan avbeställa.
-
-Om du vill använda List-Unsubscribe måste du ange en kommandorad som liknar:
+Om du vill använda&quot;mailto&quot; List-Unsubscribe måste du ange en kommandorad som liknar:
 
 ```
 List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>
@@ -159,30 +182,19 @@ List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body
 >
 >Exemplet ovan baseras på mottagartabellen. Om databasimplementeringen görs från en annan tabell måste du skriva om kommandoraden med rätt information.
 
-Följande kommandorad kan användas för att skapa en dynamisk **List-Unsubscribe**:
+Du kan också skapa en dynamisk&quot;mailto&quot; List-Unsubscribe med en kommandorad som:
 
 ```
 List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>
 ```
 
-<!--This example uses the error address.-->
+Att implementera **mailto List-Unsubscribe** kan du antingen:
 
-Gmail, Outlook.com och Microsoft Outlook har stöd för den här metoden och en avbeställningsknapp är tillgänglig direkt i gränssnittet. Den här tekniken minskar antalet klagomål.
+* Lägg till kommandoraden direkt i leverans- eller leveransmallen - [Lär dig mer](#adding-a-command-line-in-a-delivery-template)
 
->[!NOTE]
->
->Knappen Avbeställ från Internet-leverantörer visas inte alltid. Det kan bero på varje enskild Internet-leverantörs specifika kriterier och policy. Kontrollera därför att dina meddelanden skickas av en IP/avsändare:
->
->* Med gott rykte
->* Under tröskelvärdet för skräppost hos Internet-leverantörer
->* Fullt autentiserad
+* Skapa en typologiregel - [Lär dig mer](#creating-a-typology-rule)
 
-Du kan implementera **List-Unsubscribe** antingen
-
-* Direkt [lägga till kommandoraden i leveransmallen](#adding-a-command-line-in-a-delivery-template)
-* [Skapa en typologiregel](#creating-a-typology-rule)
-
-### Lägga till en kommandorad i en leveransmall {#adding-a-command-line-in-a-delivery-template}
+#### Lägga till en kommandorad i en leverans eller mall {#adding-a-command-line-in-a-delivery-template}
 
 Kommandoraden måste läggas till i **[!UICONTROL Additional SMTP headers]** i e-postmeddelandets SMTP-huvud.
 
@@ -190,9 +202,11 @@ Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du 
 
 Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`
 
-![bild](../assets/List-Unsubscribe-template-SMTP.png)
-
 Klicka på **avbeställ** skickar ett e-postmeddelande till unsubscribe@domain.com.
+
+Du kan också använda en dynamisk adress. Om du till exempel vill skicka ett e-postmeddelande till den feladress som definierats för plattformen kan du använda följande skript: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+
+![bild](../assets/List-Unsubscribe-template-SMTP.png)
 
 <!--
 List-Unsubscribe: mailto:unsubscribe@domain.com 
@@ -205,208 +219,206 @@ List-Unsubscribe: https://domain.com/unsubscribe.jsp
   ![image](../assets/UTF-8-1.png)
 -->
 
-### Skapa en typologiregel {#creating-a-typology-rule}
+#### Skapa en typologiregel {#creating-a-typology-rule}
 
 Regeln måste innehålla skriptet som genererar kommandoraden och den måste inkluderas i e-postrubriken.
 
+Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+
 >[!NOTE]
 >
->Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs till automatiskt i varje e-postmeddelande.
->
->Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
-
-<!--Can you explain precisely how to create the tyology rule in the UI and what should be added to this typology rule?-->
+>Vi rekommenderar att du skapar en typologiregel: funktionen för att avbryta prenumerationen läggs till automatiskt i varje e-postmeddelande med den här typologiregeln.
 
 ### Avbeställ prenumeration med ett klick {#one-click-list-unsubscribe}
 
-Från och med den 1 juni 2024 kommer Yahoo och Gmail att kräva att avsändarna följer reglerna för One-Click List-Unsubscribe. För att uppfylla detta krav måste avsändarna
+Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer One-Click List-Unsubscribe. [Läs mer om den här ändringen](guidance-around-changes-to-google-and-yahoo.md)
 
-1. Lägg till följande kommandorad:`List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
-1. Inkludera en länk för att avbryta prenumerationen för URI.
-1. Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder. Du kan också använda en extern tjänst.
+För att uppfylla detta krav måste avsändarna
 
-Så här konfigurerar du en-klicklista-avbryt prenumeration direkt i Adobe Campaign v7/v8:
+* Lägg till följande kommandorad: `List-Unsubscribe-Post: List-Unsubscribe=One-Click`.
+* Inkludera en länk för att avbryta prenumerationen för URI.
+* Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder. Du kan också använda en extern tjänst.
 
-* Lägg till följande webbprogram&quot;Avbeställ mottagare utan att klicka&quot; 
-   1. Gå till Resurser -> Online -> Webbprogram
-   2. Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip)
+Om du vill ha stöd för ett enklickssvar för List-Unsubscribe PSOT direkt i Adobe Campaign v7/v8 måste du lägga till det i webbprogrammet&quot;Unsubscribe Mottagare no-click&quot;. För att göra detta:
 
-Om du vill konfigurera en klickning för att avbryta prenumerationen kan du antingen:
+1. Gå till **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
 
-* [Lägga till en kommandorad i leveransmallen](#one-click-delivery-template)
-* [Skapa en typologiregel](#one-click-typology-rule)
+1. Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip) -fil.
 
-### Configuring One-Click List-Unsubscribe in the delivery template {#one-click-delivery-template}
+Konfigurera **One-Click List-Unsubscribe** kan du antingen:
 
-1. Gå till avsnittet SMTP i Leveransegenskaper.
-2. Under Ytterligare SMTP-rubriker anger du dem på kommandoraden nedan. Varje rubrik ska vara på en separat rad.
+* Lägg till kommandoraden i leverans- eller leveransmallen - [Lär dig mer](#one-click-delivery-template)
+* Skapa en typologiregel - [Lär dig mer](#one-click-typology-rule)
 
-   ```
-   List-Unsubscribe-Post: List-Unsubscribe=One-Click
-   List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
-   ```
+#### Configuring One-Click List-Unsubscribe in the delivery or template {#one-click-delivery-template}
 
-Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder URL List-Unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
+1. Gå till **[!UICONTROL SMTP]** i leveransegenskaperna.
 
-### Skapa en typologiregel som stöder One-Click List-Unsubscribe {#one-click-typology-rule}
+1. Under **[!UICONTROL Additional SMTP Headers]** anger du kommandoraden som i exemplet nedan. Varje rubrik ska vara på en separat rad.
 
-**1. Skapa den nya typologiregeln:**
-
-<!--Need to check screenshots?-->
-
-* Klicka på &quot;ny&quot; i navigeringsträdet för att skapa en ny typ
-
-![bild](../assets/CreatingTypologyRules1.png)
-
-
-**2. Fortsätt med att konfigurera typologiregeln:**
-
-* Regeltyp: Kontroll
-* Fas: Vid början av målinriktningen
-* Kanal: E-post
-* Nivå: Ditt val
-* Aktiv
-
-
-![bild](../assets/CreatingTypologyRules2.png)
-
-
-**Koda javascript-koden för typologiregeln:**
-
-
->[!NOTE]
->
->Koden som beskrivs nedan ska endast refereras som exempel.
->I det här exemplet beskrivs hur du:
->* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>>, https://..
->* Lägg till i sidhuvudet List-Unsubscribe-Post
->I exemplet med post-URL används var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= mottagare.cryptedId %>&quot; max
->* Du kan lägga till andra parametrar (som &amp;service = ...)
->
-
+Exempel:
 
 ```
-// Function to add or replace a header in the provided headers 
-function addHeader(headers, header, value)  { 
-    
-  // Create the new header line 
-  var headerLine = header + ": " + value; 
-    
-  // Create a regular expression to find the specified header 
-  var regExp = new RegExp(header + ":(.*)$", "i") 
-    
-  // Split the headers into individual lines 
-  var headerLines = headers.split("\n"); 
-    
-  // Loop through each line 
-  for (var i=0; i < headerLines.length; i++) { 
-      
-    // Check if the specified header exists 
-    var match = headerLines[i].match(regExp) 
-      
-    // If it exists 
-    if ( match != null ) { 
-        
-      // Replace the existing header line 
-      headerLines[i] = headerLine; 
-        
-      // Return the modified headers 
-      return headerLines.join("\n"); 
-    } 
-  } 
-    
-  // If the header does not exist, add the new header line 
-  headerLines.push(headerLine); 
-    
-  // Return the modified headers 
-  return headerLines.join("\n"); 
-} 
-  
-// Function to get the value of a specified header from the provided headers 
-function getHeader(headers, header) { 
-    
-  // Create a regular expression to find the specified header 
-  var regExp = new RegExp(header + ":(.*)$", "i") 
-    
-  // Split the headers into individual lines 
-  var headerLines = headers.split("\n"); 
-    
-  // Loop each line 
-  for each (line in headerLines) { 
-      
-    // Check if the specified header exists 
-    var match = line.match(regExp); 
-      
-    // If it exists 
-    if ( match != null ) { 
-        
-      // Return the header value, removing leading whitespace 
-      return match[1].replace(/^\s*/, ""); 
-    } 
-  } 
-    
-  // If the header does not exist, return an empty string 
-  return ""; 
-} 
-  
-  
-// Define the unsubscribe URL 
-var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
-  
-// Get the value of the List-Unsubscribe header 
-var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
-  
-// If the List-Unsubscribe header does not exist 
-if ( headerUnsub === "" ) { 
-  // Add the List-Unsubscribe header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
-} 
-// If the List-Unsubscribe header exists and contains 'mailto' 
-else if(headerUnsub.search('mailto')){ 
-  // Replace the existing List-Unsubscribe header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
-} 
-  
-// Get the value of the List-Unsubscribe-Post header 
-var headerUnsubPost = getHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post"); 
-  
-// If the List-Unsubscribe-Post header does not exist 
-if ( headerUnsubPost === "" ) { 
-  // Add the List-Unsubscribe-Post header 
-  delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post", "List-Unsubscribe=One-Click"); 
-} 
-  
-// Return true to indicate success 
-return true; 
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://domain.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %> >, < mailto:<%@ include option='NmsEmail_DefaultErrorAddr' %>?subject=unsubscribe<%=escape(message.mimeMessageId) %> >
 ```
+![bild](../assets/List-Unsubscribe-1-click-template-SMTP.png)
+
+Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer som stöder One-Click samtidigt som mottagare som inte stöder&quot;mailto&quot; List-Unsubscribe fortfarande kan begära att prenumerationen avbryts via e-post.
+
+#### Skapa en typologiregel som stöder One-Click List-Unsubscribe {#one-click-typology-rule}
+
+1. Gå till **[!UICONTROL Typolgy rules]** och klicka **[!UICONTROL New]**.
+
+   ![bild](../assets/CreatingTypologyRules1.png)
 
 
-![bild](../assets/CreatingTypologyRules3.png)
+1. Konfigurera den nya typologiregeln som:
+
+   * **[!UICONTROL Rule type]**: **[!UICONTROL Control]**
+   * **[!UICONTROL Phase]**: **[!UICONTROL At the start of targeting]**
+   * **[!UICONTROL Channel]**: **[!UICONTROL Email]**
+   * **[!UICONTROL Level]**: ditt val
+   * **[!UICONTROL Active]**
 
 
+   ![bild](../assets/CreatingTypologyRules2.png)
 
-**3. Lägg till din nya regel i en typologi i ett e-postmeddelande (standardtypologin är OK):**
+1. Koda javascript-koden för typologiregeln som i exemplet nedan.
 
-![bild](../assets/CreatingTypologyRules4.png)
+   >[!NOTE]
+   >
+   >Koden som beskrivs nedan ska endast refereras som exempel.
+
+   I det här exemplet beskrivs hur du:
+   * Konfigurera en&quot;mailto&quot; List-Unsubscribe. Den lägger till rubrikerna eller lägger till de befintliga&quot;mailto:&quot;-parametrarna och ersätter dem med: &lt;mailto..>>, https://...
+   * Lägg till i sidhuvudet En klickning - Avsluta prenumeration. Den använder `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
+
+   >[!NOTE]
+   >
+   >Du kan lägga till andra parametrar (t.ex. &amp;service =..).
+
+   ```
+   // Function to add or replace a header in the provided headers 
+   function addHeader(headers, header, value)  { 
+       
+     // Create the new header line 
+     var headerLine = header + ": " + value; 
+       
+     // Create a regular expression to find the specified header 
+     var regExp = new RegExp(header + ":(.*)$", "i") 
+       
+     // Split the headers into individual lines 
+     var headerLines = headers.split("\n"); 
+       
+     // Loop through each line 
+     for (var i=0; i < headerLines.length; i++) { 
+         
+       // Check if the specified header exists 
+       var match = headerLines[i].match(regExp) 
+         
+       // If it exists 
+       if ( match != null ) { 
+           
+         // Replace the existing header line 
+         headerLines[i] = headerLine; 
+           
+         // Return the modified headers 
+         return headerLines.join("\n"); 
+       } 
+     } 
+       
+     // If the header does not exist, add the new header line 
+     headerLines.push(headerLine); 
+       
+     // Return the modified headers 
+     return headerLines.join("\n"); 
+   } 
+     
+   // Function to get the value of a specified header from the provided headers 
+   function getHeader(headers, header) { 
+       
+     // Create a regular expression to find the specified header 
+     var regExp = new RegExp(header + ":(.*)$", "i") 
+       
+     // Split the headers into individual lines 
+     var headerLines = headers.split("\n"); 
+       
+     // Loop each line 
+     for each (line in headerLines) { 
+         
+       // Check if the specified header exists 
+       var match = line.match(regExp); 
+         
+       // If it exists 
+       if ( match != null ) { 
+           
+         // Return the header value, removing leading whitespace 
+         return match[1].replace(/^\s*/, ""); 
+       } 
+     } 
+       
+     // If the header does not exist, return an empty string 
+     return ""; 
+   } 
+     
+     
+   // Define the unsubscribe URL 
+   var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"; 
+     
+   // Get the value of the List-Unsubscribe header 
+   var headerUnsub = getHeader(delivery.mailParameters.headers, "List-Unsubscribe"); 
+     
+   // If the List-Unsubscribe header does not exist 
+   if ( headerUnsub === "" ) { 
+     // Add the List-Unsubscribe header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+   } 
+   // If the List-Unsubscribe header exists and contains 'mailto' 
+   else if(headerUnsub.search('mailto')){ 
+     // Replace the existing List-Unsubscribe header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe", "<"+headerUnsubUrl+">"); 
+   } 
+     
+   // Get the value of the List-Unsubscribe-Post header 
+   var headerUnsubPost = getHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post"); 
+     
+   // If the List-Unsubscribe-Post header does not exist 
+   if ( headerUnsubPost === "" ) { 
+     // Add the List-Unsubscribe-Post header 
+     delivery.mailParameters.headers = addHeader(delivery.mailParameters.headers, "List-Unsubscribe-Post", "List-Unsubscribe=One-Click"); 
+   } 
+     
+   // Return true to indicate success 
+   return true; 
+   ```
 
 
+   ![bild](../assets/CreatingTypologyRules3.png)
 
-**4. Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
+1. Lägg till din nya regel i en typologi som gäller för e-post.
 
-![bild](../assets/CreatingTypologyRules5.png)
+   >[!NOTE]
+   >
+   >Du kan lägga till den i standardtypologin.
 
+   ![bild](../assets/CreatingTypologyRules4.png)
 
+1. Förbered en ny leverans.
 
-**5. Kontrollera under leveransförberedelsen att din nya typologiregel används.**
+   >[!CAUTION]
+   >
+   >Verifiera att **[!UICONTROL Additional SMTP headers]** fältet i leveransegenskaperna är tomt.
 
-![bild](../assets/CreatingTypologyRules6.png)
+   ![bild](../assets/CreatingTypologyRules5.png)
 
+1. Kontrollera under leveransförberedelsen att din nya typologiregel används.
 
+   ![bild](../assets/CreatingTypologyRules6.png)
 
-**6. Verifiera att List-Unsubscribe finns.**
+1. Verifiera att länken Avbeställ finns.
 
-![bild](../assets/CreatingTypologyRules7.png)
-
+   ![bild](../assets/CreatingTypologyRules7.png)
 
 ## E-postoptimering {#email-optimization}
 
