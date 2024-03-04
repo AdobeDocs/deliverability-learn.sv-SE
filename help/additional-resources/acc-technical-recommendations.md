@@ -6,7 +6,7 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: ffa2e9788326389ae2e4da6e272367cdc837b72e
+source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 1%
@@ -232,7 +232,7 @@ För att uppfylla detta krav måste avsändarna
 * Inkludera en länk för att avbryta prenumerationen för URI.
 * Stöd för mottagning av HTTP-POSTENS svar från mottagaren, som Adobe Campaign stöder. Du kan också använda en extern tjänst.
 
-Om du vill ha stöd för ett enklickssvar för List-Unsubscribe PSOT direkt i Adobe Campaign v7/v8 måste du lägga till det i webbprogrammet&quot;Unsubscribe Mottagare no-click&quot;. För att göra detta:
+Om du vill ha stöd för enklickssvaret för POST av en prenumeration direkt i Adobe Campaign v7/v8 måste du lägga till det i webbprogrammet&quot;Avbeställ mottagare utan klick&quot;. För att göra detta:
 
 1. Gå till **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
 
