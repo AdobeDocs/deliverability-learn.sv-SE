@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 3ceca47634f946488115ccbef5cb9ffb5aba8b07
+source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2045'
 ht-degree: 1%
 
 ---
@@ -165,9 +165,7 @@ Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
 >[!IMPORTANT]
 >
->Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer **One-Click List-Unsubscribe**. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
->
->Lär dig hur du konfigurerar One-Click List-Unsubscribe i [det här avsnittet](#one-click-list-unsubscribe).
+>>Lär dig hur du konfigurerar One-Click List-Unsubscribe i [det här avsnittet](#one-click-list-unsubscribe).
 
 ### mailto List-Unsubscribe {#mailto-list-unsubscribe}
 
@@ -223,8 +221,6 @@ Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnitt
 ### One-Click List-Unsubscribe {#one-click-list-unsubscribe}
 
 Klicka på **Avbeställ** som säger upp prenumerationen direkt, vilket kräver endast en åtgärd.
-
-Från och med 1 juni 2024, Yahoo! och Gmail kommer att kräva att avsändarna följer One-Click List-Unsubscribe. [Läs mer om den här ändringen](../guidance-around-changes-to-google-and-yahoo.md)
 
 För att uppfylla detta krav måste avsändarna
 
