@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 39ed3773-18bf-4653-93b6-ffc64546406b
-source-git-commit: 12bd5f583476dad0eac9641389ce35b40dc5136c
+source-git-commit: b163628adde1e4d7225a1c2c54d29b24e2b2a352
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
@@ -159,13 +159,11 @@ Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
 * **mailto List-Unsubscribe** - Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet. [Läs mer](#mailto-list-unsubscribe)
 
-<!--OR: With this method, clicking the **Unsubscribe** link opens the user's default email client with a pre-filled email to the unsubscribe address specified in the email header. This allows the user to unsubscribe simply by sending the email without any further manual steps.-->
-
 * **&quot;One-Click&quot; List-Unsubscribe** - Klicka på **Avbeställ** avbeställer du prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->>Lär dig hur du konfigurerar One-Click List-Unsubscribe i [det här avsnittet](#one-click-list-unsubscribe).
+>Från och med den 1 juni 2024 kommer större internetleverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
 
 ### mailto List-Unsubscribe {#mailto-list-unsubscribe}
 
@@ -197,17 +195,6 @@ Du kan också använda en dynamisk adress. Om du till exempel vill skicka ett e-
 
 ![bild](../assets/List-Unsubscribe-template-SMTP.png)
 
-<!--
-List-Unsubscribe: mailto:unsubscribe@domain.com 
-* Clicking the **unsubscribe** link opens the user's default email client. This typology rule must be added in a typology used for creating email.
-
-List-Unsubscribe: https://domain.com/unsubscribe.jsp 
-
-* Clicking the **unsubscribe** link redirects the user to your unsubscribe form.
-
-  ![image](../assets/UTF-8-1.png)
--->
-
 #### Skapa en typologiregel {#creating-a-typology-rule}
 
 Regeln måste innehålla skriptet som genererar kommandoraden och den måste inkluderas i e-postrubriken.
@@ -221,6 +208,8 @@ Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnitt
 ### One-Click List-Unsubscribe {#one-click-list-unsubscribe}
 
 Klicka på **Avbeställ** som säger upp prenumerationen direkt, vilket kräver endast en åtgärd.
+
+Från och med den 1 juni 2024 kommer större internetleverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
 
 För att uppfylla detta krav måste avsändarna
 
