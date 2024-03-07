@@ -1,6 +1,6 @@
 ---
-title: Avbeställ Do's och Do Not's
-description: Använd en lista över saker som du bör göra och saker som du inte bör göra när du hanterar avanmälan.
+title: Avbeställ utskick och gör inga
+description: Lär dig mer om vad som händer och vad som inte händer när du hanterar prenumerationer.
 feature: Deliverability
 role: Admin
 level: Beginner
@@ -8,31 +8,31 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-15029
-source-git-commit: 7f1e756683bfc5c8587101fcbf86db010a5b6a7e
+exl-id: d8ca4d48-c6c1-45a9-bf6a-3f58ee161a53
+source-git-commit: 964230b60e345ffc624860e978beb6b08ad4c0b2
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '925'
 ht-degree: 0%
 
 ---
 
-
-# Avbeställ Do’s och Do Not’s
+# Avbeställ utskick och gör inga
 
 Avbeställningar är en naturlig del av e-postlivscykeln. Men det är svårt för marknadsförarna att ta farväl ibland. Ni arbetar så hårt för att skapa de mest engagerande e-postmeddelandena och presentera de bästa erbjudandena om produkter och tjänster som ert varumärke erbjuder. Det är dock helt normalt, och bör förväntas, att vissa prenumeranter går vidare. Det kan bero på ett antal orsaker, men slutresultatet är att de inte längre är intresserade av att höra från dig.
 
 Vi har skapat en lista över saker som ska göras och saker som ska undvikas när du hanterar avanmälan från dina e-postlistor - läs vidare för mer information.
 
-## The Do’s
+## The dos
 
-**DO:** Ha en tydlig länk för att avsluta prenumerationen. Detta kan förhindra användare från att klicka på&quot;this is spam&quot;-klagomålet (även kallat en feedbackslinga)
+**DO:** Ha en tydlig länk för att avsluta prenumerationen. Detta kan förhindra användare från att klicka på&quot;this is spam&quot; (kallas även för en feedbackslinga).
 
-+ Några idéer om hur du får länken för att avbryta prenumerationen att sticka ut: Centrera den, stryk under den och fet, placera den antingen längst upp eller längst ned i e-postmeddelandet så att den får en annan teckenfärg Använd det enda ordet -&quot;UNSUBSCRIBE&quot; - i användarens språkinställning. Använd inte blomma eller överdrivet verbiage.
++ Några idéer om hur du får länken för att avbryta prenumerationen att sticka ut: Centrera den, stryk under den och fet. Placera det högst upp eller längst ned i e-postmeddelandet. Gör det till en annan teckenfärg. Använd det enda ordet -&quot;UNSUBSCRIBE&quot; - i användarens språkinställning. Använd inte blomma eller överdrivet verbiage.
 
-**DO:** Låt avbeställaren länka till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan
+**DO:** Låt avbeställaren länka till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan.
 
-Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräfta min avanmälan&quot; och kanske en annan länk där det står&quot;Låt mig avanmäla mig och ange en lägre frekvens för den post jag får från dig&quot;. Även om detta inte är en avbeställningsmetod med ett enda klick, kan det hjälpa till att undvika båda klick som resulterar i ett felaktigt avbeställningsförsök.
+Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräfta min avanmälan&quot; och kanske en annan länk där det står&quot;Låt mig avanmäla mig och ange en lägre frekvens för den post jag får från dig&quot;. Även om detta inte är en enklicksmetod för att avbryta prenumerationen kan det hjälpa till att undvika att användaren klickar på något, vilket leder till ett felaktigt avslut.
 
-+ Om din avbeställning tar en användare till en landningssida ska du se till att landningssidan har ett klick på sig att avbryta prenumerationen när användaren har landat på sidan.
++ Om din avbeställning tar en användare till en landningssida ska du se till att landningssidan erbjuder en avbeställning med ett klick när användaren har markerat sidan.
 
 **DO:** Gör processen enkel och transparent. Exempel:
 
@@ -46,11 +46,11 @@ Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräf
 
 **DO:** Bekräfta att avbeställningen har skickats och bekräfta när de kan förvänta sig att sluta ta emot e-postmeddelanden.
 
-+ Om de redan har avbeställt prenumerationen och försöker igen anger du att de redan har avbeställt prenumerationen och när (datum/tid)
++ Om de redan har avbeställt prenumerationen och försöker igen anger du att de redan har avbeställt prenumerationen och när (datum/tid).
 
 **DO:** Hedra upp avbeställningen och ta bort adressen i tid.
 
-+ Lämpligheten beror på lokala lagar och jurisdiktioner, så rådfråga jurister om vad som gäller för ert företag.
++ Lämpligheten beror på lokal lagstiftning och behörighet, så rådgör med jurister om vad som gäller för ditt företag.
 
 **DO:** Tillåt prenumeranterna att bestämma relationen.
 
@@ -59,7 +59,7 @@ Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräf
 **DO:** Använd rubriken för att avbeställa en lista i e-postmallarna så att e-postklienter (till exempel: gmail.com) som visar länkar för att avbryta prenumerationen överst i e-postmeddelandet enkelt kan hitta var användaren är van vid att avbeställa prenumerationen.
 
 
-## The Do Not&#39;s
+## Innehållet
 
 
 **GÖR INTE:** Bränn länken för att avsluta prenumerationen i ert innehåll och hoppas att era prenumeranter kommer att ge upp av frustration.
@@ -72,16 +72,16 @@ Verbiage på landningssidan bör innehålla en länk där det står&quot;Bekräf
 
 **GÖR INTE:** Se till att användaren lägger till en e-postadress i avanmälningsformuläret manuellt.
 
-+ Den adress som prenumererade kan vara en annan än den adress som användaren loggade in på för e-post (till exempel vidarebefordrad).  De kanske inte känner till den e-postadress som användes för den ursprungliga prenumerationen.
++ Den adress som prenumererade kan vara en annan än den adress som användaren loggade in på för e-post (till exempel vidarebefordrad). De kanske inte känner till den e-postadress som användes för den ursprungliga prenumerationen.
 
 **GÖR INTE:** Låt användaren logga in på sitt konto för att avbryta prenumerationen.
 
-+ Du kanske skickar e-postmeddelandet till fel adress och den adressägaren kanske inte har åtkomst till kontot.  Om de får e-postmeddelandet bör de ha rätt att avbryta prenumerationen på länken enbart i e-postmeddelandet. Ingen annan åtgärd eller information krävs.
++ Du kanske skickar e-postmeddelandet till fel adress och den adressägaren kanske inte har åtkomst till kontot. Om de får e-postmeddelandet bör de ha rätt att avbryta prenumerationen på länken enbart i e-postmeddelandet. Ingen annan åtgärd eller information krävs.
 + Ju färre steg en kund behöver ta, desto bättre.
 
 **GÖR INTE:** Skicka ett e-postmeddelande som bekräftar att personen har avbrutit prenumerationen.
 
-+ Om du gör det har du redan brutit ditt löfte att inte skicka fler e-postmeddelanden till dem.
++ Om du gör det har du redan brutit ditt löfte att inte skicka mer post till dem.
 
 **GÖR INTE:** Var otrolig i ditt verbiage. &quot;Jag vill inte höra talas om fina erbjudanden - var snäll och avbeställ mig!&quot;
 
