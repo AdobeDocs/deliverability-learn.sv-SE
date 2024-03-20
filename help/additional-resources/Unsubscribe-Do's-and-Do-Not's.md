@@ -1,21 +1,21 @@
 ---
-source-git-commit: 758bc4144e09c53883d682a480f5f52a25c98111
+source-git-commit: e5b40a9f0a58f70066c5210053cfd88fc938bb65
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
-# Avbeställ Do’s och Do Not’s
+# Avbeställ Do&#39;s och Do Not&#39;s
 
 Avbeställningar är en naturlig del av e-postlivscykeln. Men det är svårt för marknadsförarna att ta farväl ibland. Ni arbetar så hårt för att skapa de mest engagerande e-postmeddelandena och presentera de bästa erbjudandena om produkter och tjänster som ert varumärke erbjuder. Det är dock helt normalt, och bör förväntas, att vissa prenumeranter går vidare. Det kan bero på ett antal orsaker, men slutresultatet är att de inte längre är intresserade av att höra från dig.
 
 Vi har skapat en lista över saker som ska göras och saker som ska undvikas när du hanterar avanmälan från dina e-postlistor - läs vidare för mer information.
 
-## The Do’s
+## The Do&#39;s
 
 **DO:** Ha en tydlig länk för att avsluta prenumerationen. Detta kan förhindra användare från att klicka på&quot;this is spam&quot;-klagomålet (även kallat en feedbackslinga)
 
-+ Några idéer om hur du får länken för att avbryta prenumerationen att sticka ut: Centrera den, stryk under den och fet, placera den antingen längst upp eller längst ned i e-postmeddelandet så att den får en annan teckenfärg Använd det enda ordet -&quot;UNSUBSCRIBE&quot; - i användarens språkinställning. Använd inte blomma eller överdrivet verbiage.
++ Några idéer om hur du får länken för att avbryta prenumerationen att sticka ut: Centrera den, stryk under den och fet, placera den antingen längst upp eller längst ned i e-postmeddelandet, gör den till en annan teckensnittsfärg Använd det enda ordet - UNSUBSCRIBE - i användarens språkinställning. Använd inte blomma eller överdrivet verbiage.
 
 **DO:** Låt avbeställaren länka till en landningssida där användaren kan bekräfta att han eller hon vill tas bort från listan
 
@@ -42,16 +42,14 @@ Vi har skapat en lista över saker som ska göras och saker som ska undvikas nä
 
 **DO:** Tillåt prenumeranterna att bestämma relationen.
 
-+ Det går bra att ge era prenumeranter olika alternativ - detta kan hanteras via ett prioriteringscenter/avanmälningsinitiativ.
++ Det går bra att ge era prenumeranter alternativ - detta kan hanteras via ett prioritetscenter/avanmälningsinitiativ.
 
 **DO:** Använd rubriken för att avbeställa en lista i e-postmallarna så att e-postklienter (till exempel: gmail.com) som visar länkar för att avbryta prenumerationen överst i e-postmeddelandet enkelt kan hitta var användaren är van vid att avbeställa prenumerationen.
-
-+ Klicka [här](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/guidance-around-changes-to-google-and-yahoo.html) om du vill läsa mer om branschinitiativ med ett enda klick.
 
 ## The Do Not&#39;s
 
 
-**GÖR INTE:** Bränn länken för att avsluta prenumerationen i ert innehåll och hoppas att era prenumeranter kommer att ge upp av frustration.
+**GÖR INTE:** Bränn länken för att avsluta prenumerationen i innehållet i förhoppningen att prenumeranterna kommer att ge upp av frustrationen.
 
 + Detta är en dålig slutanvändarupplevelse och kan leda till fler klagomål, vilket kan påverka er leveransförmåga och anseende negativt.
 
