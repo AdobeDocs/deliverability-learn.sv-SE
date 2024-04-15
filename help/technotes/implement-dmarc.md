@@ -5,10 +5,10 @@ topics: Deliverability
 role: Admin
 level: Beginner
 exl-id: f1c14b10-6191-4202-9825-23f948714f1e
-source-git-commit: bd8cee606c9dcb1593ad3ec45c578f59f8e968f2
+source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 8%
+source-wordcount: '1284'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ DMARC är valfritt, och även om det inte krävs är det kostnadsfritt och gör 
 
 ## Bästa metoder för att implementera DMARC {#best-practice}
 
-Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Som bästa praxis rekommenderas att långsamt införa DMARC-implementering genom att eskalera din DMARC-princip från p=none till p=quarantine, till p=reject när du får DMARC-förståelse för DMARC:s potentiella påverkan.
+Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Som en god praxis rekommenderas att långsamt införa DMARC-implementering genom att eskalera din DMARC-policy från p=none till p=karantän, till p=reject när du får DMARC-förståelse för DMARC:s potentiella påverkan.
 
 1. Analysera den feedback du får och använder (p=none), som instruerar mottagaren att inte utföra några åtgärder mot meddelanden som inte kan autentiseras, men ändå skicka e-postrapporter till avsändaren. Granska och åtgärda även problem med SPF/DKIM om giltiga meddelanden inte kan autentiseras.
 1. Kontrollera om SPF och DKIM är justerade och skickar autentisering för alla giltiga e-postmeddelanden, och flytta sedan principen till (p=karantän), vilket anger att den mottagande e-postservern ska placera e-postmeddelanden som inte kan autentiseras (detta innebär vanligtvis att meddelandena placeras i skräppostmappen).
@@ -68,6 +68,10 @@ Det viktigaste användningsområdet för dessa rapporter är att få en översik
 * [Dmarcier](https://dmarcian.com/)
 * [Korrektur](https://www.proofpoint.com/us)
 
+>[!CAUTION]
+>
+>Om de e-postadresser som du lägger till för att ta emot rapporter ligger utanför den domän som DMARC-posten skapas för, måste du auktorisera deras externa domän att ange för den DNS som du äger den här domänen. Gör detta genom att följa stegen som beskrivs i [dmarc.org](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+
 ### Exempel på DMARC-post {#example}
 
 ```
@@ -78,7 +82,7 @@ v=DMARC1; p=reject; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=m
 
 DMARC-poster har flera komponenter som kallas DMARC-taggar. Varje tagg har ett värde som anger en viss aspekt av DMARC.
 
-| Märkordsnamn | Obligatoriskt/valfritt |  -funktion | Exempel | Standardvärde |
+| Märkordsnamn | Obligatoriskt/valfritt | Funktion | Exempel | Standardvärde |
 |  ---  |  ---  |  ---  |  ---  |  ---  |
 | v | Obligatoriskt | Den här DMARC-taggen anger versionen. Det finns bara en version från och med nu, så det här har ett fast värde på v=DMARC1 | V=DMARC1 DMARC1 | DMARC1 |
 | p | Obligatoriskt | Visar den valda DMARC-principen och instruerar mottagaren att rapportera, karantän eller avvisa e-post som inte kan autentiseras. | p=ingen, karantän eller avvisad | – |
