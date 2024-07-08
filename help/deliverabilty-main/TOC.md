@@ -7,9 +7,9 @@ role: Leader, User
 level: Beginner
 auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 + [I praktiken](/help/putting-it-in-practice.md)
 + Bilaga: ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
-   + [Avbeställ Do&#39;s och Do Not&#39;s](/help/unsubscribe-dos-and-do-nots.md)
+   + [Att göra och inte göra när du avbryter prenumerationen](/help/unsubscribe-dos-and-do-nots.md)
    + Generiska resurser {#generic-resources}
       + [Allt om skräppostfällor](/help/additional-resources/all-about-spam-traps.md)
       + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
