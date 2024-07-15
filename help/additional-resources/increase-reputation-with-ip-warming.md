@@ -6,9 +6,9 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: b553a13e-2055-4abc-b784-fd52792380d0
-source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
+source-git-commit: eba8162150b5662ca18687b873114858f8eb00cc
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1582'
 ht-degree: 2%
 
 ---
@@ -34,13 +34,13 @@ Till att börja med får du egna dedikerade IP-adresser (Internet Protocol). Nä
 
 ## IP-värmare: Varför är det klart? {#why-ip-warming}
 
-Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp. Internetleverantörer/MBP håller IP-adressen och den sändande domänen under hög granskning för att avgöra om e-postmeddelanden som skickas från den här IP-adressen och domänen är skräppost eller inte.  Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
+Internet-leverantörer (ISP) eller MBP (Mailbox Providers) vidtar försiktighetsåtgärder när de upptäcker en okänd IP-adress och sändande domän. Internetleverantörer/MBP håller IP-adressen och den sändande domänen under hög granskning för att avgöra om e-postmeddelanden som skickas från den här IP-adressen och domänen är skräppost eller inte. Det här är standardproceduren som associeras med alla nya sändande IP-adresser, oavsett avsändartyp.
 
 Internetleverantörer granskar noggrant sändningsvolymen, sändningsfrekvensen, klagomål och avhoppsfrekvensen som genererats av dessa utskick. De kontrolleras noga eftersom de är tecken på avsändarens anseende - vare sig det är bra eller dåligt.
 
 Denna process med att undersöka dessa datapunkter tar naturligtvis tid och kan inte göras på en dag eller två. Anseendet byggs över tid. Det här är som att låta en främling vara hemma. Har du reservationer för att någon du aldrig träffat ska komma in i ditt hem?
 
-Troligen är svaret ja. Du skulle vilja analysera den här personen och deras motiv. Betyder de skada? Är de ett hot? Internet-leverantörer gör samma sak för att skydda sitt nätverk från skadlig eller oönskad trafik. Positiva anseendevärden hjälper er att komma långt i en framgångsrik process för IP-uppvärmning. Därför betonar vi vikten av att börja med att skicka små e-postvolymer och börja skicka till era engagerade kunder först. Mer information finns i [Målkriterier när ny trafik skickas](/help/transition-process/targeting-criteria.md).
+Troligen är svaret ja. Du skulle vilja analysera den här personen och deras motiv. Betyder de skada? Är de ett hot? Internet-leverantörer gör samma sak för att skydda sitt nätverk från skadlig eller oönskad trafik. Positiva anseendevärden hjälper er att komma långt i en framgångsrik process för IP-uppvärmning. Därför betonar vi vikten av att börja med att skicka små e-postvolymer och börja skicka till era engagerade kunder först. Mer information finns i [Målvillkor när ny trafik skickas](/help/transition-process/targeting-criteria.md).
 
 Att skicka stora mängder e-post från en helt ny IP eller IP-adress direkt från porten är en dålig praxis och kommer troligen att orsaka leveransproblem. Observera att även om du börjar skicka små volymer och gradvis ökar dem enligt rekommendationerna, är det fortfarande nödvändigt att följa vedertagna standarder för e-postmarknadsföring.
 
@@ -50,7 +50,7 @@ Att skicka stora mängder e-post från en helt ny IP eller IP-adress direkt frå
 
 Detta är den viktigaste komponenten när det gäller att hantera och utöka en prenumerantlista via e-post. I takt med att lagstiftningen mot skräppost växer och blir mer omfattande internationellt bör det vara en marknadsförares primära fokus att se till att de har fått uttryckligt (eller uttryckligt) medgivande från varje abonnent på deras lista. Det innebär att varje prenumerant aktivt har gått med på att ta emot e-postmeddelanden från ert varumärke. Detta skiljer sig från implicit samtycke där en person läggs till i en e-postlista efter att ha vidtagit en åtgärd som inte uttryckligen registrerade sig för ett e-postprogram.
 
-Läs mer på [Adobe policy för godtagbar användning](https://www.adobe.com/legal/terms/aup.html).
+Läs mer om [Adobe&#39;s Acceptable Use Policy](https://www.adobe.com/legal/terms/aup.html).
 
 ## Anseendemått: Vad är Internet-leverantörer som letar efter?
 
@@ -85,7 +85,7 @@ Kom ihåg att konsekvens är avgörande här. Oregelbundna sändningsmönster oc
 
 ### Klagomål
 
-[Klagomål](/help/metrics/complaints.md) inträffar när en prenumerant märker ett e-postmeddelande som skräppost via sitt e-postprogram. Detta skickar ett meddelande till Internet-leverantören om klagomålet. Om det finns tillräckligt många klagomål som kommer in i Internet-leverantören kommer Internet-leverantören att agera för att skydda sina kunder - eventuellt blockera många e-postmeddelanden från att komma åt prenumeranterna eller dirigera en del e-postmeddelanden till huvudmappen i motsats till prenumerantens inkorgar. Om ditt leveransproblem orsakas av klagomål är det viktigt att fastställa varför mottagarna klagar.
+[Klagomål](/help/metrics/complaints.md) uppstår när en prenumerant märker ett e-postmeddelande som skräppost via sitt e-postprogram. Detta skickar ett meddelande till Internet-leverantören om klagomålet. Om det finns tillräckligt många klagomål som kommer in i Internet-leverantören kommer Internet-leverantören att agera för att skydda sina kunder - eventuellt blockera många e-postmeddelanden från att komma åt prenumeranterna eller dirigera en del e-postmeddelanden till huvudmappen i motsats till prenumerantens inkorgar. Om ditt leveransproblem orsakas av klagomål är det viktigt att fastställa varför mottagarna klagar.
 
 Prenumeranter klagar av olika anledningar. Ibland vill en prenumerant inte få mer e-post från dig, kanske för att de känner att de får för många meddelanden om samma ämne, inte förväntade sig meddelandet eller inte kommer ihåg att registrera sig för att ta emot e-postmeddelanden.
 
@@ -101,7 +101,7 @@ Internetleverantörer letar efter enhetlig volym och god datakvalitet. Ni kommer
 
 E-posttrafiken bör ske långsamt och stadigt, och öka varje vecka tills hela listan har skickats. Dessutom följer varje segment schemat tills det är klart. Börja med de senaste prenumeranterna först och avsluta med de minst engagerade prenumeranterna sist. Observera också att vissa internetleverantörer kan behöva en mer anpassad strategi på grund av hur de hanterar ny trafik.
 
-Läs mer på [engagemang](/help/engagement.md).
+Läs mer om [engagemang](/help/engagement.md).
 
 ## Stanna kvar på kursen
 
