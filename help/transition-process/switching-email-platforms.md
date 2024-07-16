@@ -1,5 +1,5 @@
 ---
-title: Smidig övergång vid byte av e-postplattform.
+title: Smidig övergång när du byter e-postplattform.
 description: När du flyttar ESP (e-postleverantörer) går det inte att även övergå befintliga, etablerade IP-adresser. Det är viktigt att ni följer bästa praxis för att utveckla ett positivt rykte när ni börjar om på nytt.
 topics: Deliverability
 jira: KT-5259
@@ -12,8 +12,8 @@ team: ACS
 exl-id: 5444d576-5bc1-4fa6-9956-c63dc3c60440
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 11%
+source-wordcount: '213'
+ht-degree: 7%
 
 ---
 

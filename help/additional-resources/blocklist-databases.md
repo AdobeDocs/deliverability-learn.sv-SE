@@ -8,8 +8,8 @@ team: ACS
 exl-id: 4155b89f-a636-404c-8951-563c1b4d0289
 source-git-commit: e7427d6109f3201affa58decde36294d1631bf5b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 6%
+source-wordcount: '373'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ Nedan följer en lista över de mest använda RBL:erna. En mer omfattande lista 
 
   Se [https://www.spamhaus.org/](https://www.spamhaus.org/)
 
-  Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste ni agera omedelbart och varna de kommersiella tjänsterna, leveransmöjligheterna och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+  Databasen är viktigare. Att klassificeras i denna förteckning är i allmänhet en allvarlig situation. Om detta händer måste du agera omedelbart och varna kommersiella tjänster, leveransmöjligheter och [Adobe kundtjänst](https://helpx.adobe.com/se/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * **SpamCop**
 

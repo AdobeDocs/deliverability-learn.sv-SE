@@ -12,8 +12,8 @@ level: Beginner
 exl-id: e6a855ba-a929-477f-a339-6861a755a529
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '188'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Normalt baseras en engagemangsfrekvens på en viss tidsperiod. Mätvärdet kan v
 
 **Analytics** 
 
-* [Öka engagemanget och kundlojaliteten (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Identifiera engagerade målgrupper genom deras beteende med Cohorts och se vilka bakomliggande orsaker som driver detaljrikedomen i era mobilappar. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
+* [Så här ökar du engagerande målgrupper och lojalitet (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Identifiera engagerade målgrupper genom deras beteende med hjälp av kohorter och se vilka bakomliggande orsaker som skapar krånglighet i mobilapparna. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
 
 **Campaign Standard**
 

@@ -8,7 +8,7 @@ exl-id: f1c14b10-6191-4202-9825-23f948714f1e
 source-git-commit: 2a78db97a46150237629eef32086919cacf4998c
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ Domänbaserad meddelandeautentisering, rapportering och överensstämmelse är e
 
 DMARC har tre politiska alternativ:
 
-* **Bildskärm (p=ingen):** Instruerar postlådeprovidern/Internet-leverantören att göra vad de normalt skulle göra med meddelandet.
+* **Monitor (p=none):** Instruerar postlådeprovidern/ISP att göra vad de normalt skulle göra med meddelandet.
 * **Karantän (p=karantän):** Instruerar postlådeprovidern/ISP att leverera e-post som inte skickar DMARC till mottagarens skräppostmapp.
 * **Avvisa (p=avvisa):** Instruerar postlådeprovidern/ISP att blockera e-post som inte godkänns av DMARC, vilket resulterar i ett studs.
 
@@ -44,7 +44,8 @@ DMARC är valfritt, och även om det inte krävs är det kostnadsfritt och gör 
 
 ## Bästa metoder för att implementera DMARC {#best-practice}
 
-Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Som en god praxis rekommenderas att långsamt införa DMARC-implementering genom att eskalera din DMARC-policy från p=none till p=karantän, till p=reject när du får DMARC-förståelse för DMARC:s potentiella påverkan.
+Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på någon ESP:s plattform. En DMARC-post måste skapas i DNS för din domän för att den ska fungera. Dessutom krävs en e-postadress som du väljer för att ange var DMARC-rapporter ska finnas inom organisationen. Det är en god praxis att
+Vi rekommenderar att du långsamt implementerar DMARC genom att trahera din DMARC-policy från p=none till p=karantän, till p=reject när du får DMARC-förståelse för DMARC:s potentiella effekt.
 
 1. Analysera den feedback du får och använder (p=none), som instruerar mottagaren att inte utföra några åtgärder mot meddelanden som inte kan autentiseras, men ändå skicka e-postrapporter till avsändaren. Granska och åtgärda även problem med SPF/DKIM om giltiga meddelanden inte kan autentiseras.
 1. Kontrollera om SPF och DKIM är justerade och skickar autentisering för alla giltiga e-postmeddelanden, och flytta sedan principen till (p=karantän), vilket anger att den mottagande e-postservern ska placera e-postmeddelanden som inte kan autentiseras (detta innebär vanligtvis att meddelandena placeras i skräppostmappen).
@@ -58,19 +59,19 @@ Eftersom DMARC är valfritt kommer det inte att konfigureras som standard på n�
 
 DMARC kan ta emot rapporter om e-postmeddelanden som saknar SPF/DKIM. Det finns två olika rapporter som genereras av ISP-tjänstleverantörer som en del av autentiseringsprocessen och som avsändare kan ta emot via RUA/RUF-taggarna i deras DMARC-policy:
 
-* **Sammanställningsrapporter:** Innehåller inte någon PII (personligt identifierbar information) som skulle vara GDPR-känslig.
-* **Kriminaltekniska rapporter (RUF):** Innehåller e-postadresser som är GDPR-känsliga. Innan informationen används är det bäst att kontrollera internt hur man hanterar information som måste uppfylla GDPR.
+* **Aggregate Reports (RUA):** innehåller inte någon PII (Personally Identiitable Information) som skulle vara GDPR-känslig.
+* **Forensiska rapporter (RUF):** Innehåller e-postadresser som är GDPR-känsliga. Innan informationen används är det bäst att kontrollera internt hur man hanterar information som måste uppfylla GDPR.
 
 Det viktigaste användningsområdet för dessa rapporter är att få en översikt över e-postmeddelanden som försöker förfalskas. Det här är mycket tekniska rapporter som är bäst sammanställda via ett verktyg från tredje part. Några företag som specialiserar sig på DMARC-övervakning är:
 
 * [ValiMail](https://www.valimail.com/products/#automated-delivery)
 * [Agari](https://www.agari.com/)
 * [Dmarcier](https://dmarcian.com/)
-* [Korrektur](https://www.proofpoint.com/us)
+* [Korrekturpunkt](https://www.proofpoint.com/us)
 
 >[!CAUTION]
 >
->Om de e-postadresser som du lägger till för att ta emot rapporter ligger utanför den domän som DMARC-posten skapas för, måste du auktorisera deras externa domän att ange för den DNS som du äger den här domänen. Gör detta genom att följa stegen som beskrivs i [dmarc.org](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
+>Om e-postadresserna som du lägger till för att ta emot rapporter ligger utanför domänen som DMARC-posten skapas för, måste du auktorisera e-postadressernas externa domän för att ange för DNS:en att du äger den här domänen. Gör det här genom att följa stegen som beskrivs på [dmarc.org](https://dmarc.org/2015/08/receiving-dmarc-reports-outside-your-domain)
 
 ### Exempel på DMARC-post {#example}
 
@@ -98,7 +99,7 @@ DMARC-poster har flera komponenter som kallas DMARC-taggar. Varje tagg har ett v
 
 >[!NOTE]
 >
->Om din Campaign-instans finns på AWS kan du implementera DMARC för dina underdomäner med Kontrollpanelen. [Lär dig implementera DMARC-poster med hjälp av Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Om din Campaign-instans finns på AWS kan du implementera DMARC för dina underdomäner med Kontrollpanelen. [Lär dig hur du implementerar DMARC-poster med Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
 
 En vanlig orsak till DMARC-fel är felpassning mellan adressen&quot;Från&quot; och&quot;Fel till&quot; eller&quot;Retursökväg&quot;. För att undvika detta bör du kontrollera adressinställningarna&quot;Från&quot; och&quot;Fel till&quot; i leveransmallarna när du konfigurerar DMARC.
 
@@ -119,4 +120,4 @@ När dessa ändringar har sparats kan du gå vidare med din DMARC-implementering
 ## Användbara länkar {#links}
 
 * [DMARC.org](https://dmarc.org/){target="_blank"}
-* [E-postautentisering med M3AWG](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}
+* [M3AWG-e-postautentisering](https://www.m3aawg.org/sites/default/files/document/M3AAWG_Email_Authentication_Update-2015.pdf){target="_blank"}

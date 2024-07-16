@@ -10,7 +10,7 @@ team: TM
 exl-id: 1007b0ea-7a62-4b46-ba32-191df64a15be
 source-git-commit: 9444f8601f2f349398ee5deb9d5f4d4f7abb44f5
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,10 @@ Du behöver inte bara tacka dem för att de har registrerat sig - du måste ocks
 **Ange förväntningar**
 Förtydliga att ni fokuserar på en positiv upplevelse för dem. Ange vad de förväntar sig av dig och hur ofta de förväntar sig det. Att erbjuda ett sätt för dem att enkelt hantera sin upplevelse (dvs. en länk till ett prioriterat center) är också en bra idé. Överväg också att lägga till länkar till tidigare innehåll så att användarna kan referera till det innehåll de prenumererar på.
 
-**Ge dem en känsla för ert varumärke**
+**Låt dem känna igen ert varumärke**
 Alla varumärken har en röst. Låt din e-postadress visas tydligt i ditt välkomstmeddelande. Detta hjälper er nya prenumerant att få kontakt mer med varumärket och undviker att de drabbas av en stilförändring med senare e-postmeddelanden.
 
-**Håll det kortfattat**
+**Håll det koncist**
 Du har mycket att säga och ett örat i din nya prenumerant. Men det första budskapet ska vara kort, enkelt och inte överväldigande.
 
 **Skicka en serie mejl**

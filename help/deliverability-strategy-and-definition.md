@@ -12,12 +12,12 @@ team: ACS
 exl-id: 5285eda9-5099-48d5-b150-ce2c376ee549
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '854'
 ht-degree: 100%
 
 ---
 
-# Levererbarhetsstrategi och definition
+# Strategi för levererbarhet och definition
 
 För att utforma framgångsrika e-postmarknadsföringskampanjer krävs en klar förståelse av marknadsföringsmålen, oavsett om det gäller prospektering eller CRM-hantering (customer relationship management). Detta hjälper dig att avgöra vilka som ingår i målgruppen, vad som ska marknadsföras och när tillfället är idealiskt.
 

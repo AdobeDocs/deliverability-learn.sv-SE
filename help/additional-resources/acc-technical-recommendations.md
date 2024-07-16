@@ -25,7 +25,7 @@ Adobe Campaign kontrollerar om en omvänd DNS anges för en IP-adress och att de
 
 En viktig punkt i nätverkskonfigurationen är att se till att rätt omvänd DNS har definierats för var och en av IP-adresserna för utgående meddelanden. Det innebär att det för en viss IP-adress finns en omvänd DNS-post (PTR-post) med matchande DNS-post (A-post) som repeterar den ursprungliga IP-adressen.
 
-Domänvalet för en omvänd DNS har betydelse när vissa Internet-leverantörer hanteras. AOL godkänner i synnerhet endast feedbackslingor med en adress i samma domän som den omvända DNS-adressen (se [Feedback-slinga](#feedback-loop)).
+Domänvalet för en omvänd DNS har betydelse när vissa Internet-leverantörer hanteras. I AOL accepteras endast feedbackslingor med en adress i samma domän som den omvända DNS-adressen (se [Feedback-slinga](#feedback-loop)).
 
 >[!NOTE]
 >
@@ -67,12 +67,12 @@ En SPF-post kan för närvarande definieras på en DNS-server som en TXT-typpost
 v=spf1 ip4:12.34.56.78/32 ip4:12.34.56.79/32 ~all
 ```
 
-definierar de två IP-adresserna 12.34.56.78 och 12.34.56.79 som auktoriserade att skicka e-post för domänen. **~alla** betyder att alla andra adresser ska tolkas som SoftFail.
+definierar de två IP-adresserna 12.34.56.78 och 12.34.56.79 som auktoriserade att skicka e-post för domänen. **~all** betyder att alla andra adresser ska tolkas som SoftFail.
 
 Recommendations för att definiera en SPF-post:
 
-* Lägg till **~alla** (SoftFail) eller **-all** (Misslyckades) till slutet för att avvisa alla servrar utom de som definierats. Utan detta kan servrar förfalska den här domänen (med en neutral utvärdering).
-* Lägg inte till **ptr** (openspf.org rekommenderar att detta inte blir kostsamt och otillförlitligt).
+* Lägg till **~alla** (SoftFail) eller **-all** (Fail) i slutet om du vill avvisa alla servrar utom de som definierats. Utan detta kan servrar förfalska den här domänen (med en neutral utvärdering).
+* Lägg inte till **ptr** (openspf.org rekommenderar att detta inte är kostsamt och otillförlitligt).
 
 >[!NOTE]
 >
@@ -88,13 +88,13 @@ Recommendations för att definiera en SPF-post:
 
 >[!NOTE]
 >
->För värdbaserade eller hybridinstallationer, om du har uppgraderat till [Förbättrad MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages)signerar DKIM-autentisering via e-post av Förbättrat MTA för alla meddelanden med alla domäner.
+>Om du har uppgraderat till [Förbättrat MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages) för hostinginstallationer eller hybridinstallationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
 
-Använda [DKIM](/help/additional-resources/authentication.md#dkim) med Adobe Campaign Classic kräver följande krav:
+Följande krav krävs för att [DKIM](/help/additional-resources/authentication.md#dkim) ska kunna användas med Adobe Campaign Classic:
 
 **Adobe Campaign-alternativdeklaration**: i Adobe Campaign baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering på varken plattformen eller i e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
 
-* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dkim** i [Regler för domänhantering](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Om inte, följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys (som ersatte DKIM).
+* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dkim** i [Domänhanteringsreglerna](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Om inte, följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys (som ersatte DKIM).
 * Du behöver inte aktivera både DomainKeys och DKIM för samma domän som DKIM är en förbättrad version av DomainKeys.
 * Följande domäner validerar för närvarande DKIM: AOL, Gmail.
 
@@ -102,7 +102,7 @@ Använda [DKIM](/help/additional-resources/authentication.md#dkim) med Adobe Cam
 
 En feedback-slinga fungerar genom att på Internet-nivå deklarera en given e-postadress för ett intervall av IP-adresser som används för att skicka meddelanden. Internet-leverantören skickar till den här postlådan, på ungefär samma sätt som för studsmeddelanden, de meddelanden som rapporteras av mottagarna som skräppost. Plattformen bör konfigureras för att blockera framtida leveranser till användare som har klagat. Det är viktigt att du inte längre kontaktar dem även om de inte använde rätt avanmälningslänk. Det baseras på dessa klagomål på att en Internet-leverantör lägger till en IP-adress till blockeringslista. Beroende på Internet-leverantören kommer en klagofrekvens på ungefär 1 % att leda till att en IP-adress blockeras.
 
-En standard håller på att utarbetas för att definiera formatet för meddelanden om feedbackslingor: [Format för rapportering av missbruk av feedback (ARF)](https://tools.ietf.org/html/rfc6650).
+En standard håller på att skapas för att definiera formatet för feedbackloopmeddelanden: [ARF (Abuse Feedback Reporting Format)](https://tools.ietf.org/html/rfc6650).
 
 Implementering av en feedbackslinga för en instans kräver:
 
@@ -111,7 +111,7 @@ Implementering av en feedbackslinga för en instans kräver:
 
 När du implementerar en enkel feedbackslinga i Adobe Campaign används funktionen för studsmeddelanden. Postlådan för feedbackslingan används som studspostlåda och en regel definieras för att identifiera dessa meddelanden. E-postadresserna till mottagarna som rapporterade meddelandet som skräppost läggs till i karantänlistan.
 
-* Skapa eller ändra en studsregel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** med orsaken **Avvisad** och typen **Hård**.
+* Skapa eller ändra en studs-e-postregel, **Feedback_loop**, i **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** med orsaken **Refused** och typen **Hard** .
 * Om en postlåda har definierats särskilt för feedbackslingan, definierar du parametrarna för att få åtkomst till den genom att skapa ett nytt externt studentkonto i **[!UICONTROL Administration > Platform > External accounts]**.
 
 Mekanismen fungerar omedelbart för att behandla klagomål. Om du vill vara säker på att den här regeln fungerar som den ska kan du tillfälligt inaktivera kontona så att de inte samlar in dessa meddelanden och sedan kontrollera innehållet i feedbackloopens postlåda manuellt. Kör följande kommandon på servern:
@@ -125,7 +125,7 @@ Om du tvingas använda en enda slingadress för feedback för flera instanser m�
 
 * Replikera de meddelanden som tas emot på så många postlådor som det finns instanser av,
 * få varje postlåda upphämtad i en enda instans,
-* Konfigurera instanserna så att de endast bearbetar meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet för meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara **checkInstanceName** parameter i instanskonfigurationsfilen (instansen kontrolleras inte som standard och detta kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
+* Konfigurera instanserna så att de endast bearbetar meddelanden som berör dem: instansinformationen ingår i Message-ID-huvudet för meddelanden som skickas av Adobe Campaign och finns därför även i svarsslingmeddelandena. Ange bara parametern **checkInstanceName** i instanskonfigurationsfilen (instansen verifieras inte som standard och det kan leda till att en viss adress sätts i karantän på ett felaktigt sätt):
 
   ```
   <serverConf>
@@ -137,7 +137,7 @@ Tjänsten Adobe Campaign Deliverability hanterar din prenumeration på tjänster
 
 ## List-Unsubscribe {#list-unsubscribe}
 
-Lägga till ett SMTP-huvud med namnet **List-Unsubscribe** är obligatoriskt för att säkerställa optimal leveranshantering.
+Det är obligatoriskt att lägga till ett SMTP-huvud med namnet **List-Unsubscribe** för att säkerställa optimal leveranshantering.
 
 Den här rubriken kan användas som ett alternativ till ikonen&quot;Rapportera som SPAM&quot;. Den visas som en&quot;Unsubscribe&quot;-länk i Internet-leverantörens e-postgränssnitt.
 
@@ -157,39 +157,39 @@ Gmail, Outlook.com, Yahoo! och Microsoft Outlook stöder den här metoden. Länk
 
 Det finns två versioner av rubrikfunktionen för List-Unsubscribe:
 
-* **mailto List-Unsubscribe** - Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet. [Läs mer](#mailto-list-unsubscribe)
+* **&quot;mailto&quot; List-Unsubscribe** - Med den här metoden klickar du på länken **Unsubscribe** och skickar ett ifyllt e-postmeddelande till den adress för att avbryta prenumerationen som anges i e-posthuvudet. [Läs mer](#mailto-list-unsubscribe)
 
-* **&quot;One-Click&quot; List-Unsubscribe** - Klicka på **Avbeställ** avbeställer du prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
+* **&quot;Ett klick&quot; List-Unsubscribe** - Med den här metoden klickar du på länken **Unsubscribe** för att avsluta prenumerationen direkt. [Läs mer](#one-click-list-unsubscribe)
 
 >[!NOTE]
 >
->Från och med den 1 juni 2024 kommer större internetleverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
+>Från och med den 1 juni 2024 kommer större Internet-leverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
 
 ### mailto List-Unsubscribe {#mailto-list-unsubscribe}
 
-Klicka på **Avbeställ** som skickar ett förifyllt e-postmeddelande till den adress för att avsluta prenumerationen som anges i e-posthuvudet.
+Med den här metoden skickas ett förifyllt e-postmeddelande till den avanmälningsadress som anges i e-posthuvudet när du klickar på länken **Avsluta prenumeration** .
 
-Om du vill använda&quot;mailto&quot; List-Unsubscribe måste du ange en kommandorad där du anger en e-postadress, till exempel: `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
+Om du vill använda mailto List-Unsubscribe måste du ange en kommandorad där du anger en e-postadress, till exempel: `List-Unsubscribe: <mailto:client@newsletter.example.com?subject=unsubscribe?body=unsubscribe>`
 
 >[!CAUTION]
 >
 >Exemplet ovan baseras på mottagartabellen. Om databasimplementeringen görs från en annan tabell måste du skriva om kommandoraden med rätt information.
 
-Du kan också skapa en dynamisk&quot;mailto&quot; List-Unsubscribe med en kommandorad som: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
+Du kan också skapa en dynamisk mailto-lista-unsubscribe med en kommandorad som: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
-Att implementera **mailto List-Unsubscribe** i Campaign kan du antingen:
+Om du vill implementera **&quot;mailto&quot; List-Unsubscribe** i Campaign kan du antingen:
 
-* Lägg till kommandoraden direkt i leverans- eller leveransmallen - [Lär dig mer](#adding-a-command-line-in-a-delivery-template)
+* Lägg till kommandoraden direkt i leverans- eller leveransmallen - [Lär dig hur](#adding-a-command-line-in-a-delivery-template)
 
-* Skapa en typologiregel - [Lär dig mer](#creating-a-typology-rule)
+* Skapa en typologiregel - [Lär dig hur](#creating-a-typology-rule)
 
 #### Lägga till en kommandorad i en leverans eller mall {#adding-a-command-line-in-a-delivery-template}
 
-Kommandoraden måste läggas till i **[!UICONTROL Additional SMTP headers]** i e-postmeddelandets SMTP-huvud.
+Kommandoraden måste läggas till i avsnittet **[!UICONTROL Additional SMTP headers]** i e-postmeddelandets SMTP-huvud.
 
 Detta kan göras i varje e-postmeddelande eller i befintliga leveransmallar. Du kan också skapa en ny leveransmall som innehåller den här funktionen.
 
-Ange till exempel följande skript i **[!UICONTROL Additional SMTP headers]** fält: `List-Unsubscribe: mailto:unsubscribe@domain.com`. Klicka på **avbeställ** skickar ett e-postmeddelande till unsubscribe@domain.com.
+Ange till exempel följande skript i fältet **[!UICONTROL Additional SMTP headers]**: `List-Unsubscribe: mailto:unsubscribe@domain.com`. Om du klickar på länken **unsubscribe** skickas ett e-postmeddelande till adressen unsubscribe@domain.com.
 
 Du kan också använda en dynamisk adress. Om du till exempel vill skicka ett e-postmeddelande till den feladress som definierats för plattformen kan du använda följande skript: `List-Unsubscribe: <mailto:<%=errorAddress%>?subject=unsubscribe%=message.mimeMessageId%>`
 
@@ -207,9 +207,9 @@ Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnitt
 
 ### One-Click List-Unsubscribe {#one-click-list-unsubscribe}
 
-Klicka på **Avbeställ** som säger upp prenumerationen direkt, vilket kräver endast en åtgärd.
+Med den här metoden kan du klicka på länken **Avsluta prenumeration** för att avbeställa prenumerationen direkt. Det krävs bara en åtgärd för att avsluta prenumerationen.
 
-Från och med den 1 juni 2024 kommer större internetleverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
+Från och med den 1 juni 2024 kommer större Internet-leverantörer att kräva att avsändarna följer **One-Click List-Unsubscribe**.
 
 För att uppfylla detta krav måste avsändarna
 
@@ -221,20 +221,20 @@ Om du vill ha stöd för enklickssvaret för POST av en prenumeration direkt i A
 
 1. Gå till **[!UICONTROL Resources]** > **[!UICONTROL Online]** > **[!UICONTROL Web applications]**.
 
-1. Ladda upp&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip) -fil.
+1. Ladda upp filen&quot;Avbeställ mottagare utan att klicka&quot; [XML](/help/assets/WebAppUnsubNoClick.xml.zip) -filen.
 
-Konfigurera **One-Click List-Unsubscribe** i Campaign kan du antingen:
+Om du vill konfigurera **en-klicklista-avsluta prenumeration** i Campaign kan du antingen:
 
-* Lägg till kommandoraden i leverans- eller leveransmallen - [Lär dig mer](#one-click-delivery-template)
-* Skapa en typologiregel - [Lär dig mer](#one-click-typology-rule)
+* Lägg till kommandoraden i leverans- eller leveransmallen - [Lär dig hur](#one-click-delivery-template)
+* Skapa en typologiregel - [Lär dig hur](#one-click-typology-rule)
 
 #### Configuring One-Click List-Unsubscribe in the delivery or template {#one-click-delivery-template}
 
 Följ stegen nedan för att konfigurera en klickning för att avbryta prenumerationen i leverans- eller leveransmallen.
 
-1. Gå till **[!UICONTROL SMTP]** i leveransegenskaperna.
+1. Gå till avsnittet **[!UICONTROL SMTP]** i leveransegenskaperna.
 
-1. Under **[!UICONTROL Additional SMTP Headers]** anger du kommandoraden som i exemplet nedan. Varje rubrik ska vara på en separat rad.
+1. Under **[!UICONTROL Additional SMTP Headers]** anger du kommandorader som i exemplet nedan. Varje rubrik ska vara på en separat rad.
 
 Exempel:
 
@@ -251,7 +251,7 @@ Exemplet ovan aktiverar One-Click List-Unsubscribe för Internet-leverantörer s
 
 Följ stegen nedan om du vill konfigurera en enklickslista för att avbryta prenumerationen med en typologiregel.
 
-1. Gå till **[!UICONTROL Typolgy rules]** och klicka **[!UICONTROL New]**.
+1. Gå till **[!UICONTROL Typolgy rules]** i navigeringsträdet och klicka på **[!UICONTROL New]**.
 
    ![bild](../assets/CreatingTypologyRules1.png)
 
@@ -274,7 +274,7 @@ Följ stegen nedan om du vill konfigurera en enklickslista för att avbryta pren
    >Koden som beskrivs nedan ska endast refereras som exempel.
 
    I det här exemplet beskrivs hur du:
-   * Konfigurera en&quot;mailto&quot; List-Unsubscribe. Den lägger till rubrikerna eller lägger till de befintliga&quot;mailto:&quot;-parametrarna och ersätter dem med: &lt;mailto..>>, https://...
+   * Konfigurera en&quot;mailto&quot; List-Unsubscribe. Den lägger till rubrikerna eller lägger till de befintliga parametrarna&quot;mailto:&quot; och ersätter dem med: &lt;mailto..>, https://...
    * Lägg till i sidhuvudet En klickning - Avsluta prenumeration. Den använder `var headerUnsubUrl = "https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=<%= recipient.cryptedId %>"÷`
 
    >[!NOTE]
@@ -391,7 +391,7 @@ Följ stegen nedan om du vill konfigurera en enklickslista för att avbryta pren
 
    >[!CAUTION]
    >
-   >Verifiera att **[!UICONTROL Additional SMTP headers]** fältet i leveransegenskaperna är tomt.
+   >Kontrollera att fältet **[!UICONTROL Additional SMTP headers]** i leveransegenskaperna är tomt.
 
    ![bild](../assets/CreatingTypologyRules5.png)
 
@@ -409,9 +409,9 @@ Följ stegen nedan om du vill konfigurera en enklickslista för att avbryta pren
 
 SMTP (Simple mail transfer protocol) är en Internetstandard för e-postöverföring.
 
-SMTP-felen som inte kontrolleras av en regel visas i **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** mapp. Dessa felmeddelanden tolkas som standard som ej nåbara felmeddelanden.
+SMTP-felen som inte kontrolleras av en regel visas i mappen **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]**. Dessa felmeddelanden tolkas som standard som ej nåbara felmeddelanden.
 
-De vanligaste felen måste identifieras och en motsvarande regel läggas till i **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** om du vill ha rätt feedback från SMTP-servrarna. Utan detta kommer plattformen att göra onödiga återförsök (okända användare) eller felaktigt placera vissa mottagare i karantän efter ett visst antal tester.
+De vanligaste felen måste identifieras och en motsvarande regel läggas till i **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Mail rule sets]** om du vill att feedback från SMTP-servrarna ska vara korrekt. Utan detta kommer plattformen att göra onödiga återförsök (okända användare) eller felaktigt placera vissa mottagare i karantän efter ett visst antal tester.
 
 ### Dedikerade IP-adresser {#dedicated-ips}
 

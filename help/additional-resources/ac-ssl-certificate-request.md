@@ -8,21 +8,21 @@ team: ACS
 exl-id: 8a78abd3-afba-49a7-a2ae-8b2c75326749
 source-git-commit: 57016f89df54d5c74755a6a108a92db45153ec18
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 3%
+source-wordcount: '2124'
+ht-degree: 1%
 
 ---
 
 # Process för begäran av SSL-certifikat
 
-När du har delegerat en domän till Adobe för att skicka e-post (se [Inställningar för domännamn](/help/additional-resources/ac-domain-name-setup.md)) kommer Adobe att skapa och använda vissa underdomäner för specifika funktioner.
+När du har delegerat en domän till Adobe för att skicka e-post (se [Domännamnskonfiguration](/help/additional-resources/ac-domain-name-setup.md)) skapar och använder Adobe vissa underdomäner för specifika funktioner.
 
-Om du till exempel har delegerat *email.example.com* till Adobe för att skicka e-post kommer Adobe att skapa underdomäner som följande:
+Om du till exempel har delegerat *email.example.com* till Adobe för att skicka e-post, kommer Adobe att skapa underdomäner som följande:
 * *t.email.example.com* - för att spåra länkar
 * *m.email.example.com* - för spegelsidor
-* *res.email.example.com* - för värdbaserade resurser (t.ex. bilder)
+* *res.email.example.com* - för värdbaserade resurser (till exempel bilder)
 
-Vi rekommenderar **skydda dessa domäner via SSL (HTTPS)**. Osäkra länkar (HTTP) är sårbara för avlyssning och kommer att flagga för varningar i moderna webbläsare.
+Vi rekommenderar att **skydda dessa domäner via SSL (HTTPS)**. Osäkra länkar (HTTP) är sårbara för avlyssning och kommer att flagga för varningar i moderna webbläsare.
 
 Om du vill installera SSL-certifikat på dessa underdomäner måste du begära en CSR-fil och sedan köpa SSL-certifikat för Adobe för att kunna installera eller förnya.
 
@@ -34,7 +34,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 
 ## Ordlista
 
-| Term | Beskrivning |
+| Villkor | Beskrivning |
 |--- |--- |
 | CA (certifikatutfärdare) | En SSL-certifikatleverantör som utfärdar digitala certifikat till organisationer eller enskilda efter att ha verifierat deras identitet, som DigiCert, Symantec osv.<ul><li>En betrodd certifikatutfärdare betraktas vanligtvis som en tredjepartscertifikatutfärdare som utfärdar ett rotcertifikat.</li><li>Om certifikatet är signerat av samma organisation/företag som använder certifikatet, klassificeras det som ej betrodd certifikatutfärdare även när de är SSL-certifikat, till exempel självsignerade certifikat.</li></ul> |
 | Kedjecertifikat | Ett certifikat som innehåller ett rotcertifikat och ett eller flera mellanliggande certifikat kallas ett kedjecertifikat (eller kedjat). |
@@ -56,7 +56,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 
 1. Be om en CSR-fil (Certificate Signing Request) och ange nödvändig information (land, stat, ort, organisationsnamn, organisationsenhetsnamn osv.) till Adobe.
 1. Validera CSR-filen som genererats av Adobe och verifiera att all information du angett är korrekt.
-1. Använd CSR-informationen för att skapa ett certifikat som signerats av en betrodd certifikatutfärdare<!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->.
+1. Använd CSR-informationen för att skapa ett certifikat som signerats av en betrodd certifikatutfärdare <!--taking care of asking for using the subjectAltName SSL extension (SAN) if it is for several domain names, and get/purchase the resulting certificate (ideally) in PEM format for Apache server-->.
 1. Validera SSL-certifikatet och verifiera att det matchar CSR.
 1. Ge SSL-certifikatet till Adobe, som ska installera det.
 1. Testa att SSL-certifikatet har installerats för varje skyddad underdomän.
@@ -65,7 +65,7 @@ Om du vill installera SSL-certifikat på dessa underdomäner måste du begära e
 
 ## Detaljerad process
 
-### Förutsättningar
+### Förhandskrav
 
 Du måste identifiera domännamnen och funktionerna (spårning, spegelsidor, webbprogram osv.) för att skydda.
 >[!NOTE]
@@ -76,14 +76,14 @@ Du måste identifiera domännamnen och funktionerna (spårning, spegelsidor, web
 
 Följ stegen nedan för att få en CSR-fil (Certificate Signing Request).
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#subdomains-and-certificates) om du vill generera och hämta en CSR-fil från Kontrollpanelen.
+* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#subdomains-and-certificates) för att generera och hämta en CSR-fil från Kontrollpanelen.
 
 * I annat fall skapar du en supportanmälan via https://adminconsole.adobe.com/ för att få en CSR-fil från Adobe kundtjänst för de underdomäner som behövs.
 
 Här följer några metodtips:
 
 * Generera en begäran per delegerad underdomän.
-* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic, till exempel marknadsföringsservern, [server med mellanleverantörer](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html)och [körningsinstans](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre olika miljöer.
+* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic är till exempel marknadsföringsservern, [mellankällservern](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) och [körningsinstansen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre separata miljöer.
 * Du måste skaffa en ny CSR innan du kan förnya SSL-certifikat. Använd inte en gammal CSR-fil från ett år sedan eller senare.
 
 Du måste ange följande information.
@@ -92,23 +92,23 @@ Du måste ange följande information.
 >
 >Alla fält som anges i tabellerna nedan måste fyllas i. Annars kan CSR-begäran inte behandlas.
 
-**Information som ska tillhandahållas i samarbete med Adobe-teamet:**
+**Information som ska tillhandahållas med hjälp av Adobe-teamet:**
 
 | Information att lämna | Exempelvärde | Anteckning |
 |--- |--- |--- |
 | Klientnamn | My Company Inc. | Organisationens namn. Det här fältet används av Adobe för att spåra din begäran (det ingår inte i CSR/SSL-certifikatet). |
 | Adobe Campaign Environment URL | https://client-mid-prod1.campaign.adobe.com | Adobe Campaign instans-URL. |
-| Namn [CN] | t.subdomain.customer.com | Detta kan vara någon av de relevanta domänerna, men vanligtvis spårningsdomänen. |
-| Alternativt namn på ämne [SAN] | t.subdomain.customer.com | Se till att inkludera spårningsunderdomän som ett SAN. |
-| Alternativt namn på ämne [SAN] | m.subdomain.customer.com |
-| Alternativt namn på ämne [SAN] | res.subdomain.customer.com |
+| Gemensamt namn [CN] | t.subdomain.customer.com | Detta kan vara någon av de relevanta domänerna, men vanligtvis spårningsdomänen. |
+| Alternativt namn för ämne [SAN] | t.subdomain.customer.com | Se till att inkludera spårningsunderdomän som ett SAN. |
+| Alternativt namn för ämne [SAN] | m.subdomain.customer.com |
+| Alternativt namn för ämne [SAN] | res.subdomain.customer.com |
 
 **Information som ska tillhandahållas av ditt interna IT/SSL-team:**
 
 | Information att lämna | Exempelvärde | Anteckning |
 |--- |--- |--- |
-| Land [C] | USA | Det här måste vara en kod med två bokstäver. Åtkomst till den fullständiga listan över länder [här](https://www.ssl.com/csrs/country_codes/).</br>*Obs! För Storbritannien ska du använda GB (inte Storbritannien).* |
-| Stat (eller provinsnamn) [ST] | Illinois | Om tillämpligt. Värdet måste vara ett fullständigt namn, inte förkortat. |
+| Land [C] | USA | Det här måste vara en kod med två bokstäver. Få åtkomst till den fullständiga landslistan [här](https://www.ssl.com/csrs/country_codes/).</br>*Obs! Använd GB (inte UK) för Storbritannien.* |
+| Delstat (eller provinsnamn) [ST] | Illinois | Om tillämpligt. Värdet måste vara ett fullständigt namn, inte förkortat. |
 | Ort/platsnamn [L] | Chicago |
 | Organisationsnamn [O] | KOM |
 | Organisationsenhetsnamn [OU] | IT |
@@ -121,12 +121,12 @@ Du måste ange följande information.
 
 När du har skickat in din begäran med relevant information, genererar Adobe en CSR-fil (Certificate Signing Request).
 
-Texten i den resulterande CSR-filen måste börja med **&quot;—BEGIN CERTIFIATE REQUEST—&quot;**.
+Texten i den resulterande CSR-filen måste börja med **—BEGIN CERTIFICATE REQUEST—**.
 
 När du har fått CSR-filen från Adobe följer du stegen nedan:
 
 1. Kopiera och klistra in CSR-filens text i en onlineavkodare som https://www.sslshopper.com/csr-decoder.html, <!--https://www.certlogik.com/decoder/,--> eller https://www.entrust.net/ssl-technical/csr-viewer.cfm.
-Du kan också använda *OpenSSL* lokalt på en Linux-dator.
+Du kan också använda kommandot *OpenSSL* lokalt på en Linux-dator.
 1. Kontrollera att alla kontroller är slutförda.
 1. Kontrollera att rätt parametrar och domännamn finns med.
 1. Kontrollera att alla andra data överensstämmer med de uppgifter du angav när du skickade din begäran.
@@ -152,15 +152,15 @@ När CSR-filen har angetts måste du köpa och generera ett SSL-certifikat för 
 När SSL-certifikatet har genererats måste du validera det innan du skickar det till Adobe. För att göra detta, följ nedanstående steg:
 
 1. Kontrollera att certifikatet har filnamnstillägget .pem. Om så inte är fallet konverterar du det till PEM-format. Du kan konvertera med *OpenSSL*.
-1. Bekräfta att certifikatet börjar med **&quot;—BEGIN CERTIFICATE—&quot;**.
+1. Bekräfta att certifikatet börjar med **—BEGIN CERTIFICATE—**.
 1. Kopiera certifikattexten till en onlineavkodare, till exempel https://www.sslshopper.com/certificate-decoder.html eller https://www.entrust.net/ssl-technical/csr-viewer.cfm.
-Du kan också använda *OpenSSL* lokalt på en Linux-dator. Mer information finns i [den här externa sidan](https://www.shellhacks.com/decode-ssl-certificate/).
+Du kan också använda kommandot *OpenSSL* lokalt på en Linux-dator. Mer information finns på [den här externa sidan](https://www.shellhacks.com/decode-ssl-certificate/).
 1. Kontrollera att certifikatet löses korrekt, inklusive Common Name, SAN, Issuer och Validity Period.
-1. Om SSL-certifikatverifieringen lyckas kontrollerar du att certifikatet matchar CSR:n med [den här webbplatsen](https://www.sslshopper.com/certificate-key-matcher.html): select **Kontrollera om en CSR och ett certifikat matchar** och ange ditt certifikat och din CSR i motsvarande fält. De borde matcha.
+1. Om SSL-certifikatverifieringen lyckas kontrollerar du att certifikatet matchar CSR med [den här webbplatsen](https://www.sslshopper.com/certificate-key-matcher.html): välj **Kontrollera om en CSR och ett certifikat matchar** och ange ditt certifikat och din CSR i motsvarande fält. De borde matcha.
 
 ### Steg 5 - Begär installation av SSL-certifikat
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#installing-ssl-certificate) för att överföra certifikatet till Kontrollpanelen.
+* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) följer du instruktionerna på [den här sidan](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html?lang=sv#installing-ssl-certificate) för att överföra certifikatet till Kontrollpanelen.
 
 * I annat fall skapar du en ny supportanmälan via https://adminconsole.adobe.com/ för att begära att Adobe installerar certifikatet på Adobe-servrar.
 
@@ -174,11 +174,11 @@ Du måste ange:
 
 När SSL-certifikatet har installerats och bekräftats av Adobe kundtjänst kontrollerar du att det har installerats korrekt för alla URL:er.
 
-Utför testerna nedan innan du stänger installationsbiljetten för SSL. Se även till att du uppdaterar en specifik konfiguration enligt instruktionerna i [det här avsnittet](#update-configuration).
+Utför testerna nedan innan du stänger installationsbiljetten för SSL. Se även till att du uppdaterar någon specifik konfiguration enligt anvisningarna i [det här avsnittet](#update-configuration).
 
 Navigera till följande URL:er i webbläsaren (ersätt&quot;subdomain.customer.com&quot; med din underdomän):
 
-* https://subdomain.customer.com/r/test (för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) endast underdomäner - gäller inte för e-postunderdomäner)
+* https://subdomain.customer.com/r/test (endast för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) underdomäner - gäller inte e-postunderdomäner)
 * https://t.subdomain.customer.com/r/test
 * https://m.subdomain.customer.com/r/test
 * https://res.subdomain.customer.com/r/test
@@ -193,13 +193,13 @@ Om SSL-certifikatet inte är korrekt installerat visas följande varning:
 
 ### Steg 7 - Kontrollera certifikatets giltighetsperiod
 
-Du kan kontrollera certifikatets giltighetsperiod i webbläsaren. I Google Chrome klickar du på **Säker** > **Certifikat**.
+Du kan kontrollera certifikatets giltighetsperiod i webbläsaren. I Google Chrome klickar du till exempel på **Skydda** > **Certifikat**.
 
 Det är ditt ansvar att kontrollera giltighetsperioden. Adobe rekommenderar att du implementerar en process för att övervaka certifikatets förfallodatum. Läs mer om vad som händer när ditt SSL-certifikat upphör att gälla i [den här artikeln](https://www.thesslstore.com/blog/what-happens-when-your-ssl-certificate-expires/).
 
 * Skapa en supportanmälan om du vill begära ett uppdaterat certifikat minst två veckor före certifikatets förfallodatum. Du behöver inte begära ytterligare en CSR, såvida inte CSR-informationen har ändrats.
 
-* Om du har åtkomst till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv)och om din miljö hanteras av Adobe i en AWS-miljö kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv), och om din miljö hanteras av Adobe i en AWS-miljö, kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
 
 ### Steg 8 - Uppdatera en specifik konfiguration {#update-configuration}
 
@@ -207,7 +207,7 @@ När du är säker på att de begärda SSL-certifikaten är korrekt installerade
 
 >[!NOTE]
 >
->För Campaign Classic finns URL:erna som ska uppdateras huvudsakligen i [Distributionsguide](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [Externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårning, spegelsida och offentliga resursdomäner). Mer Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>För Campaign Classic finns URL:erna som ska uppdateras huvudsakligen i [distributionsguiden](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårnings-, speglingssida och offentliga resursdomäner). Mer Campaign Standard finns i [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
 
 När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-URL:er i stället för HTTP. Om du vill kontrollera att webbadresserna nu är säkra kan du snabbt utföra följande tester:
 
@@ -218,8 +218,8 @@ När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-U
 
 **Campaign Classic**
 
-* [Kontrollpanelen: Lägga till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
+* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
 
 **Campaign Standard**
 
-* [Kontrollpanelen: Lägga till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=sv) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
+* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.

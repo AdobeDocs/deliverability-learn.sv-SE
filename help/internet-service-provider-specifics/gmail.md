@@ -11,7 +11,7 @@ team: TM
 exl-id: a7319c85-32b5-4a9e-bee9-24f13630c408
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Här är några högdagrar:
 
 ## Vilka data finns tillgängliga?
 
-[!DNL Gmail] ger begränsade insikter i hur de ser på era sändningsmetoder via sina [!DNL Gmail Postmaster] Verktyg. Med det här verktyget kan du få en översikt över din sändande IP-adress och ditt domänanseende, autentiseringsresultat och problem med klagomål.
+[!DNL Gmail] ger begränsad insikt i hur de visar dina sändningsmetoder via sina [!DNL Gmail Postmaster]-verktyg. Med det här verktyget kan du få en översikt över din sändande IP-adress och ditt domänanseende, autentiseringsresultat och problem med klagomål.
 
 >[!NOTE]
 >
@@ -40,8 +40,8 @@ Här är några högdagrar:
 
 ## Insikter
 
-[!DNL Gmail] visar engagerade prenumeranter på ett annat sätt än vad de flesta avsändare traditionellt gör. En avsändare kan definiera en aktiv eller engagerad lista som någon som har öppnat ett e-postmeddelande inom 30, 90 eller 180 dagar (beroende på affärsmodell). [!DNL Gmail]å andra sidan tittar vi på hur ofta deras användare interagerar med era meddelanden.
+[!DNL Gmail] visar hur abonnenterna engagerade sig på ett annat sätt än vad de flesta avsändare traditionellt gör. En avsändare kan definiera en aktiv eller engagerad lista som någon som har öppnat ett e-postmeddelande inom 30, 90 eller 180 dagar (beroende på affärsmodell). [!DNL Gmail] å andra sidan tittar på hur ofta deras användare interagerar med dina meddelanden.
 
-Om du till exempel skickar 3 e-postmeddelanden i veckan under 90 dagar blir det cirka 39 e-postmeddelanden. Om prenumeranten öppnade ett av dessa 39 e-postmeddelanden med den traditionella metoden är han eller hon engagerad. Till [!DNL Gmail]innebär det att de ignorerade 38 e-postmeddelanden och inte är engagerade. Ni kan få en ungefärlig känsla för era egna användares engagemang på [!DNL Gmail] genom att betygsätta dem på öppet papper under de senaste 10 mejlen. En prenumerant som är associerad med 7 öppningar av dina senaste 10 e-postmeddelanden är därför mer engagerad än någon som öppnat 2 av 10. Om du skickar e-post mindre ofta till användare som är mindre engagerade kan du förbättra ditt sändningsanseende på [!DNL Gmail].
+Om du till exempel skickar 3 e-postmeddelanden i veckan under 90 dagar blir det cirka 39 e-postmeddelanden. Om prenumeranten öppnade ett av dessa 39 e-postmeddelanden med den traditionella metoden är han eller hon engagerad. Till [!DNL Gmail] innebär det att de ignorerade 38 e-postmeddelanden och inte är engagerade. Du kan få en ungefärlig känsla för dina egna användares interaktionsnivåer på [!DNL Gmail] genom att betygsätta dem vid öppet antal under de senaste 10 e-postmeddelandena. En prenumerant som är associerad med 7 öppningar av dina senaste 10 e-postmeddelanden är därför mer engagerad än någon som öppnat 2 av 10. Om du skickar e-post mindre ofta till användare som är mindre engagerade, kommer du att få ett bättre rykte när du skickar e-post på [!DNL Gmail].
 
-[!DNL Gmail] använder olika flikar för att användarna ska kunna skilja olika typer av post åt. Dessa är *Inkorg*, *Social* och *Kampanj*. Även om e-post levereras till fliken Kampanj betraktas det fortfarande som inkorg. Användarna kan ändra sina vyer och flikar.
+[!DNL Gmail] använder olika flikar för användare för att skilja olika typer av e-post åt. Det här är *Inkorgen*, *Socialt* och *Marknadsföring*. Även om e-post levereras till fliken Kampanj betraktas det fortfarande som inkorg. Användarna kan ändra sina vyer och flikar.

@@ -27,6 +27,6 @@ Sändningens varaktighet är processen att skapa en enhetlig sändningsvolym och
 
 ![Bra sändningsbeständighet](assets/Sender_Permanence_1.png)
 
-![Felaktig sändningsbeständighet](assets/Sender_Permanence_2.png)
+![Felaktig överföringsbeständighet](assets/Sender_Permanence_2.png)
 
-![Godtagbar sändningsbeständighet](assets/Sender_Permanence_3.png)
+![Godtagbar sändande permanent](assets/Sender_Permanence_3.png)

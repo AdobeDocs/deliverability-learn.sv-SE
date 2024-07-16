@@ -12,8 +12,8 @@ team: ACS
 exl-id: 4025d95c-cc77-4e0c-9904-aaf60019b18c
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 0%
+source-wordcount: '898'
+ht-degree: 1%
 
 ---
 
@@ -36,8 +36,8 @@ En del av introduktionsprocessen för nya avsändare på Adobe-plattformar är b
 
 Det är viktigt att utforma en välstrukturerad IP-strategi för att skapa ett gott rykte. Antalet IP-adresser och inställningar varierar beroende på er affärsmodell och era marknadsföringsmål. Samarbeta med en expert för att ta fram en tydlig strategi för att komma igång. Tänk på följande saker som är viktiga att tänka på:
 
-* **För många IP-adresser** kan utlösa anseendeproblem eftersom det är en vanlig taktik hos skräppost att **snowshoe**, som används av skräppost där trafiken sprids över många IP-adresser för att maximera leveransen av skräppost. Även om du inte är skräppost kan du se ut som en om du använder för många IP-adresser, särskilt om dessa IP-adresser inte har haft någon tidigare trafik.
-* **För få IP-adresser** kan orsaka genomströmningsproblem och potentiellt orsaka problem med anseendet. Dataflödet varierar beroende på Internet-leverantör. Hur mycket och hur snabbt en Internet-leverantör är villig att acceptera baseras vanligtvis på sin infrastruktur och sina anseendetrösklar.
+* **För många IP-adresser** kan utlösa anseendeproblem eftersom det är en vanlig taktik för skräppost till **snowshoe**, som används av skräppost där trafiken sprids över många IP-adresser för att maximera leveransen av skräppost. Även om du inte är skräppost kan du se ut som en om du använder för många IP-adresser, särskilt om dessa IP-adresser inte har haft någon tidigare trafik.
+* **För få IP-adresser** kan orsaka genomströmningsproblem och kan utlösa anseendeproblem. Dataflödet varierar beroende på Internet-leverantör. Hur mycket och hur snabbt en Internet-leverantör är villig att acceptera baseras vanligtvis på sin infrastruktur och sina anseendetrösklar.
 * Det är viktigt att separera trafiken för meddelandetyper. Det är viktigt att i minsta möjliga mån avgränsa marknadsföring och transaktionell post i separata IP-pooler.
 * Beroende på er e-poststrategi kan det även vara tillrådligt att separera olika produkter eller marknadsföringsströmmar från olika IP-pooler om ert rykte är drastiskt annorlunda. Vissa marknadsförare segmenterar också efter region. Att separera IP-adressen för trafik med lägre anseende löser inte problemet med anseende, men det förhindrar problem med e-postleveranser med gott anseende. Trots allt vill ni inte offra er goda publik för en mer riskfylld.
 
@@ -47,11 +47,11 @@ Bakom kulisserna behandlar Adobe-plattformarna data om studsar, klagomål, avanm
 
 ## Autentisering {#authentication}
 
-Autentisering är den process som Internet-leverantörer använder för att validera en avsändares identitet. De två vanligaste autentiseringsprotokollen är [!DNL Sender Policy Framework] (SPF) [!DNL DomainKeys Identified Mail] (DKIM). Dessa är inte synliga för slutanvändaren, men hjälper Internet-leverantörer att filtrera e-post från verifierade avsändare. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) blir allt populärare, även om dess policyer ännu inte införlivats av alla internetleverantörer i deras anseende.
+Autentisering är den process som Internet-leverantörer använder för att validera en avsändares identitet. De två vanligaste autentiseringsprotokollen är [!DNL Sender Policy Framework] (SPF) och [!DNL DomainKeys Identified Mail] (DKIM). Dessa är inte synliga för slutanvändaren, men hjälper Internet-leverantörer att filtrera e-post från verifierade avsändare. [!DNL Domain-based Message Authentication Reporting and Conformance] (DMARC) blir allt populärare, även om dess principer ännu inte har införlivats av alla Internet-leverantörer i deras anseende.
 
 ### SPF
 
-[!DNL Sender Policy Framework] (SPF) är en autentiseringsmetod som gör att ägaren till en domän kan ange vilka e-postservrar som de använder för att skicka e-post från den domänen.
+[!DNL Sender Policy Framework] (SPF) är en autentiseringsmetod som gör att ägaren till en domän kan ange vilka e-postservrar de använder för att skicka e-post från den domänen.
 
 ### DKIM
 
@@ -59,18 +59,18 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 
 ### DMARC
 
-[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) är en autentiseringsmetod som gör att domänägare kan skydda sin domän från obehörig användning. DMARC använder SPF eller DKIM eller båda för att tillåta en domänägare att kontrollera vad som händer med e-post som inte kan autentiseras: levererad, i karantän eller avvisad.
+[!DNL Domain-based Message Authentication, Reporting and Conformance] (DMARC) är en autentiseringsmetod som tillåter domänägare att skydda sin domän från obehörig användning. DMARC använder SPF eller DKIM eller båda för att tillåta en domänägare att kontrollera vad som händer med e-post som inte kan autentiseras: levererad, i karantän eller avvisad.
 
 ## Produktspecifika resurser
 
 **Campaign**
 
-* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic.*
-* [Kontrollpanelen: Fullständig underdomändelegering (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard.*
+* Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard fullständigt i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 * Läs mer om hur du implementerar en feedbackslinga för en Campaign Classic-instans i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ytterligare resurser
 
 * Läs mer om autentiseringsmetoderna SPF, DKIM och DMARC i [det här avsnittet](/help/additional-resources/authentication.md).
-* Lär dig mer om hur du ökar ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).
+* Läs mer om hur du kan förbättra ditt e-postanseende med IP-uppvärmning i [det här avsnittet](/help/additional-resources/increase-reputation-with-ip-warming.md).

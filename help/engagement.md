@@ -12,7 +12,7 @@ team: ACS
 exl-id: 5a36b821-bcec-4c4f-ae7e-a697df1bb56d
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -37,11 +37,11 @@ Rätt frekvens är något varje marknadsförare måste hitta för sitt specifika
 
 ## Ändrade intressen
 
-Prenumerantens intressen utvecklas hela tiden, och marknadsförarna måste förstå att ett varumärkes engagemang kan vara tillfälligt. Vissa prenumeranter kommer att avanmäla sig, men många kommer bara att ta bort eller ignorera oönskade e-postmeddelanden. Ur kundens perspektiv uppfattas budskap som oönskade eller oönskade som skräppost. Därför måste marknadsförarna förlita sig på **behörighetsbaserad marknadsföring** och **övervaka engagemang** för förlust av ränta. För att uppnå optimal placering av inkorgen rekommenderar vi att marknadsförarna strategiskt återengagerar prenumeranterna med hjälp av reaktiveringskampanjer och en strategi för återvinning, som kan vara mycket användbara verktyg för en e-postmarknadsförare.
+Prenumerantens intressen utvecklas hela tiden, och marknadsförarna måste förstå att ett varumärkes engagemang kan vara tillfälligt. Vissa prenumeranter kommer att avanmäla sig, men många kommer bara att ta bort eller ignorera oönskade e-postmeddelanden. Ur kundens perspektiv uppfattas budskap som oönskade eller oönskade som skräppost. Därför måste marknadsförarna förlita sig på **behörighetsbaserad marknadsföring** och **övervaka engagemanget** för att förlora intresse. För att uppnå optimal placering av inkorgen rekommenderar vi att marknadsförarna strategiskt återengagerar prenumeranterna med hjälp av reaktiveringskampanjer och en strategi för återvinning, som kan vara mycket användbara verktyg för en e-postmarknadsförare.
 
-A **strategi för återvinnande** är när ett särskilt incitament regelbundet skickas till en viss del av en marknadsföringsdatabas i ett försök att återanvisa en lista som har haft låg öppnings- och klickaktivitet. Positiva svar behålls och den del av listan som inte svarar flyttas till en inaktiv status och skickas inte längre till e-post.
+En **återvinningsstrategi** är när ett särskilt incitament regelbundet skickas till en viss del av en marknadsföringsdatabas i ett försök att återanvisa en lista som har haft låg öppnings- och klickaktivitet. Positiva svar behålls och den del av listan som inte svarar flyttas till en inaktiv status och skickas inte längre till e-post.
 
-A **reaktiveringskampanj** liknar varandra men används för att bekräfta en lista en gång, vilket är användbart när du hanterar gamla inaktuella listor - listor som inte har skickats till e-post på över 12 månader eller till och med år. Den här typen av kampanj framtvingas också av blockeringslista för att matcha ett block. Abonnenter som inte kan återkopplas genom den här processen bör uteslutas från framtida e-postkampanjer.
+En **reaktiveringskampanj** liknar den, men den används för att bekräfta en lista en gång, vilket är användbart när du hanterar gamla inaktuella listor - som inte har skickats till e-post på över 12 månader eller till och med år. Den här typen av kampanj framtvingas också av blockeringslista för att matcha ett block. Abonnenter som inte kan återkopplas genom den här processen bör uteslutas från framtida e-postkampanjer.
 
 Det bästa sättet att implementera en återaktiverings- eller återaktiveringskampanj är unikt för e-postprogrammet och bör vara helt anpassat efter företagets behov och situation.
 
@@ -49,7 +49,7 @@ Det bästa sättet att implementera en återaktiverings- eller återaktiveringsk
 
 Det är enkelt att bara ange att ditt svar till e-postmeddelande ska vara en&quot;inget svar&quot;-adress, men det skulle vara ett misstag som missar helhetsbilden.
 
-När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att aktivera **svars- och svarssystem** hjälper du till att förbättra avsändarens anseende. Detta ökar sannolikheten för positiv leverans och placeringsfrekvens för inkorgen.
+När mottagarna svarar på marknadsföringsmejl förväntas ett svar. Genom att aktivera ett **svars- och svarssystem** kan du förbättra avsändarens anseende. Detta ökar sannolikheten för positiv leverans och placeringsfrekvens för inkorgen.
 
 Det är också en mycket bättre kundupplevelse och kommer att bidra till att öka konsumenternas positiva uppfattning av ert varumärke. Det står trots allt inget &quot;snälla, gör affärer med oss&quot; som &quot;vi vill höra från dig&quot;.
 

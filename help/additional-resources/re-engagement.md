@@ -8,8 +8,8 @@ team: ACS
 exl-id: 30118706-d4c0-4bd8-8c9b-50c26b8374ef
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Vid implementering av leverans handlar några av de bästa sätten att försöka
 
 ## Hur visar internetleverantörer icke-engagemangsaktiviteter? {#how-do-isps-view-non-engagement-activity-}
 
-I åratal har internetleverantörer använt feedback från sina användare för att bestämma var de ska skicka meddelanden, eller om de alls ska leverera dem. Användare [engagemang](/help/engagement.md) består av både positiv och negativ återkoppling och internetleverantörer övervakar båda kontinuerligt. Att inte engagera sig är kanske en av de viktigaste aktörerna i ett negativt engagemang. Ur ett leveransperspektiv kan ni också sänka det totala anseendet för er IP-adress och domäner genom att kontinuerligt skicka kampanjer till användare som inte visar något engagemang.
+I åratal har internetleverantörer använt feedback från sina användare för att bestämma var de ska skicka meddelanden, eller om de alls ska leverera dem. Användarens [engagemang](/help/engagement.md) består av både positiv och negativ feedback och ISP:er övervakar båda kontinuerligt. Att inte engagera sig är kanske en av de viktigaste aktörerna i ett negativt engagemang. Ur ett leveransperspektiv kan ni också sänka det totala anseendet för er IP-adress och domäner genom att kontinuerligt skicka kampanjer till användare som inte visar något engagemang.
 
 Internetleverantörer som Gmail, Microsoft® och OATH ser att de inte engagerar sig som oönskad e-post och börjar omdirigera meddelanden till skräppostmappen. Dessa prenumeranter kanske inte längre äger e-postkontot och detta kan användas som en&quot;återvunnen&quot; skräppostsvällning. Det innebär att adressen var ogiltig en tid och att alla meddelanden avvisas. Om prenumeranthanteringssystemet inte tar bort adresserna som &quot;studsar hårt&quot; är det troligt att skräppostsvällningar skickas som kan leda till betydande leveransproblem.
 
@@ -75,8 +75,8 @@ Prenumeranter som interagerar med kampanjen genom att följa öppnings- eller kl
 
 **Adobe Campaign**
 
-* [Spårningsloggar i Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Spårningsloggar i Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Spårningsloggar i Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
+* [Spårningsloggar i Campaign Standarden](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
 
 **Adobe kundresehantering**
 

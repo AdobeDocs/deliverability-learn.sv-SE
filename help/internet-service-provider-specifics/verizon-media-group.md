@@ -11,7 +11,7 @@ team: TM
 exl-id: 43e6d3cb-23c3-4076-8026-a1a08e76bd1b
 source-git-commit: 6b312cdbba496818337c97ec4f42962aea757901
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Här är några högdagrar:
 
 ## Vilka data är viktiga
 
-[!DNL Verizon Media Group] (VMG) har byggt upp och underhåller egna skräppostfilter med en blandning av innehåll och URL-filtrering och skräppostklagomål. Tillsammans med Gmail är de en av de första internetleverantörerna som filtrerar e-post efter domän och IP-adress.
+[!DNL Verizon Media Group] (VMG) har skapat och underhåller egna skräppostfilter med en blandning av innehåll och URL-filtrering och skräppostklagomål. Tillsammans med Gmail är de en av de första internetleverantörerna som filtrerar e-post efter domän och IP-adress.
 
 ## Vilka data finns tillgängliga?
 
@@ -32,7 +32,7 @@ VMG har en FBL som används för att skicka in klagomål till avsändare. De utf
 
 ## Avsändarens rykte
 
-Avsändarens rykte består av en kombination av IP-adress, domän och adress. Anseendet beräknas med hjälp av de traditionella komponenterna, inklusive klagomål, skräppostfällor, inaktiva eller felformade adresser samt engagemang. I VMG används hastighetsbegränsning (kallas även strypning) tillsammans med massvikning för att skydda mot skräppost. De kompletterar sina interna filtreringssystem med vissa [!DNL Spamhaus] svarta listor, inklusive PBL, SBL och XBL för att skydda sina användare.
+Avsändarens rykte består av en kombination av IP-adress, domän och adress. Anseendet beräknas med hjälp av de traditionella komponenterna, inklusive klagomål, skräppostfällor, inaktiva eller felformade adresser samt engagemang. I VMG används hastighetsbegränsning (kallas även strypning) tillsammans med massvikning för att skydda mot skräppost. De kompletterar sina interna filtreringssystem med vissa [!DNL Spamhaus] svarta listor, bland annat PBL, SBL och XBL för att skydda sina användare.
 
 ## Insikter
 

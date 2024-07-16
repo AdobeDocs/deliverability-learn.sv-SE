@@ -8,7 +8,7 @@ team: ACS
 exl-id: 6c9ade01-3052-4311-af80-888294820024
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '549'
 ht-degree: 6%
 
 ---
@@ -31,16 +31,16 @@ Nedan anges de huvudprinciper som ska följas när en ny plattform startas.
 
 * Konfigurera en dedikerad underdomän som är specifik för e-postkampanjer som skickas från Adobe.
 
-* Om du har den här informationen **importera ogiltiga adresser till karantänregistret**.
+* Om du har den här informationen kan du **importera ogiltiga adresser till karantäntabellen**.
 Det händer ofta att en plattform startas när en adresslista används för första gången och som kanske inte är fullständigt kvalificerad. Om du skickar till ogiltiga adresser eller till honeypoadresser kommer detta att bidra till att minska plattformens anseende.
 
-   * Om du har en lista med ogiltiga adresser är det bäst för dig att importera den till karantäntabellen innan du skickar den första gången. Karantänregistret är tillgängligt via **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard) menyer.
+   * Om du har en lista med ogiltiga adresser är det bäst för dig att importera den till karantäntabellen innan du skickar den första gången. Karantäntabellen är tillgänglig via menyerna **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** (Campaign Classic) och **[!UICONTROL Administration > Channels > Quarantines > Addresses]** (Campaign Standard).
 
    * Om du ändå vill ange de ogiltiga adresserna är det bäst att göra detta när plattformens rykte väl har etablerats och bitvis för att &quot;tona ned&quot; användningen av dåliga adresser över tiden.
 
 * **Begränsa dataöverföringshastigheten** genom att begränsa antalet matriser. Kontakta Adobe Campaign-administratören om du vill ha mer information om hur du justerar sådana tekniska inställningar.
 
-* **Öka volymen som skickas progressivt** för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor.
+* **Öka volymen** progressivt för att undvika att markeras som skräppost. Använd inte hela databasen som mål från början, utan lägg till en extra del av listan varje gång du skickar. Detta bör göra att du kan öka volymen i varje steg och samtidigt minska den totala hastigheten för ogiltiga adresser. För att säkerställa en smidig utveckling av startfasen kan du använda vågor.
 
 * **Skicka regelbundet**. I viss utsträckning är det bättre att skicka små tagningar regelbundet i stället för stora kampanjer sporadiskt.
 * **Var noga med leveransrapporterna**. Höga felindikatorer kan innebära att en teknisk inställning är felaktigt konfigurerad.
@@ -56,7 +56,7 @@ Mer information om de principer som anges ovan och hur de tillämpas med Adobe C
 
 * [Optimera leveransen genom karantän](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#optimizing-your-delivery-through-quarantines)
 * [Identifiera adresser i karantän för hela plattformen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#identifying-quarantined-addresses-for-the-entire-platform)
-* [Skicka med flera påfyllnader](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
+* [Skickar med flera påfyllnader](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves)
 * [Leveransövervakning](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages)
 
 **Adobe Campaign Standard**

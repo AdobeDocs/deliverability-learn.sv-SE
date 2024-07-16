@@ -25,14 +25,14 @@ ht-degree: 4%
 ![bild](/help/assets/CreatingTypologyRules2.png)
 
 
-**Koda javascript-koden för typologiregeln:**
+**Kodning av javascript för typologiregeln:**
 
 
 >[!NOTE]
 >
 >Koden som beskrivs nedan ska endast refereras som exempel.
 >I det här exemplet beskrivs hur du:
->* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>>, https://..
+>* Konfigurera en URL List-Unsubscribe och lägger till rubrikerna eller lägger till den befintliga mailto-parametern och ersätter den med: &lt;mailto..>, https://..
 >* Lägg till i sidhuvudet List-Unsubscribe-Post
 >I exemplet med post-URL används var headerUnsubUrl = &quot;https://campmomentumv7-mkt-prod3.campaign.adobe.com/webApp/unsubNoClick?id=&lt;%= mottagare.cryptedId %>&quot; max
 >* Du kan lägga till andra parametrar (som &amp;service = ...)
@@ -141,7 +141,7 @@ return true;
 
 ![bild](/help/assets/CreatingTypologyRules4.png)
 
-**4. Förbered en ny leverans (kontrollera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
+**4. Förbered en ny leverans (verifiera att ytterligare SMTP-huvuden i leveransegenskapen är tomma)**
 
 ![bild](/help/assets/CreatingTypologyRules5.png)
 

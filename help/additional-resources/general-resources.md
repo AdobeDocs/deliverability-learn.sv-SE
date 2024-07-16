@@ -9,7 +9,7 @@ exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
 source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 33%
+ht-degree: 31%
 
 ---
 
@@ -21,7 +21,7 @@ Läs följande om du vill veta mer om de senaste uppdateringarna om leveransbarh
 
 * [Implementera Gmail:s varumärkesidentifierare för meddelandeidentifiering (BIMI)](../technotes/implement-bimi.md)
 
-## Generiska resurser
+## Allmänna resurser
 
 I det här avsnittet visas ytterligare resurser om levererbarhet, som specifika rekommendationer och bästa praxis, andra verktyg eller felsökningsprocedurer.
 

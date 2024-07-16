@@ -8,7 +8,7 @@ team: ACS
 exl-id: 03609139-b39b-4051-bcde-9ac7c5358b87
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,16 @@ SPF (Sender Policy Framework) är en standard för e-postautentisering som gör 
 
 SPF är en teknik som i viss utsträckning gör att du kan kontrollera att domännamnet som används i ett e-postmeddelande inte är falskt. När ett meddelande tas emot från en domän tillfrågas domänens DNS-server. Svaret är en kort post (SPF-posten) som anger vilka servrar som har behörighet att skicka e-post från den här domänen. Om vi antar att bara ägaren av domänen har möjlighet att ändra den här posten, kan vi tänka oss att den här metoden inte tillåter att avsändaradressen förfalskas, åtminstone inte delen från höger om&quot;@&quot;.
 
-I slutet [RFC 4408-specifikation](https://www.rfc-editor.org/info/rfc4408), används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: den domän som anges av kommandot SMTP &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. Vi rekommenderar att du ser till att båda källorna anger samma domän.
+I den slutliga [RFC 4408-specifikationen](https://www.rfc-editor.org/info/rfc4408) används två element i meddelandet för att avgöra vilken domän som betraktas som avsändare: den domän som anges av kommandot SMTP &quot;HELO&quot; (eller &quot;EHLO&quot;) och den domän som anges av adressen för huvudet &quot;Return-Path&quot; (eller &quot;MAIL FROM&quot;), som också är studsadressen. Olika överväganden gör det möjligt att endast ta hänsyn till ett av dessa värden. Vi rekommenderar att du ser till att båda källorna anger samma domän.
 
 Om du kontrollerar SPF-filen utvärderas giltigheten för avsändarens domän:
 
-* **Ingen**: Ingen utvärdering kunde utföras.
+* **Ingen**: Det gick inte att utföra någon utvärdering.
 * **Neutral**: Domänen som efterfrågas aktiverar inte utvärdering.
-* **Godkänd**: Domänen anses vara autentisk.
+* **Pass**: Domänen betraktas som autentisk.
 * **Misslyckades**: Domänen är förfalskad och meddelandet bör avvisas.
 * **SoftFail**: Domänen är antagligen förfalskad, men meddelandet bör inte avvisas enbart baserat på det här resultatet.
-* **TempError**: Ett tillfälligt fel avbröt utvärderingen. Meddelandet kan avvisas.
+* **TempError**: Ett tillfälligt fel stoppade utvärderingen. Meddelandet kan avvisas.
 * **PermError**: SPF-posterna för domänen är ogiltiga.
 
 Det är värt att notera att det kan ta upp till 48 timmar att ta hänsyn till poster gjorda på DNS-servernivå. Den här fördröjningen beror på hur ofta DNS-cachen för de mottagande servrarna uppdateras.
@@ -45,12 +45,12 @@ DKIM-autentisering (DomainKeys Identified Mail) är en efterföljare till SPF. D
 
 DKIM kommer från en kombination av DomainKeys, Yahoo! och Cisco identifierade autentiseringsprinciper för Internet Mail och används för att kontrollera avsändardomänens autenticitet och garantera meddelandets integritet.
 
-DKIM ersatt **DomainKeys** autentisering.
+DKIM ersatte autentiseringen **DomainKeys**.
 
 DKIM kräver vissa förutsättningar:
 
-* **Säkerhet**: Kryptering är ett nyckelelement i DKIM. För att säkerställa att DKIM:s säkerhetsnivå är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
-* **Anseende**: Anseendet baseras på IP och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: undvik att behålla standardinställningen som kan användas av alla och därför har ett svagt anseende. Du måste implementera en annan väljare för **kundlojalitet jämfört med kundvärvningsinformation** och för autentisering.
+* **Säkerhet**: Kryptering är ett nyckelelement för DKIM. För att säkerställa att DKIM:s säkerhetsnivå är 1024b den rekommenderade krypteringsstorleken. Lägre DKIM-nycklar anses inte giltiga av de flesta åtkomstleverantörer.
+* **Återgivning**: Återgivningen baseras på IP och/eller domänen, men den mindre transparenta DKIM-väljaren är också ett nyckelelement som ska beaktas. Det är viktigt att du väljer väljaren: undvik att behålla standardinställningen som kan användas av alla och därför har ett svagt anseende. Du måste implementera en annan väljare för **kvarhållande kontra förvärv** och för autentisering.
 
 Läs mer om DKIM-krav när du använder Campaign Classic i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#dkim-acc).
 
@@ -63,4 +63,4 @@ DMARC (Domain-based Message Authentication, Reporting and Conformance) är den s
 
 >[!NOTE]
 >
->DMARC kan utnyttja rapporterna från [250ok](https://250ok.com/).
+>DMARC kan utnyttja rapporter som genererats av [250ok](https://250ok.com/).

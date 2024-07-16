@@ -8,14 +8,14 @@ team: ACS
 exl-id: 45cdcda0-70e4-47f4-8713-a834500e7881
 source-git-commit: d6094cd2ef0a8a7741e7d8aa4db15499fad08f90
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 2%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
 # Allt om skräppostfällor
 
-A [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-post skickas till. En skräppostfälla har ett huvuduppdrag: identifiera spammare eller avsändare utan datahygienprocess.
+En [skräppostsvällning](/help/metrics/spam-traps.md) är en giltig adress, utan felmeddelande när e-postmeddelanden skickas till. En skräppostfälla har ett huvuduppdrag: identifiera spammare eller avsändare utan datahygienprocess.
 
 ## Vem hanterar de här skräppostlådadresserna?
 

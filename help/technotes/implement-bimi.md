@@ -25,7 +25,7 @@ BIMI förbättrar inte direkt leveransen eller ditt rykte. Men det kan hjälpa e
 
 ## Hur ser det ut?
 
-Du kan hitta exempel på implementeringar från olika leverantörer och mer information om vilka leverantörer som visar logotypen på [BIMI-gruppens sida](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
+Du kan hitta några exempel på implementeringar från olika leverantörer och mer information om vilka leverantörer som visar logotypen på [BIMI-gruppens sida](https://bimigroup.org/where-is-my-bimi-logo-displayed/){target="_blank"}.
 
 ## Vem är BIMI-gruppen?
 
@@ -35,7 +35,7 @@ BIMI Group består av flera intressenter från olika delar av branschen: Google,
 
 ## Vem stöder BIMI?
 
-Postlådeleverantörernas lista som stöder BIMI växer stadigt. En aktuell lista finns [här](https://bimigroup.org/bimi-infographic/){target="_blank"} för både stödleverantörer och leverantörer som överväger BIMI.
+Postlådeleverantörernas lista som stöder BIMI växer stadigt. En uppdaterad lista finns [här](https://bimigroup.org/bimi-infographic/){target="_blank"} både för stödleverantörer och för leverantörer som överväger BIMI.
 
 Från och med april 2023 innehåller listan Gmail, Yahoo, La Poste, Fastmail, Onet.pl och Zone, Proofpoint som antispam-enhet och Apple Mail (från och med iOS 16).
 
@@ -47,11 +47,11 @@ Att implementera BIMI går i flera steg:
 
 1. DMARC-implementering (domänbaserad meddelandeautentisering, rapportering och överensstämmelse) på efterlevnadsnivå för både den sändande domänen och dess organisationsdomän - [Läs mer](#dmarc)
 
-1. Skapa din logotyp i SVG TinyPS-format - [Läs mer](#create-brand-logo)
+1. Skapande av din logotyp i formatet SVG TinyPS - [Läs mer](#create-brand-logo)
 
 1. Registrera dig för ett verifierat varumärkescertifikat (krävs endast för vissa leverantörer) - [Läs mer](#vmc)
 
-1. Publicera en BIMI DNS-post med logotypen och certifikatet - [Läs mer](#publish-bimi-record)
+1. Publish en BIMI DNS-post med logotypen och certifikatet - [Läs mer](#publish-bimi-record)
 
 1. Har gott rykte - [Läs mer](#good-reputation)
 
@@ -62,17 +62,17 @@ Att implementera BIMI går i flera steg:
 
 ### DMARC {#dmarc}
 
-DMARC är en standard som gör det möjligt för varumärket att bestämma vad en postlådeleverantör ska göra med ett e-postmeddelande som misslyckas [autentisering](../additional-resources/authentication.md). De så kallade profilerna sträcker sig från&quot;ingen&quot; över&quot;karantän&quot; (placering av skräppostmappen) till&quot;avvisa&quot; (blockera e-post helt). Det är bara de senare två policyerna som kallas&quot;genomförande&quot; och som är kvalificerade för BIMI. E-post som skickas av Adobe skickar autentisering eftersom SPF (Sender Policy Framework) och DKIM (Domain Keys Identified Mail) är inställda som standard. Adobe konfigurerar DMARC på din sändande domän på begäran.
+DMARC är en standard som gör att varumärket kan bestämma vad en postlådeleverantör ska göra med ett e-postmeddelande som inte kan [autentiseras](../additional-resources/authentication.md). De så kallade profilerna sträcker sig från&quot;ingen&quot; över&quot;karantän&quot; (placering av skräppostmappen) till&quot;avvisa&quot; (blockera e-post helt). Det är bara de senare två policyerna som kallas&quot;genomförande&quot; och som är kvalificerade för BIMI. E-post som skickas av Adobe skickar autentisering eftersom SPF (Sender Policy Framework) och DKIM (Domain Keys Identified Mail) är inställda som standard. Adobe konfigurerar DMARC på din sändande domän på begäran.
 
 Förutom DMARC på den sändande domänen måste DMARC även användas på efterlevnadsnivå för organisationsdomänen (om den sändande domänen är news.example.com är example.com organisationsdomänen).
 
 ### Skapa din logotyp {#create-brand-logo}
 
-Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI Groups riktlinjer](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
+Logotypen måste uppfylla kraven till 100 %. Se alltid [BIMI-gruppens riktlinjer](https://bimigroup.org/creating-bimi-svg-logo-files/){target="_blank"}.
 
 Logotypen måste lagras på en säker plats (HTTPS) om ett leveransnätverk (CDN) används för att skydda postlådeprovidrar från att hämta logotypen (t.ex. punktskydd).
 
-Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering. Vissa leverantörer har egna krav som är utöver dem som ställs av BIMI-arbetsgruppen. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"} logotypen måste till exempel vara minst 96 x 96 pixlar.
+Förutom de tekniska kraven finns det några praktiska rekommendationer, som att ha en fyrkantig logotyp, en enfärgad bakgrundsfärg och andra. Rekommendationerna är till för bästa visualisering. Vissa leverantörer har egna krav som är utöver dem som ställs av BIMI-arbetsgruppen. [Gmail](https://support.google.com/a/answer/10911027?sjid=903725605955621707-EU){target="_blank"} kräver till exempel att logotypen ska vara minst 96 x 96 pixlar.
 Observera att bristande efterlevnad kan leda till att logotypen inte visas.
 
 ### Verifierat varumärkescertifikat (VMC) {#vmc}
@@ -107,10 +107,10 @@ Förtroende är avgörande för BIMI. Användaren litar på sin postlådeleveran
 
 ## Tips och tricks
 
-* BIMI-gruppen har ett praktiskt valideringsverktyg för BIMI. Om du vill dubbelkontrollera om allt är klart eller klart, eller bara vill se om logotypen är kompatibel, går du till [den här länken](https://bimigroup.org/bimi-generator/){target="_blank"}. För den senare klickar du bara på **[!UICONTROL Generate BIMI]** och ange en platshållardomän men rätt logotyps-URL. Inspektören talar om för dig om logotypen är kompatibel.
+* BIMI-gruppen har ett praktiskt valideringsverktyg för BIMI. Om du vill dubbelkontrollera om allt är konfigurerat och klart, eller bara vill se om logotypen är kompatibel, går du till [den här länken](https://bimigroup.org/bimi-generator/){target="_blank"}. För den senare klickar du bara på **[!UICONTROL Generate BIMI]** och anger en platshållardomän men rätt logotypadress. Inspektören talar om för dig om logotypen är kompatibel.
 
 * Du kan börja utan en VMC utan problem, men det skadar inte ditt rykte om BIMI-posten inte innehåller någon VMC-URL, men logotypen kan redan visas i Yahoo.
 
 * Att införa DMARC på organisationsnivå är ett stort företag. Vissa företag är specialiserade på att hjälpa varumärken att uppnå en fullständig DMARC-användning.
 
-* En omfattande lista över vanliga frågor och svar publiceras [här](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.
+* En omfattande lista med vanliga frågor och svar publiceras [här](https://bimigroup.org/faqs-for-senders-esps/){target="_blank"}.

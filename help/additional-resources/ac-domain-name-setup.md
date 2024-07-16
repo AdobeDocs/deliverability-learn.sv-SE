@@ -8,7 +8,7 @@ team: ACS
 exl-id: 4d52d197-d20e-450c-bfcf-e4541c474be4
 source-git-commit: 82f7254a9027f79d2af59aece81f032105c192d5
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2043'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ I det här dokumentet beskrivs affärsmässiga och tekniska krav för konfigurat
 
 Med Adobe kan digital marknadsföring bli den kontextuella motor som driver ert varumärkes marknadsföringsprogram för kundengagemang.  E-post är fortfarande grunden för digitala marknadsföringsprogram. Det har dock blivit svårare än någonsin att nå inkorgen.
 
-Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp [IP-uppvärmningsprocess](../../help/additional-resources/increase-reputation-with-ip-warming.md) och förbättra den övergripande leveransen. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet.  Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
+Genom att skapa en underdomän för e-postkampanjer kan varumärken isolera olika typer av trafik (till exempel marknadsföring kontra företag) i specifika IP-pooler och med specifika domäner, vilket snabbar upp den [IP-uppvärmningsprocessen](../../help/additional-resources/increase-reputation-with-ip-warming.md) och förbättrar leveransmöjligheterna generellt. Om du delar en domän och den blockeras eller läggs till i blockeringslista kan det påverka företagets e-postleverans. Men kända problem eller blockeringar på en domän som är specifik för din e-postmarknadsföring kommer att påverka just det e-postflödet.  Om du använder huvuddomänen som avsändare eller Från-adress för flera e-postströmmar kan det också bryta e-postautentiseringen, vilket gör att dina meddelanden blockeras eller placeras i skräppostmappen.
 
 ### Delegering
 
@@ -35,7 +35,8 @@ Detta innebär att Adobe Campaign DNS-servrar endast har fullständig behörighe
 
 Genom att delegera en underdomän för användning med Adobe Campaign kan klienterna förlita sig på att Adobe upprätthåller den DNS-infrastruktur som krävs för att uppfylla branschens krav på levererbarhet för avsändardomäner för e-postmarknadsföring, samtidigt som de behåller och kontrollerar DNS för sina interna e-postdomäner.  Deldomänsdelegering tillåter:
 
-Klienter som vill behålla sin image genom att använda ett DNS-alias med sina domännamn Adobe för att självständigt implementera alla tekniska standarder för att optimera leveransen under e-postutskick
+Klienter som vill behålla sin varumärkesavbildning genom att använda ett DNS-alias med sina domännamn
+Adobe ska självständigt implementera alla bästa tekniska metoder för att optimera leveransmöjligheterna under e-postutskick
 
 ## Alternativ för DNS-konfiguration
 
@@ -44,7 +45,7 @@ För att kunna tillhandahålla en molnbaserad hanterad tjänst rekommenderar Ado
 | Alternativ | Beskrivning | Adobe ansvar | Klientansvar |
 |--- |------- |--- |--- |
 | Delegering till underdomäner till Adobe Campaign | Klienten delegerar en underdomän (email.example.com) till Adobe. I det här scenariot kan Adobe leverera Campaign som en hanterad tjänst genom att kontrollera och underhålla alla aspekter av DNS som krävs för att leverera, återge och spåra e-postkampanjer. | Fullständig hantering av underdomänen och alla DNS-poster som krävs för Adobe Campaign. | Korrekt delegering av underdomänen till Adobe |
-| Använda CNAME:er | Klienten skapar en underdomän och använder CNAME:er för att peka mot Adobe-specifika poster.  Med den här konfigurationen delar både Adobe och kunden ansvaret för att underhålla DNS:er. | Hantering av DNS-poster som krävs för Adobe Campaign. | Skapa och kontrollera underdomänen och skapa/hantera de CNAME-poster som krävs för Adobe Campaign. |
+| Användning av CNAME | Klienten skapar en underdomän och använder CNAME:er för att peka mot Adobe-specifika poster.  Med den här konfigurationen delar både Adobe och kunden ansvaret för att underhålla DNS:er. | Hantering av DNS-poster som krävs för Adobe Campaign. | Skapa och kontrollera underdomänen och skapa/hantera de CNAME-poster som krävs för Adobe Campaign. |
 
 ## Nödvändiga DNS-poster
 
@@ -87,7 +88,7 @@ Delegering av ett domännamn innebär att den här domänen kommer att dedikeras
 
 Under konfigurationsprocessen ser Adobe till att domänen är ansluten till infrastrukturen för inkommande e-post i Adobe för att hantera och bearbeta återbundna e-postmeddelanden som kommer tillbaka till dessa domäner (DNS-postkonfiguration av MX-typ).
 
-### Använda CNAME:er
+### Användning av CNAME
 
 Om klienten väljer att använda CNAME i stället för att delegera en underdomän till Adobe, kommer Adobe under konfigurationsfasen att tillhandahålla de poster som ska placeras i klientens DNS-servrar och konfigurera motsvarande värden i Adobe Campaign DNS-servrar.
 
@@ -111,7 +112,7 @@ Fyll i tabellen nedan. Den första raden är bara ett exempel.
 >[!NOTE]
 >
 >* Syftet med fältet Svara till adress är när du vill att mottagaren ska svara på en annan adress än Från adress.  Adobe rekommenderar att svarsadressen är giltig och länkad till en övervakad postlåda, men inget obligatoriskt fält krävs.  Kunden måste vara värd för den här postlådan.  Det kan vara en supportpostlåda, till exempel customercare@customer.com, där e-postmeddelanden läses och besvaras.
->* Om kunden inte väljer&quot;Svara till adress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
+>* Om kunden inte väljer &quot;Svarsadress&quot; är standardadressen alltid `<tenant>-<type>-<env>@<subdomain>`.
 >* När Svara-till-adressen har konfigurerats på det här sättet skickas svar till en oövervakad postlåda.
 >* När du skickar e-postmeddelanden från Adobe Campaign övervakas inte postlådan&quot;Från adress&quot; och marknadsföringsanvändare kan inte komma åt den här postlådan. Adobe Campaign erbjuder inte heller möjlighet att svara automatiskt eller vidarebefordra e-postmeddelanden som tas emot i den här postlådan.
 >* Adressen för Campaign From/Sender och Feladressen får inte vara &quot;missbruk&quot; eller &quot;postmaster&quot;.
@@ -158,7 +159,7 @@ Ytterligare DNS-konfiguration för CNAME krävs för att distribuera externt til
 
 Brandväggen måste också konfigureras så att den ger åtkomst till den Adobe Campaign-marknadsinstans som är värd för dessa webbkomponenter (på port 80 eller 443).
 
-**Best Practice Recommendations**
+**Best Practice Recommendations:**
 
 Den underdomän som ska vara värd för webbkomponenter är synlig för kunderna, så se till att göra den korrekt varumärkesprofilerad och enkel att komma ihåg eftersom den kan behöva skrivas in manuellt, till exempel: https://web.customer.com.
 Om några formulär behöver lagras på säkra sidor (HTTPS) krävs ytterligare teknisk konfiguration, vilket beskrivs nedan.
@@ -204,4 +205,4 @@ Mer information om detta hittar du i den [dedikerade dokumentationen](https://ex
 
 >[!NOTE]
 >
->[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) endast för kunder som använder Adobe Managed Services.
+>[Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv) är endast tillgänglig för kunder som använder Adobe Managed Services.
