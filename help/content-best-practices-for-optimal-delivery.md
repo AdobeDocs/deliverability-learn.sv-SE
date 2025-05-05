@@ -29,8 +29,8 @@ Innehåll är nyckeln. Du har redan läst våra perspektiv om relevans, men här
 
 **Campaign Classic**
 
-* [Kontrollera meddelandeinnehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html)
+* [Kontrollera meddelandeinnehåll](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/deliverability-management/control-message-content.html?lang=sv-SE)
 
 **Campaign Standard**
 
-* [Kontrollera e-postinnehåll](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html#testing-and-sending)
+* [Kontrollera e-postinnehåll](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/managing-deliverability/control-email-content.html?lang=sv-SE#testing-and-sending)

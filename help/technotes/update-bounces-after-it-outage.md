@@ -45,8 +45,8 @@ Med hjälp av standardlogik för studshantering har Adobe Campaign automatiskt l
 
 Om du vill hitta de mottagare som påverkades av problemet, eller om det skulle inträffa igen med någon annan Internet-leverantör, kan du läsa instruktionerna nedan:
 
-* För Campaign Classic v7 och Campaign v8, se [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
-* Mer Campaign Standard finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en#unquarantine-bulk){_blank}.
+* För Campaign Classic v7 och Campaign v8, se [den här sidan](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=sv-SE#unquarantine-bulk){_blank}.
+* Mer Campaign Standard finns på [den här sidan](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=sv-SE#unquarantine-bulk){_blank}.
 
 ### Adobe Journey Optimizer{#ajo-update}
 
@@ -54,5 +54,5 @@ Med hjälp av standardlogik för studshantering har Adobe Journey Optimizer auto
 
 När adresserna har identifierats kan de tas bort manuellt från listan över undertryckningar med knappen **[!UICONTROL Delete]**. Dessa adresser kan sedan inkluderas i framtida e-postkampanjer.
 
-Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html#remove-from-suppression-list){_blank}.
+Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list.html?lang=sv-SE#remove-from-suppression-list){_blank}.
 

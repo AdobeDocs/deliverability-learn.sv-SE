@@ -75,9 +75,9 @@ Prenumeranter som interagerar med kampanjen genom att följa öppnings- eller kl
 
 **Adobe Campaign**
 
-* [Spårningsloggar i Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#tracking-logs)
-* [Spårningsloggar i Campaign Standarden](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html#tracking-logs)
+* [Spårningsloggar i Campaign Classicen](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html?lang=sv-SE#tracking-logs)
+* [Spårningsloggar i Campaign Standarden](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/sending-and-tracking-messages/tracking-messages.html?lang=sv-SE#tracking-logs)
 
 **Adobe kundresehantering**
 
-* [Meddelandespårning](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html)
+* [Meddelandespårning](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/message-tracking.html?lang=sv-SE)

@@ -48,10 +48,10 @@ I många fall följer inte transaktionsmejl den traditionella uppvärmningsmetod
 **Campaign**
 
 * Läs mer om hur du hanterar leveransen när du startar en ny plattform med Adobe Campaign i [det här avsnittet](/help/additional-resources/ac-starting-new-platform.md).
-* Lär dig hur du skickar med flera vågor med Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves).
+* Lär dig hur du skickar med flera vågor med Adobe Campaign Classic i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=sv-SE#sending-using-multiple-waves).
 * Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard fullständigt i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=sv-SE) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=sv-SE) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 
 ## Ytterligare resurser
 

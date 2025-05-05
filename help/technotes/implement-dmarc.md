@@ -99,7 +99,7 @@ DMARC-poster har flera komponenter som kallas DMARC-taggar. Varje tagg har ett v
 
 >[!NOTE]
 >
->Om din Campaign-instans finns på AWS kan du implementera DMARC för dina underdomäner med Kontrollpanelen. [Lär dig hur du implementerar DMARC-poster med Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html).
+>Om din Campaign-instans finns på AWS kan du implementera DMARC för dina underdomäner med Kontrollpanelen. [Lär dig hur du implementerar DMARC-poster med Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/txt-records/dmarc.html?lang=sv-SE).
 
 En vanlig orsak till DMARC-fel är felpassning mellan adressen&quot;Från&quot; och&quot;Fel till&quot; eller&quot;Retursökväg&quot;. För att undvika detta bör du kontrollera adressinställningarna&quot;Från&quot; och&quot;Fel till&quot; i leveransmallarna när du konfigurerar DMARC.
 

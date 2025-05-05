@@ -37,7 +37,7 @@ Här är några sätt att hjälpa dig att identifiera ett eventuellt problem dä
 **Adobe Campaign Standard**
 
 * [Övervaka en leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv)
-* [Sammanfattning av leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html)
+* [Sammanfattning av leverans](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/list-of-reports/delivery-summary.html?lang=sv-SE)
 * [Övervaka levererbarhet](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=sv#testing-and-sending)
 
 ## Ytterligare resurser

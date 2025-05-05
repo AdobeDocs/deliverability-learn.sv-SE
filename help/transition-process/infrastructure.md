@@ -66,8 +66,8 @@ Autentisering är den process som Internet-leverantörer använder för att vali
 **Campaign**
 
 * Lär dig hur du delegerar en underdomän till Adobe Campaign Classic eller Standard fullständigt i [det här avsnittet](/help/additional-resources/ac-domain-name-setup.md).
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
-* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=sv-SE) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Classic fullständigt.*
+* [Kontrollpanelen: Fullständig delegering av underdomäner (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/subdomain-delegation.html?lang=sv-SE) - *Lär dig hur du delegerar en underdomän till Adobe Campaign Standard fullständigt.*
 * Läs mer om hur du implementerar en feedbackslinga för en Campaign Classic-instans i [det här avsnittet](/help/additional-resources/acc-technical-recommendations.md#feedback-loop-acc).
 
 ## Ytterligare resurser

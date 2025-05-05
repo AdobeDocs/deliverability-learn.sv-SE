@@ -59,13 +59,13 @@ En sista viktig del av svarsstrategin är att om du har en riktig e-postadress s
 
 **Adobe Campaign Classic**
 
-* [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html#communication-channels)
-* [Tryckregler](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+* [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=sv-SE#communication-channels)
+* [Tryckregler](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=sv-SE)
 
 **Adobe Campaign Standard**
 
-* [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html)
-* [Fatigue-regler](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html)
+* [Definiera rätt publik](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/delivery-bestpractices/define-the-right-audience.html?lang=sv-SE)
+* [Fatigue-regler](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/working-with-typology-rules/fatigue-rules.html?lang=sv-SE)
 
 ## Ytterligare resurser
 

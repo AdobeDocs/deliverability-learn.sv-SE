@@ -39,7 +39,7 @@ Mer exakt används de för att styra hur snabbt Adobe Campaign MTA (Message Tran
 
 >[!NOTE]
 >
->Mer information om MX-hantering i Adobe Campaign Classic finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#mx-configuration).
+>Mer information om MX-hantering i Adobe Campaign Classic finns i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=sv-SE#mx-configuration).
 
 ### TLS {#tls}
 
@@ -88,13 +88,13 @@ Recommendations för att definiera en SPF-post:
 
 >[!NOTE]
 >
->Om du har uppgraderat till [Förbättrat MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html#sending-messages) för hostinginstallationer eller hybridinstallationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
+>Om du har uppgraderat till [Förbättrat MTA](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-with-enhanced-mta.html?lang=sv-SE#sending-messages) för hostinginstallationer eller hybridinstallationer, signeras DKIM-e-postautentisering av Förbättrat MTA för alla meddelanden med alla domäner.
 
 Följande krav krävs för att [DKIM](/help/additional-resources/authentication.md#dkim) ska kunna användas med Adobe Campaign Classic:
 
 **Adobe Campaign-alternativdeklaration**: i Adobe Campaign baseras den privata nyckeln för DKIM på en DKIM-väljare och en domän. Det går för närvarande inte att skapa flera privata nycklar för samma domän/underdomän med olika väljare. Det går inte att definiera vilken väljardomän/underdomän som ska användas för autentisering på varken plattformen eller i e-postmeddelandet. Plattformen kommer att välja en av de privata nycklarna, vilket innebär att autentiseringen har en stor chans att misslyckas.
 
-* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dkim** i [Domänhanteringsreglerna](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#email-management-rules). Om inte, följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys (som ersatte DKIM).
+* Om du har konfigurerat DomainKeys för din Adobe Campaign-instans behöver du bara välja **dkim** i [Domänhanteringsreglerna](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=sv-SE#email-management-rules). Om inte, följer du samma konfigurationssteg (privat/offentlig nyckel) som för DomainKeys (som ersatte DKIM).
 * Du behöver inte aktivera både DomainKeys och DKIM för samma domän som DKIM är en förbättrad version av DomainKeys.
 * Följande domäner validerar för närvarande DKIM: AOL, Gmail.
 
@@ -199,7 +199,7 @@ Du kan också använda en dynamisk adress. Om du till exempel vill skicka ett e-
 
 Regeln måste innehålla skriptet som genererar kommandoraden och den måste inkluderas i e-postrubriken.
 
-Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html#typology-rules).
+Lär dig hur du skapar typologiregler i Adobe Campaign v7/v8 i [det här avsnittet](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=sv-SE#typology-rules).
 
 >[!NOTE]
 >

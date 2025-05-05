@@ -29,8 +29,8 @@ Normalt baseras en engagemangsfrekvens på en viss tidsperiod. Mätvärdet kan v
 
 **Analytics** 
 
-* [Så här ökar du engagerande målgrupper och lojalitet (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=en#mobile-app-analytics): *Identifiera engagerade målgrupper genom deras beteende med hjälp av kohorter och se vilka bakomliggande orsaker som skapar krånglighet i mobilapparna. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
+* [Så här ökar du engagerande målgrupper och lojalitet (självstudiekurs)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/mobile-app-analytics/measuring-mobile-analytics/how-to-increase-engagement-and-retention-rates.html?lang=sv-SE#mobile-app-analytics): *Identifiera engagerade målgrupper genom deras beteende med hjälp av kohorter och se vilka bakomliggande orsaker som skapar krånglighet i mobilapparna. Använd datavetenskapsalgoritmer i segmentanalys för att ta reda på skillnader och likheter mellan segment.*
 
 **Campaign Standard**
 
-* [AI-baserade e-postmeddelanden: Prediktiv poängsättning för engagemang](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html#predictive-scoring)
+* [AI-baserade e-postmeddelanden: Prediktiv poängsättning för engagemang](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/preparing-and-testing-messages/predictive.html?lang=sv-SE#predictive-scoring)

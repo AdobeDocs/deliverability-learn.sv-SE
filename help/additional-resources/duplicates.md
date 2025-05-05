@@ -37,9 +37,9 @@ Borttagning av dubbletter skyddar det avsändande anseendet och garanterar en go
 
 **Adobe Campaign Classic**
 
-* [Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html)
-* [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html)
+* [Dedupliceringsaktivitet](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/deduplication.html?lang=sv-SE)
+* [Använda sammanfogningsfunktionen för aktiviteten Deduplicering](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=sv-SE)
 
 **Adobe Campaign Standard**
 
-* [Deduplicera data från en importerad fil](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html)
+* [Deduplicera data från en importerad fil](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-use-case/data-management/deduplicating-data-imported-file.html?lang=sv-SE)

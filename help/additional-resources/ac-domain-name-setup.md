@@ -19,7 +19,7 @@ I det här dokumentet beskrivs affärsmässiga och tekniska krav för konfigurat
 
 >[!NOTE]
 >
->Du kan också konfigurera nya underdomäner med hjälp av Kontrollpanelen (tillgänglig som beta). Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html#must-read).
+>Du kan också konfigurera nya underdomäner med hjälp av Kontrollpanelen (tillgänglig som beta). Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=sv-SE#must-read).
 
 ## Underdomäner
 
@@ -201,7 +201,7 @@ När underdomäner har konfigurerats för din instans kan du övervaka dem med K
 
 Detta gör att du kan visa alla underdomäner som du har delegerat till Adobe Campaign samt begära förnyelse av deras SSL-certifikat.
 
-Mer information om detta hittar du i den [dedikerade dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html#subdomains-and-certificates).
+Mer information om detta hittar du i den [dedikerade dokumentationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=sv-SE#subdomains-and-certificates).
 
 >[!NOTE]
 >
