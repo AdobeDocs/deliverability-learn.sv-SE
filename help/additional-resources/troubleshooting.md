@@ -19,7 +19,7 @@ Nedan följer några tips som kan hjälpa dig att identifiera och åtgärda leve
 
 ## Identifiera ett leveransproblem {#identify-deliverability-issue}
 
-Om du vill identifiera ett möjligt problem kan elementen på [sidan ](/help/ongoing-monitoring.md) dra uppmärksamheten till dig.
+Om du vill identifiera ett möjligt problem kan elementen på [sidan &#x200B;](/help/ongoing-monitoring.md) dra uppmärksamheten till dig.
 
 <!--
 Mailing or campaign metrics: unsubscribe, abuse complaint and/or bounce rates are higher than usual.
