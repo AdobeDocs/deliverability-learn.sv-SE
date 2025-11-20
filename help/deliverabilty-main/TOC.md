@@ -9,7 +9,7 @@ auto-video-transcripts: true
 source-git-commit: 0d78f4c588ae55c61a7e40e07a3b8d33ce84cb01
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 # Adobe Campaigns bästa praxis-guide för levererbarhet {#deliverability-best-practice-guide}
 
 + [Introduktion](/help/introduction.md)
-+ [Levererbarhetsstrategi och definition](/help/deliverability-strategy-and-definition.md)
++ [Strategi för levererbarhet och definition](/help/deliverability-strategy-and-definition.md)
 + Mätvärden för levererbarhet {#metrics-for-deliverability}
    + [Översikt över mätvärden](/help/metrics/metrics-overview.md)
    + [Studsar](/help/metrics/bounces.md)
@@ -25,7 +25,7 @@ ht-degree: 100%
    + [Skräppostfällor](/help/metrics/spam-traps.md)
    + [Massutskick och blockering](/help/metrics/bulking-and-blocking.md)
 + [Engagemang](/help/engagement.md)
-+ Övergångsprocess – byta e-postplattform {#transition-process}
++ Övergångsprocess – byta e-postplattformar {#transition-process}
    + [Smidig övergång vid byte av e-postplattform](/help/transition-process/switching-email-platforms.md)
    + [Infrastruktur](/help/transition-process/infrastructure.md)
    + [Målkriterier](/help/transition-process/targeting-criteria.md)
@@ -47,7 +47,7 @@ ht-degree: 100%
 + Bilaga: ytterligare resurser {#additional-resources}
    + [Översikt](/help/additional-resources/general-resources.md)
    + [Att göra och inte göra när du avbryter prenumerationen](/help/unsubscribe-dos-and-do-nots.md)
-   + Generiska resurser {#generic-resources}
+   + Allmänna resurser {#generic-resources}
       + [Allt om skräppostfällor](/help/additional-resources/all-about-spam-traps.md)
       + [Öka e-postens anseende med IP-uppvärmning](/help/additional-resources/increase-reputation-with-ip-warming.md)
       + [Autentisering](/help/additional-resources/authentication.md)
@@ -60,7 +60,7 @@ ht-degree: 100%
       + [Process för begäran av SSL-certifikat](/help/additional-resources/ac-ssl-certificate-request.md)
       + [Starta en ny plattform](/help/additional-resources/ac-starting-new-platform.md)
       + [Campaign Classic – tekniska rekommendationer](/help/additional-resources/acc-technical-recommendations.md)
-   + Teknisk notering {#technotes}
+   + Tekniska anmärkningar{#technotes}
       + [Implementera DMARC](/help/technotes/implement-dmarc.md)
       + [Implementera BIMI](/help/technotes/implement-bimi.md)
       + [Uppdatera studsar efter avbrott i Italia Online](/help/technotes/update-bounces-after-it-outage.md)
