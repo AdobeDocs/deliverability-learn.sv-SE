@@ -83,7 +83,7 @@ Följ stegen nedan för att få en CSR-fil (Certificate Signing Request).
 Här följer några metodtips:
 
 * Generera en begäran per delegerad underdomän.
-* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic är till exempel marknadsföringsservern, [mellankällservern](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html) och [körningsinstansen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html#execution-instance) tre separata miljöer.
+* Det går att kombinera flera underdomäner till en enda CSR-begäran, men bara inom samma miljö. I Campaign Classic är till exempel marknadsföringsservern, [mellankällservern](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/mid-sourcing-server.html?lang=sv-SE) och [körningsinstansen](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/configuring-instances.html?lang=sv-SE#execution-instance) tre separata miljöer.
 * Du måste skaffa en ny CSR innan du kan förnya SSL-certifikat. Använd inte en gammal CSR-fil från ett år sedan eller senare.
 
 Du måste ange följande information.
@@ -178,7 +178,7 @@ Utför testerna nedan innan du stänger installationsbiljetten för SSL. Se äve
 
 Navigera till följande URL:er i webbläsaren (ersätt&quot;subdomain.customer.com&quot; med din underdomän):
 
-* https://subdomain.customer.com/r/test (endast för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html) underdomäner - gäller inte e-postunderdomäner)
+* https://subdomain.customer.com/r/test (endast för [webbprogram](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=sv-SE) underdomäner - gäller inte e-postunderdomäner)
 * https://t.subdomain.customer.com/r/test
 * https://m.subdomain.customer.com/r/test
 * https://res.subdomain.customer.com/r/test
@@ -199,7 +199,7 @@ Det är ditt ansvar att kontrollera giltighetsperioden. Adobe rekommenderar att 
 
 * Skapa en supportanmälan om du vill begära ett uppdaterat certifikat minst två veckor före certifikatets förfallodatum. Du behöver inte begära ytterligare en CSR, såvida inte CSR-informationen har ändrats.
 
-* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv), och om din miljö hanteras av Adobe i en AWS-miljö, kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html#monitoring-certificates).
+* Om du har tillgång till [Kontrollpanelen](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=sv), och om din miljö hanteras av Adobe i en AWS-miljö, kan du använda Kontrollpanelen för att förnya certifikatet innan det upphör att gälla. Läs mer i [det här avsnittet](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=sv-SE#monitoring-certificates).
 
 ### Steg 8 - Uppdatera en specifik konfiguration {#update-configuration}
 
@@ -207,7 +207,7 @@ När du är säker på att de begärda SSL-certifikaten är korrekt installerade
 
 >[!NOTE]
 >
->För Campaign Classic finns de URL:er som ska uppdateras huvudsakligen i [distributionsguiden](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html) (spårnings-, spegelsidesdomäner och offentliga resursdomäner). För Campaign Standard, se [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html#about-brand-identity).
+>För Campaign Classic finns de URL:er som ska uppdateras huvudsakligen i [distributionsguiden](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/initial-configuration/deploying-an-instance.html#deployment-wizard) och i [externa konton](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html?lang=sv-SE) (spårnings-, spegelsidesdomäner och offentliga resursdomäner). För Campaign Standard, se [Varumärkningskonfiguration](https://experienceleague.adobe.com/docs/campaign-standard/using/administrating/application-settings/branding.html?lang=sv-SE#about-brand-identity).
 
 När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-URL:er i stället för HTTP. Om du vill kontrollera att webbadresserna nu är säkra kan du snabbt utföra följande tester:
 
@@ -218,8 +218,8 @@ När konfigurationerna har uppdaterats skickas nya e-postmeddelanden med HTTPS-U
 
 **Campaign Classic**
 
-* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
+* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=sv-SE) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
 
 **Campaign Standard**
 
-* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
+* [Kontrollpanelen: Lägger till SSL-certifikat (självstudiekurs)](https://experienceleague.adobe.com/docs/campaign-standard-learn/control-panel/subdomains-and-certificates/adding-ssl-certificates.html?lang=sv-SE) - Lär dig hur du lägger till SSL-certifikat för att skydda dina underdomäner.
