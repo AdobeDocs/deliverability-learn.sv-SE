@@ -6,10 +6,10 @@ doc-type: article
 activity: understand
 team: ACS
 exl-id: 75538ef8-8e4b-4940-8d11-42ebd7c65e93
-source-git-commit: 3616470b31f45d589d323a6b90c7fd5df3b467b7
+source-git-commit: b859229410ca0199f9e9d57025a9fe022834a217
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 31%
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
@@ -25,25 +25,26 @@ Läs följande om du vill veta mer om de senaste uppdateringarna om leveransbarh
 
 I det här avsnittet visas ytterligare resurser om levererbarhet, som specifika rekommendationer och bästa praxis, andra verktyg eller felsökningsprocedurer.
 
-* [Allt om skräppostfällor](../../help/additional-resources/all-about-spam-traps.md)
+* [Allt om skräppostsvällning](../../help/additional-resources/all-about-spam-traps.md)
 * [Öka e-postens anseende med IP-uppvärmning](../../help/additional-resources/increase-reputation-with-ip-warming.md)
 * [Autentisering](../../help/additional-resources/authentication.md)
 * [Dubbletter](../../help/additional-resources/duplicates.md)
-* [God praxis för återengagemang](../../help/additional-resources/re-engagement.md)
-* [Real-time Blackhole Lists](../../help/additional-resources/blocklist-databases.md)
+* [Bästa praxis för återanvändning](../../help/additional-resources/re-engagement.md)
+* [Svarthålslistor i realtid](../../help/additional-resources/blocklist-databases.md)
 * [Felsökning](../../help/additional-resources/troubleshooting.md)
 
-  <!--
-    [IP Certification](../../help/additional-resources/ip-certification.md)
-    [Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)-->
+<!--
+[IP Certification](../../help/additional-resources/ip-certification.md)
+[Third-party monitoring tools](../../help/additional-resources/third-party-monitoring-tools.md)
+-->
 
 ## Produktspecifika resurser
 
-Dessutom listas ett antal produktspecifika resurser som hjälper dig att implementera och nå framgång med Adobe.
+Dessutom listas ett antal produktspecifika resurser som hjälper dig att implementera och nå framgång med dina Adobe-lösningar.
 
 **[!DNL Adobe Campaign]**
 
-* [Konfiguration av domännamn](../../help/additional-resources/ac-domain-name-setup.md)
+* [Inställningar för domännamn](../../help/additional-resources/ac-domain-name-setup.md)
 * [CSR- och SSL-certifikatbegäran](../../help/additional-resources/ac-ssl-certificate-request.md)
 * [Starta en ny plattform](../../help/additional-resources/ac-starting-new-platform.md)
-* [Campaign Classic – tekniska rekommendationer](../../help/additional-resources/acc-technical-recommendations.md)
+* [Campaign Classic - Tekniska rekommendationer](../../help/additional-resources/acc-technical-recommendations.md)
